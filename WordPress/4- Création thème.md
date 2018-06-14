@@ -7,7 +7,7 @@
 - Savoir créer des templats de page pour créer des mises en page spécifiques que ne proposent pas de thèmes standards
 
 
-Extension Visual Studio Code : Wordpress Devlopment
+> Extension Visual Studio Code : Wordpress Devlopment
 
 
 ## Récap fonctions
