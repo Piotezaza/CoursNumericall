@@ -23,7 +23,10 @@ function marble_setup()
         Déclarer les menus du thème avec register_nav_menu()
         Plus tard dans le thème pour afficher les menus on utilisera wp_nav_menu()
     */
-
+    register_nav_menus( array (
+        'main_menu' => 'Menu principal',
+        'footer_menu' => 'Menu du pied de page'
+    ));
 
 
 }
