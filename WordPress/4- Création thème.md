@@ -16,7 +16,7 @@ Extension Visual Studio Code : Wordpress Devlopment
 - `<?php get_footer(); ?>` **Permet d'inclule le fichier `footer.php` dans le template**
 - `<?php language_attributes(); ?>` **TEXT**
 - `<?php bloginfo( 'charset' ); ?>` **TEXT**
-- `<?php bloginfo( 'pingback_url' ); ?>` **TEXT**
+- `<?php bloginfo( 'pingback_url' ); ?>` **Permet d'autoriser les liens de notification d’autres blogs (pings et rétroliens) sur les nouveaux articles**
 - `<?php echo esc_url( get_template_directory_uri() ); ?>` **Fonction de protection**
 - `<?php wp_head(); ?>` **Pour que WordPress fonctionne correctement**
 - `<?php body_class(); ?>` **Permet de générer les classes dynamiquement**
