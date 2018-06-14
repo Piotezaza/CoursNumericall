@@ -4,13 +4,12 @@
 
 - [Télécharger Wordpress](https://wordpress.org/download)
 
----
 
 ## Sources externes pour développer
 
 - [WPHIERARCHY](https://wphierarchy.com/)
+- [Wordpress Theme Anatomy](https://yoast.com/wordpress-theme-anatomy/)
 
----
 
 ## Répertoires de thèmes 
 
