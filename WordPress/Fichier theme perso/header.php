@@ -1,20 +1,17 @@
 <!DOCTYPE html>
-<html>
+<html <?php language_attributes(); ?> >
 <head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="<?php bloginfo( 'charset' ); ?>">
+    <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
+    
 	<title>Marble - homepage</title>
 
-	<link rel="stylesheet" href="css/normalize.css" rel="stylesheet">
-	
-	<!-- polices -->
-	<link href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Condensed:400,700|Roboto+Slab:400,700" rel="stylesheet">
-	
-	<!-- mes styles -->
-	<link rel="stylesheet" href="<?= get_template_directory_uri() ?>/css/styles.css">
-
+    <!--[if lt IE 9]>
+        <script src="<?php echo esc_url( get_template_directory_uri() ); ?>/js/html5.js"></script>
+        <![endif]-->
+        <?php wp_head(); ?>
 </head>
-<body>
+<body <?php body_class(); ?>>
 
 	<header class="main-header">
 		<div class="wrapper">

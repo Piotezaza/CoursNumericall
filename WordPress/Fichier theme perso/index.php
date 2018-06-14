@@ -1,3 +1,5 @@
+<?php get_header(); ?>
+
 		<section class="jumbotron">
 			<div class="wrapper">
 				<h2>We are digital &amp; branding agency based in London.</h2>
@@ -65,3 +67,5 @@
 				</article>
 			</div>
 		</section>
+
+<?php get_footer(); ?>
