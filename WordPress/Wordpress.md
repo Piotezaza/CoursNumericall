@@ -22,7 +22,7 @@
     - Informations nécessaires
         - Site en construction : demander aux moteurs de recherche de ne pas indexer ce site
 
--------
+---
 
 ## Réglages de base 
 
@@ -32,7 +32,7 @@ Se rendre dans `Réglages` et régler TOUTES les informations afin de les adapte
 Créer l'architecture du site en créant de nouvelles pages.
 Aller dans `Apparence` → `Menus` et créer vos menus
 
--------
+---
 
 ## Thème enfant Wordpress
 
@@ -58,11 +58,14 @@ Les fichiers du thème enfant:
 Pour créer un thème enfant :
 
 - Reprendre le **MÊME NOM DE DOSSIER** que le thème de base suivi de `-child` à la fin (*ex: twentyfifteen-child*).
-- Copier-coller le fichier `style.css` du dossier d'origine dans le dossier enfant.
+- Copier-coller le fichier `style.css` & `screenshot.png` du dossier d'origine dans le dossier enfant.
+
+Le fichier `Screenshot.png` permet d'avoir un aperçu du thème dans la section `Apparence` → `Thèmes`.
+
 - Garder uniquement le 1er commentaire.
 - À la fin du `Theme Name`, rajouter le terme `child`.
 - En dessous de cette ligne, écrire `Template: <nom du thème parent>`. **ATTENTION AUX ESPACES**
-- Aller dans `Apparence` et sélectionner le thème enfant.
+- Aller dans `Apparence` → `Thèmes` et sélectionner le thème enfant.
 
 ```
 /*
@@ -73,3 +76,10 @@ Tempalte: twentyfifteen
 ```
 
 - Importer la feuille de style du thème parent. Ici : `@import url('../twentyfifteen/style.css')` 
+
+---
+
+## Supports & liens
+
+- [Télécharger Wordpress](https://wordpress.org/download)
+- [WPHIERARCHY](https://wphierarchy.com/)
