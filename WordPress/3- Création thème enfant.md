@@ -1,4 +1,4 @@
-# Thème enfant Wordpress
+# Thème enfant
 
 Avantages :
 - Continuer à profiter des mises à jour
@@ -53,3 +53,35 @@ Tempalte: twentyfifteen
 - Faire une modification sur une page en particulier :
 
 Dans le dossier parent du thème : copier le fichier `page.php` et le coller dans le dossier enfant. Renommer le fichier `page.php` par `page-<nom de l'id de la page>` et y faire les modidifications nécéssaires. 
+
+- Fonctionnement fichiers WordPress
+
+    - Dans l'interface de WordPress, on a activé le thème enfant. 
+    - WordPress va donc regarder ce thème en premier, le thème parent sera sondé en deuxième partie. 
+    - S'il ne trouve pas un fichier dans le thème enfant, il va le chercher dans le thème parent.
+    - Si il trouve un fichier dans le thème enfant, il utilise ce dernier mais il n'utilise pas celui du fichier parent.
+
+**EXCEPTION POUR LE FICHIER `FUNCTIONS`**
+
+```
+PARENT/
+    ...
+    ...
+    ...
+    style.css
+    index.php
+    functions.php
+    ...
+    ...
+    ...
+
+ENFANT/
+    style.css
+    index.php
+    functions.php
+```
+
+
+## Détail des fichiers 
+
+`functions.php` : On peut définir les caractéristiques du thème, ajouter des sidebar, des menus... Il permet d'étendre les fonctionnalités du thème.
