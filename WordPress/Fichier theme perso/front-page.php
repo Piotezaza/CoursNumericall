@@ -69,7 +69,15 @@
 						//Code html de l'article 
 				?>
 							<article class="col">
-								<img src="<?= get_template_directory_uri() ?>/img/image1.jpg" alt="Business Card">
+							<?php 
+								the_post_thumbnail(
+									'marble-home-thumbnail', 
+									array
+									(
+									'class'=>'hentry-thumbnail'
+									)
+								); 
+							?>
 								<h4><?php the_title(); ?></h4>
 								<h5><?php the_category(', '); ?></h5>
 								<p><?php the_excerpt(); ?></p>

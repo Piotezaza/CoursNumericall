@@ -50,6 +50,7 @@ function marble_setup()
     add_theme_support( 'post-thumbnails' );
     add_image_size( 'marble-thumbnail', 350, 200, 1 );
     add_image_size( 'marble-title', 1170, 300, 1 );
+    add_image_size( 'marble-home-thumbnail', 380, 270, 1 );
 
 
     /*
