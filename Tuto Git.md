@@ -23,6 +23,7 @@ Tu veux uploader ton projet (déjà créé ou non) sur un repository github mais
 Prêt à écrire toutes les commandes ? Go !
 
 - `git init` : un dossier `.git` va apparaître dans ton dossier
-- `git clone <lien que tu as copié avant>` 
-- `git ` 
-- `` 
+- `git clone <lien que tu as copié avant>` : un dossier avec le nom de ton projet va appraître
+- Supprime le fichier `.git`
+- Dans le dossier ajouté automatiquement, coupe tout et colle-le dans le dossier que TU as créé.
+- Supprime le dossier vide
