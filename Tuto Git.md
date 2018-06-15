@@ -39,3 +39,9 @@ Si tu veux tout mettre sur ta branche principale (le tron de ton arbre = branche
  - Pour initialiser les dossiers de ton projet sur ton git local.
     - `git add *` : initialise TOUS les dossiers
     - `git add <nom du dossier>` : initialise un dossier en particulier
+- `git commit -m "<commentaire>"` : permet de préparer l'upload sur git en sauvegardant les fichiers en local **ATTENTION, c'est pas un `CTRL+S` !!**
+- Mettre en ligne
+    - `git push origin master` : met sur ta branche principale
+    - `git push origin <nom de ta branche>` : met sur la branche de ton choix
+
+Pour créer une branche, tu as besoin d'une seule commande : `git checkout -b <nom de la branche>` . Une fois entrée, tu te retrouve directement sur cette dernière et ça va remplacere la mention `master` en bas à gauche de VS Code. Pour naviguer entre tes branches, tu as juste besoin de cliquer sur le nom de ta branche en bas et tu vas avoir une liste des branches de ton projet qui va apparaître. **Penses à `sauvegarder`, `add`, `commit` & `push` tes fichiers avant de changer de branche !**
