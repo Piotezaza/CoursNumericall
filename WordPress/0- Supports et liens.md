@@ -4,6 +4,7 @@
 
 - [Télécharger la dernière version](https://wordpress.org/download)
 - [Actions hooks](https://codex.wordpress.org/Plugin_API/Action_Reference)
+- [Template Tags](https://codex.wordpress.org/Template_tags)
 
 ## Sources externes pour développer
 

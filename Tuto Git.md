@@ -27,3 +27,15 @@ Prêt à écrire toutes les commandes ? Go !
 - Supprime le fichier `.git`
 - Dans le dossier ajouté automatiquement, coupe tout et colle-le dans le dossier que TU as créé.
 - Supprime le dossier vide
+
+**LE TOUR EST JOUÉ !**
+
+### Dans Visual Studio Code
+
+Maintenant, en bas à gauche de ta fenêtre, tu vas voir apparaître `master` avec la représentation d'une branche Git. Si tu as ça, TOUT EST NORMAL, c'est que tout est bien installé. Je vais te lister les commandes dont tu vas avoir besoin pour gérer ton projet. Tu devras les effectuer dans cet ordre, sinon ça ne fonctionnera pas.
+
+Si tu veux tout mettre sur ta branche principale (le tron de ton arbre = branche *master*)
+
+ - Pour initialiser les dossiers de ton projet sur ton git local.
+    - `git add *` : initialise TOUS les dossiers
+    - `git add <nom du dossier>` : initialise un dossier en particulier
