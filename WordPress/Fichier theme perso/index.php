@@ -23,7 +23,9 @@
 									On utilise les templates tags à l'intérieur de la boucle pour afficher les contenue dynamiques de l'article en cours de génération
 								 -->
 								<h1><?php the_title(); ?></h1>
-								<p class="metas">Mise en ligne le: <?php the_date();?> / par: <?php the_author();?> / Dans: <?php the_category(', '); ?></p>
+								<?php if( is_single() ) : ?>
+									<p class="metas">Mise en ligne le: <?php the_date();?> / par: <?php the_author();?> / Dans: <?php the_category(', '); ?></p>
+								<?php endif; ?>
 
 								<?php the_content(); ?>
 							</article>
