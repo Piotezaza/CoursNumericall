@@ -42,6 +42,26 @@
 							</article>
 				<?php			
 						} // end while
+				?>
+				<div class="pagination container">
+					<div class="col">
+						<?php 
+							if( get_previous_posts_link() ) :
+								previous_posts_link( 'Page précédente', 0 );
+							endif;
+						?>
+					</div>
+					<div class="col" style="text-align: right">
+						<?php
+							if( get_next_posts_link() ) :
+								next_posts_link( 'Page suivante', 0 );
+							endif;
+						?>
+					</div>
+
+					
+				</div>
+				<?php
 					} // end if
 				?>
 		</section>
