@@ -70,13 +70,14 @@
 				?>
 							<article class="col">
 							<?php 
-								the_post_thumbnail(
-									'marble-home-thumbnail', 
-									array
-									(
-									'class'=>'hentry-thumbnail'
-									)
-								); 
+								if( has_post_thumbnail() )
+								{
+									the_post_thumbnail('marble-home-thumbnail'); 
+								}
+								else
+								{
+									echo '<img src="' . get_template_directory_uri() . '/img/image1.jpg" alt="Business Card">';
+								}
 							?>
 								<h4><?php the_title(); ?></h4>
 								<h5><?php the_category(', '); ?></h5>
