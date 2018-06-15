@@ -19,13 +19,26 @@
 							the_post(); 
 				?>
 							<article id="post-<?php the_ID(); ?>" <?php post_class();?>>
-								<!-- 
-									On utilise les templates tags à l'intérieur de la boucle pour afficher les contenue dynamiques de l'article en cours de génération
-								 -->
-								<h1><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h1>
-								<p class="metas">Mise en ligne le: <?php the_date();?> / par: <?php the_author();?> / Dans: <?php the_category(', '); ?></p>
+								<div class="hentry-container">
+									<?php 
+										the_post_thumbnail(
+											'marble-thumbnail', 
+											array
+											(
+											'class'=>'hentry-thumbnail'
+											)
+										); 
+									?>
+									<div class="hentry-text">
+										<!-- 
+										On utilise les templates tags à l'intérieur de la boucle pour afficher les contenue dynamiques de l'article en cours de génération
+									-->
+									<h1><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h1>
+									<p class="metas">Mise en ligne le: <?php the_date();?> / par: <?php the_author();?> / Dans: <?php the_category(', '); ?></p>
 
-								<p><?php the_excerpt(); ?></p>
+									<p><?php the_excerpt(); ?></p>
+									</div>									
+								</div>
 							</article>
 				<?php			
 						} // end while

@@ -26,6 +26,15 @@
 								
 									<p class="metas">Mise en ligne le: <?php the_date();?> / par: <?php the_author();?> / Dans: <?php the_category(', '); ?></p>
 								
+									<?php 
+										the_post_thumbnail(
+											'marble-title', 
+											array
+											(
+											'class'=>'hentry-thumbnail'
+											)
+										); 
+									?>
 
 								<?php the_content(); ?>
 							</article>
