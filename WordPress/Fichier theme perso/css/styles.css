@@ -365,14 +365,14 @@ body {
 	padding: 0;
 }
 
-#footer #menu-menu-footer li {
+#footer .menu li {
 	display: inline-block;
 	padding: 0 0 0 15px;
 	margin-left: 15px;
 	border-left: 1px solid #FFF;
 }
 
-#footer #menu-menu-footer li:first-child{
+#footer .menu li:first-child{
 	border-left: none;
 	margin-left: 0;
 	padding-left: 0;
