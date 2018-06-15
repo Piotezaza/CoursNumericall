@@ -73,15 +73,18 @@
 
 			<hr />
 			
-			<p class="copyrights">
-				&copy; 2016 Marble. All rights reserved. Theme by elemis.
-			</p>
-			<?php
-				wp_nav_menu( array(
-					'theme_location' => 'footer_menu'
-				));
-			?>
-			<!-- ./copyrights -->
+			<span id="footer">
+				<p class="copyrights">
+					&copy; 2016 Marble. All rights reserved. Theme by elemis.
+				</p>
+				<?php
+					wp_nav_menu( array(
+						'theme_location' => 'footer_menu'
+					));
+				?>
+				<!-- ./copyrights -->
+			</span>
+			
 		</div>
 	</footer>
 	<!-- ./main-footer -->
