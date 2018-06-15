@@ -13,7 +13,7 @@
 
 	<header class="main-header">
 		<div class="wrapper">
-			<h1 class="logo"><?= bloginfo( 'name' ) ;?></h1>
+			<h1 class="logo"><?= bloginfo( 'name' ) ;?><?php if( is_page() ) echo ' - ' . get_the_title(); ?></h1>
 			<nav>
 				<?php
 					wp_nav_menu( array(
