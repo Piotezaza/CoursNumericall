@@ -85,8 +85,12 @@ function marble_excerpt($more)
 add_filter( 'excerpt_more', 'marble_excerpt' );
 
 
-
+/**
+ * Déclaration d'une zone de widget pour la sidebar
+ */
 function marble_widgets_init() {
+
+    // Sidebar principale
     register_sidebar( array(
         'name' => 'Sidebar principale',
         'id' => 'main-sidebar',
@@ -96,14 +100,16 @@ function marble_widgets_init() {
         'before_title'  => '<h2 class="widgettitle">',
         'after_title'   => '</h2>',
     ) );
+
+    // Sidebar du footer
     register_sidebar( array(
-        'name' => __( 'Footer Sidebar', 'marble' ),
-        'id' => 'sidebar-2',
-        'description' => __( 'Widgets in this area will be shown on all posts and pages.', 'marble' ),
-        'before_widget' => '<li id="%1$s" class="widget %2$s">',
-        'after_widget'  => '</li>',
-        'before_title'  => '<h2 class="widgettitle">',
-        'after_title'   => '</h2>',
+        'name' => 'Sidebar du footer',
+        'id' => 'footer-sidebar',
+        'description' => 'La Sidebar qui apparaît à droite du contenu sur les pages de liste d\'actualité',
+        'before_widget' => '<div id="%1$s" class="widget %2$s col">',
+        'after_widget'  => '</div>',
+        'before_title'  => '<h4 class="widgettitle">',
+        'after_title'   => '</h4>',
     ) );
 }
 add_action( 'widgets_init', 'marble_widgets_init' );

@@ -313,6 +313,11 @@ body {
 	position: relative;
 }
 
+.main-footer ul li a {
+	color:  #cacaca;
+	text-decoration: none;
+}
+
 .main-footer ul li:before {
 	content: "";
 	display: block;

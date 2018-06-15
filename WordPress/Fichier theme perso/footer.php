@@ -68,7 +68,7 @@
 					</p>
 				</div> -->
 				<!-- ./col4 -->
-
+				<?php dynamic_sidebar( 'footer-sidebar' ); ?> 
 			</div>
 			<!-- ./container -->
 
