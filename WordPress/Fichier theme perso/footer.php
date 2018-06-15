@@ -1,12 +1,15 @@
 </main>
 	<!-- ./main -->
 
+	<!-- Conditional tags pour choisir d'afficher ou non la citation -->
+	<?php if(is_home() || is_front_page()) {?>
 	<section id="section-testimony">
 		<blockquote class="wrapper">
 			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque voluptatum, quibusdam temporibus voluptas repudiandae hic maiores eligendi repellendus, accusamus nobis laboriosam</p>
 		</blockquote>
 	</section>
 	<!-- ./testimony -->
+	<?php } ?>
 
 	<footer class="main-footer">
 		<div class="wrapper">
