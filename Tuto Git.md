@@ -39,7 +39,9 @@ Si tu veux tout mettre sur ta branche principale (le tron de ton arbre = branche
  - Pour initialiser les dossiers de ton projet sur ton git local.
     - `git add *` : initialise TOUS les dossiers
     - `git add <nom du dossier>` : initialise un dossier en particulier
-- `git commit -m "<commentaire>"` : permet de préparer l'upload sur git en sauvegardant les fichiers en local **ATTENTION, c'est pas un `CTRL+S` !!**
+- `git commit -m "<commentaire>"` : 
+    - permet de préparer l'upload sur git en sauvegardant les fichiers en local.
+    - **ATTENTION, c'est pas un `CTRL+S` !!**
 - Mettre en ligne
     - `git push origin master` : met sur ta branche principale
     - `git push origin <nom de ta branche>` : met sur la branche de ton choix
