@@ -31,3 +31,17 @@ function marble_setup()
 
 }
 add_action( 'after_setup_theme', 'marble_setup');
+
+
+/*
+    Changer le rendu du texte [...] de l'excerpt (résumé de l'article)
+
+    @param string $more le texte par défaut de l'excerpt "more"
+    @return string une nouvelle chaîne HTML pour l'excerpt "more"
+*/
+function marble_excerpt($more)
+{
+    global $post;
+    return '<p><a class="more-link" href="' . get_permalink($post->ID) . '">Lire la suite</a></p>';
+}
+add_filter( 'excerpt_more', 'marble_excerpt' );

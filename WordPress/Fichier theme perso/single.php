@@ -22,10 +22,12 @@
 								<!-- 
 									On utilise les templates tags à l'intérieur de la boucle pour afficher les contenue dynamiques de l'article en cours de génération
 								 -->
-								<h1><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h1>
-								<p class="metas">Mise en ligne le: <?php the_date();?> / par: <?php the_author();?> / Dans: <?php the_category(', '); ?></p>
+								<h1><?php the_title(); ?></h1>
+								
+									<p class="metas">Mise en ligne le: <?php the_date();?> / par: <?php the_author();?> / Dans: <?php the_category(', '); ?></p>
+								
 
-								<p><?php the_excerpt(); ?></p>
+								<?php the_content(); ?>
 							</article>
 				<?php			
 						} // end while
