@@ -2,7 +2,6 @@
 
 		
 		<section id="section-hentry" class="wrapper">
-			<div class="container">
 
 				<?php 
 				/*
@@ -19,7 +18,7 @@
 							// Définit le contenu courant de l'article
 							the_post(); 
 				?>
-							<article class="col">
+							<article>
 								<!-- 
 									On utilise les templates tags à l'intérieur de la boucle pour afficher les contenue dynamiques de l'article en cours de génération
 								 -->
@@ -32,7 +31,6 @@
 						} // end while
 					} // end if
 				?>
-			</div>
 		</section>
 
 <?php get_footer(); ?>
