@@ -11,7 +11,8 @@
 	<footer class="main-footer">
 		<div class="wrapper">
 			<div class="container">
-				<div class="col">
+				
+				<!-- <div class="col">
 					<h4>Get in Touch</h4>
 					<ul>
 						<li class="plan">Moonshine Street No: 14/05<br>
@@ -24,10 +25,10 @@
 							<a href="mailto:support@longwave.com" title="Ecrire à support@longwave.com">support@longwave.com</a>
 						</li>
 					</ul>
-				</div>
+				</div> -->
 				<!-- ./col1 -->
 
-				<div class="col">
+				<!-- <div class="col">
 					<h4>Twitter</h4>
 					<ul class="twitter-list">
 						<li>
@@ -40,10 +41,10 @@
 							Sapiente perferendis quis consequatur exercitationem sed facilis.
 						</li>
 					</ul>
-				</div>
+				</div> -->
 				<!-- ./col2 -->
 
-				<div class="col">
+				<!-- <div class="col">
 					<h4>Popular posts</h4>
 					<p>
 						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam autem assumend
@@ -54,10 +55,10 @@
 					<p>
 						Sapiente perferendis quis consequatur exercitationem sed facilis.
 					</p>
-				</div>
+				</div> -->
 				<!-- ./col3 -->
 
-				<div class="col">
+				<!-- <div class="col">
 					<h4>About us</h4>
 					<p>
 						Lorem ipsum dolor sit amet, consectetur adipisicing elit. A cupiditate, doloremque recusandae pariatur tempora placeat? Commodi, non
@@ -65,7 +66,7 @@
 					<p>
 						Fugit dolore delectus placeat veritatis autem consequuntur sit consequatur sint dolorum? Voluptates, ipsum.
 					</p>
-				</div>
+				</div> -->
 				<!-- ./col4 -->
 
 			</div>

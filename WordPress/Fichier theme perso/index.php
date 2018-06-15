@@ -1,8 +1,7 @@
 <?php get_header(); ?>
 
-		
-		<section id="section-hentry" class="wrapper">
-
+		<div id="contenu-blog">
+			<section id="section-hentry" class="wrapper">
 				<?php 
 				/*
 					Avant tout ça, il y a la query (qu'on ne voit pas)
@@ -62,8 +61,19 @@
 					
 				</div>
 				<?php
+					} 
+					// Si aucun article est publié :
+					else
+					{
+						echo '<p>Pas d\'articles pour le moment </p>';
 					} // end if
 				?>
-		</section>
+			</section>
+			<div class="sidebar">
+			<!-- /?php get_sidebar('nice-bar'); ?> -->
+			<?php dynamic_sidebar( 'main-sidebar' ); ?> 
+			</div>
+		</div>
+		
 
 <?php get_footer(); ?>

@@ -83,3 +83,27 @@ function marble_excerpt($more)
     return '<p><a class="more-link" href="' . get_permalink($post->ID) . '">Lire la suite</a></p>';
 }
 add_filter( 'excerpt_more', 'marble_excerpt' );
+
+
+
+function marble_widgets_init() {
+    register_sidebar( array(
+        'name' => 'Sidebar principale',
+        'id' => 'main-sidebar',
+        'description' => 'La Sidebar qui apparaît à droite du contenu sur les pages de liste d\'actualité',
+        'before_widget' => '<li id="%1$s" class="widget %2$s">',
+        'after_widget'  => '</li>',
+        'before_title'  => '<h2 class="widgettitle">',
+        'after_title'   => '</h2>',
+    ) );
+    register_sidebar( array(
+        'name' => __( 'Footer Sidebar', 'marble' ),
+        'id' => 'sidebar-2',
+        'description' => __( 'Widgets in this area will be shown on all posts and pages.', 'marble' ),
+        'before_widget' => '<li id="%1$s" class="widget %2$s">',
+        'after_widget'  => '</li>',
+        'before_title'  => '<h2 class="widgettitle">',
+        'after_title'   => '</h2>',
+    ) );
+}
+add_action( 'widgets_init', 'marble_widgets_init' );
