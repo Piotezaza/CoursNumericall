@@ -233,24 +233,28 @@ body {
 
 /*----------  section-latest-work  ----------*/
 
-#section-latest-work {
+#section-latest-work,
+#section-latest-article {
 	padding: 0px 0px 40px;
 }
 
-#section-latest-work h3 {
+#section-latest-work h3,
+#section-latest-article h3 {
 	font: 700 22px/26px 'Roboto Condensed', sans-serif;
 	color: #4e4e4e;
 	text-transform: uppercase;
 	letter-spacing: -0.06em;
 }
 
-#section-latest-work h4 {
+#section-latest-work h4,
+#section-latest-article h4 {
 	font: 700 18px/22px 'Roboto Slab', sans-serif;
 	color: #4e4e4e;
 	margin: 18px 0px 5px;
 }
 
-#section-latest-work h5 {
+#section-latest-work h5,
+#section-latest-article h5 {
 	font: 13px/16px 'Roboto Slab', sans-serif;
 	color:  #a8a8a8;
 	margin: 0px 0px 15px;
