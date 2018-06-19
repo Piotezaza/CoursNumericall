@@ -4,5 +4,5 @@ var lastNews = document.getElementById('last-news');
 var xhttp = new XMLHttpRequest();
 
 refreshButton.onclick = function () {
-    
-}
+    console.log('AJAX');
+};
