@@ -4,7 +4,7 @@ var lastNews = document.getElementById('last-news');
 var xhttp = new XMLHttpRequest();
 
 refreshButton.onclick = function(){
-    refreshButton.classList.add("fa-spin");
+    document.classList.add("fa-spin");
     xhttp.open("GET", url); // Prépare la requête
 
     xhttp.onreadystatechange = function(){
