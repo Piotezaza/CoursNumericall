@@ -5,5 +5,9 @@ var xhttp = new XMLHttpRequest();
 
 refreshButton.onclick = function(){
     console.log('AJAX');
-    xhttp.open("GET", url)
+    xhttp.open("GET", url); // Prépare la requête
+    xhttp.onreadystatechange = function(){
+        console.log(this.readyState);
+    };
+    xhttp.send(); // Envoie la requête au serveur
 };
