@@ -1,7 +1,9 @@
 <?php
 
+require_once('src/utils.php');
+
 $template = "login";
 
-include_once('view/header.php');
-include_once('view/' . $template . '.php');
-include_once('view/footer.php');
+require_once('view/header.php');
+require_once('view/' . $template . '.php');
+require_once('view/footer.php');

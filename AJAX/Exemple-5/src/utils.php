@@ -7,5 +7,5 @@ function dbConnect()
         PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC
     ];
 
-    return new PDO('sqlite:' . __DIR__ . '../data/data.db');
+    return new PDO('sqlite:' . __DIR__ . '../data/data.db', null, null, $attributes);
 }
