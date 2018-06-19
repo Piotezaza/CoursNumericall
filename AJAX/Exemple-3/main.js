@@ -20,6 +20,9 @@ CPInput.onkeyup = function()
         {
             var result = JSON.parse(this.responseText);
             console.log(result);
+            result.places.forEach(function(place){
+                
+            })
         }
     };
     xhttp.send();
