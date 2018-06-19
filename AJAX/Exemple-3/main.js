@@ -3,6 +3,7 @@
 var url = "http://api.zippopotam.us/fr/";
 var CPInput = document.getElementById('codePostal');
 var villeInput = document.getElementById('ville');
+var xhttp = new XMLHttpRequest();
 
 CPInput.onkeyup = function()
 {
@@ -10,4 +11,6 @@ CPInput.onkeyup = function()
     {
         return;
     }
+
+    xhttp.open("GET", url + CPInput.value, true);
 }
