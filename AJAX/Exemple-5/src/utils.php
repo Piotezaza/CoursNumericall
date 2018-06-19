@@ -9,3 +9,14 @@ function dbConnect()
 
     return new PDO('sqlite:' . __DIR__ . '../data/data.db', null, null, $attributes);
 }
+
+function register($pdo, $post)
+{
+    if( empty($post['username']) || empty($post['email']) || empty($post['password']) )
+    {
+        return array(
+            'success' => false; 
+            'message' => 'Merci de remplir tous les champs'
+        );
+    }
+}

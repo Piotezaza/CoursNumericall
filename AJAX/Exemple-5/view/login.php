@@ -18,7 +18,7 @@
                     </div>
                 </div>
                 <div class="card-footer">
-                    <button type="submit" class="btn btn-dark">Se connecter</button>
+                    <button type="submit" class="btn btn-dark" name="register">Se connecter</button>
                 </div>
             </div>
         </form>
