@@ -8,13 +8,15 @@ var articleTemplate = lastNews.querySelector('li.media');
 var xhttp = new XMLHttpRequest();
 
 articleTemplate.remove();
-console.log(articleTemplate);
 
 refreshButton.onclick = function(){
     document.getElementById('refresh-icon').classList.add("fa-spin");
-    xhttp.open("GET", url + Math.random()); // Prépare la requête
 
-    xhttp.onreadystatechange = function(){
+    // Préparation de la requête
+    xhttp.open("GET", url + Math.random()); 
+
+    xhttp.onreadystatechange = function()
+    {
 
         if(this.readyState == 4 && this.status == 200)
         {
@@ -23,10 +25,17 @@ refreshButton.onclick = function(){
 
             console.log(data);
 
+            // Affichage du nombre d'articles
             lastNewsFooter.innerHTML = data.count + " articles";
 
             // Affichage des articles
-            
+            data.articles.forEach(function(article)
+            {
+                var newArticleHTML = articleTemplate.cloneNode(true);
+                newArticleHTML.querySelector('img').src = article.image;
+                newArticleHTML.querySelector('h2').src = article.title;
+                newArticleHTML.querySelector('p').src = article.description;
+            });
 
             document
                 .getElementById('refresh-icon')
