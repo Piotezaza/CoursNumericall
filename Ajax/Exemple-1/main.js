@@ -4,7 +4,7 @@ var lastNews = document.getElementById('last-news');
 var xhttp = new XMLHttpRequest();
 
 refreshButton.onclick = function(){
-    refreshButton.classList();
+    refreshButton.classList.add("");
     xhttp.open("GET", url); // Prépare la requête
 
     xhttp.onreadystatechange = function(){
