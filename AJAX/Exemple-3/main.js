@@ -13,4 +13,9 @@ CPInput.onkeyup = function()
     }
 
     xhttp.open("GET", url + CPInput.value, true);
+    xhttp.onreadystatechange = function()
+    {
+
+    };
+    xhttp.send();
 }
