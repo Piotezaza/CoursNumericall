@@ -6,6 +6,11 @@ var $villeInput = $('#ville');
 
 $cpInput.keyup(function()
 {
+    if($cpInput.val().length() != 5)
+    {
+        return;
+    }
+    
     // AJAX
     var xhr = $.ajax({
         method: "GET",
