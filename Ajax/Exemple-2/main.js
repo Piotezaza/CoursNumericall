@@ -18,10 +18,15 @@ refreshButton.onclick = function(){
 
         if(this.readyState == 4 && this.status == 200)
         {
-            var data = JSON.parse(this.responseText); // Transforme la réponse en objet JSON
+            // Transforme la réponse en objet JSON
+            var data = JSON.parse(this.responseText); 
+
             console.log(data);
 
             lastNewsFooter.innerHTML = data.count + " articles";
+
+            // Affichage des articles
+            
 
             document
                 .getElementById('refresh-icon')
