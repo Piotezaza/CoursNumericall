@@ -49,7 +49,7 @@
                     </div>
                 </div>
                 <div class="card-footer">
-                    <button type="submit" class="btn btn-dark">S'enregistrer'</button>
+                    <button type="submit" class="btn btn-dark">S'enregistrer</button>
                 </div>
             </div>
         </form>
