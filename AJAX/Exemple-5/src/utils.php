@@ -24,4 +24,18 @@ function register($pdo, $post)
 function checkUSer($pdo, $post)
 {
     $query = $pdo -> prepare("SELECT * FROM user WHERE username = :username OR email = :email");
+    $query -> execute(array('username' => $post['username'], 'email' => $post['email']));
+
+    if($query->fetch())
+    {
+        return array(
+            'success' => false, 
+            'message' => "Le nom d'utilisateur ou le mail existe déjà"
+        );
+    }
+
+    return array(
+        'sucess' => true, 
+        'message' => ""
+    );
 }
