@@ -1,4 +1,4 @@
-# Apprendre le SQL
+# EN TRAVAUX - Apprendre le SQL
 
 Le SQL (Structured Query Language) est un langage permettant de communiquer avec une base de données. Ce langage informatique est notamment très utilisé par les développeurs web pour communiquer avec les données d’un site web. SQL.sh recense des cours de SQL et des explications sur les principales commandes pour lire, insérer, modifier et supprimer des données dans une base.
 

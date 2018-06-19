@@ -1,15 +1,19 @@
 // Déclaration des variables
 
 var url = "http://api.zippopotam.us/fr/";
-var $CPInput = $('codePostal');
-var $villeInput = $('ville');
+var $cpInput = $('#codePostal');
+var $villeInput = $('#ville');
 
-$CPInput.keyup(function()
+$cpInput.keyup(function()
 {
     // AJAX
-    $.ajax({
+    var xhr = $.ajax({
         method: "GET",
-        url: url+ $CPInput.val(),
-        dataType : 'json',
+        url: url+ $cpInput.val(),
+        dataType : 'json'
+    });
+
+    xhr.done(function(data){
+        console.log(data);
     });
 })

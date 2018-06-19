@@ -1,13 +1,10 @@
-#  **EN TRAVAUX**
---- 
-
-## Tuto GIT
+# Tuto GIT
 
 Tu veux utiliser Git mais tu comprends rien ? Ce tuto est pour toi !
 
 > Attention, les astuces que je vais te donner sont approximatives, ça fonctionnera mais ça ne sera pas du tout optimal, j'ai pas encore mon BAC+8 en Git ಠ_ಠ
 
-### Créer un projet GIT
+## Créer un projet GIT
 
 Tu veux uploader ton projet (déjà créé ou non) sur un repository github mais t'es COM-PLÈ-TE-MENT largué(e) ? Voici la démarche à faire :
 
@@ -30,7 +27,7 @@ Prêt à écrire toutes les commandes ? Go !
 
 **LE TOUR EST JOUÉ !**
 
-### Dans Visual Studio Code
+## Dans Visual Studio Code
 
 Maintenant, en bas à gauche de ta fenêtre, tu vas voir apparaître `master` avec la représentation d'une branche Git. Si tu as ça, TOUT EST NORMAL, c'est que tout est bien installé. Je vais te lister les commandes dont tu vas avoir besoin pour gérer ton projet. Tu devras les effectuer dans cet ordre, sinon ça ne fonctionnera pas.
 
