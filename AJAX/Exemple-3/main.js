@@ -16,18 +16,28 @@ CPInput.onkeyup = function()
     
     xhttp.onreadystatechange = function()
     {
-        if(this.readyState == 4 && this.status == 200)
+        if(this.readyState == 4)
         {
-            var result = JSON.parse(this.responseText);
-            console.log(result);
-            result.places.forEach(function(place){
+            // Active le SELECT
+            villeInput.disabled = false;
 
-                // Nouvelle option pour le select
-                var option = document.createElement("option");
-                option.text = place['place name'];
-                option.value = place['place name'];
-                villeInput.add(option);
-            })
+            // Reset du SELECT
+            villeInput.innerHTML = "";
+
+            if(this.status == 200)
+            {
+                var result = JSON.parse(this.responseText);
+
+                result.places.forEach(function(place){
+
+                    // Nouvelle option pour le select
+                    var option = document.createElement("option");
+                    option.text = place['place name'];
+                    option.value = place['place name'];
+                    villeInput.add(option);
+                })
+            }
+            
         }
     };
     xhttp.send();
