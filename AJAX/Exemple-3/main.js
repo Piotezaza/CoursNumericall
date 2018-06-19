@@ -7,6 +7,8 @@ var xhttp = new XMLHttpRequest();
 
 CPInput.onkeyup = function()
 {
+    villeInput.innerHTML = '<option value="" disabled selected>Entrer un code postal</option>';
+
     if(CPInput.value.length != 5)
     {
         villeInput.disabled = true;
@@ -17,27 +19,25 @@ CPInput.onkeyup = function()
     
     xhttp.onreadystatechange = function()
     {
-        if(this.readyState == 4)
+        if(this.readyState == 4 && this.status == 200)
         {
             // Reset du SELECT
             villeInput.innerHTML = "";
+            
+            // Active le SELECT
+            villeInput.disabled = false;
 
-            if(this.status == 200)
+            var result = JSON.parse(this.responseText);
+
+            result.places.forEach(function(place)
             {
-                // Active le SELECT
-                villeInput.disabled = false;
-
-                var result = JSON.parse(this.responseText);
-
-                result.places.forEach(function(place){
-
-                    // Nouvelle option pour le select
-                    var option = document.createElement("option");
-                    option.text = place['place name'];
-                    option.value = place['place name'];
-                    villeInput.add(option);
-                })
-            }
+                // Nouvelle option pour le select
+                var option = document.createElement("option");
+                option.text = place['place name'];
+                option.value = place['place name'];
+                villeInput.add(option);
+            })
+        
             
         }
     };
