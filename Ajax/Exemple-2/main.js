@@ -12,6 +12,7 @@ refreshButton.onclick = function(){
         if(this.readyState == 4 && this.status == 200)
         {
             var data = JSON.parse(this.responseText); // Transforme la réponse en objet JSON
+            console.log(data);
             document
                 .getElementById('refresh-icon')
                 .classList.remove('fa-spin');
