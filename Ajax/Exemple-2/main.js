@@ -2,6 +2,7 @@ var url ="lastArticles.json?r=";
 var refreshButton = document.getElementById('refresh');
 var lastNews = document.getElementById('last-news');
 var lastNewsFooter = document.getElementById('last-news-footer');
+var articleTemplate = lastNews.querySelector('.media');
 var xhttp = new XMLHttpRequest();
 
 refreshButton.onclick = function(){
