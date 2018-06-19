@@ -6,7 +6,7 @@ var $villeInput = $('#ville');
 
 $cpInput.keyup(function()
 {
-    if($cpInput.val().length() != 5)
+    if($cpInput.val().length != 5)
     {
         return;
     }
@@ -22,8 +22,9 @@ $cpInput.keyup(function()
         
         console.log(data);
         
+        $villeInput.prop('disabled', false);
         $villeInput.html('');
-        
+
         $.each(data.places, function(index, value)
         {
             $villeInput.append('<option value="' + value["place name"] + '">' + value["place name"] + '</option>');
