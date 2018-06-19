@@ -24,7 +24,7 @@
         </form>
     </div>
     <div class="col-6">
-    <form action="" method="post">
+    <form action="" method="post" enctype="multipart/form-data">
             <div class="card">
                 <div class="card-header">
                     <span class="lead">Créer un compte</span>
