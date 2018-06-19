@@ -12,27 +12,40 @@ $cpInput.keyup(function()
     }
 
     // AJAX
-    var xhr = $.ajax({
-        method: "GET",
-        url: url+ $cpInput.val(),
-        dataType : 'json'
-    });
+    // var xhr = $.ajax({
+    //     method: "GET",
+    //     url: url+ $cpInput.val(),
+    //     dataType : 'json'
+    // });
 
-    xhr.done(function(data){
+    // xhr.done(function(data){
         
-        console.log(data);
+    //     console.log(data);
         
+    //     $villeInput.prop('disabled', false);
+    //     $villeInput.html('');
+
+    //     $.each(data.places, function(index, value)
+    //     {
+    //         $villeInput.append('<option value="' + value["place name"] + '">' + value["place name"] + '</option>');
+    //     });
+    // });
+
+    // xhr.fail(function()
+    // {
+    //     console.log("Erreur AJAX");
+    // })
+
+    $.getJSON(url + $cpInput.val(), function(data)
+    {
         $villeInput.prop('disabled', false);
         $villeInput.html('');
-
         $.each(data.places, function(index, value)
         {
             $villeInput.append('<option value="' + value["place name"] + '">' + value["place name"] + '</option>');
         });
-    });
-
-    xhr.fail(function()
-    {
-        console.log("Erreur AJAX");
-    })
+    }).fail(function()
+        {
+            console.log('Erreur AJAX')
+        })
 })
