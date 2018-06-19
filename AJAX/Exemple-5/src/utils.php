@@ -20,3 +20,8 @@ function register($pdo, $post)
         );
     }
 }
+
+function checkUSer($pdo, $post)
+{
+    $query = $pdo -> prepare("SELECT * FROM user WHERE username = :username OR email = :email");
+}
