@@ -36,6 +36,8 @@ function register($pdo, $post)
     {
         copy($files['avatar']['tmp_name'], 'uploads/' . $avatar);
     }
+
+    $query = $pdo->prepare("INSERT INTO user (username, password, email, avatar) VALUES (:username, :password, :email, :avatar)")
 }
 
 function checkUSer($pdo, $post)
