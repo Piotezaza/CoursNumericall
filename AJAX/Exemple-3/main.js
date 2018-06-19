@@ -21,7 +21,12 @@ CPInput.onkeyup = function()
             var result = JSON.parse(this.responseText);
             console.log(result);
             result.places.forEach(function(place){
-                
+
+                // Nouvelle option pour le select
+                var option = document.createElement("option");
+                option.text = place['place name'];
+                option.value = place['place name'];
+                villeInput.add(option);
             })
         }
     };
