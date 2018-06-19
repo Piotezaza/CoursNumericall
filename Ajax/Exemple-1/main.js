@@ -4,12 +4,12 @@ var lastNews = document.getElementById('last-news');
 var xhttp = new XMLHttpRequest();
 
 refreshButton.onclick = function(){
-    console.log('AJAX');
+    refreshButton.classList();
     xhttp.open("GET", url); // Prépare la requête
 
     xhttp.onreadystatechange = function(){
         console.log(this.readyState);
     };
-    
+
     xhttp.send(); // Envoie la requête au serveur
 };
