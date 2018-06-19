@@ -20,13 +20,22 @@ function register($pdo, $post)
         );
     }
 
+    // Test si l'utilisateur existe
     $checkUser = checkUSer($pdo, $post);
     if(!$checkUser['sucess'])
     {
         return $checkUser;
     }
 
+    // Cryptage du mot de passe
     $password = md5($post['password'] . "WF3");
+    $avatar = $file['avatar']['name'];
+
+    // Upload de l'avatar
+    if( !empty($files['avatar']['name']) )
+    {
+        copy($files['avatar']['tmp_name'], 'uploads/' . $avatar);
+    }
 }
 
 function checkUSer($pdo, $post)
