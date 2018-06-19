@@ -8,7 +8,11 @@ refreshButton.onclick = function(){
     xhttp.open("GET", url); // Prépare la requête
 
     xhttp.onreadystatechange = function(){
-        console.log(this.readyState);
+
+        if(this.readyState == 4 && this.status == 200)
+        {
+            console.log(this.responseText);
+        }
     };
 
     xhttp.send(); // Envoie la requête au serveur
