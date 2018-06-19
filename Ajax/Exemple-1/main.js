@@ -1,4 +1,4 @@
-var url ="lastArticles.html"; 
+var url ="lastArticles.html?r=" + Math.random(); 
 var refreshButton = document.getElementById('refresh');
 var lastNews = document.getElementById('last-news');
 var xhttp = new XMLHttpRequest();
