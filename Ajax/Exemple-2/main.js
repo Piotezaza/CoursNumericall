@@ -1,6 +1,7 @@
 var url ="lastArticles.json?r="; 
 var refreshButton = document.getElementById('refresh');
 var lastNews = document.getElementById('last-news');
+var lastNewsFooter = document.getElementById('last-news-footer');
 var xhttp = new XMLHttpRequest();
 
 refreshButton.onclick = function(){
@@ -13,6 +14,9 @@ refreshButton.onclick = function(){
         {
             var data = JSON.parse(this.responseText); // Transforme la réponse en objet JSON
             console.log(data);
+
+            lastNewsFooter.innerHTML = data.count + " articles";
+
             document
                 .getElementById('refresh-icon')
                 .classList.remove('fa-spin');
