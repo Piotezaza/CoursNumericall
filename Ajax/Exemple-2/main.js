@@ -1,4 +1,4 @@
-var url ="lastArticles.html?r="; 
+var url ="lastArticles.json?r="; 
 var refreshButton = document.getElementById('refresh');
 var lastNews = document.getElementById('last-news');
 var xhttp = new XMLHttpRequest();
@@ -11,7 +11,7 @@ refreshButton.onclick = function(){
 
         if(this.readyState == 4 && this.status == 200)
         {
-            lastNews.innerHTML = this.responseText;
+            var data = JSON.parse(this.responseText); // Transforme la réponse en objet JSON
             document
                 .getElementById('refresh-icon')
                 .classList.remove('fa-spin');
