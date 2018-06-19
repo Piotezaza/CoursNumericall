@@ -26,8 +26,6 @@ refreshButton.onclick = function(){
             // Transforme la réponse en objet JSON
             var data = JSON.parse(this.responseText); 
 
-            console.log(data);
-
             // Affichage du nombre d'articles
             lastNewsFooter.innerHTML = data.count + " articles";
 
@@ -35,7 +33,7 @@ refreshButton.onclick = function(){
             data.articles.forEach(function(article)
             {
                 var newArticleHTML = articleTemplate.cloneNode(true);
-                console.log(newArticleHTML);
+
                 newArticleHTML.querySelector('img').src = article.img;
                 newArticleHTML.querySelector('h5').innerHTML = article.title;
                 newArticleHTML.querySelector('p').innerHTML = article.description;
