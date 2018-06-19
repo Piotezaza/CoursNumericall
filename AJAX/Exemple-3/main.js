@@ -9,6 +9,7 @@ CPInput.onkeyup = function()
 {
     if(CPInput.value.length != 5)
     {
+        villeInput.disabled = true;
         return;
     }
 
@@ -18,14 +19,14 @@ CPInput.onkeyup = function()
     {
         if(this.readyState == 4)
         {
-            // Active le SELECT
-            villeInput.disabled = false;
-
             // Reset du SELECT
             villeInput.innerHTML = "";
 
             if(this.status == 200)
             {
+                // Active le SELECT
+                villeInput.disabled = false;
+
                 var result = JSON.parse(this.responseText);
 
                 result.places.forEach(function(place){
