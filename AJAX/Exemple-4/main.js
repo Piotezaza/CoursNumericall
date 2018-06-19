@@ -19,10 +19,19 @@ $cpInput.keyup(function()
     });
 
     xhr.done(function(data){
+        
         console.log(data);
+        
+        $villeInput.html('');
+        
         $.each(data.places, function(index, value)
         {
             $villeInput.append('<option value="' + value["place name"] + '">' + value["place name"] + '</option>');
         });
     });
+
+    xhr.fail(function()
+    {
+        console.log("Erreur AJAX");
+    })
 })
