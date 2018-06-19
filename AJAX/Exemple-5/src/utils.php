@@ -15,10 +15,18 @@ function register($pdo, $post)
     if( empty($post['username']) || empty($post['email']) || empty($post['password']) )
     {
         return array(
-            'success' => false; 
+            'success' => false,
             'message' => 'Merci de remplir tous les champs'
         );
     }
+
+    $checkUser = checkUSer($pdo, $post);
+    if(!$checkUser['sucess'])
+    {
+        return $checkUser;
+    }
+
+    $password = md5($post['password'] . "WF3");
 }
 
 function checkUSer($pdo, $post)
