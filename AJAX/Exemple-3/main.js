@@ -13,11 +13,13 @@ CPInput.onkeyup = function()
     }
 
     xhttp.open("GET", url + CPInput.value, true);
+    
     xhttp.onreadystatechange = function()
     {
         if(this.readyState == 4 && this.status == 200)
         {
             var result = JSON.parse(this.responseText);
+            console.log(result);
         }
     };
     xhttp.send();
