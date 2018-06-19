@@ -10,7 +10,7 @@ $cpInput.keyup(function()
     {
         return;
     }
-    
+
     // AJAX
     var xhr = $.ajax({
         method: "GET",
@@ -20,5 +20,9 @@ $cpInput.keyup(function()
 
     xhr.done(function(data){
         console.log(data);
+        $.each(data.places, function(index, value)
+        {
+            $villeInput.append('<option value="' + value["place name"] + '">' + value["place name"] + '</option>');
+        });
     });
 })
