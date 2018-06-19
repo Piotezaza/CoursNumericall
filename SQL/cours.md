@@ -4,6 +4,7 @@ Le SQL (Structured Query Language) est un langage permettant de communiquer avec
 
 Partons sur le principe d'une base de donnée simple pour pratiquer correctement ces quelques commandes.
 
+[Schéma de la BDD](https://raw.githubusercontent.com/Piotezaza/CoursNumericall/master/SQL/exos/Schema%20BDD.png)
 
 
 
