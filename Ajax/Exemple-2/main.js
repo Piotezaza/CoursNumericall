@@ -1,9 +1,14 @@
+// DÉCLARATION DES VARIABLES
+
 var url ="lastArticles.json?r="; 
 var refreshButton = document.getElementById('refresh');
 var lastNews = document.getElementById('last-news');
 var lastNewsFooter = document.getElementById('last-news-footer');
-var articleTemplate = lastNews.querySelector('.media');
+var articleTemplate = lastNews.querySelector('li.media');
 var xhttp = new XMLHttpRequest();
+
+articleTemplate.remove();
+console.log(articleTemplate);
 
 refreshButton.onclick = function(){
     document.getElementById('refresh-icon').classList.add("fa-spin");
