@@ -3,7 +3,7 @@ Pour tous ceux qui ont du mal à suivre la cadence, un petit git des familles po
 
 
 
-Pour télécharger un dossier / ficher en particulier il faut modifier l'URL.
+## Pour télécharger un dossier / ficher en particulier
 
 Si tu veux télécharger un dossier ou un fichier en particulier tu dois te rendre au bon endroit et modifier ton URL de cette manière : remplacer `tree` par `archive` et rajouter `.zip` à la fin.
 
