@@ -10,4 +10,4 @@ Si tu veux télécharger un dossier ou un fichier en particulier tu dois te rend
 
 ## Liens de téléchargement
 
-- [Télécharger /AJAX/Exemple-5](https://github.com/Piotezaza/CoursNumericall/archive/master/AJAX/Exemple-5.zip)
+- [AJAX/Exemple-5](https://github.com/Piotezaza/CoursNumericall/archive/master/AJAX/Exemple-5.zip)
