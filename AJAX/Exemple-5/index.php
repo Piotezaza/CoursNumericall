@@ -28,7 +28,7 @@ elseif(isset($_POST['login']))
     }
 }
 
-if($user = getUser();)
+if($user = getUser())
 {
     // Page messenger
     $template = "messenger";
