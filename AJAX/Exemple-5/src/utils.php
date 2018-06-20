@@ -29,9 +29,9 @@ function register($pdo, $post) //$post => $_POST, $files => $_FILES
 
     // Cryptage du mot de passe
     $password = md5($post['password'] . "WF3");
-    $avatar = $file['avatar']['name'];
 
     // Upload de l'avatar
+    $avatar = $files['avatar']['name'];
     if( !empty($files['avatar']['name']) )
     {
         copy($files['avatar']['tmp_name'], 'uploads/' . $avatar);
