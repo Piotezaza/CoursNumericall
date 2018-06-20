@@ -54,7 +54,7 @@ function register($pdo, $post) //$post => $_POST, $files => $_FILES
     return array(
         'sucess' => false, 
         'message' => "Impossible de créer ce compte"
-    )
+    );
 }
 
 function checkUSer($pdo, $post)
