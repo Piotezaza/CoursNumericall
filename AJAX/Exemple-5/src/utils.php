@@ -31,14 +31,17 @@ function register($pdo, $post) //$post => $_POST, $files => $_FILES
     $password = md5($post['password'] . "WF3");
 
     // Upload de l'avatar
-    $avatar = $files['avatar']['name'];
+    $avatar = uniqid() . $files['avatar']['name'];
     if( !empty($files['avatar']['name']) )
     {
         copy($files['avatar']['tmp_name'], 'uploads/' . $avatar);
     }
 
     $query = $pdo->prepare("INSERT INTO user (username, password, email, avatar) VALUES (:username, :password, :email, :avatar)");
-    // TODO executer la requête
+    $query -> bindValue(':username', $post['username'], PDO::PARAM_STR);
+    $query -> bindValue(':password', $password, PDO::PARAM_STR);
+    $query -> bindValue(':email', $post['email'], PDO::PARAM_STR);
+    $query -> bindValue(':avatar', $avatar, PDO::PARAM_STR);
 }
 
 function checkUSer($pdo, $post)
