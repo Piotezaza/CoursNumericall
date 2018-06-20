@@ -1,3 +1,5 @@
+$(function(){
+
 var url = 'src/checkUser.php';
 var $username = $('#register-form [name="username"]');
 var $email = $('#register-form [name="email"]');
@@ -28,3 +30,5 @@ function checkUser(e)
 
 $username.keyup(checkUser);
 $email.keyup(checkUser);
+
+});
