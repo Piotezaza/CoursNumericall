@@ -2,6 +2,8 @@
 
 > Tout d'abord, remerciez Steve, c'est grâce à lui que vous avez ce petit tuto ! ʕ•͡ᴥ•ʔ
 
+[Les snippets de Steve](https://github.com/Piotezaza/CoursNumericall/blob/master/Cr%C3%A9ation%20raccourcis%20VS%20Code.md#petite-liste-avec-les-snippets-php-de-steve-%EF%BE%9F-%E3%83%BD%E3%83%AE%E3%83%BD)
+
 Les raccourcis *appellés `snippet`* sont utilisés pour gagner du temps. Par exemple, si tu commences à écrire `html` tu vas avoir l'auto-complétion avec des portions de code pré-enregistrées qui vont apparaître et tu auras juste à faire `TAB` ou `ENTRER` pour que ça s'affiche. Je vais donc vous expliquer comment créer tout ça pour gagner du temps lors de vos séances de codage.
 
 ## Manip's dans Visual Studio Code
@@ -14,7 +16,7 @@ Les raccourcis *appellés `snippet`* sont utilisés pour gagner du temps. Par ex
 
 ### 2ème étape : **accéder au bon fichier pour le bon language**
 
-- Clique sur l'engrenage. 
+- Clique sur le même engrenage que pour la 1ère étape. 
 - Clique sur `Extraits de code de l'utilisateur`
 - Sélectionne le language pour tes snippets. Ici on va prendre **PHP**.
 - Un fichier `.json` va s'ouvrir et là on commence à prendre son pied \ (•◡•) /
