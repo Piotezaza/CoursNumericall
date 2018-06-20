@@ -2,7 +2,7 @@
 
 > Tout d'abord, remerciez Steve, c'est grâce à lui que vous avez ce petit tuto ! ~(˘▾˘~)
 
-Les snippets *appellé `snippet`* sont utilisés pour gagner du temps. Par exemple, si tu commences à écrire `html` tu vas avoir l'auto-complétion avec des portions de code pré-enregistrées.
+Les raccourcis *appellé `snippet`* sont utilisés pour gagner du temps. Par exemple, si tu commences à écrire `html` tu vas avoir l'auto-complétion avec des portions de code pré-enregistrées.
 
 ## Manip's
 
@@ -44,5 +44,18 @@ Voici l'apparence d'un snippet :
 	"description": "TA DESCRIPTION"
 }
 ```
+---
 
-**Petit exemple :** on va faire un snippet pour la fonction `if()`
+**PREREQUIS**
+
+Dans un snippet, tu as déjà remarqué, ton curseur se met **AUTOMATIQUEMENT** à des endroits **clés** pour te faire gagner du temps. Tu as juste à faire `TAB` pour naviguer entre les différents paramètres de ton raccourcis. 
+
+Pour insérer un emplacement de curseur, il suffit d'écrire `${1:}`. 
+- le `${}` indique qu'il va y avoir une intérraction avec le curseur, on y entre des paramètres comme expliqué en dessous.
+- Le `1:` représente l'ordre de navigation de ton curseur. Si tu as qu'un emplacement, il faut quand même le mettre. Si tu en as plusieurs, il te suffit d'incrémenter à la mano tes numéros.
+
+Tu as peut-être déjà remarqué mais des fois, t'as carrément un texte sélectionné qui apparaît ! ⚆ _ ⚆ 
+
+---
+
+**EXEMPLE :** on va faire un snippet pour la fonction `if()`
