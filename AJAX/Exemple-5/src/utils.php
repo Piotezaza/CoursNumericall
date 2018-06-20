@@ -147,7 +147,7 @@ function getLastMessages($pdo, $lastId)
         $query->bindValue(':lastId', $lastId, PDO::PARAM_INT);
         $query->execute();
 
-        return $query->fetchAll();
+        return array_reverse($query->fetchAll());
     }
     else
     {
