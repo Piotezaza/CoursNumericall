@@ -33,7 +33,7 @@
                     <div class="form-error badge badge-danger"></div>
                     <div class="form-group">
                         <label for="username">Nom d'utilisateur</label>
-                        <input type="text" class="form-control" name="username" id="username" placeholder="Nom d'utilisateur">
+                        <input type="text" class="form-control" name="username" id="user" placeholder="Nom d'utilisateur">
                     </div>
                     <div class="form-group">
                         <label for="email">Email</label>
@@ -41,7 +41,7 @@
                     </div>
                     <div class="form-group">
                         <label for="password">Mot de passe</label>
-                        <input type="password" class="form-control" name="password" id="password" placeholder="Mot de passe">
+                        <input type="password" class="form-control" name="password" id="pass" placeholder="Mot de passe">
                     </div>
                     <div class="form-group">
                         <label for="avatar">Avatar</label>
