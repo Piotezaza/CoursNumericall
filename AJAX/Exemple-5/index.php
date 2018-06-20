@@ -4,6 +4,7 @@ require_once('src/utils.php');
 $pdo = dbConnect();
 
 $template = "login";
+$registrationError = "";
 
 // INSCRIPTION
 if(isset($_POST['register']))
@@ -12,7 +13,7 @@ if(isset($_POST['register']))
 
     if(!$result['sucess'])
     {
-        
+        $registrationError = $result['message'];
     }
 }
 
