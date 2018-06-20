@@ -86,7 +86,7 @@ EMPLACEMENT2
 
 ---
 
-**EXEMPLE 2 de Steve :** Snippet pour initier une base de donnée
+**EXEMPLE 2 :** Snippet pour initier une base de donnée *(issu du code de Steve)*
 
 ```
 "BDD": {
