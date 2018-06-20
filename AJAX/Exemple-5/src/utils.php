@@ -22,7 +22,7 @@ function register($pdo, $post) //$post => $_POST, $files => $_FILES
 
     // Test si l'utilisateur existe
     $checkUser = checkUSer($pdo, $post);
-    if(!$checkUser['sucess'])
+    if(!$checkUser['success'])
     {
         return $checkUser;
     }
@@ -32,7 +32,7 @@ function register($pdo, $post) //$post => $_POST, $files => $_FILES
 
     // Upload de l'avatar
     $avatar = uniqid() . $files['avatar']['name'];
-    if( !empty($files['avatar']['name']) )
+    if( !empty($_FILES['avatar']['name']) )
     {
         copy($files['avatar']['tmp_name'], 'uploads/' . $avatar);
     }
@@ -73,7 +73,7 @@ function checkUSer($pdo, $post)
     }
 
     return array(
-        'sucess' => true, 
+        'success' => true, 
         'message' => ""
     );
 }
