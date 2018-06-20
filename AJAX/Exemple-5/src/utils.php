@@ -88,6 +88,7 @@ function login($pdo, $post)
         );
     }
 
+    $password = md5($post['password'] . "WF3");
     $query = $pdo->prepare("SELECT * FROM user WHERE username = :username AND password = :password");
     $query -> execute(array(':username' => $post['username'], ':password' => $password));
     
