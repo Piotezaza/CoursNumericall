@@ -58,6 +58,8 @@ Tu as peut-être déjà remarqué mais des fois, t'as carrément un texte sélec
 
 C'est l'oeuvre du `:` apres le `1`. Pour écrire le texte, il te suffit d'écrire ce que tu veux derrière les deux points. Je vais faire quelques exemples pour que ce soit bien clair.
 
+**BONNUS** : Pour faire une tabulation, écris juste `\t` à l'endroit où tu veux la voir apparaître !
+
 ---
 
 **EXEMPLE 1 :** Snippet pour la fonction `if()`
@@ -68,7 +70,7 @@ C'est l'oeuvre du `:` apres le `1`. Pour écrire le texte, il te suffit d'écrir
 	"body": [
 	"if(${1:})",
         "{",
-        "${2:}",
+        "\t${2:}",
         "}"
 	],
 	"description": "Petit if des familles"
