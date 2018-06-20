@@ -151,4 +151,17 @@ function postMessage($pdo, $user, $message)
     $query->bindValue(':content', $message, PDO::PARAM_STR);
     $query->bindValue(':userId', $user['id'], PDO::PARAM_INT);
     $query->bindValue(':date', time('now'), PDO::PARAM_STR);
+
+    if($query->execute())
+    {
+        return array(
+            'success' => true, 
+            'message' => ""
+        );
+    }
+
+    return array(
+        'success' => false, 
+        'message' => "Impossible d'envoyer le message."
+    );
 }
