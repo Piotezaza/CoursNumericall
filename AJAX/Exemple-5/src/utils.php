@@ -91,10 +91,35 @@ function login($pdo, $post)
     $query = $pdo->prepare("SELECT * FROM user WHERE username = :username AND password = :password");
     $query -> execute(array(':username' => $post['username'], ':password' => $password));
     
-    var_dump($query->fetch());
-
-    if($query->fetch())
+    // var_dump($query->fetch());
+    // var_dump($pdo->errorInfo());
+    // $user = $query -> fetch();
+    // if($user){ ... }
+    if($user = $query->fetch())
     {
+        $_SESSION['user_id'] = $user['id'];
+        $_SESSION['user_name'] = $user['username'];
+        $_SESSION['user_email'] = $user['email'];
+        $_SESSION['user_avatar'] = $user['avatar'];
 
+        return array(
+            'success' => true, 
+            'message' => "",
+        );
     }
 }  
+
+function getUser()
+{
+    if(isset($_SESSION['user_id']))
+    {
+        return array(
+            'id' => $_SESSION['user_id'],
+            'username' => $_SESSION['user_name'],
+            'email' => $_SESSION['user_email'],
+            'avatar' => $_SESSION['user_avatar'],
+        );
+    }
+
+    return false;
+}

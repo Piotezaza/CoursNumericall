@@ -28,6 +28,12 @@ elseif(isset($_POST['login']))
     }
 }
 
+if($user = getUser();)
+{
+    // Page messenger
+    $template = "messenger";
+}
+
 require_once('view/header.php');
 require_once('view/' . $template . '.php');
 require_once('view/footer.php');
