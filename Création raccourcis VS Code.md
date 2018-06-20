@@ -2,9 +2,9 @@
 
 > Tout d'abord, remerciez Steve, c'est grâce à lui que vous avez ce petit tuto ! ʕ•͡ᴥ•ʔ
 
-Les raccourcis *appellé `snippet`* sont utilisés pour gagner du temps. Par exemple, si tu commences à écrire `html` tu vas avoir l'auto-complétion avec des portions de code pré-enregistrées qui vont apparaître et tu auras juste à faire `TAB` ou `ENTRER` pour que ça s'affiche.
+Les raccourcis *appellés `snippet`* sont utilisés pour gagner du temps. Par exemple, si tu commences à écrire `html` tu vas avoir l'auto-complétion avec des portions de code pré-enregistrées qui vont apparaître et tu auras juste à faire `TAB` ou `ENTRER` pour que ça s'affiche. Je vais donc vous expliquer comment créer tout ça pour gagner du temps lors de vos séances de codage.
 
-## Manip's une fois Visual Studio Code lancé :
+## Manip's dans Visual Studio Code
 
 ### 1ère étape : **organisation de nos snippets**
 
