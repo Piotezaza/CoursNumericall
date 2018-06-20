@@ -8,7 +8,12 @@ $template = "login";
 // INSCRIPTION
 if(isset($_POST['register']))
 {
-    
+    $result = register($pdo, $_POST, $_FILES);
+
+    if(!$result['sucess'])
+    {
+        
+    }
 }
 
 require_once('view/header.php');
