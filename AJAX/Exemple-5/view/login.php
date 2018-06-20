@@ -18,7 +18,7 @@
                     </div>
                 </div>
                 <div class="card-footer">
-                    <button type="submit" class="btn btn-dark" name="register">Se connecter</button>
+                    <button type="submit" class="btn btn-dark" name="login">Se connecter</button>
                 </div>
             </div>
         </form>
@@ -49,7 +49,7 @@
                     </div>
                 </div>
                 <div class="card-footer">
-                    <button type="submit" class="btn btn-dark">S'enregistrer</button>
+                    <button type="submit" class="btn btn-dark" name="resigter">S'enregistrer</button>
                 </div>
             </div>
         </form>
