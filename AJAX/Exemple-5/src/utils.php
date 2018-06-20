@@ -136,13 +136,14 @@ function logout()
     }
 }
 
-function getLastMessages($pdo)
+function getLastMessages($pdo, $lastId)
 {
     // Premier chargement de la page
-    if($lastIf == 0)
+    if($lastId == 0)
     {
-        $query = $pdo->prepare("SELECT * FROM message JOIN user ON user.id = message.user ORDER BY id DESC LIMIT :limit");
-        $query->bindValue(':limit', 5, PDO::PARAM_INT)
+        $count = 5;
+        $query = $pdo->prepare("SELECT message.* FROM message JOIN user ON user.id = message.user ORDER BY id DESC LIMIT :limit");
+        $query->bindValue(':limit', $count, PDO::PARAM_INT)
         $query->bindValue(':lastId', $lastId, PDO::PARAM_INT);
         $query->execute();
 
