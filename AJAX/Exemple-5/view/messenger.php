@@ -6,8 +6,12 @@
 <!-- MESSAGES -->
 
 <nav class="navbar bg-primary fixed-bottom navbar-dark">
-    <form id="message-form">
+    <form id="message-form" method="POST">
         <div class="input-group">
+            <input class="form-control" type="text" placeholder="Entrez votre message" name="message"/>
+            <div class="input-group-append">
+                <button type="submit" class="btn btn-dark"><i class="fas fa-paper-plane"></i></button>
+            </div>
         </div>
     </form>
 </nav>
