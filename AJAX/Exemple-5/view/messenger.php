@@ -9,7 +9,7 @@
 </nav>
 
 
-<!-- MESSAGE -->
+<!-- MESSAGES -->
 
 <nav class="navbar bg-primary fixed-bottom navbar-dark">
     <form id="message-form" method="POST">
