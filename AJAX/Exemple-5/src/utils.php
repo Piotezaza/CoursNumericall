@@ -42,6 +42,19 @@ function register($pdo, $post) //$post => $_POST, $files => $_FILES
     $query -> bindValue(':password', $password, PDO::PARAM_STR);
     $query -> bindValue(':email', $post['email'], PDO::PARAM_STR);
     $query -> bindValue(':avatar', $avatar, PDO::PARAM_STR);
+
+    if($query->execute())
+    {
+        return array(
+            'sucess' => true, 
+            'message' => "Bienvenue"
+        );
+    }
+
+    return array(
+        'sucess' => false, 
+        'message' => "Impossible de créer ce compte"
+    )
 }
 
 function checkUSer($pdo, $post)
