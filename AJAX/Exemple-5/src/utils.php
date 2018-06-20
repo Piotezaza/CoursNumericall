@@ -83,7 +83,7 @@ function login($pdo, $post)
     if( empty($post['username']) || empty($post['username']) )
     {
         return array(
-            'sucess' => false,
+            'success' => false,
             'message' => "Vous devez entrer un nom d'utilisateur et un mot de passe."
         );
     }
