@@ -5,6 +5,7 @@ $pdo = dbConnect();
 
 $template = "login";
 $registrationError = "";
+$loginError = "";
 
 // INSCRIPTION
 if(isset($_POST['register']))
@@ -16,8 +17,16 @@ if(isset($_POST['register']))
         $registrationError = $result['message'];
     }
 }
-
 // CONNEXION
+elseif(isset($_POST['login']))
+{
+    $result = login($pdo, $_POST);
+
+    if(!$result['success'])
+    {
+        $loginError = $result['message'];
+    }
+}
 
 require_once('view/header.php');
 require_once('view/' . $template . '.php');

@@ -95,6 +95,6 @@ function login($pdo, $post)
 
     if($query->fetch())
     {
-        
+
     }
-}
+}  
