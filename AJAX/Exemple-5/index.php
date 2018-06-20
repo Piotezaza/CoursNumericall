@@ -17,6 +17,8 @@ if(isset($_POST['register']))
     }
 }
 
+// CONNEXION
+
 require_once('view/header.php');
 require_once('view/' . $template . '.php');
 require_once('view/footer.php');

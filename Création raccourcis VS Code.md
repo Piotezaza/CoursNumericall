@@ -36,8 +36,8 @@ Voici l'apparence d'un snippet :
 "NOM": {
 	"prefix": "CE QUE TU VAS ÉCRIRE",
 	"body": [
-		"CE QUI VA APPARAÎTRE SUR UNE",
-            "OU DEUX LIGNES"
+	"CE QUI VA APPARAÎTRE SUR UNE",
+        "OU DEUX LIGNES"
 	],
 	"description": "TA DESCRIPTION"
 }
@@ -46,7 +46,7 @@ Voici l'apparence d'un snippet :
 
 **PREREQUIS**
 
-Dans un snippet, tu as déjà remarqué, ton curseur se met **AUTOMATIQUEMENT** à des endroits **clés** pour te faire gagner du temps. Tu as juste à faire `TAB` pour naviguer entre les différents paramètres de ton raccourcis. 
+Dans un snippet, tu as déjà dû le remarquer, ton curseur se met **AUTOMATIQUEMENT** à des endroits **clés** pour te faire gagner du temps. Tu as juste à faire `TAB` pour naviguer entre les différents paramètres de ton raccourci pour écrire ce que tu veux. 
 
 Pour insérer un emplacement de curseur, il suffit d'écrire `${1:}`. 
 - le `${}` indique qu'il va y avoir une intérraction avec le curseur, on y entre des paramètres comme expliqué en dessous.
