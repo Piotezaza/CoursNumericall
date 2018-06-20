@@ -135,3 +135,8 @@ function logout()
         unset($_SESSION['user_avatar']);
     }
 }
+
+function getLastMessages($pdo)
+{
+    $query = $pdo->prepare("SELECT * FROM message JOIN user ON user.id = message.user_id");
+}
