@@ -1,7 +1,7 @@
-<?
+<?php
 
 require_once('utils.php');
 
 logout();
 
-header("Location: index.php");
+header("Location: ../index.php");

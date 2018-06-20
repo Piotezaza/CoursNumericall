@@ -1,5 +1,5 @@
 <?php
-
+session_start();
 require_once('src/utils.php');
 $pdo = dbConnect();
 

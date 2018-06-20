@@ -118,7 +118,7 @@ function getUser()
             'id' => $_SESSION['user_id'],
             'username' => $_SESSION['user_name'],
             'email' => $_SESSION['user_email'],
-            'avatar' => $_SESSION['user_avatar'],
+            'avatar' => $_SESSION['user_avatar']
         );
     }
 
@@ -138,7 +138,7 @@ function logout()
 
 function getLastMessages($pdo)
 {
-    $query = $pdo->prepare("SELECT * FROM message JOIN user ON user.id = message.user_id WHERE message.id > :lastId ORDER BY id ASC");
+    $query = $pdo->prepare("SELECT * FROM message JOIN user ON user.id = message.user WHERE message.id > :lastId ORDER BY id ASC");
     $query->bindValue(':lastId', $lastId, PDO::PARAM_INT);
     $query->execute();
 
@@ -147,7 +147,7 @@ function getLastMessages($pdo)
 
 function postMessage($pdo, $user, $message)
 {
-    $query = $pdo->prepare("INSERT INTO message (content, user_id, date) VALUES (:content, :userId, :date)");
+    $query = $pdo->prepare("INSERT INTO message (content, user, date) VALUES (:content, :userId, :date)");
     $query->bindValue(':content', $message, PDO::PARAM_STR);
     $query->bindValue(':userId', $user['id'], PDO::PARAM_INT);
     $query->bindValue(':date', time('now'), PDO::PARAM_STR);
