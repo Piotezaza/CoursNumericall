@@ -21,7 +21,7 @@ function register($pdo, $post) //$post => $_POST, $files => $_FILES
     }
 
     // Test si l'utilisateur existe
-    $checkUser = checkUSer($pdo, $post);
+    $checkUser = checkUser($pdo, $post);
     if(!$checkUser['success'])
     {
         return $checkUser;
@@ -57,7 +57,7 @@ function register($pdo, $post) //$post => $_POST, $files => $_FILES
     );
 }
 
-function checkUSer($pdo, $post)
+function checkUser($pdo, $post)
 {
     $query = $pdo -> prepare("SELECT * FROM user WHERE username = :username OR email = :email");
     $query->bindValue('username', $post['username']);

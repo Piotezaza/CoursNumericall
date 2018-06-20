@@ -9,5 +9,5 @@ $pdo = dbConnect();
     $myJSON['value']; >> (tableau)
 */ 
 
-header('Content-Type : application/json');
+header('Content-Type: application/json');
 echo json_encode(checkUser($pdo, $_GET), JSON_PRETTY_PRINT);
