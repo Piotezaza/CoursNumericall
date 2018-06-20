@@ -46,13 +46,13 @@ function register($pdo, $post) //$post => $_POST, $files => $_FILES
     if($query->execute())
     {
         return array(
-            'sucess' => true, 
+            'success' => true, 
             'message' => "Bienvenue"
         );
     }
 
     return array(
-        'sucess' => false, 
+        'success' => false, 
         'message' => "Impossible de créer ce compte"
     );
 }
