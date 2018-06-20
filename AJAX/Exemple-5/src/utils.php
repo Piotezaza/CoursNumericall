@@ -10,7 +10,7 @@ function dbConnect()
     return new PDO('sqlite:' . __DIR__ . '/../data/data.db', null, null, $attributes);
 }
 
-function register($pdo, $post)
+function register($pdo, $post) //$post => $_POST, $files => $_FILES
 {
     if( empty($post['username']) || empty($post['email']) || empty($post['password']) )
     {
@@ -44,7 +44,9 @@ function register($pdo, $post)
 function checkUSer($pdo, $post)
 {
     $query = $pdo -> prepare("SELECT * FROM user WHERE username = :username OR email = :email");
-    $query -> execute(array('username' => $post['username'], 'email' => $post['email']));
+    $query->bindValue('username', $post['username']);
+    $query->bindValue('email', $post['email']);
+    $query -> execute();
 
     if($query->fetch())
     {
