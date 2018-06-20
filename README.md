@@ -10,7 +10,7 @@ Si tu veux télécharger un dossier ou un fichier en particulier tu dois te rend
 Pour AJAX/Exemple (en dessous) tu as :
 
 ```
-https://github.com/Piotezaza/CoursNumericall/tree/master/AJAX/Exemple-5git
+https://github.com/Piotezaza/CoursNumericall/tree/master/AJAX/Exemple-5
 ```
 
 Et tu dois au final avoir ça :
