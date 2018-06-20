@@ -29,7 +29,7 @@ Chaque snippet doit contenir :
 
 - Un **nom** : c'est juste le nom de ton snippet, rien de bien compliqué.
 - Un **prefixe** : c'est ce que tu vas écrire pour appeler ton snippet. 
-- Un **body** : la manière dont ton snipper va fonctionner.
+- Un **body** : la manière dont ton snippet va fonctionner.
 - Une **description** : petit descriptif de ta fonction et/ou de ton snippet.
 
 Voici l'apparence d'un snippet :
