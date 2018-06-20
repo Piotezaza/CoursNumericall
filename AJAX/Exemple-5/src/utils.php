@@ -77,3 +77,16 @@ function checkUser($pdo, $post)
         'message' => ""
     );
 }
+
+function login($pdo, $post)
+{
+    if( empty($post['username']) || empty($post['username']) )
+    {
+        return array(
+            'sucess' => false,
+            'message' => "Vous devez entrer un nom d'utilisateur et un mot de passe."
+        );
+    }
+
+    $query = $pdo->prepare("SELECT * FROM user WHERE username = :username AND password = :password");
+}
