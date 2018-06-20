@@ -11,7 +11,7 @@ if(isset($_POST['register']))
 {
     $result = register($pdo, $_POST, $_FILES);
 
-    if(!$result['sucess'])
+    if(!$result['success'])
     {
         $registrationError = $result['message'];
     }
