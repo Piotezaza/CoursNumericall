@@ -138,11 +138,22 @@ function logout()
 
 function getLastMessages($pdo)
 {
-    $query = $pdo->prepare("SELECT * FROM message JOIN user ON user.id = message.user WHERE message.id > :lastId ORDER BY id ASC");
-    $query->bindValue(':lastId', $lastId, PDO::PARAM_INT);
-    $query->execute();
+    // Premier chargement de la page
+    if($lastIf == 0)
+    {
+        $query = $pdo->prepare("SELECT * FROM message JOIN user ON user.id = message.user ORDER BY id DESC LIMIT :limit");
+        $query->bindValue(':limit', 5, PDO::PARAM_INT)
+        $query->bindValue(':lastId', $lastId, PDO::PARAM_INT);
+        $query->execute();
 
-    return $query->fetchAll();
+        return $query->fetchAll();
+    }
+    else
+    {
+        $query = $pdo->prepare("SELECT * FROM message JOIN user ON user.id = message.user WHERE message.id > :lastId ORDER BY id ASC");
+        $query->bindValue(':lastId', $lastId, PDO::PARAM_INT);
+        return $query->fetchAll();
+    }
 }
 
 function postMessage($pdo, $user, $message)

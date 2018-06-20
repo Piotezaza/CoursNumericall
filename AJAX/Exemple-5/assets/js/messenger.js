@@ -19,4 +19,13 @@ $(function()
     }
 
     $form.submit(postMessage);
+
+    function getMessage()
+    {
+        $getJSON('src/getMessage.php', { lastId: lastId}, function(data){
+            console.log(data);
+        })
+    }
+
+    getMessage();
 });
