@@ -65,6 +65,7 @@ $.ajax({
 
 ### Permet de paramétrer toutes les prochaînes requêtes AJAX (et donc de gagner du temps)
 
+
 ```
 $.ajaxSetup({
     url: 'script.php'
@@ -78,9 +79,12 @@ $.ajax({}).done(...);
 ### Requête GET & POST
 
 ```
-$.get(URL, DATA, function(data){}, DATATYPE);
-$.post(URL, DATA, function(data){}, DATATYPE);
-
-$.getJSON(URL, DATA, function(data){});
-
+$.get(URL, DATA, function(data){}, DATATYPE); // Requête GET
+$.post(URL, DATA, function(data){}, DATATYPE); // Requête POST
+$.getJSON(URL, DATA, function(data){}); // Requête GET type JSON
+$.post(URL, DATA, function(data){}, 'json'); // Requête GET type JSON
 ```
+
+--- 
+
+- `$('form').serialize()` : retournee les données d'un formulaire sous forme de chaîne encodée pour les URL
