@@ -11,13 +11,28 @@
 
 <!-- MESSAGES -->
 <ul class="messages list-unstyled" id="messages">
+
+    <!-- TEMPLATE MES MESSAGES -->
     <li class="message me media">
         <div class="avatar float-left">
-            <img src="" class="avatar rounded-circle img-thumbnail"/>
+            <img src="" class="rounded-circle img-thumbnail"/>
         </div>
+        <div class="media-body">
+            <small class="infos"></small>
+            <div class="content bg-primary text-right text-light">
+            </div>
+        </div>    
     </li>
-    <li class="message me media">
-    
+
+    <!-- TEMPLATE AUTRES MESSAGES -->
+    <li class="message not-me media">
+        <div class="media-body text-right">
+            <small class="infos"></small>
+            <div class="content bg-secondary text-left">
+        </div>
+        <div class="avatar float-right">
+            <img src="" class="rounded-circle img-thumbnail"/>
+        </div>
     </li>
 </ul>
 
