@@ -4,6 +4,7 @@ session_start();
 require_once('utils.php');
 
 $pdo = dbConnect();
+$user = getUser();
 
 $messages = getLastMessages($pdo, $_GET['lastId']);
 
