@@ -1,7 +1,7 @@
 #Mémo
 
-- [AJAX]()
-- [PHP]()
+- [AJAX](https://github.com/Piotezaza/CoursNumericall/tree/master/AJAX#AJAX)
+- [PHP](https://github.com/Piotezaza/CoursNumericall/tree/master/AJAX#PHP)
 
 ## AJAX
 
