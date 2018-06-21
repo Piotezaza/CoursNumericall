@@ -10,25 +10,25 @@
 
 
 <!-- MESSAGES -->
-<ul class="messages list-unstyled d-none" id="messages">
+<ul class="messages list-unstyled" id="messages">
 
     <!-- TEMPLATE MES MESSAGES -->
-    <li class="message me media">
+    <li class="message me media d-none">
         <div class="avatar float-left">
             <img src="" class="rounded-circle img-thumbnail"/>
         </div>
         <div class="media-body">
             <small class="infos"></small>
-            <div class="content bg-primary text-right text-light">
+            <div class="content bg-primary text-right text-light rounded p-3">
             </div>
         </div>    
     </li>
 
     <!-- TEMPLATE AUTRES MESSAGES -->
-    <li class="message not-me media">
+    <li class="message not-me media d-none">
         <div class="media-body text-right">
             <small class="infos"></small>
-            <div class="content bg-secondary text-left">
+            <div class="content bg-secondary text-left rounded p-3">
         </div>
         <div class="avatar float-right">
             <img src="" class="rounded-circle img-thumbnail"/>

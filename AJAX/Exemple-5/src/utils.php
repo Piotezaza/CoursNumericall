@@ -10,7 +10,7 @@ function dbConnect()
     return new PDO('sqlite:' . __DIR__ . '/../data/data.db', null, null, $attributes);
 }
 
-function register($pdo, $post) //$post => $_POST, $files => $_FILES
+function register($pdo, $post, $files) //$post => $_POST, $files => $_FILES
 {
     if( empty($post['username']) || empty($post['email']) || empty($post['password']) )
     {
