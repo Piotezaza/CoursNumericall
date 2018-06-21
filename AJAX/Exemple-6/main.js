@@ -8,9 +8,15 @@ function initMap(){
     var geocoder = new google.maps.Geocoder;
 
     function codeAddress(){
-        geocoder.geocode( { 'address': $('address').val() }, function(results, status){
+        geocoder.geocode({'address': $('#address').val()}, function(results, status){
+        if(status == OK)
+        {
+            map.setCenter(results[0].geometry.location);
+        }
+        else
+        {
             console.log(status);
-            console.log(results);
+        }
         });
     }
 
