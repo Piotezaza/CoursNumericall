@@ -26,7 +26,7 @@
 
     <!-- TEMPLATE AUTRES MESSAGES -->
     <li class="message not-me media d-none">
-        <div class="media-body text-right">
+        <div class="media-body">
             <small class="infos"></small>
             <div class="content bg-light text-left">
         </div>
