@@ -28,7 +28,7 @@
     <li class="message not-me media d-none">
         <div class="media-body text-right">
             <small class="infos"></small>
-            <div class="content bg-secondary text-left">
+            <div class="content bg-light text-left">
         </div>
         <div class="avatar float-right">
             <img src="" class="rounded-circle img-thumbnail"/>

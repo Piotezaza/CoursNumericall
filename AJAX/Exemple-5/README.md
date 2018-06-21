@@ -27,6 +27,6 @@ https://github.com/Piotezaza/CoursNumericall/archive/master/AJAX/Exemple-5.zip
 
 ## BDD - /data
 
-Pseudo : `pseudo`
+Compte 1 : `pseudo` | `mdp`
 
-Mot de passe : `mdp`
+Compte 2 : `pseudo2` | `mdp`

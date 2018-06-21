@@ -11,6 +11,9 @@ body {
     width: 100%;
 }
 
+.message {
+    margin: 10px 0;
+}
 .message .avatar img{
     width: 80px;
     height: 80px;
