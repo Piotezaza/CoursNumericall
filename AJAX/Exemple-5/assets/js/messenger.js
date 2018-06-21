@@ -53,4 +53,5 @@ $(function()
     }
 
     getMessage();
+    setInterval(getMessage, 1000);
 });
