@@ -36,7 +36,6 @@ xhr.send();
 - `data: {}` : **objet** `{ username: 'Bob', password: '1234' }` ou **chaîne** `( "username=Bob&password=1234" )`
 - `dataType: 'html'` : ou JSON
 - `console.log(data);` : affichage du contenu de la réponse
-- `` : 
 
 ### CODE TYPE
 
