@@ -28,4 +28,5 @@ https://github.com/Piotezaza/CoursNumericall/archive/master/AJAX/Exemple-5.zip
 ## BDD - /data
 
 Pseudo : `Piote`
+
 Mot de passe : `mdp`
