@@ -446,26 +446,26 @@ Ce problème qui était un handicap pour Wordpress face à ses concurrents Drupa
 ### AUTRE METHODE : Mettre à jour sa base de donnée avec Search Replace Database Script
 
 
-1 - Transférer les fichiers du site via FTP sur le serveur distant
-2 - Mettre à jour sur le serveur distant les fichiers `wp-config.php` et `.htaccess` avec les données du site distant (information de la base de donnée et chemin relatif du fichier index.php dans le .htaccess)
-3 - Dans le phpmyadmin du site local : Faire un export des données de la BDD du site local
-4 - Dans le phpmyadmin du site distant : Faire un import de la base de donnée
-5 - Télécharger le dossier du script Search-Replace Database 
+1. Transférer les fichiers du site via FTP sur le serveur distant
+2. Mettre à jour sur le serveur distant les fichiers `wp-config.php` et `.htaccess` avec les données du site distant (information de la base de donnée et chemin relatif du fichier index.php dans le .htaccess)
+3. Dans le phpmyadmin du site local : Faire un export des données de la BDD du site local
+4. Dans le phpmyadmin du site distant : Faire un import de la base de donnée
+5. Télécharger le dossier du script Search-Replace Database 
 
 Télécharger les fichiers à cette adresse :
 https://github.com/interconnectit/Search-Replace-DB
 
-6 - Placer les fichiers du script à la racide du dossier d'installation de Wordpress (distant) dans un dossier `srdb` sur le serveur et se rendre à l'adresse suivante : http://nomdusite.com/srdb/ 
-7 - Effectuer l'assistant de mise à jour de la base de donnée en recherchant l'ancienne url du site et en la remplaçant par la nouvelle :
+6. Placer les fichiers du script à la racide du dossier d'installation de Wordpress (distant) dans un dossier `srdb` sur le serveur et se rendre à l'adresse suivante : http://nomdusite.com/srdb/ 
+7. Effectuer l'assistant de mise à jour de la base de donnée en recherchant l'ancienne url du site et en la remplaçant par la nouvelle :
 
 Exemple :
 
 ancienne url : http://localhost/monsite
 nouvelle url : http://www.monsite.com
 
-8 - Pour plus de sécurité, utiliser la fonction 'dry run' pour faire un test de remplacement. Puis faire un 'live-run' lorsqu'on est prêt.
-9 - Une fois ces opérations terminées, supprimer les fichiers du dossier `srdb` pour éviter les failles de sécurité !!!
-10 - Se connecter à son nouveau site à l'adresse http://www.monsite.com/wp-admin/ et aller à nouveau enregistrer la structure des permaliens dans la page Réglages/permaliens `options-permalink.php`
+8. Pour plus de sécurité, utiliser la fonction 'dry run' pour faire un test de remplacement. Puis faire un 'live-run' lorsqu'on est prêt.
+9. Une fois ces opérations terminées, supprimer les fichiers du dossier `srdb` pour éviter les failles de sécurité !!!
+10. Se connecter à son nouveau site à l'adresse http://www.monsite.com/wp-admin/ et aller à nouveau enregistrer la structure des permaliens dans la page Réglages/permaliens `options-permalink.php`
 
 La migration est achevée.
 
