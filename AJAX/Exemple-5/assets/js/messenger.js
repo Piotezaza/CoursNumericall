@@ -11,16 +11,16 @@ $(function()
             $message = (data.user.id == value.user? $messageMe.clone(): $messageNotMe.clone()); // ATTENTION !!!!!! Si la BDD c'est user_id, bien penser à rajouter le _id !!!
             $message.find('.avatar img').attr('src', 'uploads/' + value.avatar);
             $message.find('.content').html(value.content);
-            $message.find('.infos').html(value.username + '-' + value.date);
+            $message.find('.infos').html(value.username + ' - ' + formatDate(value.date));
             $message.removeClass('d-none');
             $('#messages').append($message);
         });
     }
 
-    function formDate(timestamp)
+    function formatDate(timestamp)
     {
         var date = new Date(timestamp * 1000);
-        return
+        return date.getDate() + '/' + (date.getMonth() + 1) + '/' + date.getFullYear() + ' ' + date.getHours() + 'h' + date.getMinutes();
     }
 
     function postMessage()
@@ -31,7 +31,7 @@ $(function()
             $form.serialize() /* {message: $message.val(), ...} */, 
             function(data)
             {
-                console.log(data);
+                $form.find('[name="message"}').val('');
             }
             , 'json'
         );
