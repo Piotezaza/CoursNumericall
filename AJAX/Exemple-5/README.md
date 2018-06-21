@@ -19,6 +19,8 @@ https://github.com/Piotezaza/CoursNumericall/archive/master/AJAX/Exemple-5.zip
 
 - [Exemple-5](https://github.com/Piotezaza/CoursNumericall/archive/master/AJAX/Exemple-5.zip)
 - [Exemple-5/assets](https://github.com/Piotezaza/CoursNumericall/archive/master/AJAX/Exemple-5/assets.zip)
+    - [Exemple-5/css](https://github.com/Piotezaza/CoursNumericall/archive/master/AJAX/Exemple-5/css.zip)
+    - [Exemple-5/js](https://github.com/Piotezaza/CoursNumericall/archive/master/AJAX/Exemple-5/js.zip)
 - [Exemple-5/data](https://github.com/Piotezaza/CoursNumericall/archive/master/AJAX/Exemple-5/data.zip)
 - [Exemple-5/src](https://github.com/Piotezaza/CoursNumericall/archive/master/AJAX/Exemple-5/src.zip)
 - [Exemple-5/view](https://github.com/Piotezaza/CoursNumericall/archive/master/AJAX/Exemple-5/view.zip)
