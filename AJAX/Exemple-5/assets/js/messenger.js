@@ -2,6 +2,8 @@ $(function()
 {
     var $form = $('#message-form');
     var lastId = 0;
+    var $messageMe = $('#messages .me');
+    var $messageNotMe = $('#messages .not-me');
 
     function postMessage()
     {
