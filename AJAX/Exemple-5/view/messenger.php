@@ -10,7 +10,7 @@
 
 
 <!-- MESSAGES -->
-<ul class="messages list-unstyled hide" id="messages">
+<ul class="messages list-unstyled" id="messages">
 
     <!-- TEMPLATE MES MESSAGES -->
     <li class="message me media">
