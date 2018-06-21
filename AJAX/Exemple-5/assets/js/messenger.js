@@ -5,6 +5,11 @@ $(function()
     var $messageMe = $('#messages .me');
     var $messageNotMe = $('#messages .not-me');
 
+    function showMessages(data)
+    {
+        
+    }
+
     function postMessage()
     {
         // $.ajax({ url: '...', method: 'POST', data: $form.serialize()}).done(function(data){})
@@ -26,7 +31,7 @@ $(function()
     function getMessage()
     {
         $.getJSON('src/getMessage.php', {lastId: lastId}, function(data){
-            console.log(data);
+            showMessages(data);
         })
     }
 
