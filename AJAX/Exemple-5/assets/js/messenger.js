@@ -44,11 +44,19 @@ $(function()
     function getMessage()
     {
         $.getJSON('src/getMessage.php', {lastId: lastId}, function(data){
+            
+            if (data.messages.lenght == 0) {
+                return;
+            }
+
             showMessages(data);
 
             // Récupère l'id du dernier message
-            lastId = data.messages[data.messages.length -1].id;
+            lastId = data.messages[data.messages.length - 1].id;
             console.log(lastId);
+
+            // Scroll en bas de la page
+            $('html, body').animate({scrollTop: $(document).height()}, 'slow');
         })
     }
 
