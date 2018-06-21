@@ -6,6 +6,7 @@ function initMap(){
     });
 
     var geocoder = new google.maps.Geocoder;
+    var marker = new google.maps.Marker();
 
     function codeAddress(){
         geocoder.geocode({'address': $('#address').val()}, function(results, status){
