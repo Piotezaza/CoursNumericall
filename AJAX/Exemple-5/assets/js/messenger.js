@@ -7,7 +7,9 @@ $(function()
 
     function showMessages(data)
     {
-        
+        $.each(data, function(index, value){
+            
+        });
     }
 
     function postMessage()
