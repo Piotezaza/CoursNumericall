@@ -1,6 +1,11 @@
-# Mémo AJAX
+#Mémo
 
-## JAVASCRIPT
+- [AJAX]()
+- [PHP]()
+
+## AJAX
+
+### JAVASCRIPT
 
 - `var hxr = new XMLHttpRequest` : fais un appel AJAX en natif
 - `xhr.open(METHOD, URL, ASYNC)` : prépare la requête
@@ -11,7 +16,7 @@
 - `JSON.stringify(OBJECT)` : transforme un objet en chaîne (JSON)
 - `xhr.send()` : envoi de la requête
 
-### CODE TYPE
+#### CODE TYPE
 
 ```
 var hxr = new XMLHttpRequest;
@@ -29,7 +34,7 @@ xhr.onreadystatechange = function()
 xhr.send();
 ```
 
-## JQUERY
+### JQUERY
 
 - `url: ''` : lien vers le script à appeler
 - `method: 'POST'` : ou GET
@@ -37,7 +42,7 @@ xhr.send();
 - `dataType: 'html'` : ou JSON
 - `console.log(data);` : affichage du contenu de la réponse
 
-### CODE TYPE
+#### CODE TYPE
 
 ```
 $.ajax({
@@ -62,7 +67,7 @@ $.ajax({
 
 ---
 
-### Permet de paramétrer toutes les prochaînes requêtes AJAX (et donc de gagner du temps)
+#### Permet de paramétrer toutes les prochaînes requêtes AJAX (et donc de gagner du temps)
 
 
 ```
@@ -75,7 +80,7 @@ $.ajax({}).done(...);
 
 ---
 
-### Requête GET & POST
+#### Requête GET & POST
 
 ```
 $.get(URL, DATA, function(data){}, DATATYPE); // Requête GET
@@ -87,3 +92,11 @@ $.post(URL, DATA, function(data){}, 'json'); // Requête GET type JSON
 --- 
 
 - `$('form').serialize()` : retourne les données d'un formulaire sous forme de chaîne encodée pour les URL
+
+---
+
+## PHP
+
+- `header('Content-Type: application/json')` : indique dans le header que la réponse sera sous forme de JSON
+- `json_encode(array)` : retourne une chaîne JSON à partir d'un tableau
+- `json_decode(string, /* true: retourne un array*/` : retourne un objet PHP à partir d'une chaîne JSON
