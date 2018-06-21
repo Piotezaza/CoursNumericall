@@ -9,7 +9,7 @@ function initMap(){
 
     function codeAddress(){
         geocoder.geocode({'address': $('#address').val()}, function(results, status){
-        if(status == OK)
+        if(status == 'OK')
         {
             map.setCenter(results[0].geometry.location);
         }
