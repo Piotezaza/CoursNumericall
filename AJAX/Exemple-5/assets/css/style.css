@@ -21,7 +21,12 @@ body {
     padding-top: 0;
 }
 
-.message .info{
+.message .infos{
     color: #fefefe;
     font-weight: bold;
+}
+
+.message .content{
+    padding: 15px;
+    border-radius: 10px;
 }
