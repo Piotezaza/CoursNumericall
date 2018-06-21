@@ -10,6 +10,19 @@
 
 
 <!-- MESSAGES -->
+<ul class="messages list-unstyled" id="messages">
+    <li class="message me media">
+        <div class="avatar float-left">
+            <img src="" class="avatar rounded-circle img-thumbnail"/>
+        </div>
+    </li>
+    <li class="message me media">
+    
+    </li>
+</ul>
+
+
+
 
 <nav class="navbar bg-primary fixed-bottom navbar-dark">
     <form id="message-form" method="POST">
