@@ -151,7 +151,8 @@ function getLastMessages($pdo, $lastId)
     else
     {
         $query = $pdo->prepare("SELECT  message.*, user.username, user.avatar FROM message JOIN user ON user.id = message.user WHERE message.id > :lastId ORDER BY id ASC");
-        $query->bindValue(':lastId', $lastId, PDO::PARAM_INT);
+        $query->bindParam(':lastId', $lastId, PDO::PARAM_INT);
+        $query->execute();
         return $query->fetchAll();
     }
 }

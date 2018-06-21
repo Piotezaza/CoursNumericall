@@ -56,7 +56,7 @@ $(function()
             console.log(lastId);
 
             // Scroll en bas de la page
-            $('html, body').animate({scrollTop: $(document).height()}, 'slow');
+            $('html').animate({scrollTop: $(document).height()}, 'slow');
         })
     }
 
