@@ -1,6 +1,7 @@
 $(function()
 {
     var $form = $('#message-form');
+    var lastId = 0;
 
     function postMessage()
     {
@@ -22,7 +23,7 @@ $(function()
 
     function getMessage()
     {
-        $getJSON('src/getMessage.php', { lastId: lastId}, function(data){
+        $.getJSON('src/getMessage.php', { lastId: lastId}, function(data){
             console.log(data);
         })
     }
