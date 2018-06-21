@@ -33,7 +33,7 @@ xhr.send();
 
 - `url: ''` : Lien vers le script à appeler
 - `method: 'POST'` : ou GET
-- `data: {}` : **objet** `{ username: 'Bob', password: '1234' }` ou **chaîne** `( "username=Bob&password=1234" )`
+- `data: {}` : **OBJET** `{ username: 'Bob', password: '1234' }` ou **CHAÎNE** `( "username=Bob&password=1234" )`
 - `dataType: 'html'` : ou JSON
 - `console.log(data);` : affichage du contenu de la réponse
 
