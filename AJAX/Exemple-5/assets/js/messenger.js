@@ -45,6 +45,10 @@ $(function()
     {
         $.getJSON('src/getMessage.php', {lastId: lastId}, function(data){
             showMessages(data);
+
+            // Récupère l'id du dernier message
+            lastId = data.messages[data.messages.length -1].id;
+            console.log(lastId);
         })
     }
 
