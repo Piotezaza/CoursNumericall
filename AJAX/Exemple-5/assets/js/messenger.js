@@ -8,7 +8,7 @@ $(function()
     function showMessages(data)
     {
         $.each(data, function(index, value){
-            
+            $message = (data.user.id == value.user? $messageMe.clone(): $messageNotMe.clone()); // ATTENTION !!!!!! Si la BDD c'est user_id, bien penser à rajouter le _id !!! 
         });
     }
 
