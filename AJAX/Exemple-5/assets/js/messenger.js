@@ -20,6 +20,7 @@ $(function()
     function formDate(timestamp)
     {
         var date = new Date(timestamp * 1000);
+        return
     }
 
     function postMessage()
