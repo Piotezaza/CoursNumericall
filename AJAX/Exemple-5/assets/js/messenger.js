@@ -31,7 +31,7 @@ $(function()
             $form.serialize() /* {message: $message.val(), ...} */, 
             function(data)
             {
-                $form.find('[name="message"}').val('');
+                $form.find('[name="message"]').val('');
             }
             , 'json'
         );
@@ -45,7 +45,7 @@ $(function()
     {
         $.getJSON('src/getMessage.php', {lastId: lastId}, function(data){
             
-            if (data.messages.lenght == 0) {
+            if (data.messages.length == 0) {
                 return;
             }
 

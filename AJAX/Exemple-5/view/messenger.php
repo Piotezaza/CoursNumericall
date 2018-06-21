@@ -29,6 +29,7 @@
         <div class="media-body">
             <small class="infos"></small>
             <div class="content bg-light text-left">
+            </div>
         </div>
         <div class="avatar float-right">
             <img src="" class="rounded-circle img-thumbnail"/>
