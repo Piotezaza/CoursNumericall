@@ -31,8 +31,8 @@ function register($pdo, $post) //$post => $_POST, $files => $_FILES
     $password = md5($post['password'] . "WF3");
 
     // Upload de l'avatar
-    $avatar = uniqid() . $_FILES['avatar']['name'];
-    if( !empty($_FILES['avatar']['name']) )
+    $avatar = uniqid() . $files['avatar']['name'];
+    if( !empty($files['avatar']['name']) )
     {
         copy($files['avatar']['tmp_name'], 'uploads/' . $avatar);
     }
