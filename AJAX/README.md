@@ -2,13 +2,13 @@
 
 ## JAVASCRIPT
 
-- `var hxr = new XMLHttpRequest` : faire un appel AJAX en natif
+- `var hxr = new XMLHttpRequest` : fais un appel AJAX en natif
 - `xhr.open(METHOD, URL, ASYNC)` : prépare la requête
-- `this.status` : Status de la réponse serveur
-- `this.readyState` : État de la requête, 200 = OK // 4 = requête finir, le serveur a répondu
-- `this.responseText` : Contenu de la réponse
-- `JSON.parse(STRING)` : Transforme une chaîne (JSON) en objet JS
-- `JSON.stringify(OBJECT)` : Transforme un objet en chaîne (JSON)
+- `this.status` : status de la réponse serveur
+- `this.readyState` : état de la requête, 200 = OK // 4 = requête finir, le serveur a répondu
+- `this.responseText` : contenu de la réponse
+- `JSON.parse(STRING)` : transforme une chaîne (JSON) en objet JS
+- `JSON.stringify(OBJECT)` : transforme un objet en chaîne (JSON)
 - `xhr.send()` : envoi de la requête
 
 ### CODE TYPE
@@ -31,7 +31,7 @@ xhr.send();
 
 ## JQUERY
 
-- `url: ''` : Lien vers le script à appeler
+- `url: ''` : lien vers le script à appeler
 - `method: 'POST'` : ou GET
 - `data: {}` : **OBJET** `{ username: 'Bob', password: '1234' }` ou **CHAÎNE** `( "username=Bob&password=1234" )`
 - `dataType: 'html'` : ou JSON
