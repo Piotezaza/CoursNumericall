@@ -35,6 +35,6 @@ abstract class Forme
         return $this;
     }
 
-    public abstract function air();
+    public abstract function aire();
     public abstract function perimetre();
 }
