@@ -33,10 +33,11 @@ class Article
     const S_PRIVATE = 0;
 
     // Contructeur :
-    public function __construct($titre, $contenu)
+    public function __construct($titre, $contenu, Auteur $auteur)
     {
         $this->setTitre($titre);
         $this->setContenu($contenu);
+        $this->auteur = $auteur; // ou $this->setAuteur($auteur)
         $this->statut = self::S_PUBLIC;
         self::$counter++;
 
@@ -101,8 +102,11 @@ class Article
 
 // echo Article::getCounter();
 
-$article1 = new Article('Titre', 'Contenu');
+
+
 $auteur = new Auteur;
+$article1 = new Article('Titre', 'Contenu', $auteur);
+
 // echo $article1->getInfos();
 echo '<br>';
 
