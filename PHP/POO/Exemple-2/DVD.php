@@ -9,7 +9,7 @@ class DVD extends Produit
     
     public function __construct()
     {
-        $rhis->poids = 110; // 110g
+        $this->poids = 110; // 110g
     } 
 
     public function getActeurs()
