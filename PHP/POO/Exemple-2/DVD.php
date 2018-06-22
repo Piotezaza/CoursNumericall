@@ -2,7 +2,7 @@
 
 require_once('Produit.php');
 
-class DVD extends Protuit
+class DVD extends Produit
 {
-    
+
 }
