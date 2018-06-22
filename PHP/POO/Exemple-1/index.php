@@ -2,7 +2,18 @@
 
 class Article
 {
-    private $titre = "Mon article";
+    // Propriétés
+    private $titre;
+    private $statut;
+    const S_PUBLIC = 1;
+    const S_PRIVATE = 0;
+
+    // Constructeur
+    public function __construct($titre)
+    {
+        $this->setTitre($titre);
+        $this->statut = self::S_PUBLIC;
+    }
 
     public function getTitre()
     {
@@ -14,12 +25,15 @@ class Article
         
         $this->titre = $nouveauTitre;
     }
+
+    public function isPublic()
+    {
+        return $this->statut == self::S_PUBLIC;
+    }
 }
 
-$monArticle = new Article;
-$article2 = new Article;
 
-echo $monArticle->getTitre();
-$monArticle->setTitre("Nouvel Article");
-echo '</br>';
-echo $monArticle->getTitre();
+$monArticle = new Article("Article 1");
+$article2 = new Article("Article 2");
+
+echo $monArticle->isPublic();
