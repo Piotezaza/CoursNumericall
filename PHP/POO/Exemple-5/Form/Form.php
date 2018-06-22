@@ -7,6 +7,13 @@ class Form
     private $action;
     private $attr;
 
+    public function __construct($name, $method = 'POST', $action = "", $attr = array())
+    {
+        $this->setName($name);
+        $this->setMethod($method);
+        $this->setAttr($attr);
+    }
+
     public function getName()
     {
         return $this->name;
@@ -43,12 +50,12 @@ class Form
         return $this;
     }
  
-    public function getAttr()
+    public function getAttr() : array
     {
         return $this->attr;
     }
  
-    public function setAttr($attr)
+    public function setAttr(array $attr) // array ('class' => 'form')
     {
         $this->attr = $attr;
 
