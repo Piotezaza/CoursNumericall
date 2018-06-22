@@ -14,6 +14,11 @@ final class Carre extends Forme
 
     public function aire()
     {
-        $this->cote * $this->cote; // pow($this->cote, 2)
+        return $this->cote * $this->cote; // pow($this->cote, 2)
+    }
+
+    public function perimetre()
+    {
+        return $this->cote * 4;
     }
 }
