@@ -5,13 +5,15 @@ class Form
     private $name;
     private $method;
     private $action;
-    private $attr;
+    private $attr; // ARRAY
+    private $items;
 
     public function __construct($name, $method = 'POST', $action = "", $attr = array())
     {
         $this->setName($name);
         $this->setMethod($method);
         $this->setAttr($attr);
+        $this->items = array();
     }
 
     public function getName()
