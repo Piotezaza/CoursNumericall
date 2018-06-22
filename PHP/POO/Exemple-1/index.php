@@ -11,11 +11,12 @@ class Article
 
     public function setTitre($titre)
     {
-        
+        echo $titre . '</br>';
+        echo $this->titre;
     }
 }
 
 $monArticle = new Article;
 $article2 = new Article;
 
-echo $monArticle->getTitre();
+echo $monArticle->setTitre("Nouvel Article");
