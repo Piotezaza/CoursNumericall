@@ -1,16 +1,30 @@
 <?php 
 
+class Auteur
+{
+    private $nom = "Nom auteur";
+
+    public function getNom()
+    {
+        return $this->nom;
+    }
+}
+
 class Article
 {
     // Propriétés :
     private $titre = "Titre par défaut - NON dynamique"; 
-    // si on ne set pas $titre a posteriori, $titre aura comme valeur cette string
-    // il n'est pas obligatoire de définir cette propriété, on peut se contenter de la déclarer, 
-    // auquel cas si on crée par la suite une instance sans donner de valeur à $titre, 
-    // $titre sera vide
+
+    /*
+        si on ne set pas $titre a posteriori, $titre aura comme valeur cette string
+        il n'est pas obligatoire de définir cette propriété, on peut se contenter de la déclarer, 
+        auquel cas si on crée par la suite une instance sans donner de valeur à $titre, 
+        $titre sera vide
+    */
 
     private $contenu;
     private $statut;
+    private $auteur;
 
     public static $counter = 0;
 
@@ -37,6 +51,7 @@ class Article
     public function setTitre($nouveauTitre)
     {        
         $this->titre = $nouveauTitre;
+        return $this;
     }
 
     public function isPublic()
@@ -62,6 +77,11 @@ class Article
         return $this;
     }
 
+    public function setAuteur(Auteur $auteur)
+    {
+        $this->auteur = $auteur;
+    }
+    
     public function getInfos()
     {
         return $this->getTitre() . ' ' . $this->getContenu();
@@ -81,11 +101,11 @@ class Article
 // echo Article::getCounter();
 
 $article1 = new Article('Titre', 'Contenu');
+$auteur = new Auteur;
 echo $article1->getInfos();
 echo '<br>';
 
-$article1->setTitre('Nouveau titre');
-$article1->setContenu('Nouveau contenu');
+$article1->setTitre('Nouveau titre')
+->setContenu('Nouveau contenu')
+->setAuteur($auteur);
 echo $article1->getInfos();
-
-?>
