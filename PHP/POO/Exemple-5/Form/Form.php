@@ -62,7 +62,7 @@ class Form
         return $this;
     }
 
-    public function creativeView()
+    public function createView()
     {
         $html = '<form name="' 
         . $this->getName() 
