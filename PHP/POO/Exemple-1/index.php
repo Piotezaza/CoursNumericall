@@ -8,6 +8,12 @@ class Auteur
     {
         return $this->nom;
     }
+
+    public function setNom($nouveauNom)
+    {
+        $this->nom = $nouveauNom;
+        return $this;
+    }
 }
 
 class Article
@@ -83,6 +89,11 @@ class Article
     {
         $this->auteur = $auteur;
     }
+
+    public function getAuteur()
+    {
+        return $this->auteur;
+    }
     
     public function getInfos()
     {
@@ -113,4 +124,7 @@ echo '<br>';
 $article1->setTitre('Nouveau titre')
 ->setContenu('Nouveau contenu')
 ->setAuteur($auteur);
+
+$article1->getAuteur()->setNom("Nouvel auteur");
+
 echo $article1->getInfos();
