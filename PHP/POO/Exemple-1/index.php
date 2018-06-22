@@ -2,15 +2,20 @@
 
 class Article
 {
-    public $titre;
+    public $titre = "Mon article";
+
+    public function getTitre()
+    {
+        return $this->titre;
+    }
+
+    public function setTitre($titre)
+    {
+        
+    }
 }
 
 $monArticle = new Article;
-$monArticle->titre = "Mon super article";
-
-echo $monArticle->titre;
-
 $article2 = new Article;
-$article2->titre = "Encore un !";
 
-echo $article2->titre;
+echo $monArticle->getTitre();
