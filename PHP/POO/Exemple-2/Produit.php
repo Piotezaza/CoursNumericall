@@ -4,7 +4,13 @@ class Produit
 {
     protected $prix;
     protected $poids;
-
+    
+    public function __construct($prix, $poids)
+    {
+        $this->setPrix($prix);
+        $this->setPoids($poids);
+    }
+    
     public function getPrix()
     {
         return $this->prix;
