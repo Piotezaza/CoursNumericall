@@ -2,7 +2,7 @@
 
 class Article
 {
-    public $titre = "Mon article";
+    private $titre = "Mon article";
 
     public function getTitre()
     {
