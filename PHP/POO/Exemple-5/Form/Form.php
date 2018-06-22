@@ -1,5 +1,7 @@
 <?php 
 
+require_once('FormItem.php');
+
 class Form
 {
     private $name;
@@ -84,5 +86,10 @@ class Form
         $html .= '</form>';
 
         return $html;
+    }
+
+    public function addItem(FormItem $item)
+    {
+        $this->items[] = $item;
     }
 }
