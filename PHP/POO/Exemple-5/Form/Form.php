@@ -74,14 +74,18 @@ class Form
         . $this->getMethod()
         . '" action="' 
         . $this->getAction()
-        . '">'
+        . '"'
         ;
 
         foreach ($this->getAttr() as $key => $value) {
-            $html . $key . '="' . $value . '" ';
+            $html .= $key . '="' . $value . '" ';
         }
 
-        $html .= '>'
+        $html .= '>';
+
+        foreach ($this->getItems() as $key => $item) {
+            $html .= $item->createView();
+        }
 
         $html .= '</form>';
 
@@ -91,5 +95,17 @@ class Form
     public function addItem(FormItem $item)
     {
         $this->items[] = $item;
+    }
+
+    public function getItems()
+    {
+        return $this->items;
+    }
+
+    public function setItems($items)
+    {
+        $this->items = $items;
+
+        return $this;
     }
 }

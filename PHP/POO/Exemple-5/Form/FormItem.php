@@ -1,27 +1,5 @@
 <?php 
 
-class FormItem
-{
-    private $name;
-
-    public function __constructeur($name)
-    {
-        $this->setName($name);
-    }
-
-    public function getName()
-    {
-        return $this->name;
-    }
-
-    public function setName($name)
-    {
-        $this->name = $name;
-
-        return $this;
-    }
-}
-
 abstract class FormItem
 {
     private $name;
@@ -43,8 +21,19 @@ abstract class FormItem
         return $this;
     }
 
-    public abstract function creativeView()
+    public abstract function createView();
+
+    protected function startView()
     {
-        
+        $html = '<div class="form-group">
+        <label></label>';
+
+        return $html;
+    }
+
+    protected function endView()
+    {
+        $html = '</div>';
+        return $html;
     }
 }
