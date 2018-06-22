@@ -61,4 +61,18 @@ class Form
 
         return $this;
     }
+
+    public function creativeView()
+    {
+        $html = '<form name="' 
+        . $this->getName() 
+        . '" method="' 
+        . $this->getMethod()
+        . '" action="' 
+        . $this->getAction()
+        . '">'
+        ;
+
+        $html .= '</form>';
+    }
 }
