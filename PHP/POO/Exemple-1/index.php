@@ -102,7 +102,7 @@ class Article
 
 $article1 = new Article('Titre', 'Contenu');
 $auteur = new Auteur;
-
+// echo $article1->getInfos();
 echo '<br>';
 
 $article1->setTitre('Nouveau titre')
