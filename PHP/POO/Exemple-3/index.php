@@ -1,8 +1,10 @@
 <?php
 
 require_once('Carre.php');
+require_once('Cercle.php');
 
 $maforme = new Carre(10, 10, 120);
+$monCercle = new Cercle(10, 10, 80);
 
 function afficheInfos($forme)
 {
@@ -10,3 +12,5 @@ function afficheInfos($forme)
 }
 
 afficheInfos($maforme);
+echo '</br>';
+afficheInfos($monCercle);
