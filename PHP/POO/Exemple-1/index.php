@@ -9,10 +9,10 @@ class Article
         return $this->titre;
     }
 
-    public function setTitre($titre)
+    public function setTitre($nouveauTitre)
     {
         
-        $this->titre = $titre;
+        $this->titre = $nouveauTitre;
     }
 }
 

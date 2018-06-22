@@ -22,4 +22,3 @@
 - [Underscores](http://underscores.me/)
 - [Roots](https://roots.io/)
 - [Understrap](https://understrap.com/) | [Git Understrap](https://github.com/understrap/understrap)
-- 
