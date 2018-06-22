@@ -74,5 +74,7 @@ class Form
         ;
 
         $html .= '</form>';
+
+        return $html;
     }
 }
