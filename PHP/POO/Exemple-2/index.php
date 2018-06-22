@@ -6,3 +6,4 @@ $monDVD = new DVD();
 $monDVD->setPrix(12.99);
 
 echo $monDVD->getPrix();
+
