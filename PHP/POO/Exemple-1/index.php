@@ -36,6 +36,7 @@ class Article
     public function __construct($titre, $contenu)
     {
         $this->setTitre($titre);
+        $this->setContenu($contenu);
         $this->statut = self::S_PUBLIC;
         self::$counter++;
 
