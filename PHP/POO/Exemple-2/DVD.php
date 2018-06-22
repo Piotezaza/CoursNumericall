@@ -9,7 +9,8 @@ class DVD extends Produit
     
     public function __construct($prix, $zone)
     {
-        $this->poids = 110; // 110g
+        $this->setZone($zone);
+        parent::__construct($prix, 110);
     } 
 
     public function getActeurs()
