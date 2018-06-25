@@ -7,9 +7,15 @@ class Vehicule
     protected $nombrePortes;
     protected $couleur;
 
+    public function __construct(string $couleur)
+    {
+        $this->setCouleur($couleur);
+        $this->dateCreation = new DateTime;
+    }
+
     public function setCouleur(string $couleur)
     {
-        if(strlen($couleur) ==7)
+        if(strlen($couleur) == 7)
         {
             $this->couleur = $couleur;
         }
@@ -26,6 +32,6 @@ class Vehicule
 
     public function toString()
     {
-        
+        return "Vehicule couleur " . $this->getCouleur();
     }
 }
