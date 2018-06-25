@@ -14,6 +14,7 @@ $myform->setData($user);
 $myform->addItem(new TextItem("username", "Nom d'utilisateur"));
 $myform->addItem(new TextItem("email", "Adresse email"));
 $myform->addItem(new TextItem("rien", "Rien"));
+$myform->addItem(new SelectItem("Rien", ['rien', 'rien', 'rien']));
 
 echo $myform->createView();
 
