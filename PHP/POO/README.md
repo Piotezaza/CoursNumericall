@@ -7,3 +7,11 @@ Un **objet** est une **instance de classe**, c'est donc une variable que l'on pe
 Une **classe** est un **moule** et un **objet** est un **gateau** (le moule indique qu'il faut des ingrédients, l'objet indique lesquels)
 
 La pseudo variable `$this` peut se traduite par **"TON"** ou **"TA"** (utilise **TON** premier ingrédient avec **TON** deuxième et appelle **TA** méthode "mélanger")
+
+---
+
+"encapsulation" définir si les propriétés sont publiques, privées,...
+
+Le constructeur `__construct` est une méthode magique (appelée automatiquement par PHP)
+
+Les constantes `const` sont des valeurs qui ne peuvent pas varier.
