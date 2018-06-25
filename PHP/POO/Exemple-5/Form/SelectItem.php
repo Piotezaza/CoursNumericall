@@ -14,7 +14,9 @@ class SelectItem extends FormItem
     {
         $html = $this->startView();
         $html .= '<select class="form-control" name="' . $this->getName() . '" />';
-
+        foreach ($this->getOptions() as $key => $value) {
+            $html .= '<option value="' . $value . '">' . $key . '</option>';
+        }
         $html .= '</select>';
         $html .= $this->endView();
 
