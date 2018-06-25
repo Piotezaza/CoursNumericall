@@ -4,10 +4,12 @@ abstract class FormItem
 {
     protected $name;
     protected $value;
+    protected $label;
 
-    public function __construct($name)
+    public function __construct($name, $label)
     {
         $this->setName($name);
+        $this->setLabel($label);
     }
 
     public function getName()
@@ -27,7 +29,7 @@ abstract class FormItem
     protected function startView()
     {
         $html = '<div class="form-group">
-        <label></label>';
+        <label>' . $this->getLabel() . '</label>';
 
         return $html;
     }
@@ -46,6 +48,18 @@ abstract class FormItem
     public function setValue($value)
     {
         $this->value = $value;
+
+        return $this;
+    }
+
+    public function getLabel()
+    {
+        return $this->label;
+    }
+
+    public function setLabel($label)
+    {
+        $this->label = $label;
 
         return $this;
     }
