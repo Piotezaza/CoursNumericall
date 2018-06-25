@@ -8,15 +8,22 @@ class SelectItem extends FormItem
     public function __construct($name, $label, $options)
     {
         $this->setOptions($options);
+        parent::__construct($name, $label);
     }
     
     public function createView()
     {
         $html = $this->startView();
         $html .= '<select class="form-control" name="' . $this->getName() . '" />';
+
         foreach ($this->getOptions() as $key => $value) {
-            $html .= '<option value="' . $value . '">' . $key . '</option>';
+            /*
+                $value == "val" ? "OUI" : "NON"
+                if($value == "val"){$result = "OUI";} else {$result = "NON";}
+            */
+            $html .= '<option value="' . $value . '"' . (($value == $this->getValue())? 'selected': '') . '>' . $key . '</option>';
         }
+
         $html .= '</select>';
         $html .= $this->endView();
 

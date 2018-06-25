@@ -13,12 +13,14 @@ class User
     private $username;
     private $password;
     private $email;
+    private $pays;
 
-    public function __construct($username, $password, $email)
+    public function __construct($username, $password, $email, $pays = "FR")
     {
         $this -> setUsername($username);
         $this -> setPassword($password);
         $this -> setEmail($email);
+        $this->setPays($pays);  
         $this -> id = uniqid();
     }
     
@@ -73,6 +75,18 @@ class User
         {
             trigger_error("L'adresse email n'esty pas valide");
         }
+
+        return $this;
+    }
+
+    public function getPays()
+    {
+        return $this->pays;
+    }
+
+    public function setPays($pays)
+    {
+        $this->pays = $pays;
 
         return $this;
     }

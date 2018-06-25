@@ -23,3 +23,11 @@ Le constructeur `__construct` est une méthode magique (appelée automatiquement
 Les constantes `const` sont des valeurs qui ne peuvent pas varier.
 
 Une classe abstraite est une classe qui va contenir au moins une fonction abstraite. Elle ne peut pas être instanciée, elle est obligatoirement héritée.
+
+
+**Opérateur ternaire**
+
+```
+$value == "val" ? "OUI" : "NON"
+if($value == "val"){$result = "OUI";} else {$result = "NON";}
+```
