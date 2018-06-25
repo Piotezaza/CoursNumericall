@@ -3,6 +3,7 @@
 namespace Form;
 
 use Entity\User;
+// new \Entity\Produit\User as ProduitUser;
 
 class SelectItem extends FormItem
 {
@@ -14,7 +15,8 @@ class SelectItem extends FormItem
         $this->setOptions($options);
         parent::__construct($name, $label);
 
-        $user = new User("Piote2", "Azerty2", "superemail2@gmail.com", "PL");
+        $user = new \Entity\User("Piote2", "Azerty2", "superemail2@gmail.com", "PL");
+        $userProduit = new ProduitUser();
     }
     
     public function createView()

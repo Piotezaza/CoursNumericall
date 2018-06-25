@@ -9,6 +9,7 @@ require_once('Include/header.php');
 
 spl_autoload_register(function($className)
 {
+    // "Entity\User.php => "Entity\User
     if(file_exists(/*'Entity/' .*/ $className . '.php'))
     {
         require_once(/*'Entity/' .*/ $className . '.php');
@@ -18,7 +19,7 @@ spl_autoload_register(function($className)
     //     require_once('Form/' . $className . '.php');
     // }
 
-    echo "Classe appelée :" . $className . "</br>";
+    // echo "Classe appelée :" . $className . "</br>";
 });
 
 use Entity\User;
