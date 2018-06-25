@@ -1,5 +1,7 @@
 # Micro cours
 
+> Résumé des explications du prof 
+
 Une **classe** c'est un **modèle de donnée** avec **attributs** & des **méthodes** qui va définir le comportement d'un objet.
 
 Un **objet** est une **instance de classe**, c'est donc une variable que l'on peut utiliser comme le modèle le définit.
@@ -10,8 +12,14 @@ La pseudo variable `$this` peut se traduite par **"TON"** ou **"TA"** (utilise *
 
 ---
 
-"encapsulation" définir si les propriétés sont publiques, privées,...
+"encapsulation" définir si les propriétés sont publiques, privées, protected...
+
+- public : 
+- private : 
+- protected : 
 
 Le constructeur `__construct` est une méthode magique (appelée automatiquement par PHP)
 
 Les constantes `const` sont des valeurs qui ne peuvent pas varier.
+
+Une classe abstraite est une classe qui va contenir au moins une fonction abstraite. Elle ne peut pas être instanciée, elle est obligatoirement héritée.
