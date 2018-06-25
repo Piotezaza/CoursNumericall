@@ -6,11 +6,14 @@ class Vehicule
     protected $estMotorise;
     protected $nombrePortes;
     protected $couleur;
+    protected $dateCreation;
+    protected $type;
 
     public function __construct(string $couleur)
     {
         $this->setCouleur($couleur);
         $this->dateCreation = new DateTime;
+        $this->type ="Vehicule";
     }
 
     public function setCouleur(string $couleur)
@@ -33,5 +36,17 @@ class Vehicule
     public function toString()
     {
         return "Vehicule couleur " . $this->getCouleur();
+    }
+
+    public function getNombrePortes()
+    {
+        return $this->nombrePortes;
+    }
+
+    public function setNombrePortes($nombrePortes)
+    {
+        $this->nombrePortes = $nombrePortes;
+
+        return $this;
     }
 }

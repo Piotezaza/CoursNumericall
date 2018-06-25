@@ -3,7 +3,7 @@
 namespace Form;
 
 use Entity\User;
-// new \Entity\Produit\User as ProduitUser;
+use \Entity\Produit\User as ProduitUser;
 
 class SelectItem extends FormItem
 {
