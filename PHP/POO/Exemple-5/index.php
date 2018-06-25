@@ -21,6 +21,11 @@ spl_autoload_register(function($className)
     echo "Classe appelée :" . $className . "</br>";
 });
 
+use Entity\User;
+use Form\Form;
+use Form\TextItem;
+use Form\SelectItem;
+
 $fauxArticle = new \Entity\Produit\Produit();
 $user = new \Entity\User("Piote", "Azerty", "superemail@gmail.com", "IT");
 // echo $user->getPassword();
