@@ -11,7 +11,7 @@ echo $user->getPassword();
 
 $myform = new Form ("login", "POST", "", array("class" => "form", "id" => "login-form"));
 $myform->setData($user);
-$myform->addItem(new TextItem("username"));
+$myform->addItem(new TextItem("username", "Nom d'utilisateur"));
 
 echo $myform->createView();
 
