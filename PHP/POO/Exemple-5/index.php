@@ -10,6 +10,7 @@ $user = new User("Loic", "Azerty", "ovigne.loic@gmail.com");
 echo $user->getPassword();
 
 $myform = new Form ("login", "POST", "", array("class" => "form", "id" => "login-form"));
+$myform->setDate($user);
 $myform->addItem(new TextItem("username"));
 
 echo $myform->createView();
