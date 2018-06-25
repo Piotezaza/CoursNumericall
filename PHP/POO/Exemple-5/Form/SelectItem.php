@@ -1,5 +1,7 @@
 <?php 
 
+namespace Form;
+
 class SelectItem extends FormItem
 {
 

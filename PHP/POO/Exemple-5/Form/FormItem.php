@@ -1,5 +1,7 @@
 <?php 
 
+namespace Form;
+
 abstract class FormItem
 {
     protected $name;

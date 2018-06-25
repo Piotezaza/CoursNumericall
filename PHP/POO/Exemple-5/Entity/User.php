@@ -7,6 +7,8 @@
     Email
 */
 
+namespace Entity;
+
 class User
 {
     private $id;

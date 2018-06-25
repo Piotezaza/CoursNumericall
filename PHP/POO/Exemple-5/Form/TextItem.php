@@ -1,5 +1,7 @@
 <?php 
 
+namespace Form;
+
 require_once('FormItem.php');
 
 class TextItem extends FormItem
