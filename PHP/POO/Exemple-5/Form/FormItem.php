@@ -6,6 +6,8 @@ abstract class FormItem
     protected $value;
     protected $label;
 
+    public abstract function createView();
+
     public function __construct($name, $label)
     {
         $this->setName($name);
@@ -23,8 +25,6 @@ abstract class FormItem
 
         return $this;
     }
-
-    public abstract function createView();
 
     protected function startView()
     {
