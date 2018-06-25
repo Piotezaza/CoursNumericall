@@ -10,3 +10,4 @@ echo $vehicule->toString();
 $voiture = new Voiture("#890000");
 echo $voiture -> toString();
 $voiture->setNombrePortes(4);
+Voiture::STATUT_ENPANNE;

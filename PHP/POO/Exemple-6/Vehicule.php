@@ -8,6 +8,8 @@ class Vehicule
     protected $couleur;
     protected $dateCreation;
     protected $type;
+    const STATUT_ENPANNE = 'en panne';
+    const STATUT_REPARE = 'réparé';
 
     public function __construct(string $couleur)
     {
