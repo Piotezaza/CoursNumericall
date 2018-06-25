@@ -86,7 +86,8 @@ class Form
 
         // Créé le code HTML des items
         foreach ($this->getItems() as $key => $item) {
-            $item->setValue($this->data->getUsername());
+            $methode = "get" . $item->getName();
+            $item->setValue($this->data->$methode());
             $html .= $item->createView();
         }
 
