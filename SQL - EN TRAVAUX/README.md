@@ -4,7 +4,7 @@ Le SQL (Structured Query Language) est un langage permettant de communiquer avec
 
 Partons sur le principe d'une base de donnée simple pour pratiquer correctement ces quelques commandes.
 
-Voici le [schéma de la BDD](https://raw.githubusercontent.com/Piotezaza/CoursNumericall/master/SQL/exos/Schema%20BDD.png) ainsi que [le code SQL](https://github.com/Piotezaza/CoursNumericall/blob/master/SQL/cours.md#code-sql) pour ajouter la les données à votre BDD fraîchement crée. Pour avoir les mêmes résultats que moi, il vous suffit de vous rendre dans votre **PHPMYADMIN** en local, de séléctionner la base de donnée et de vous rendre dans l'onglet `SQL`.
+Voici le [schéma de la BDD](https://raw.githubusercontent.com/Piotezaza/CoursNumericall/master/SQL/exos/Schema%20BDD.png) ainsi que [le code SQL](https://github.com/Piotezaza/CoursNumericall/blob/master/SQL/README.md#code-sql) pour ajouter la les données à votre BDD fraîchement crée. Pour avoir les mêmes résultats que moi, il vous suffit de vous rendre dans votre **PHPMYADMIN** en local, de séléctionner la base de donnée et de vous rendre dans l'onglet `SQL`.
 
 
 
