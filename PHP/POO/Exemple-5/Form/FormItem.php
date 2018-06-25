@@ -2,7 +2,8 @@
 
 abstract class FormItem
 {
-    private $name;
+    protected $name;
+    protected $value;
 
     public function __construct($name)
     {
@@ -35,5 +36,17 @@ abstract class FormItem
     {
         $html = '</div>';
         return $html;
+    }
+
+    public function getValue()
+    {
+        return $this->value;
+    }
+
+    public function setValue($value)
+    {
+        $this->value = $value;
+
+        return $this;
     }
 }
