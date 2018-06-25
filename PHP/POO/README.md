@@ -1,5 +1,10 @@
 # Micro cours
 
+## Liens de cours
+
+- [OPENCLASSROOMS - Programmez en orienté objet en PHP](https://openclassrooms.com/courses/programmez-en-oriente-objet-en-php/introduction-a-la-poo)
+- [La POO en PHP](https://www.grafikart.fr/formations/programmation-objet-php)
+
 > Résumé des explications du prof 
 
 Une **classe** c'est un **modèle de donnée** avec **attributs** & des **méthodes** qui va définir le comportement d'un objet.
