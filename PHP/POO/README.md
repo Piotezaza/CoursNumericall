@@ -19,10 +19,6 @@ La pseudo variable `$this` peut se traduite par **"TON"** ou **"TA"** (utilise *
 
 "encapsulation" définir si les propriétés sont publiques, privées, protected...
 
-- public : 
-- private : 
-- protected : 
-
 Le constructeur `__construct` est une méthode magique (appelée automatiquement par PHP)
 
 Les constantes `const` sont des valeurs qui ne peuvent pas varier.
