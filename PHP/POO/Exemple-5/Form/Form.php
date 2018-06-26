@@ -111,12 +111,16 @@ class Form
 
     public function addItem(FormItem $item)
     {
-        $this->items[] = $item;
+        $this->items[$item->getName()] = $item;
+
+        /*
+            $this->items['username']
+        */
     }
 
     public function getItems()
     {
-        return $this->items;
+        return $this->items[$name];
     }
 
     public function setItems($items)
@@ -161,5 +165,10 @@ class Form
         $this->submitLabel = $submitLabel;
 
         return $this;
+    }
+
+    public function clone()
+    {
+
     }
 }
