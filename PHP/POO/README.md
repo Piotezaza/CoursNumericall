@@ -36,5 +36,3 @@ Une classe abstraite est une classe qui va contenir au moins une fonction abstra
 $value == "val" ? "OUI" : "NON"
 if($value == "val"){$result = "OUI";} else {$result = "NON";}
 ```
-
-OLIVIA AIME TROP LES LICORNES
