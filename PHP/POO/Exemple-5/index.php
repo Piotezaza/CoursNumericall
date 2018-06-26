@@ -47,10 +47,18 @@ $myform->addItem(new SelectItem("pays", "Pays", array("Pologne" => "PL", "France
 $myform->addItem(new TextareaItem("presentation", "Présentation"));
 echo $myform->createView();
 
+echo $myform->getItem('username')->getValue();
+echo '</br>';
+$newForm = clone($myform);
 $newForm = $myform;
 $newForm->setName("nouveau");
 echo $newForm->getName();
 echo '</br>';
 echo $myform->getName();
+$newForm->getItem("username")->setValue("Plop");
+echo '</br>';
+echo $newForm->getItem("username")->getValue();
+echo '</br>';
+echo $myform->getItem("username")->getValue();
 
 require_once('Include/footer.php');

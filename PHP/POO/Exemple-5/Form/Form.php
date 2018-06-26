@@ -118,6 +118,16 @@ class Form
         */
     }
 
+    public function getItem($name)
+    {
+        if(!isset($this->items[$name]))
+        {
+            return null;
+        }
+
+        return $this->items[$name];
+    }
+
     public function getItems()
     {
         return $this->items[$name];
