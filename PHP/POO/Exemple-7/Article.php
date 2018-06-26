@@ -36,4 +36,8 @@ class Article
     }
 
     // Appelée lors de la lecture d'une propriété inaccessible
+    public function __get($name)
+    {
+        
+    }
 }
