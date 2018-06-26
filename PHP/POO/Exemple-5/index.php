@@ -72,6 +72,5 @@ echo '</br>';
 echo $myForm->getName();*/
 
 $_SESSION['form'] = $myForm;
-echo $_SESSION['form'];
 
 require_once('Include/footer.php');
