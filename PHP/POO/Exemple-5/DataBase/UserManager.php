@@ -19,4 +19,4 @@ class UserManager extends DBManager
         
         $query->execute();
     }
-}
+}   
