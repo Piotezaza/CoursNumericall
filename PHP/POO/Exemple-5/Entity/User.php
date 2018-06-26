@@ -9,8 +9,13 @@
 
 namespace Entity;
 
+// use Traits\ValidationTrait;
+
 class User
 {
+
+    use \Traits\ValidationTrait;
+
     private $id;
     private $username;
     private $password;
@@ -69,13 +74,13 @@ class User
     
     public function setEmail($email)
     {
-        if(filter_var($email, FILTER_VALIDATE_EMAIL))
+        if($this->isMail($email))
         {
             $this -> email = $email;
         }
         else
         {
-            trigger_error("L'adresse email n'esty pas valide");
+            trigger_error("L'adresse email n'est pas valide");
         }
 
         return $this;
