@@ -17,6 +17,6 @@ class Article
     // Appelée lors d'un appel d'une méthode inaccessible 
     public function __call($name, $attr)
     {
-        echo "Méthode " . $name . ""
+        echo "Méthode " . $name . " appelée </br>"
     }
 }
