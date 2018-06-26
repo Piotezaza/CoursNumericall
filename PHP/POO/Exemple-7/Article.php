@@ -63,6 +63,42 @@ class Article
         }
     }
 
+    // Appelée lors de la conversion de l'objet en chaîne 
+    public function __toString()
+    {
+        return $this->name;
+    }
+
+    // Lors de l'appel de la méthode isset ou empty sur une propriété
+    public function __isset($name){
+        echo "L'attribut " . $name . " est testé </br>";
+    }
+
+    // Lors d'une linéaeisation
+    public function __sleep()
+    {
+        echo "Linéarisation </br>";
+        return ["name"];
+    }
+
+    // Lors d'une délinéarisation
+    public function __wakeup()
+    {
+        echo "Délinéarisation </br>";
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     
     public function getName()
