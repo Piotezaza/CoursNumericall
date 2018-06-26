@@ -50,6 +50,10 @@ class Article
         }
     }
 
+
+
+
+    
     public function getName()
     {
         return $this->name;
