@@ -31,8 +31,9 @@ use Entity\User;
 use Form\Form;
 use Form\TextItem;
 use Form\SelectItem;
+use Form\TextareaItem;
 
-$fauxArticle = new \Entity\Produit\Produit();
+
 $user = new \Entity\User("Piote", "Azerty", "superemail@gmail.com", "IT");
 // echo $user->getPassword();
 
@@ -43,6 +44,7 @@ $myform->addItem(new TextItem("email", "Adresse email"));
 $myform->addItem(new TextItem("rien", "Rien"));
 $myform->addItem(new SelectItem("sexe", "Sexe", array("Homme" => "h", "Femme" => "f", "Autre" => "a")));
 $myform->addItem(new SelectItem("pays", "Pays", array("Pologne" => "PL", "France" => "FR", "Allemagne" => "DE", "Italie" => "IT")));
+$myform->addItem(new TextareaItem("rien", "Rien"));
 
 echo $myform->createView();
 

@@ -16,7 +16,6 @@ class SelectItem extends FormItem
         parent::__construct($name, $label);
 
         $user = new \Entity\User("Piote2", "Azerty2", "superemail2@gmail.com", "PL");
-        $userProduit = new ProduitUser();
     }
     
     public function createView()

@@ -13,6 +13,7 @@ class Form
     private $items;
     private $data; // Objet
     private $dateCreate;
+    private $submitLabel;
 
     public function __construct($name, $method = 'POST', $action = "", $attr = array())
     {
@@ -21,6 +22,7 @@ class Form
         $this->setAttr($attr);
         $this->items = array();
         $this->dateCreate = new \DateTime;
+        $this->setSubmitLabel("Envoyer");
     }
 
     public function getName()
@@ -99,6 +101,9 @@ class Form
             $html .= $item->createView();
         }
 
+        // Bouton Submit
+        $html .= $this->getSubmitView();
+
         $html .= '</form>';
 
         return $html;
@@ -136,6 +141,24 @@ class Form
         {
             trigger_error("Data n'est pas un objet");
         }
+
+        return $this;
+    }
+
+    public function getSubmitView()
+    {
+        $html = '<button type="submit" class="btn btn-primary">' . $this->getSubmitLabel() . '</button>';
+        return $html;
+    }
+    
+    private function getSubmitLabel()
+    {
+        return $this->submitLabel;
+    }
+
+    private function setSubmitLabel($submitLabel)
+    {
+        $this->submitLabel = $submitLabel;
 
         return $this;
     }
