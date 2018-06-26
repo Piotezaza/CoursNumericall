@@ -13,6 +13,10 @@ abstract class Vehicule
 
     public static $counter = 0;
 
+    /**
+     * Constructeur
+     * @param string $couleur Couleur du véhicule
+     */
     public function __construct(string $couleur)
     {
         $this->setCouleur($couleur);
