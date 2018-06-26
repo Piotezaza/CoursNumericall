@@ -45,7 +45,12 @@ $myform->addItem(new TextItem("rien", "Rien"));
 $myform->addItem(new SelectItem("sexe", "Sexe", array("Homme" => "h", "Femme" => "f", "Autre" => "a")));
 $myform->addItem(new SelectItem("pays", "Pays", array("Pologne" => "PL", "France" => "FR", "Allemagne" => "DE", "Italie" => "IT")));
 $myform->addItem(new TextareaItem("presentation", "Présentation"));
-
 echo $myform->createView();
+
+$newForm = $myform;
+$newForm->setName("nouveau");
+echo $newForm->getName();
+echo '</br>';
+echo $myform->getName();
 
 require_once('Include/footer.php');
