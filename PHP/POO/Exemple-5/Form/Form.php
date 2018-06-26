@@ -11,7 +11,8 @@ class Form
     private $action;
     private $attr; // ARRAY
     private $items;
-    private $data; //
+    private $data; // Objet
+    private $dateCreate;
 
     public function __construct($name, $method = 'POST', $action = "", $attr = array())
     {
@@ -19,6 +20,7 @@ class Form
         $this->setMethod($method);
         $this->setAttr($attr);
         $this->items = array();
+        $this->dateCreate = new \DateTime;
     }
 
     public function getName()

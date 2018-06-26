@@ -5,6 +5,7 @@
 - [OPENCLASSROOMS - Programmez en orienté objet en PHP](https://openclassrooms.com/courses/programmez-en-oriente-objet-en-php/introduction-a-la-poo)
 - [GRAFIKART - La POO en PHP](https://www.grafikart.fr/formations/programmation-objet-php)
 - [PHP.NET - Les classes et les objets](http://php.net/manual/fr/language.oop5.php)
+- [PHP.NET - NAMESPACE](http://php.net/manual/fr/language.namespaces.rationale.php)
 
 ## Résumé des explications du prof 
 
