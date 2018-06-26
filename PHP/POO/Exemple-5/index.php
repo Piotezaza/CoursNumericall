@@ -1,5 +1,7 @@
 <?php
 
+session_start();
+
 require_once('Include/header.php');
 
 // require_once('Form/Form.php');
@@ -37,27 +39,38 @@ use Form\TextareaItem;
 $user = new \Entity\User("Piote", "Azerty", "superemail@gmail.com", "IT");
 // echo $user->getPassword();
 
-$myform = new Form ("login", "POST", "", array("class" => "form", "id" => "login-form"));
-$myform->setData($user);
-$myform->addItem(new TextItem("username", "Nom d'utilisateur"));
-$myform->addItem(new TextItem("email", "Adresse email"));
-$myform->addItem(new TextItem("rien", "Rien"));
-$myform->addItem(new SelectItem("sexe", "Sexe", array("Homme" => "h", "Femme" => "f", "Autre" => "a")));
-$myform->addItem(new SelectItem("pays", "Pays", array("Pologne" => "PL", "France" => "FR", "Allemagne" => "DE", "Italie" => "IT")));
-$myform->addItem(new TextareaItem("presentation", "Présentation"));
-echo $myform->createView();
+$myForm = new Form ("login", "POST", "", array("class" => "form", "id" => "login-form"));
+$myForm->setData($user);
+$myForm->addItem(new TextItem("username", "Nom d'utilisateur"));
+$myForm->addItem(new TextItem("email", "Adresse email"));
+$myForm->addItem(new TextItem("rien", "Rien"));
+$myForm->addItem(new SelectItem("sexe", "Sexe", array("Homme" => "h", "Femme" => "f", "Autre" => "a")));
+$myForm->addItem(new SelectItem("pays", "Pays", array("Pologne" => "PL", "France" => "FR", "Allemagne" => "DE", "Italie" => "IT")));
+$myForm->addItem(new TextareaItem("presentation", "Présentation"));
+echo $myForm->createView();
 
-echo $myform->getItem('username')->getValue();
+// echo $myForm->getItem('username')->getValue();
+// echo '</br>';
+// $newForm = clone($myForm);
+// $newForm->setName("nouveau");
+// echo $newForm->getName();
+// echo '</br>';
+// echo $myForm->getName();
+// $newForm->getItem("username")->setValue("Plop");
+// echo '</br>';
+// echo $newForm->getItem("username")->getValue();
+// echo '</br>';
+// echo $myForm->getItem("username")->getValue();
+
+$formStr = serialize($myForm);
+$newForm = unserialize($formStr);
+
+$newForm->setName("Nouveau");
 echo '</br>';
-$newForm = clone($myform);
-$newForm->setName("nouveau");
 echo $newForm->getName();
 echo '</br>';
-echo $myform->getName();
-$newForm->getItem("username")->setValue("Plop");
-echo '</br>';
-echo $newForm->getItem("username")->getValue();
-echo '</br>';
-echo $myform->getItem("username")->getValue();
+echo $myForm->getName();
+
+$_SESSION['form'] = $myForm;
 
 require_once('Include/footer.php');
