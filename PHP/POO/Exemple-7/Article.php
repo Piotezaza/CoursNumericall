@@ -2,6 +2,8 @@
 
 class Article
 {
+    private $name = "Nom";
+
     public function getData()
     {
         return "DATA";
@@ -46,5 +48,17 @@ class Article
         {
             return $this->$method();
         }
+    }
+
+    public function getName()
+    {
+        return $this->name;
+    }
+
+    public function setName($name)
+    {
+        $this->name = $name;
+
+        return $this;
     }
 }
