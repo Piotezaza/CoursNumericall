@@ -1,6 +1,6 @@
 <?php
 
-class Vehicule 
+abstract class Vehicule 
 {
     protected $nombreRoues;
     protected $estMotorise;
@@ -51,4 +51,6 @@ class Vehicule
 
         return $this;
     }
+
+    public  abstract static function klaxonner();
 }

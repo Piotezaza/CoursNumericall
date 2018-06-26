@@ -9,4 +9,9 @@ class Voiture extends Vehicule
         return "Voiture " . parent::toString();
         $this->type = "Voiture";
     }
+
+    public static function klaxonner()
+    {
+        echo "pouet";
+    }
 }
