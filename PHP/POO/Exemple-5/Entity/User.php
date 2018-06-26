@@ -21,6 +21,7 @@ class User
     private $password;
     private $email;
     private $pays;
+    private $presentation;
 
     public function __construct($username, $password, $email, $pays = "FR")
     {
@@ -101,6 +102,18 @@ class User
     public function setPays($pays)
     {
         $this->pays = $pays;
+
+        return $this;
+    }
+ 
+    public function getPresentation()
+    {
+        return $this->presentation;
+    }
+ 
+    public function setPresentation($presentation)
+    {
+        $this->presentation = $presentation;
 
         return $this;
     }

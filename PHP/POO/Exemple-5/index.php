@@ -34,10 +34,13 @@ use Form\Form;
 use Form\TextItem;
 use Form\SelectItem;
 use Form\TextareaItem;
+use DataBase\UserManager;
 
+$user = new User("Piote", "Azerty", "superemail@gmail.com", "IT");
+$user->setPresentation("Si t'efface il y a un placeholder ◉_◉");
 
-$user = new \Entity\User("Piote", "Azerty", "superemail@gmail.com", "IT");
-// echo $user->getPassword();
+$userManager = new UserManager();
+$userManager->save($user);
 
 $myForm = new Form ("login", "POST", "", array("class" => "form", "id" => "login-form"));
 $myForm->setData($user);
