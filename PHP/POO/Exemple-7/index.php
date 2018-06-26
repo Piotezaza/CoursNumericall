@@ -3,3 +3,4 @@
 require_once('Article.php');
 
 $article = new Article;
+$article->afficher();
