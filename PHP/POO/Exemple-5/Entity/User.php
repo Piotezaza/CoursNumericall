@@ -50,7 +50,14 @@ class User
      
     public function setUsername($username)
     {
-        $this -> username = $username;
+        if($this->isStringLength($username, 3, 20))
+        {
+            $this -> username = $username;
+        }
+        else
+        {
+            trigger_error("Le nom d'utilisateur n'est pas valide.");
+        }
 
         return $this;
     }
