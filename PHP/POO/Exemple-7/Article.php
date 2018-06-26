@@ -87,19 +87,11 @@ class Article
         echo "Délinéarisation </br>";
     }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+    //Lors de l'utilisation de l'objet comme méthode
+    public function __invoke()
+    {
+        echo "Utilisation de l'objet comme une méthode </br>";
+    }
     
     public function getName()
     {

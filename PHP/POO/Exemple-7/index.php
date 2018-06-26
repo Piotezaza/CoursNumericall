@@ -12,3 +12,4 @@ echo $article;
 isset($article->name);
 $str = serialize($article);
 unserialize($str);
+$article();
