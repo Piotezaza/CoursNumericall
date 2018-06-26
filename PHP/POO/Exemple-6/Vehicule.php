@@ -1,4 +1,4 @@
-<?php /* OLIVIA ELLE RECUPERE LE CODE DES AUTRES C'EST PAS BIEN !!! */
+<?php
 
 abstract class Vehicule 
 {
