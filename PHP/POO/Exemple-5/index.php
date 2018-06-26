@@ -62,15 +62,16 @@ echo $myForm->createView();
 // echo '</br>';
 // echo $myForm->getItem("username")->getValue();
 
-$formStr = serialize($myForm);
+/*$formStr = serialize($myForm);
 $newForm = unserialize($formStr);
 
 $newForm->setName("Nouveau");
 echo '</br>';
 echo $newForm->getName();
 echo '</br>';
-echo $myForm->getName();
+echo $myForm->getName();*/
 
 $_SESSION['form'] = $myForm;
+echo $_SESSION['form'];
 
 require_once('Include/footer.php');

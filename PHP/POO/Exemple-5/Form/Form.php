@@ -192,5 +192,6 @@ class Form
     public function __sleep()
     {
         echo "Objet Form sérializé </br>";
+        return ["name", "method"];
     }
 }
