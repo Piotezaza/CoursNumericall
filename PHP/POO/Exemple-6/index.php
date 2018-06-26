@@ -8,6 +8,9 @@ require_once('Voiture.php');
 // echo $vehicule->toString();
 
 $voiture = new Voiture("#890000");
-echo $voiture -> toString();
-$voiture->setNombrePortes(4);
-Voiture::klaxonner();
+$voiture2 = new Voiture("#865425");
+
+// echo $voiture -> toString();
+// $voiture->setNombrePortes(4);
+// Voiture::klaxonner();
+echo Vehicule::$counter . ' Véhicule(s)';

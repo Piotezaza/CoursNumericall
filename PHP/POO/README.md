@@ -4,6 +4,7 @@
 
 - [OPENCLASSROOMS - Programmez en orienté objet en PHP](https://openclassrooms.com/courses/programmez-en-oriente-objet-en-php/introduction-a-la-poo)
 - [GRAFIKART - La POO en PHP](https://www.grafikart.fr/formations/programmation-objet-php)
+- [PHP.NET - Les classes et les objets](http://php.net/manual/fr/language.oop5.php)
 
 ## Résumé des explications du prof 
 
@@ -14,6 +15,8 @@ Un **objet** est une **instance de classe**, c'est donc une variable que l'on pe
 Une **classe** est un **moule** et un **objet** est un **gateau** (le moule indique qu'il faut des ingrédients, l'objet indique lesquels)
 
 La pseudo variable `$this` peut se traduite par **"TON"** ou **"TA"** (utilise **TON** premier ingrédient avec **TON** deuxième et appelle **TA** méthode "mélanger")
+
+`self::` fait référence à la **classe** contrairement à `$this` qui fait référence à **l'instance**
 
 ---
 

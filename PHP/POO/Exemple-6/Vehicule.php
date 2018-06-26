@@ -11,11 +11,14 @@ abstract class Vehicule
     const STATUT_ENPANNE = 'en panne';
     const STATUT_REPARE = 'réparé';
 
+    public static $counter = 0;
+
     public function __construct(string $couleur)
     {
         $this->setCouleur($couleur);
         $this->dateCreation = new DateTime;
         $this->type ="Vehicule";
+        self::$counter++;
     }
 
     public function setCouleur(string $couleur)
