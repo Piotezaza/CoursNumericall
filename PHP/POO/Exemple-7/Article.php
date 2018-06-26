@@ -39,5 +39,12 @@ class Article
     public function __get($name)
     {
         echo "Propriété " . $name . " est appelée </br>";
+
+        $method = 'get' . ucfirst($name);
+
+        if(method_exists($this, $method))
+        {
+            return $this->$method();
+        }
     }
 }
