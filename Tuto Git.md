@@ -6,12 +6,27 @@ Tu veux utiliser Git mais tu comprends rien ? Ce tuto est pour toi !
 
 ## Créer un projet GIT
 
-Tu veux uploader ton projet (déjà créé ou non) sur un repository github mais t'es COM-PLÈ-TE-MENT largué(e) ? Voici la démarche à faire :
+Tu veux uploader ton projet (déjà créé ou non) sur un repository github mais t'es COM-PLÈ-TE-MENT largué(e) ? 
+
+Voici la démarche à faire :
 
 - Sur GitHub, [créé un nouveau repository](https://github.com/new).
 - Choisis un nom, entre une description et coche `initialize this repository with a README`.
 - Une fois créé, quand tu es sur ton projet, cliques sur le bouton vert `Clone or download` et copie le lien.
 - Maintenant, sur ton PC, vas dans le dossier où tu veux voir apparaître le dossier de ton projet (normalement `HTDOCS` ou `WWW`).
+- Installes [Git](https://git-scm.com/downloads).
+- Lorsque tu fais un clic droit, tu devrais voir apparaître `Git Bash Here`.
+- Cliques dessus, un terminal va s'ouvrir.
+- Écris `git clone <lien que tu as copié avant>` : un dossier avec le nom de ton projet va appraître.
+
+**LE TOUR EST JOUÉ !**
+
+## Récupérer un projet GIT
+
+Démarche à faire :
+
+- Quand tu es sur le bon projet sur GitHub, cliques sur le bouton vert `Clone or download` et copie le lien.
+- Sur ton PC, vas dans le dossier où tu veux voir apparaître le dossier de ton projet (normalement `HTDOCS` ou `WWW`).
 - Installes [Git](https://git-scm.com/downloads).
 - Lorsque tu fais un clic droit, tu devrais voir apparaître `Git Bash Here`.
 - Cliques dessus, un terminal va s'ouvrir.
