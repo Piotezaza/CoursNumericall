@@ -7,3 +7,5 @@ $article->getDate();
 Article::getCounter();
 echo $article->name;
 echo '</br>';
+$article->name = "Nouveau nom";
+echo $article->name;
