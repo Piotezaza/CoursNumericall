@@ -50,7 +50,6 @@ echo $myform->createView();
 echo $myform->getItem('username')->getValue();
 echo '</br>';
 $newForm = clone($myform);
-$newForm = $myform;
 $newForm->setName("nouveau");
 echo $newForm->getName();
 echo '</br>';
