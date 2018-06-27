@@ -168,7 +168,7 @@ namespace ;
 
 class OBJET /* extends PARENT*/
 {
-    // private $attribut;
+    // private $attribut; //Ne pas oublier de faire le getter & setter en fonction du cas d'utilisation de l'attribut
     // public $attribut;
     // protected $attribut;
 
@@ -176,6 +176,7 @@ class OBJET /* extends PARENT*/
     {
         # CODE ...
     }
+
 }
 ```
 

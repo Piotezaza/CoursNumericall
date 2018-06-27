@@ -22,3 +22,11 @@ $singleton2 = /* à mettre si je n'utilise pas use Singleton\Singleton :  \Singl
 echo '<hr/>';
 
 $formItem = \Factory\Factory::create("select");
+
+echo '<hr/>';
+
+$messagerie = new \Observer\Messagerie();
+$notification = new \Observer\Notification();
+
+$messagerie->attach($notification);
+$messagerie->envoyerMessage("HELLO");
