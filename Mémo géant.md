@@ -32,3 +32,41 @@ La structure de ce fichier sera la suivante :
 - PHP
 - SQL
 - SYMPHONY
+
+---
+
+## AJAX
+
+---
+
+## BOOTSTRAP
+
+---
+
+## CSS
+
+---
+
+## HTML
+
+---
+
+## JAVASCRIPT
+
+---
+
+## JQUERY
+
+---
+
+## PHP
+
+---
+
+## SQL
+
+---
+
+## SYMPHONY
+
+---
