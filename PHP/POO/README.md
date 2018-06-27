@@ -57,7 +57,7 @@ Une **classe** c'est ce qui va contenir l'objet (un peu comme un moule) et l'**o
 Elle va contenir pas mal de choses comme des **attributs** ou encore des **méthodes**.
 
 
-### Les **attributs**
+### Les attributs
 
 [Explication Openclassrooms](https://openclassrooms.com/courses/programmez-en-oriente-objet-en-php/introduction-a-la-poo#/id/r-1669226).
 
@@ -122,7 +122,7 @@ echo $obj->_attributPrive; // Rien ne s'affiche (ou une notice si vous les avez 
 $obj->afficherAttributs(); // Affiche « Hello world ! » suivi de rien du tout ou d'une notice si vous les avez activées.
 ```
 
-### Les **méthodes**
+### Les méthodes
 
 Pour la déclaration de méthodes, il suffit de faire précéder le mot-clé `function` à la visibilité de la méthode. Les types de visibilité des méthodes sont les mêmes que les attributs. Les méthodes n'ont en général pas besoin d'être masquées à l'utilisateur, vous les mettrez souvent en `public` (à moins que vous teniez absolument à ce que l'utilisateur ne puisse pas appeler cette méthode, par exemple s'il s'agit d'une fonction qui simplifie certaines tâches sur l'objet mais qui ne doit pas être appelée n'importe comment).
  
