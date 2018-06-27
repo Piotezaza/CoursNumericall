@@ -39,9 +39,11 @@ La structure de ce fichier sera la suivante :
 
 ### SOMMAIRE
 
-- []()
+- [COURS]()
 
-1. TEXTE
+#### COURS
+
+- [OPENCLASSROOMS - Introduction à AJAX](https://openclassrooms.com/courses/1916641-dynamisez-vos-sites-web-avec-javascript/1920925-quest-ce-que-lajax)
 
 ---
 
@@ -111,6 +113,9 @@ La structure de ce fichier sera la suivante :
 
 
 #### ORIENTÉ OBJET
+
+- `$this` 
+- `::set` représente l'objet depuis lequel il est appelé. Peut également s'écrire de la manière suivante (pas trop recommandée) > `::objet`
 
 ##### **AUTOLOAD**
 
