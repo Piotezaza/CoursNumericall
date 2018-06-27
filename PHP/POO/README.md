@@ -239,7 +239,7 @@ class OBJET /* extends PARENT*/
 ```
 
 ---
-- Tester le type d'attribut (string, array,...)
+- **Tester le type d'attribut (string, array,...)**
 
 ```
 public function setAttribut(string $attribut)
