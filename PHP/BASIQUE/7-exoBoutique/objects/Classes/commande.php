@@ -28,15 +28,15 @@ class Commande{
 
     public function selectAllProduit(){
         $dsn = 'mysql:host=localhost; dbname=boutique';
-    $login = 'root';
-    $pwd = '';
-    $attributes = [
-        PDO::ATTR_ERRMODE => PDO::ERRMODE_WARNING,
-        PDO::MYSQL_ATTR_INIT_COMMAND => 'SET NAMES utf8',
-        PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC
-    ];
+        $login = 'root';
+        $pwd = '';
+        $attributes = [
+            PDO::ATTR_ERRMODE => PDO::ERRMODE_WARNING,
+            PDO::MYSQL_ATTR_INIT_COMMAND => 'SET NAMES utf8',
+            PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC
+        ];
 
-    $pdo = new PDO($dsn, $login, $pwd, $attributes);
+        $pdo = new PDO($dsn, $login, $pwd, $attributes);
         $details = $pdo->prepare("SELECT d.id_produit, p.reference, p.categorie, p.titre, p.description, p.couleur, p.taille, p.public, p.photo, p.prix, p.stock FROM details_commande d, produit p WHERE d.id_produit = p.id_produit AND d.id_commande = :id_commande");
         $details->bindValue(':id_commande', $this->id, PDO::PARAM_STR);
         $details->execute();
