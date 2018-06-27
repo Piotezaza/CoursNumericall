@@ -188,7 +188,7 @@ public function __construct($force, $degats) // Constructeur demandant 2 paramè
 ---
 ## Mémo
 
-- Autoload : 
+- **Autoload**
 
 ```
 spl_autoload_register(function($className)
@@ -202,7 +202,7 @@ spl_autoload_register(function($className)
 });
 ```
 ---
-- Espace de nom / Namespace
+- **Espace de nom / Namespace**
 
 [Cours rapide Openclassrooms](https://openclassrooms.com/courses/les-espaces-de-noms-namespace)
 
@@ -217,7 +217,7 @@ namespace NomDuDocument;
 ```
 
 ---
-- STARTER TEMPLATE CRÉATION OBJET
+- **STARTER TEMPLATE CRÉATION OBJET**
 
 ```
 <?php
