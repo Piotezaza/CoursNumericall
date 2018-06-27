@@ -9,10 +9,10 @@ class Piece extends Maison
 
     public function __construct($nomPiece, $surface, $hauteur, $nbFenetres)
     {
-        $this -> nomPiece = $nomPiece;
-        $this -> surface = $surface;
-        $this -> hauteur = $hauteur;
-        $this -> nbFenetres = $nbFenetres;
+        $this -> setNom($nomPiece);
+        $this -> setSurface($surface);
+        $this -> setHauteur($hauteur);
+        $this -> setNbFenetres($nbFenetres);
     }
 
     public function getNom()
