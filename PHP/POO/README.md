@@ -54,7 +54,7 @@ if($value == "val"){$result = "OUI";} else {$result = "NON";}
 
 Une **classe** c'est ce qui va contenir l'objet (un peu comme un moule) et l'**objet** c'est ce qui définit ton moule (s'il est carré, rond, etc.).
 
-Elle va contenir par pas mal de choses comme des **attributs** ou encore des **méthodes**.
+Elle va contenir pas mal de choses comme des **attributs** ou encore des **méthodes**.
 
 ### Les **attributs**
 
@@ -138,6 +138,8 @@ class Personnage // Présence du mot-clé class suivi du nom de la classe.
 ```
 spl_autoload_register(function($className)
 {
+    // /* remplacer les \ par des / mac OS X UNIQUEMENT */ $className = str_replace('\\', '/', $className); 
+
     if(file_exists($className . '.php'))
     {
         require_once($className . '.php');
@@ -152,6 +154,7 @@ spl_autoload_register(function($className)
 À savoir : 
 
 -> Ça regroupe des variables et des fonctions, des classes, tout ce que vous voulez dans un même ensemble. 
+
 -> Il doit TOUJOURS être au début de la requête, sinon une erreur fatale va apparaître
 
 ```
@@ -159,7 +162,7 @@ namespace NomDuDocument;
 ```
 
 ---
-- STARTER TEMPLACE CRÉATION OBJET
+- STARTER TEMPLATE CRÉATION OBJET
 
 ```
 <?php

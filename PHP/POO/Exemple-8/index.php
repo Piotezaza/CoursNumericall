@@ -25,8 +25,9 @@ $formItem = \Factory\Factory::create("select");
 
 echo '<hr/>';
 
+// Patern observer : permet d'avoir des classes indépendantes
 $messagerie = new \Observer\Messagerie();
 $notification = new \Observer\Notification();
 
-$messagerie->attach($notification);
+$messagerie->attach($notification); // Si commenté, tout fonctionne, juste la notification n'est pas envoyée.
 $messagerie->envoyerMessage("HELLO");
