@@ -6,6 +6,9 @@ use Entity\User;
 
 class UserManager extends DBManager
 {
+
+    private $data = ["username", "password", "email", "pays", "sexe", "presentation"];
+
     public function save(User $user)
     {
         // $query = $this->pdo->prepare("INSERT INTO user (username, password, email, pays, sexe, presentation) VALUES (:username, :password, :email, :pays, :sexe, :presentation)");
@@ -19,7 +22,7 @@ class UserManager extends DBManager
         
         // $query->execute();
 
-        $data = ["username", "password", "email", "pays", "sexe", "presentation"];
+        $data = $this->data;
         $attributes = "";
         $values = "";
 
@@ -55,9 +58,18 @@ class UserManager extends DBManager
         $query->bindParam(':id', $id, \PDO::PARAM_INT);
         $query->execute();
 
+        /*
+            if($userData = $query->fetch()) est la même chose que :
+            
+            $userData = $query->fetch();
+            if($userData){};
+        */
         if($userData = $query->fetch())
         {
-            
+            $user = new User();
+            foreach ($this->data as $key => $value) {
+                
+            }
         }
     }
 }
