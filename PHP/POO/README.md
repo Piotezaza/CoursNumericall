@@ -113,13 +113,9 @@ $obj->afficherAttributs(); // Affiche « Hello world ! » suivi de rien du tout 
 
 ### Les **méthodes**
 
-- `protected` : 
-- `private` : 
-- `public` : 
+Pour la déclaration de méthodes, il suffit de faire précéder le mot-clé `function` à la visibilité de la méthode. Les types de visibilité des méthodes sont les mêmes que les attributs. Les méthodes n'ont en général pas besoin d'être masquées à l'utilisateur, vous les mettrez souvent en `public` (à moins que vous teniez absolument à ce que l'utilisateur ne puisse pas appeler cette méthode, par exemple s'il s'agit d'une fonction qui simplifie certaines tâches sur l'objet mais qui ne doit pas être appelée n'importe comment).
+ 
 - `static` : toutes les variables appelées dans la fonction ne peuvent être modifiées 
-
-
-- `` : 
 
 
 Micro explications :
@@ -163,10 +159,24 @@ namespace NomDuDocument;
 ```
 
 ---
-- TEXT
+- STARTER TEMPLACE CRÉATION OBJET
 
 ```
+<?php
 
+namespace ;
+
+class OBJET /* extends PARENT*/
+{
+    // private $attribut;
+    // public $attribut;
+    // protected $attribut;
+
+    /*public | private | protected | static*/ function __construct(/*ARGUMENTS*/)
+    {
+        # CODE ...
+    }
+}
 ```
 
 ---
