@@ -190,6 +190,8 @@ public function __construct($force, $degats) // Constructeur demandant 2 paramè
 
 - **Autoload**
 
+[Doc PHP.NET](http://php.net/manual/fr/function.spl-autoload-register.php)
+
 ```
 spl_autoload_register(function($className)
 {
