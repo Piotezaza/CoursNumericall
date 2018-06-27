@@ -59,10 +59,6 @@ $userManager = new UserManager();
 //     $userManager->save($user);
 // }
 
-// $user = $userManager->findById(1);
-
-$userManager = new UserManager();
-
 if ($_POST) 
 {
     $user = $userManager->findById(1);
