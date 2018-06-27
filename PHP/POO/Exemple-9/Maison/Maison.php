@@ -7,7 +7,7 @@ class Maison
     private $materiauxStructure;
     private $materiauxToiture;
     public $pieces;
-    
+
     private const TYPE_MATERIAUX_STRUCTURE = ["Briques", "Bois", "Ciment", "Mousse"];
     private const TYPE_MATERIAUX_TOITURE = ["Tuiles", "Ardoise", "Branches"];
 
@@ -24,13 +24,13 @@ class Maison
 
     public function setMateriauxStructure(string $materiauxStructure)
     {
-        if(in_array($materiauxStructure, self::TYPE_MATERIAUX_STRUCTURE))
+        if(in_array($materiauxStructure, self/* == Maison (objet) */::TYPE_MATERIAUX_STRUCTURE))
         {
             $this->materiauxStructure = $materiauxStructure;
         }
         else
         {
-            trigger_error("Le matériaux de la toiture n'est pas valide.");
+            trigger_error("Le matériaux de la structure n'est pas valide.");
         }
         return $this;
     }
