@@ -1,13 +1,15 @@
 <?php
 
-class Piece extends Maison
+namespace Maison;
+
+class Piece
 {
     private $nom;
     private $surface;
     private $hauteur;
     private $nbFenetres;
 
-    public function __construct($nomPiece, $surface, $hauteur, $nbFenetres)
+    public function __construct($nomPiece, $surface, $hauteur, $nbFenetres = 0)
     {
         $this -> setNom($nomPiece);
         $this -> setSurface($surface);

@@ -65,4 +65,14 @@ class Maison
 
         return $this;
     }
+
+    public function getInfos()
+    {
+        $infos = array(
+            "matStructure" => $this -> getMateriauxStructure(),
+            "matToiture" => $this -> getMateriauxToiture()
+        );
+
+        return $infos;
+    }
 }

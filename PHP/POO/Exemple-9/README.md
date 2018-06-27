@@ -36,3 +36,10 @@ Créer des constructeurs avec les attributs obligatoires :
 - `Piece` : `nom`, `surface`, `hauteur`
 
 Dans `Maison`, les matériaux doivent être préféfinis dans un **array** de type **constante** pour valider les données (avec `in_array`).
+
+---
+
+3. Méthode et commentaire
+
+- Écrire une méthode `getInfos` dans la classe `Maison` qui va retourner un **array** avec toutes les informations (y compris les pièces).
+- Écrire un commetaire doc qui décrit la méthode (@return ...).
