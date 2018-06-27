@@ -13,6 +13,7 @@
 - [GRAFIKART - La POO en PHP](https://www.grafikart.fr/formations/programmation-objet-php)
 - [PHP.NET - Les classes et les objets](http://php.net/manual/fr/language.oop5.php)
 - [PHP.NET - NAMESPACE](http://php.net/manual/fr/language.namespaces.rationale.php)
+- [EXPLICATION : PATTERN DE CONCEPTION / SINGLETON](https://apprendre-php.com/tutoriels/tutoriel-45-singleton-instance-unique-d-une-classe.html)
 
 
 ## Résumé des explications du prof 
@@ -141,10 +142,10 @@ spl_autoload_register(function($className)
 });
 ```
 
-- Espace de nom
+- Espace de nom : il doit TOUJOURS être au début de la requête, sinon une erreur fatale va apparaître
 
 ```
-namespace NomDocument;
+namespace NomDuDocument;
 ```
 
 
