@@ -1,25 +1,18 @@
 # Micro cours
 
+## Sommaire
+
+- [Liens de cours]
+- [Résumé des explications du prof]
+- [Petites explications maison]
+- [Mémo]
+
 ## Liens de cours
 
 - [OPENCLASSROOMS - Programmez en orienté objet en PHP](https://openclassrooms.com/courses/programmez-en-oriente-objet-en-php/introduction-a-la-poo)
 - [GRAFIKART - La POO en PHP](https://www.grafikart.fr/formations/programmation-objet-php)
 - [PHP.NET - Les classes et les objets](http://php.net/manual/fr/language.oop5.php)
 - [PHP.NET - NAMESPACE](http://php.net/manual/fr/language.namespaces.rationale.php)
-
-## Suspissions pour le DS
-
-- Autoload : 
-
-```
-spl_autoload_register(function($className)
-{
-    if(file_exists($className . '.php'))
-    {
-        require_once($className . '.php');
-    }
-});
-```
 
 
 ## Résumé des explications du prof 
@@ -58,9 +51,9 @@ if($value == "val"){$result = "OUI";} else {$result = "NON";}
 
 Une **classe** c'est ce qui va contenir l'objet (un peu comme un moule) et l'**objet** c'est ce qui définit ton moule (s'il est carré, rond, etc.).
 
-Elle va contenir par pas mal de choses :
+Elle va contenir par pas mal de choses comme des **attributs** ou encore des **méthodes**.
 
-### Des **attributs**
+### Les **attributs**
 
 Les attributs ont des status de visibilité différents. Ils indiquent à partir d'où on peut y avoir accès. [Explication Openclassrooms](https://openclassrooms.com/courses/programmez-en-oriente-objet-en-php/introduction-a-la-poo#/id/r-1669226).
 
@@ -110,7 +103,7 @@ echo $obj->_attributPrive; // Rien ne s'affiche (ou une notice si vous les avez 
 $obj->afficherAttributs(); // Affiche « Hello world ! » suivi de rien du tout ou d'une notice si vous les avez activées.
 ```
 
-### Des **méthodes**
+### Les **méthodes**
 
 - `protected` : 
 - `private` : 
@@ -131,3 +124,67 @@ class Personnage // Présence du mot-clé class suivi du nom de la classe.
 }
 ```
 
+
+
+
+## Mémo
+
+- Autoload : 
+
+```
+spl_autoload_register(function($className)
+{
+    if(file_exists($className . '.php'))
+    {
+        require_once($className . '.php');
+    }
+});
+```
+
+- Espace de nom
+
+```
+namespace NomDocument;
+```
+
+
+- TEXT
+
+```
+
+```
+
+
+- TEXT
+
+```
+
+```
+
+
+- TEXT
+
+```
+
+```
+
+
+- TEXT
+
+```
+
+```
+
+
+- TEXT
+
+```
+
+```
+
+
+- TEXT
+
+```
+
+```
