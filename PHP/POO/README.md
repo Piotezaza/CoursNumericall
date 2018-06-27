@@ -2,11 +2,12 @@
 
 ## Sommaire
 
-- [Liens de cours]
-- [Résumé des explications du prof]
-- [Petites explications maison]
-- [Mémo]
+- [Liens de cours](https://github.com/Piotezaza/CoursNumericall/tree/master/PHP/POO#liens-de-cours)
+- [Résumé des explications du prof](https://github.com/Piotezaza/CoursNumericall/tree/master/PHP/POO#liens-de-cours)
+- [Petites explications maison](https://github.com/Piotezaza/CoursNumericall/tree/master/PHP/POO#liens-de-cours)
+- [Mémo](https://github.com/Piotezaza/CoursNumericall/tree/master/PHP/POO#liens-de-cours)
 
+---
 ## Liens de cours
 
 - [OPENCLASSROOMS - Programmez en orienté objet en PHP](https://openclassrooms.com/courses/programmez-en-oriente-objet-en-php/introduction-a-la-poo)
@@ -15,7 +16,7 @@
 - [PHP.NET - NAMESPACE](http://php.net/manual/fr/language.namespaces.rationale.php)
 - [EXPLICATION : PATTERN DE CONCEPTION / SINGLETON](https://apprendre-php.com/tutoriels/tutoriel-45-singleton-instance-unique-d-une-classe.html)
 
-
+---
 ## Résumé des explications du prof 
 
 Une **classe** c'est un **modèle de donnée** avec **attributs** & des **méthodes** qui va définir le comportement d'un objet.
@@ -46,6 +47,7 @@ $value == "val" ? "OUI" : "NON"
 if($value == "val"){$result = "OUI";} else {$result = "NON";}
 ```
 
+---
 ## Petites explications maison
 
 > J'suis pas douée mais le peu que je sais je veux bien tenter d'expliquer.
@@ -127,7 +129,7 @@ class Personnage // Présence du mot-clé class suivi du nom de la classe.
 
 
 
-
+---
 ## Mémo
 
 - Autoload : 
@@ -141,49 +143,55 @@ spl_autoload_register(function($className)
     }
 });
 ```
+---
+- Espace de nom / Namespace
 
-- Espace de nom : il doit TOUJOURS être au début de la requête, sinon une erreur fatale va apparaître
+[Cours rapide Openclassrooms](https://openclassrooms.com/courses/les-espaces-de-noms-namespace)
+
+À savoir : 
+
+-> Il doit TOUJOURS être au début de la requête, sinon une erreur fatale va apparaître
 
 ```
 namespace NomDuDocument;
 ```
 
-
+---
 - TEXT
 
 ```
 
 ```
 
-
+---
 - TEXT
 
 ```
 
 ```
 
-
+---
 - TEXT
 
 ```
 
 ```
 
-
+---
 - TEXT
 
 ```
 
 ```
 
-
+---
 - TEXT
 
 ```
 
 ```
 
-
+---
 - TEXT
 
 ```
