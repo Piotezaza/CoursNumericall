@@ -13,10 +13,12 @@ require_once('inc/header.php');
 use \Maison\Maison;
 use \Pieces\Pieces;
 
-$maison = new Maison;
-$maison -> setMateriauxStructure("Briques");
+$maison = new Maison("Bois", "Tuiles");
+// $maison -> setMateriauxStructure("Briques");
 
 echo $maison -> getMateriauxStructure();
+echo '<hr/>';
+echo $maison -> getMateriauxToiture();
 
 
 

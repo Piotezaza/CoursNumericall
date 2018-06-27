@@ -7,17 +7,15 @@ class Maison
     private $materiauxStructure;
     private $materiauxToiture;
     public $pieces;
+    
+    private const TYPE_MATERIAUX_STRUCTURE = ["Briques", "Bois", "Ciment", "Mousse"];
+    private const TYPE_MATERIAUX_TOITURE = ["Tuiles", "Ardoise", "Branches"];
 
-    // public function __construct($materiauxStructure, $materiauxToiture)
-    // {
-    //     $this -> materiauxStructure = $materiauxStructure;
-    //     $this -> materiauxToiture = $materiauxToiture;
-    // }
-
-    // public function showMaison()
-    // {
-    //     echo "La maison a une structure en <strong>" . $this->materiauxStructure . "</strong> et une toiture en <strong>" . $this->materiauxToiture . "</strong>.</br>";
-    // }
+    public function __construct(string $materiauxStructure, string $materiauxToiture)
+    {
+        $this -> setMateriauxStructure($materiauxStructure);
+        $this -> setMateriauxToiture($materiauxToiture);
+    }
 
     public function getMateriauxStructure()
     {
@@ -26,8 +24,14 @@ class Maison
 
     public function setMateriauxStructure(string $materiauxStructure)
     {
-        $this->materiauxStructure = $materiauxStructure;
-
+        if(in_array($materiauxStructure, self::TYPE_MATERIAUX_STRUCTURE))
+        {
+            $this->materiauxStructure = $materiauxStructure;
+        }
+        else
+        {
+            trigger_error("Le matériaux de la toiture n'est pas valide.");
+        }
         return $this;
     }
 
@@ -38,8 +42,15 @@ class Maison
  
     public function setMateriauxToiture(string $materiauxToiture)
     {
-        $this->materiauxToiture = $materiauxToiture;
-
+        if(in_array($materiauxToiture, self::TYPE_MATERIAUX_TOITURE))
+        {
+            $this->materiauxToiture = $materiauxToiture;
+        }
+        else
+        {
+            trigger_error("Le matériaux de la toiture n'est pas valide.");
+        }
+        
         return $this;
     }
 
