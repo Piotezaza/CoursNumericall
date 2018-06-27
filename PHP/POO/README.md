@@ -7,6 +7,21 @@
 - [PHP.NET - Les classes et les objets](http://php.net/manual/fr/language.oop5.php)
 - [PHP.NET - NAMESPACE](http://php.net/manual/fr/language.namespaces.rationale.php)
 
+## Suspissions pour le DS
+
+- Autoload : 
+
+```
+spl_autoload_register(function($className)
+{
+    if(file_exists($className . '.php'))
+    {
+        require_once($className . '.php');
+    }
+});
+```
+
+
 ## Résumé des explications du prof 
 
 Une **classe** c'est un **modèle de donnée** avec **attributs** & des **méthodes** qui va définir le comportement d'un objet.
@@ -47,11 +62,53 @@ Elle va contenir par pas mal de choses :
 
 ### Des **attributs**
 
-Les attributs ont des status de visibilité différents. Ils indiquent à partir d'où on peut y avoir accès. [Explication Openclassrooms](https://openclassrooms.com/courses/programmez-en-oriente-objet-en-php/introduction-a-la-poo#/id/r-1669226)
+Les attributs ont des status de visibilité différents. Ils indiquent à partir d'où on peut y avoir accès. [Explication Openclassrooms](https://openclassrooms.com/courses/programmez-en-oriente-objet-en-php/introduction-a-la-poo#/id/r-1669226).
 
-- `protected` : 
-- `private` : impose quelques restrictions. On n'aura accès aux attributs et méthodes seulement depuis l'intérieur de la classe, c'est-à-dire que seul le code voulant accéder à un attribut privé ou une méthode privée écrit(e) à l'intérieur de la classe fonctionnera
-- `public` : on peut y avoir accès depuis n'importe où, depuis l'intérieur de l'objet (dans les méthodes qu'on a créées), comme depuis l'extérieur
+
+#### L'attribut `public`
+
+On peut y avoir accès depuis n'importe où, depuis l'intérieur de l'objet (dans les méthodes qu'on a créées), comme depuis l'extérieur
+
+#### L'attribut `private` : 
+
+Impose quelques restrictions : on n'aura accès aux attributs et méthodes seulement depuis l'intérieur de la classe, c'est-à-dire que seul le code voulant accéder à un attribut privé ou une méthode privée écrit(e) à l'intérieur de la classe fonctionnera. Pour s'y retrouver correctement dans le code, il est préférable d'utiliser la notation `PEAR` qui dit que chaque nom d'élément privé (ici il s'agit d'attributs, il peut aussi s'agir de méthodes) doit être précédé d'un underscore. Exemple : `$_attribut`.
+
+#### L'attribut `protected` :
+
+Ce type de visibilité est, au niveau restrictif, à placer entre `public` et private. Le type de visibilité `protected` est en fait une petite modification du type `private` : il a exactement les mêmes effets que `private`, à l'exception que toute classe fille aura accès aux éléments protégés.
+
+EXEMPLE :
+
+```
+<?php
+class ClasseMere
+{
+  protected $attributProtege;
+  private $_attributPrive;
+  
+  public function __construct()
+  {
+    $this->attributProtege = 'Hello world !';
+    $this->_attributPrive = 'Bonjour tout le monde !';
+  }
+}
+
+class ClasseFille extends ClasseMere
+{
+  public function afficherAttributs()
+  {
+    echo $this->attributProtege; // L'attribut est protégé, on a donc accès à celui-ci.
+    echo $this->_attributPrive; // L'attribut est privé, on n'a pas accès celui-ci, donc rien ne s'affichera (mis à part une notice si vous les avez activées).
+  }
+}
+
+$obj = new ClasseFille;
+
+echo $obj->attributProtege; // Erreur fatale.
+echo $obj->_attributPrive; // Rien ne s'affiche (ou une notice si vous les avez activées).
+
+$obj->afficherAttributs(); // Affiche « Hello world ! » suivi de rien du tout ou d'une notice si vous les avez activées.
+```
 
 ### Des **méthodes**
 
