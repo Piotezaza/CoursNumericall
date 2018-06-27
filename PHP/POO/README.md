@@ -14,7 +14,7 @@
 - [GRAFIKART - La POO en PHP](https://www.grafikart.fr/formations/programmation-objet-php)
 - [PHP.NET - Les classes et les objets](http://php.net/manual/fr/language.oop5.php)
 - [PHP.NET - NAMESPACE](http://php.net/manual/fr/language.namespaces.rationale.php)
-- [EXPLICATION : PATTERN DE CONCEPTION / SINGLETON](https://apprendre-php.com/tutoriels/tutoriel-45-singleton-instance-unique-d-une-classe.html)
+- [EXPLICATION : DESIGN PATTERN / SINGLETON](https://apprendre-php.com/tutoriels/tutoriel-45-singleton-instance-unique-d-une-classe.html)
 
 ---
 ## Résumé des explications du prof 
@@ -58,8 +58,13 @@ Elle va contenir par pas mal de choses comme des **attributs** ou encore des **m
 
 ### Les **attributs**
 
-Les attributs ont des status de visibilité différents. Ils indiquent à partir d'où on peut y avoir accès. [Explication Openclassrooms](https://openclassrooms.com/courses/programmez-en-oriente-objet-en-php/introduction-a-la-poo#/id/r-1669226).
+[Explication Openclassrooms](https://openclassrooms.com/courses/programmez-en-oriente-objet-en-php/introduction-a-la-poo#/id/r-1669226).
 
+Les attributs ont des status de visibilité différents. Ils indiquent à partir d'où on peut y avoir accès. La déclaration d'attributs dans une classe se fait en écrivant le nom de l'attribut à créer, précédé de sa visibilité. On peut initialiser les attributs lorsqu'on les déclare (par exemple, leur mettre une valeur de 0 ou autre)
+
+**ATTENTION**
+
+La valeur que vous leur donnez par défaut doit être une expression scalaire statique. Par conséquent, leur valeur ne peut par exemple pas être issue d'un appel à une fonction `private $_attribut = strlen('azerty')` ou d'une variable, superglobale ou non `private $_attribut = $_SERVER['REQUEST_URI']`. Si votre version de PHP est antérieure à la 5.6, vous ne pouvez spécifier que des valeurs statiques, ce qui rend impossible l'assignation du résultat d'une opération. Par exemple, vous ne pouvez pas faire de `private $_attribut = 1 + 1` ou bien `private $_attribut = 'Hello ' . 'world !'` .
 
 #### L'attribut `public`
 
