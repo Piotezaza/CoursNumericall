@@ -15,5 +15,5 @@ spl_autoload_register(function($className)
 // Me permet de ne pas mettre \Singleton\ devant ma classe en dessous. Peut être utile lors de l'appel de beaucoup de classes.
 use Singleton\Singleton; 
 
-$singleton = /* \Singleton\ */ Singleton::getInstance("NOM");
-$singleton2 = /* \Singleton\ */ Singleton::getInstance("NOM");
+$singleton = /* à mettre si je n'utilise pas use Singleton\Singleton :  \Singleton\ */ Singleton::getInstance("NOM");
+$singleton2 = /* à mettre si je n'utilise pas use Singleton\Singleton :  \Singleton\ */ Singleton::getInstance("NOM");
