@@ -111,7 +111,7 @@ La structure de ce fichier sera la suivante :
 
 #### ORIENTÉ OBJET
 
-##### **Autoload**
+##### **AUTOLOAD**
 
 [Doc PHP.NET](http://php.net/manual/fr/function.spl-autoload-register.php)
 
