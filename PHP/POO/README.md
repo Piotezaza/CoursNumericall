@@ -1,4 +1,4 @@
-# Micro cours
+# PHP Orienté Objet
 
 ## Sommaire
 
