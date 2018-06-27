@@ -99,11 +99,19 @@ La structure de ce fichier sera la suivante :
 
 ### SOMMAIRE
 
-- [POO]()
+- [FONCTIONS DE BASE]
+- [POO](https://github.com/Piotezaza/CoursNumericall/blob/master/M%C3%A9mo%20g%C3%A9ant.md#orient%C3%89-objet)
+    - [Autoload]
+    - []()
+    - []()
+    - []()
+
+#### FONCTIONS DE BASE
+
 
 #### ORIENTÉ OBJET
 
-1. **Autoload**
+##### **Autoload**
 
 [Doc PHP.NET](http://php.net/manual/fr/function.spl-autoload-register.php)
 
