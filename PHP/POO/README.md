@@ -45,17 +45,32 @@ Une **classe** c'est ce qui va contenir l'objet (un peu comme un moule) et l'**o
 
 Elle va contenir par pas mal de choses :
 
-- Des **variables**
-    - `protected` : 
-    - `private` : 
-    - `public` : 
+### Des **attributs**
 
-- Des **fonctions**
-    - `protected` : 
-    - `private` : 
-    - `public` : 
-    - `static` : toutes les variables appelées dans la fonction ne peuvent être modifiées 
+Les attributs ont des status de visibilité différents. Ils indiquent à partir d'où on peut y avoir accès. [Explication Openclassrooms](https://openclassrooms.com/courses/programmez-en-oriente-objet-en-php/introduction-a-la-poo#/id/r-1669226)
+
+- `protected` : 
+- `private` : impose quelques restrictions. On n'aura accès aux attributs et méthodes seulement depuis l'intérieur de la classe, c'est-à-dire que seul le code voulant accéder à un attribut privé ou une méthode privée écrit(e) à l'intérieur de la classe fonctionnera
+- `public` : on peut y avoir accès depuis n'importe où, depuis l'intérieur de l'objet (dans les méthodes qu'on a créées), comme depuis l'extérieur
+
+### Des **méthodes**
+
+- `protected` : 
+- `private` : 
+- `public` : 
+- `static` : toutes les variables appelées dans la fonction ne peuvent être modifiées 
 
 
 - `` : 
+
+
+Micro explications :
+
+```
+<?php
+class Personnage // Présence du mot-clé class suivi du nom de la classe.
+{
+  // Déclaration des attributs et méthodes ici.
+}
+```
 

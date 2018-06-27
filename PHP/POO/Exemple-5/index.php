@@ -42,15 +42,41 @@ use DataBase\UserManager;
 $userManager = new UserManager();
 // $userManager->save($user);
 
-if($_POST)
+// if($_POST)
+// {
+//     $user = new User();
+
+//     foreach ($_POST as $key => $value) 
+//     {
+//         $methode = 'set' . ucfirst($key); // $key contient le nom du champ
+
+//         if(method_exists($user, $methode))
+//         {
+//             $user->$methode($value);
+//         }
+//     }
+
+//     $userManager->save($user);
+// }
+
+// $user = $userManager->findById(1);
+
+$userManager = new UserManager();
+
+if ($_POST) 
 {
-    $user = new User();
+    $user = $userManager->findById(1);
 
     foreach ($_POST as $key => $value) 
     {
-        $methode = 'set' . ucfirst($key); // $key contient le nom du champ
+        if ($value == "password") 
+        {
+            continue;
+        }
 
-        if(method_exists($user, $methode))
+        $methode = 'set' . ucfirst($key);
+
+        if (method_exists($user, $methode)) 
         {
             $user->$methode($value);
         }
