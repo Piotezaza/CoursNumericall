@@ -54,6 +54,7 @@ Elle va contenir par pas mal de choses :
     - `protected` : 
     - `private` : 
     - `public` : 
+    - `static` : toutes les variables appelées dans la fonction ne peuvent être modifiées 
 
 
 - `` : 
