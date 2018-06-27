@@ -5,6 +5,12 @@
 - [Liens de cours](https://github.com/Piotezaza/CoursNumericall/tree/master/PHP/POO#liens-de-cours)
 - [Résumé des explications du prof](https://github.com/Piotezaza/CoursNumericall/tree/master/PHP/POO#r%C3%A9sum%C3%A9-des-explications-du-prof)
 - [Petites explications maison](https://github.com/Piotezaza/CoursNumericall/tree/master/PHP/POO#petites-explications-maison)
+    - [Les Attributs](https://github.com/Piotezaza/CoursNumericall/tree/master/PHP/POO#les-attributs)
+        - [`Public`](https://github.com/Piotezaza/CoursNumericall/tree/master/PHP/POO#lattribut-public)
+        - [`Private`](https://github.com/Piotezaza/CoursNumericall/tree/master/PHP/POO#lattribut-private-)
+        - [`Protected`](https://github.com/Piotezaza/CoursNumericall/tree/master/PHP/POO#lattribut-protected-)
+    - [Les Méthodes](https://github.com/Piotezaza/CoursNumericall/tree/master/PHP/POO#les-m%C3%A9thodes)
+    - [Utiliser une classe](https://github.com/Piotezaza/CoursNumericall/tree/master/PHP/POO#utiliser-une-classe)
 - [Mémo](https://github.com/Piotezaza/CoursNumericall/tree/master/PHP/POO#m%C3%A9mo)
 
 ---
