@@ -150,6 +150,7 @@ spl_autoload_register(function($className)
 
 À savoir : 
 
+-> Ça regroupe des variables et des fonctions, des classes, tout ce que vous voulez dans un même ensemble. 
 -> Il doit TOUJOURS être au début de la requête, sinon une erreur fatale va apparaître
 
 ```

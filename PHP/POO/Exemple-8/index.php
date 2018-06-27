@@ -17,3 +17,8 @@ use Singleton\Singleton;
 
 $singleton = /* à mettre si je n'utilise pas use Singleton\Singleton :  \Singleton\ */ Singleton::getInstance("NOM");
 $singleton2 = /* à mettre si je n'utilise pas use Singleton\Singleton :  \Singleton\ */ Singleton::getInstance("NOM");
+
+
+echo '<hr/>';
+
+$formItem = \Factory\Factory::create("select");
