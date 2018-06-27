@@ -24,7 +24,8 @@ class UserManager extends DBManager
         $values = "";
 
         // Boucle sur les données pour créer la requête (username, email,...) VALUES (:username, :email,...)
-        foreach ($data as $key => $value) {
+        foreach ($data as $key => $value) 
+        {
             $attributes .= $value . ',';
             $values .= ':' . $value . ',';
         }
@@ -33,12 +34,13 @@ class UserManager extends DBManager
         $attributes = substr($attributes, 0, strlen($attributes) -1); 
         $values = substr($values, 0, strlen($values) -1);
 
-
         $queryStr = "INSERT INTO user (" . $attributes . ") VALUES (" . $values . ")";
+
         $query = $this->pdo->prepare($queryStr);
 
         // Boucle pour appeler les méthodes accesseurs (getUsername())
-        foreach ($data as $key => $value) {
+        foreach ($data as $key => $value) 
+        {
             $methode = "get" . ucfirst($value);
             $query->bindValue(':' . $value, $user->$methode());
         }

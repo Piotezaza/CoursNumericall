@@ -21,6 +21,7 @@ class User
     private $password;
     private $email;
     private $pays;
+    private $sexe;
     private $presentation;
 
     public function __construct($username, $password, $email, $pays = "FR")
@@ -114,6 +115,18 @@ class User
     public function setPresentation($presentation)
     {
         $this->presentation = $presentation;
+
+        return $this;
+    }
+ 
+    public function getSexe()
+    {
+        return $this->sexe;
+    }
+
+    public function setSexe($sexe)
+    {
+        $this->sexe = $sexe;
 
         return $this;
     }
