@@ -101,7 +101,7 @@ La structure de ce fichier sera la suivante :
 
 - [POO]()
 
-#### Orienté objet
+#### ORIENTÉ OBJET
 
 1. **Autoload**
 
