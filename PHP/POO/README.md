@@ -171,7 +171,7 @@ $perso = new Personnage; // Création d'un nouvel objet Personnage >> $perso
 $perso->parler(); // signifie « va chercher l'objet $perso, et invoque la méthode parler() sur cet objet »
 ```
 
-- Le CONSTRUCTEUR
+- Le constructeur
 
 Comme son nom l'indique, le constructeur sert à construire l'objet. Si des attributs doivent être initialisés ou qu'une connexion à la BDD doit être faite, c'est par ici que ça se passe. Le constructeur est exécuté **dès la création** de l'objet et par conséquent, **aucune valeur ne doit être retournée**, même si ça ne génèrera aucune erreur. Bien sûr, une classe fonctionne très bien sans constructeur, il n'est en rien obligatoire ! Si vous n'en spécifiez pas, cela revient au même que si vous en aviez écrit un vide (sans instruction à l'intérieur).
 
@@ -184,14 +184,6 @@ public function __construct($force, $degats) // Constructeur demandant 2 paramè
     $this->_experience = 1; // Initialisation de l'expérience à 1.
   }
 ```
-
-- TEXTE
-
-texte
-
-```
-```
-
 
 ---
 ## Mémo
@@ -247,9 +239,15 @@ class OBJET /* extends PARENT*/
 ```
 
 ---
-- TEXT
+- Tester le type d'attribut (string, array,...)
 
 ```
+public function setAttribut(string $attribut)
+{
+    $this->attribut = $attribut;
+
+    return $this;
+}
 
 ```
 
