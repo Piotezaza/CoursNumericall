@@ -41,6 +41,24 @@ use DataBase\UserManager;
 
 $userManager = new UserManager();
 // $userManager->save($user);
+
+if($_POST)
+{
+    $user = new User();
+
+    foreach ($_POST as $key => $value) 
+    {
+        $methode = 'set' . ucfirst($key); // $key contient le nom du champ
+
+        if(method_exists($user, $methode))
+        {
+            $user->$methode($value);
+        }
+    }
+
+    $userManager->save($user);
+}
+
 $user = $userManager->findById(1);
 
 $myForm = new Form ("login", "POST", "", array("class" => "form", "id" => "login-form"));

@@ -36,3 +36,25 @@ Une classe abstraite est une classe qui va contenir au moins une fonction abstra
 $value == "val" ? "OUI" : "NON"
 if($value == "val"){$result = "OUI";} else {$result = "NON";}
 ```
+
+## Petites explications maison
+
+> J'suis pas douée mais le peu que je sais je veux bien tenter d'expliquer.
+
+Une **classe** c'est ce qui va contenir l'objet (un peu comme un moule) et l'**objet** c'est ce qui définit ton moule (s'il est carré, rond, etc.).
+
+Elle va contenir par pas mal de choses :
+
+- Des **variables**
+    - `protected` : 
+    - `private` : 
+    - `public` : 
+
+- Des **fonctions**
+    - `protected` : 
+    - `private` : 
+    - `public` : 
+
+
+- `` : 
+
