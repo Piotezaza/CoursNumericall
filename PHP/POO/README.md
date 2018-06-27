@@ -64,7 +64,13 @@ Les attributs ont des status de visibilité différents. Ils indiquent à partir
 
 **ATTENTION**
 
-La valeur que vous leur donnez par défaut doit être une expression scalaire statique. Par conséquent, leur valeur ne peut par exemple pas être issue d'un appel à une fonction `private $_attribut = strlen('azerty')` ou d'une variable, superglobale ou non `private $_attribut = $_SERVER['REQUEST_URI']`. Si votre version de PHP est antérieure à la 5.6, vous ne pouvez spécifier que des valeurs statiques, ce qui rend impossible l'assignation du résultat d'une opération. Par exemple, vous ne pouvez pas faire de `private $_attribut = 1 + 1` ou bien `private $_attribut = 'Hello ' . 'world !'` .
+La valeur que vous leur donnez par défaut doit être une expression scalaire statique.
+
+Par conséquent, leur valeur ne peut par exemple pas être issue d'un appel à une fonction `private $_attribut = strlen('azerty')` ou d'une variable, superglobale ou non `private $_attribut = $_SERVER['REQUEST_URI']`.
+
+Si votre version de PHP est antérieure à la 5.6, vous ne pouvez spécifier que des valeurs statiques, ce qui rend impossible l'assignation du résultat d'une opération.
+
+Par exemple, vous ne pouvez pas faire de `private $_attribut = 1 + 1` ou bien `private $_attribut = 'Hello ' . 'world !'` .
 
 #### L'attribut `public`
 
