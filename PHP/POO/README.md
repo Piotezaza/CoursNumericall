@@ -118,16 +118,62 @@ Pour la déclaration de méthodes, il suffit de faire précéder le mot-clé `fu
 - `static` : toutes les variables appelées dans la fonction ne peuvent être modifiées 
 
 
-Micro explications :
+### Utiliser une classe
+
+- Créer un objet
+
+On va utiliser notre classe afin qu'elle nous fournisse un objet.
+
+```
+$perso = new Personnage;
+```
+
+
+- Appeler les méthodes de l'objet
+
+Pour appeler une méthode d'un objet, il va falloir utiliser un opérateur : il s'agit de l'opérateur -> (une flèche composée d'un tiret suivi d'un chevron fermant). Celui-ci s'utilise de la manière suivante. À gauche de cet opérateur, on place l'objet que l'on veut utiliser. Dans l'exemple pris juste au-dessus, cet objet aurait été$perso. À droite de l'opérateur, on spécifie le nom de la méthode que l'on veut invoquer.
 
 ```
 <?php
-class Personnage // Présence du mot-clé class suivi du nom de la classe.
+// Nous créons une classe « Personnage ».
+class Personnage
 {
-  // Déclaration des attributs et méthodes ici.
+  private $_force;
+  private $_localisation;
+  private $_experience;
+  private $_degats;
+        
+  // Nous déclarons une méthode dont le seul but est d'afficher un texte.
+  public function parler()
+  {
+    echo 'Je suis un personnage !';
+  }
 }
+    
+$perso = new Personnage; // Création d'un nouvel objet Personnage >> $perso
+$perso->parler(); // signifie « va chercher l'objet $perso, et invoque la méthode parler() sur cet objet »
 ```
 
+- Le CONSTRUCTEUR
+
+Comme son nom l'indique, le constructeur sert à construire l'objet. Si des attributs doivent être initialisés ou qu'une connexion à la BDD doit être faite, c'est par ici que ça se passe. Le constructeur est exécuté **dès la création** de l'objet et par conséquent, **aucune valeur ne doit être retournée**, même si ça ne génèrera aucune erreur. Bien sûr, une classe fonctionne très bien sans constructeur, il n'est en rien obligatoire ! Si vous n'en spécifiez pas, cela revient au même que si vous en aviez écrit un vide (sans instruction à l'intérieur).
+
+```
+public function __construct($force, $degats) // Constructeur demandant 2 paramètres
+  {
+    echo 'Voici le constructeur !'; // Message s'affichant une fois que tout objet est créé.
+    $this->setForce($force); // Initialisation de la force.
+    $this->setDegats($degats); // Initialisation des dégâts.
+    $this->_experience = 1; // Initialisation de l'expérience à 1.
+  }
+```
+
+- TEXTE
+
+texte
+
+```
+```
 
 
 ---
