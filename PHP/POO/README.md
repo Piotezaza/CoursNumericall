@@ -213,7 +213,41 @@ spl_autoload_register(function($className)
 -> Il doit TOUJOURS être au début de la requête, sinon une erreur fatale va apparaître
 
 ```
-namespace NomDuDocument;
+namespace foo;
+use My\Full\Classname as Another;
+
+// Ceci est la même chose que use My\Full\NSname as NSname
+use My\Full\NSname;
+
+// importation d'une classe globale
+use ArrayObject;
+
+// importation d'une function (PHP 5.6+)
+use function My\Full\functionName;
+
+// alias d'une fonction (PHP 5.6+)
+use function My\Full\functionName as func;
+
+// importation d'une constante (PHP 5.6+)
+use const My\Full\CONSTANT;
+
+// instantie un objet de la classe foo\Another
+$obj = new namespace\Another;
+
+// instantie un objet de la classe My\Full\Classname
+$obj = new Another;
+
+// appelle la fonction My\Full\NSname\subns\func
+NSname\subns\func();
+
+// instantie un objet de la classe ArrayObject
+$a = new ArrayObject(array(1));
+
+// Sans l'instruction "use ArrayObject" nous aurions instantié un objet de la classe foo\ArrayObject
+func(); // Appel la fonction My\Full\functionName
+
+// affiche la valeur de My\Full\CONSTANT
+echo CONSTANT; 
 ```
 
 ---
