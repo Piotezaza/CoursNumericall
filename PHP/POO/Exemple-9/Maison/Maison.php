@@ -68,9 +68,22 @@ class Maison
 
     public function getInfos()
     {
+        $pieces = array();
+
+        foreach ($this->getPieces() as $key => $value) 
+        {
+            $pieces[] = array(
+                "nom" => $value->getNom(),
+                "surface" => $value->getSurface(),
+                "hauteur" => $value->getHauteur(),
+                "nbFenetres" => $value->getNbFenetres(),
+            );
+        }
+
         $infos = array(
             "matStructure" => $this -> getMateriauxStructure(),
-            "matToiture" => $this -> getMateriauxToiture()
+            "matToiture" => $this -> getMateriauxToiture(),
+            "pieces" => $pieces
         );
 
         return $infos;

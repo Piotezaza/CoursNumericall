@@ -27,5 +27,39 @@ $maison->setPieces($pieces);
 // echo $maison -> getMateriauxToiture();
 
 var_dump($maison->getInfos());
+$infos = $maison->getInfos();
 
-require_once('inc/footer.php');
+
+
+?>
+
+<div class="form-group">
+  <input type="text" class="form-control" name="nom" placeholder="Nom de la maison">
+</div>
+<div class="form-group">
+  <input type="text" class="form-control" name="matStructure" value"<?= $infos['matStructure'] ?>" placeholder="Matériaux de la structure">
+</div>
+<div class="form-group">
+  <input type="text" class="form-control" name="matToiture" value"<?= $infos['matToiture'] ?>" placeholder="Matériaux de la toiture">
+</div>
+<div class="form-group">
+    <textarea class="form-control" name="pieces" id="pieces" rows="3">
+
+<?php 
+    foreach ($infos['pieces'] as $key => $value) {
+        echo "PIECES $key 
+        ";
+        echo "Nom: " . $value['nom'] ."
+        ";
+        echo "Surface: " . $value['surface'] . "
+        ";
+        echo "Hauteur: " . $value['hauteur'] . "
+        ";
+        echo "Nombre de fenêtre: " . $value['nbFenetres'] . "
+            ";
+    }
+?>
+    </textarea>
+</div>
+
+<?php require_once('inc/footer.php');?>
