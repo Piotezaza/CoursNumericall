@@ -14,3 +14,7 @@ Création d'une application de gestion d'énergie d'une maison
     - hauteur
     - nbFenetres
 - Créer les setter & getter 
+- Créer un objet `Maison` qui va contenir plusieurs objets `Piece` (dans `index.php`)
+- Créer un autoload
+
+Info : une classe par fichier avec le même nom.
