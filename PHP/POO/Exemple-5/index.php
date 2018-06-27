@@ -36,11 +36,12 @@ use Form\SelectItem;
 use Form\TextareaItem;
 use DataBase\UserManager;
 
-$user = new User("Piote", "Azerty", "superemail@gmail.com", "IT");
-$user->setPresentation("Si t'efface il y a un placeholder ◉_◉");
+// $user = new User("Piote", "Azerty", "superemail@gmail.com", "IT");
+// $user->setPresentation("Si t'efface il y a un placeholder ◉_◉");
 
 $userManager = new UserManager();
-$userManager->save($user);
+// $userManager->save($user);
+$user = $userManager->findById(1);
 
 $myForm = new Form ("login", "POST", "", array("class" => "form", "id" => "login-form"));
 $myForm->setData($user);

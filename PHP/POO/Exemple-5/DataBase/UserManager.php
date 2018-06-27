@@ -67,9 +67,21 @@ class UserManager extends DBManager
         if($userData = $query->fetch())
         {
             $user = new User();
-            foreach ($this->data as $key => $value) {
-                
+
+            foreach ($this->data as $key => $value) 
+            {
+
+                $methode = "set" . ucfirst($value);
+
+                if(method_exists($user, $methode))
+                {
+                    $user->$methode($userData[$value]);
+                }
             }
+
+            return $user;
         }
+
+        return new User();
     }
 }

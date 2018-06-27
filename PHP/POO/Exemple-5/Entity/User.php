@@ -24,13 +24,13 @@ class User
     private $sexe;
     private $presentation;
 
-    public function __construct($username = "", $password = "", $email = "", $pays = "FR")
+    public function __construct(/*$username = "", $password = "", $email = "", $pays = "FR"*/)
     {
-        $this -> setUsername($username);
-        $this -> setPassword($password);
-        $this -> setEmail($email);
-        $this->setPays($pays);  
-        $this -> id = uniqid();
+        // $this -> setUsername($username);
+        // $this -> setPassword($password);
+        // $this -> setEmail($email);
+        // $this->setPays($pays);  
+        // $this -> id = uniqid();
     }
     
     public function getId()
