@@ -127,8 +127,8 @@ spl_autoload_register(function($className)
     }
 });
 ```
-
-##### **Espace de nom / Namespace**
+---
+##### **ESPACE DE NOM / NAMESPACE**
 
 [Cours rapide Openclassrooms](https://openclassrooms.com/courses/les-espaces-de-noms-namespace) | Pour plus de détails sur le code ci-dessous : [PHP.NET - Utilisation des espaces de noms : importation et alias](http://php.net/manual/fr/language.namespaces.importing.php)
 
@@ -175,7 +175,7 @@ func(); // Appel la fonction My\Full\functionName
 // affiche la valeur de My\Full\CONSTANT
 echo CONSTANT; 
 ```
-
+---
 ##### **STARTER TEMPLATE CRÉATION OBJET**
 
 ```
@@ -196,8 +196,8 @@ class OBJET /* extends PARENT*/
 
 }
 ```
-
-##### **Tester le type d'attribut (string, array,...)**
+---
+##### **TESTER LE TYPE D'ATTRIBUT (string, array, ...)**
 
 ```
 public function setAttribut(string $attribut)
