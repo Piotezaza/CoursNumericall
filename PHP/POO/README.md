@@ -56,6 +56,7 @@ Une **classe** c'est ce qui va contenir l'objet (un peu comme un moule) et l'**o
 
 Elle va contenir pas mal de choses comme des **attributs** ou encore des **méthodes**.
 
+
 ### Les **attributs**
 
 [Explication Openclassrooms](https://openclassrooms.com/courses/programmez-en-oriente-objet-en-php/introduction-a-la-poo#/id/r-1669226).
@@ -64,27 +65,31 @@ Les attributs ont des status de visibilité différents. Ils indiquent à partir
 
 **ATTENTION**
 
-La valeur que vous leur donnez par défaut doit être une expression scalaire statique.
+La valeur que vous leur donnez par défaut doit être une **expression scalaire statique**.
 
-Par conséquent, leur valeur ne peut par exemple pas être issue d'un appel à une fonction `private $_attribut = strlen('azerty')` ou d'une variable, superglobale ou non `private $_attribut = $_SERVER['REQUEST_URI']`.
+Par conséquent, leur valeur ne peut *par exemple* **pas** être issue d'un appel à une fonction `private $_attribut = strlen('azerty')` ou d'une variable, superglobale ou non `private $_attribut = $_SERVER['REQUEST_URI']`.
 
-Si votre version de PHP est antérieure à la 5.6, vous ne pouvez spécifier que des valeurs statiques, ce qui rend impossible l'assignation du résultat d'une opération.
+Si votre version de PHP est *antérieure à la 5.6*, vous ne pouvez spécifier que des valeurs statiques, ce qui rend *impossible* l'assignation du résultat d'une opération.
 
 Par exemple, vous ne pouvez pas faire de `private $_attribut = 1 + 1` ou bien `private $_attribut = 'Hello ' . 'world !'` .
+
 
 #### L'attribut `public`
 
 On peut y avoir accès depuis n'importe où, depuis l'intérieur de l'objet (dans les méthodes qu'on a créées), comme depuis l'extérieur
 
+
 #### L'attribut `private` : 
 
 Impose quelques restrictions : on n'aura accès aux attributs et méthodes seulement depuis l'intérieur de la classe, c'est-à-dire que seul le code voulant accéder à un attribut privé ou une méthode privée écrit(e) à l'intérieur de la classe fonctionnera. Pour s'y retrouver correctement dans le code, il est préférable d'utiliser la notation `PEAR` qui dit que chaque nom d'élément privé (ici il s'agit d'attributs, il peut aussi s'agir de méthodes) doit être précédé d'un underscore. Exemple : `$_attribut`.
+
 
 #### L'attribut `protected` :
 
 Ce type de visibilité est, au niveau restrictif, à placer entre `public` et private. Le type de visibilité `protected` est en fait une petite modification du type `private` : il a exactement les mêmes effets que `private`, à l'exception que toute classe fille aura accès aux éléments protégés.
 
-EXEMPLE :
+
+**EXEMPLE :**
 
 ```
 <?php
