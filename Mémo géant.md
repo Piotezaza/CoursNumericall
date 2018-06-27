@@ -99,7 +99,9 @@ La structure de ce fichier sera la suivante :
 
 ### SOMMAIRE
 
-- []()
+- [POO]()
+
+#### ORIENTÉ OBJET
 
 1. **Autoload**
 
