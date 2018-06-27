@@ -7,7 +7,7 @@ Création d'une application de gestion d'énergie d'une maison
 
 Une **maison** contient des **pièces**
 
-Créer une classe **maison** avec mes attributs **privés** suivants
+Créer une classe **maison** avec les attributs **privés** suivants
 - Matériaux pour la structure : `materiauxStructure` | Type STRING
 - Matériaux pour la toiture : `materiauxToiture` | Type STRING
 
