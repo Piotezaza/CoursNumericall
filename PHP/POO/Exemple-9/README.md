@@ -1,29 +1,39 @@
 # Consignes
 
-Création d'une application de gestion d'énergie d'une maison
+Création d'une application de gestion d'énergie d'une maison.
+
+**Info** : une classe par fichier avec le même nom.
+
+---
 
 1. Modélisation de la maison
 
 
-Une **maison** contient des **pièces**
+Une **maison** contient des **pièces**.
 
-Créer une classe **maison** avec les attributs **privés** suivants
+Créer une classe **maison** avec les attributs **privés** suivants:
 - Matériaux pour la structure : `materiauxStructure` | Type STRING
 - Matériaux pour la toiture : `materiauxToiture` | Type STRING
 
-La classe `Maison` contient un ou plusieurs objets `Piece`
+La classe `Maison` contient un ou plusieurs objets `Piece`.
 
 Créer une classe `Piece` avec les attributs privés suivants :
 - `surface` | > 0
 - `hauteur` | > 0
 - `nbFenetres` | >= 0
 
-Créer les setter & getter 
+Créer les setter & getter .
 
-Créer un objet `Maison` qui va contenir plusieurs objets `Piece` (dans `index.php`)
+Créer un objet `Maison` qui va contenir plusieurs objets `Piece` (dans `index.php`).
 
-Créer un autoload
+Créer un autoload.
 
 ---
 
-**Info** : une classe par fichier avec le même nom.
+2. Affiner nos classes
+
+Créer des constructeurs avec les attributs obligatoires :
+- `Maison` : `materiauxStructure`, `materiauxToiture`
+- `Piece` : `nom`, `surface`, `hauteur`
+
+Dans `Maison`, les matériaux doivent être préféfinis dans un **array** de type **constante** pour valider les données (avec `in_array`).
