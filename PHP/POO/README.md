@@ -61,7 +61,7 @@ Elle va contenir pas mal de choses comme des **attributs** ou encore des **méth
 
 [Explication Openclassrooms](https://openclassrooms.com/courses/programmez-en-oriente-objet-en-php/introduction-a-la-poo#/id/r-1669226).
 
-Les attributs ont des status de visibilité différents. Ils indiquent à partir d'où on peut y avoir accès. La déclaration d'attributs dans une classe se fait en écrivant le nom de l'attribut à créer, précédé de sa visibilité. On peut initialiser les attributs lorsqu'on les déclare (par exemple, leur mettre une valeur de 0 ou autre)
+Les attributs ont des **status de visibilité différents**. Ils indiquent à partir d'où on peut y avoir **accès**. La déclaration d'attributs dans une classe se fait en écrivant le nom de l'attribut à créer, précédé de sa visibilité. On peut **initialiser** les attributs lorsqu'on les déclare (par exemple, leur mettre une valeur de 0 ou autre)
 
 **ATTENTION**
 
