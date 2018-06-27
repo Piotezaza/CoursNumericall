@@ -94,6 +94,7 @@ La structure de ce fichier sera la suivante :
 1. TEXTE
 
 ---
+---
 
 ## PHP
 
@@ -101,10 +102,10 @@ La structure de ce fichier sera la suivante :
 
 - [FONCTIONS DE BASE]
 - [POO](https://github.com/Piotezaza/CoursNumericall/blob/master/M%C3%A9mo%20g%C3%A9ant.md#orient%C3%89-objet)
-    - [Autoload]
-    - []()
-    - []()
-    - []()
+    - [AUTOLOAD](https://github.com/Piotezaza/CoursNumericall/blob/master/M%C3%A9mo%20g%C3%A9ant.md#autoload)
+    - [ESPACE DE NOM / NAMESPACE]()
+    - [STARTER TEMPLATE CRÉATION OBJET]()
+    - [TESTER LE TYPE D'ATTRIBUT (string, array, ...)]()
 
 #### FONCTIONS DE BASE
 
@@ -126,7 +127,8 @@ spl_autoload_register(function($className)
     }
 });
 ```
-2. **Espace de nom / Namespace**
+
+##### **Espace de nom / Namespace**
 
 [Cours rapide Openclassrooms](https://openclassrooms.com/courses/les-espaces-de-noms-namespace) | Pour plus de détails sur le code ci-dessous : [PHP.NET - Utilisation des espaces de noms : importation et alias](http://php.net/manual/fr/language.namespaces.importing.php)
 
@@ -174,7 +176,7 @@ func(); // Appel la fonction My\Full\functionName
 echo CONSTANT; 
 ```
 
-3. **STARTER TEMPLATE CRÉATION OBJET**
+##### **STARTER TEMPLATE CRÉATION OBJET**
 
 ```
 <?php
@@ -195,7 +197,7 @@ class OBJET /* extends PARENT*/
 }
 ```
 
-4. **Tester le type d'attribut (string, array,...)**
+##### **Tester le type d'attribut (string, array,...)**
 
 ```
 public function setAttribut(string $attribut)
