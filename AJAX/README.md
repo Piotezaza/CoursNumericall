@@ -58,7 +58,7 @@ $.ajax({
     beforeSend: function(){
 
     },
-}).done(functiond(data){
+}).done(function(data){
 
     console.log(data);
 
