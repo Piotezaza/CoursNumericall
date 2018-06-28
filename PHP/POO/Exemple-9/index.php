@@ -26,7 +26,7 @@ $maison->setPieces($pieces);
 // echo '<hr/>';
 // echo $maison -> getMateriauxToiture();
 
-var_dump($maison->getInfos());
+// var_dump($maison->getInfos());
 $infos = $maison->getInfos();
 
 
