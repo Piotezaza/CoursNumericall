@@ -19,7 +19,7 @@ function postMessage(e)
             $form.serialize() /* {message: $message.val(), ...} */, 
             function(data)
             {
-                $form.find('[name="message"]').val('');
+                //$form.find('[name="message"]').val('');
                 /*
                 message vient de enregistrerAjax.php :
                  $result = array(
@@ -27,6 +27,7 @@ function postMessage(e)
                     "message" => "Les données ont été envoyées"
                 );
                 */
+               $('message').html('<span class="' + data.code + '">' + data.message + '</span>');
             }
             , 'json'
         );

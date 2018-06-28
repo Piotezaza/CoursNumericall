@@ -27,7 +27,7 @@
               $form.serialize() /* {Form: $Form.val(), ...} */, 
               function(data)
               {
-                  alert(data.message);
+                $('.message').html('<span class="' + data.code + '">' + data.message + '</span>');
               }
               , 'json'
           );

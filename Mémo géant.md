@@ -274,7 +274,7 @@ $.post(URL, DATA, function(data){}, 'json'); // Requête GET type JSON
 ### ORIENTÉ OBJET
 
 - `$this` 
-- `::self` représente l'objet depuis lequel il est appelé. Peut également s'écrire de la manière suivante (pas trop recommandée) > `::objet`. À utiliser **uniquement** sur les `const` et les `static`.
+- `self::` représente l'objet depuis lequel il est appelé. Peut également s'écrire de la manière suivante (pas trop recommandée) > `::objet`. À utiliser **uniquement** sur les `const` et les `static`.
 
 #### **AUTOLOAD**
 
