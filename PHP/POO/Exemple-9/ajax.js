@@ -20,6 +20,13 @@ function postMessage(e)
             function(data)
             {
                 $form.find('[name="message"]').val('');
+                /*
+                message vient de enregistrerAjax.php :
+                 $result = array(
+                    "code" => "success",
+                    "message" => "Les données ont été envoyées"
+                );
+                */
             }
             , 'json'
         );
