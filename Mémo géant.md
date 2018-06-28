@@ -20,6 +20,20 @@ La structure de ce fichier sera la suivante :
 
 
 ---
+
+```
+
+   _____ ______ _____        _____         _______ ____  _____  
+  / ____|  ____|  __ \ /\   |  __ \     /\|__   __/ __ \|  __ \ 
+ | (___ | |__  | |__) /  \  | |__) |   /  \  | | | |  | | |__) |
+  \___ \|  __| |  ___/ /\ \ |  _  /   / /\ \ | | | |  | |  _  / 
+  ____) | |____| |  / ____ \| | \ \  / ____ \| | | |__| | | \ \ 
+ |_____/|______|_| /_/    \_\_|  \_\/_/    \_\_|  \____/|_|  \_\
+                                                                
+                                                                
+
+```
+
 ---
 
 
@@ -224,7 +238,6 @@ fclose($file);
 
 ---
 ---
----
 
 
 ## PHP
@@ -245,7 +258,7 @@ fclose($file);
 
 ### BASIQUE
 
-#### **ENREGISTRER DES INFORMATIONS DANS UN FICHIER
+#### ENREGISTRER DES INFORMATIONS DANS UN FICHIER
 
 ```
 // VERSION À FAIRE À CHAQUE FOIS (methode dans if et ensuite le reste dans le if)
