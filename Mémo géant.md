@@ -272,7 +272,7 @@ $.post(URL, DATA, function(data){}, 'json'); // Requête GET type JSON
 
 - `PHP_EOL` : permet de sauter une ligne dans un fichier
 - `require_once("fichier.txt")` : bloque l'execution du code si le fichier n'est pas trouvé
-- `` 
+- `strlen()` retourne la longueur d'une chaîne 
 - `` 
 
 ### BASIQUE
@@ -325,6 +325,7 @@ $.post(URL, DATA, function(data){}, 'json'); // Requête GET type JSON
 
 - `$this` 
 - `self::` représente l'objet depuis lequel il est appelé. Peut également s'écrire de la manière suivante (pas trop recommandée) > `::objet`. À utiliser **uniquement** sur les `const` et les `static`.
+- [COURS MADE IN MAZA](https://github.com/Piotezaza/CoursNumericall/tree/master/PHP/POO#petites-explications-maison)
 
 #### **AUTOLOAD**
 
