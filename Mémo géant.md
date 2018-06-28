@@ -43,11 +43,12 @@ La structure de ce fichier sera la suivante :
 
 ### SOMMAIRE
 
-- [COURS]()
+- [COURS](https://github.com/Piotezaza/CoursNumericall/blob/master/M%C3%A9mo%20g%C3%A9ant.md#cours)
 - [AVEC JAVASCRIPT](https://github.com/Piotezaza/CoursNumericall/blob/master/M%C3%A9mo%20g%C3%A9ant.md#avec-javascript)
     - [CODE TYPE](https://github.com/Piotezaza/CoursNumericall/blob/master/M%C3%A9mo%20g%C3%A9ant.md#code-type)
 - [AVEC JQUERY](https://github.com/Piotezaza/CoursNumericall/blob/master/M%C3%A9mo%20g%C3%A9ant.md#avec-jquery)
     - [CODE TYPE](https://github.com/Piotezaza/CoursNumericall/blob/master/M%C3%A9mo%20g%C3%A9ant.md#code-type-1)
+- [AVEC PHP](https://github.com/Piotezaza/CoursNumericall/blob/master/M%C3%A9mo%20g%C3%A9ant.md#avec-php)
 
 ### COURS
 
@@ -230,9 +231,9 @@ fclose($file);
 
 ### SOMMAIRE
 
-- [FONCTIONS DE BASE]
+- [FONCTIONS DE BASE](https://github.com/Piotezaza/CoursNumericall/blob/master/M%C3%A9mo%20g%C3%A9ant.md#fonctions-de-base)
 - [BASIQUE]()
-    - [Enregistrer des informations dans un fichier]()
+    - [Enregistrer des informations dans un fichier](https://github.com/Piotezaza/CoursNumericall/blob/master/M%C3%A9mo%20g%C3%A9ant.md#enregistrer-des-informations-dans-un-fichier)
 - [POO](https://github.com/Piotezaza/CoursNumericall/blob/master/M%C3%A9mo%20g%C3%A9ant.md#orient%C3%89-objet)
     - [AUTOLOAD](https://github.com/Piotezaza/CoursNumericall/blob/master/M%C3%A9mo%20g%C3%A9ant.md#autoload)
     - [ESPACE DE NOM / NAMESPACE]()
@@ -241,6 +242,10 @@ fclose($file);
 
 ### FONCTIONS DE BASE
 
+- `PHP_EOL` : permet de sauter une ligne dans un fichier
+- `` 
+- `` 
+- `` 
 
 ### BASIQUE
 

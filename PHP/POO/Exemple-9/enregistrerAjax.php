@@ -1,12 +1,19 @@
 <?php
 
-// VERSION À FAIRE À CHAQUE FOIS (methode dans if et ensuite le reste dans le if)
+
 if($_POST)
 {
     if(!empty($_POST)
     {
-        $file =fopen("infos.txt", "w");
-        fwrite($file, )
+        $str =  "Maison: " . $_POST['nom'] . PHP_EOL
+                . "Matériaux structure: " . $_POST['matStructure'] . PHP_EOL
+                . "Matériaux toiture: " . $_POST['matToiture'] . PHP_EOL
+                . "Pièces: " . $_POST['pieces'] . PHP_EOL
+                ;
+        
+        $file = fopen($_POST['nom'] . '.txt', 'w');
+        fwrite($file, $str);
+        fclose($file);
     }
     else 
     {
@@ -16,4 +23,6 @@ if($_POST)
         );
     }
 }
+
+
 
