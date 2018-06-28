@@ -33,6 +33,7 @@ $infos = $maison->getInfos();
 
 ?>
 
+<form method="POST" action="enregistrerAjax.php">
 <div class="form-group">
   <input type="text" class="form-control" name="nom" placeholder="Nom de la maison">
 </div>
@@ -61,5 +62,6 @@ $infos = $maison->getInfos();
 ?>
     </textarea>
 </div>
+</form>
 
 <?php require_once('inc/footer.php');?>

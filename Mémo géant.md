@@ -44,12 +44,16 @@ La structure de ce fichier sera la suivante :
 ### SOMMAIRE
 
 - [COURS]()
+- [AVEC JAVASCRIPT]()
+    - [CODE TYPE]()
+- [AVEC JQUERY]()
+    - [CODE TYPE]()
 
-#### COURS
+### COURS
 
 - [OPENCLASSROOMS - Introduction à AJAX](https://openclassrooms.com/courses/1916641-dynamisez-vos-sites-web-avec-javascript/1920925-quest-ce-que-lajax)
 
-#### AVEC JAVASCRIPT 
+### AVEC JAVASCRIPT 
 - `var hxr = new XMLHttpRequest` : fais un appel AJAX en natif
 - `xhr.open(METHOD, URL, ASYNC)` : prépare la requête
 - `this.status` : status de la réponse serveur
@@ -140,6 +144,23 @@ $.post(URL, DATA, function(data){}, 'json'); // Requête GET type JSON
 - `$('form').serialize()` : retourne les données d'un formulaire sous forme de chaîne encodée pour les URL
 
 ---
+
+#### Enregistrer les infos dans un fichier
+
+```
+$file = fopen("fichier.txt", "w");
+fwrite($file, "TEXTE");
+fclose($file);
+```
+
+#### Retourner une réponse en JSON
+
+```
+{
+    "code" : "success",
+    "message" : "OK"
+}
+```
 
 ---
 ---
