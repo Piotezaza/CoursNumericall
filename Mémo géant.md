@@ -49,6 +49,7 @@ La structure de ce fichier sera la suivante :
 
 - [OPENCLASSROOMS - Introduction à AJAX](https://openclassrooms.com/courses/1916641-dynamisez-vos-sites-web-avec-javascript/1920925-quest-ce-que-lajax)
 
+#### AVEC JAVASCRIPT 
 - `var hxr = new XMLHttpRequest` : fais un appel AJAX en natif
 - `xhr.open(METHOD, URL, ASYNC)` : prépare la requête
 - `this.status` : status de la réponse serveur
@@ -79,7 +80,7 @@ xhr.onreadystatechange = function()
 xhr.send();
 ```
 
-### JQUERY
+### AVEC JQUERY
 
 - `url: ''` : lien vers le script à appeler
 - `method: 'POST'` : ou GET
