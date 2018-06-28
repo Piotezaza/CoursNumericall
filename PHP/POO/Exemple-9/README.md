@@ -52,4 +52,4 @@ Dans `Maison`, les matériaux doivent être préféfinis dans un **array** de ty
 - Afficher l'envoi du formulaire et envoyer les données POST avec une requête AJAX.
 - Afficher la réponse dans une balise HTML.
 - JavaScript natif ou JQuery.
-
+- Comment envoyer TOUTES les données d'un formulaire..?
