@@ -3,7 +3,7 @@
 
 if($_POST)
 {
-    if(!empty($_POST)
+    if(!empty($_POST))
     {
         $str =  "Maison: " . $_POST['nom'] . PHP_EOL
                 . "Matériaux structure: " . $_POST['matStructure'] . PHP_EOL
