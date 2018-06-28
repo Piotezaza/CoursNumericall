@@ -48,7 +48,6 @@ La structure de ce fichier sera la suivante :
     - [CODE TYPE](https://github.com/Piotezaza/CoursNumericall/blob/master/M%C3%A9mo%20g%C3%A9ant.md#code-type)
 - [AVEC JQUERY](https://github.com/Piotezaza/CoursNumericall/blob/master/M%C3%A9mo%20g%C3%A9ant.md#avec-jquery)
     - [CODE TYPE](https://github.com/Piotezaza/CoursNumericall/blob/master/M%C3%A9mo%20g%C3%A9ant.md#code-type-1)
-- [AVEC PHP](https://github.com/Piotezaza/CoursNumericall/blob/master/M%C3%A9mo%20g%C3%A9ant.md#avec-php)
 
 ### COURS
 
@@ -143,25 +142,6 @@ $.post(URL, DATA, function(data){}, 'json'); // Requête GET type JSON
 - `$('form').serialize()` : retourne les données d'un formulaire sous forme de chaîne encodée pour les URL
 
 ---
-
-#### Enregistrer les infos dans un fichier
-
-```
-$file = fopen("fichier.txt", "w");
-fwrite($file, "TEXTE");
-fclose($file);
-```
-
-#### Retourner une réponse en JSON
-
-```
-{
-    "code" : "success",
-    "message" : "OK"
-}
-```
-
----
 ---
 
 
@@ -234,9 +214,9 @@ fclose($file);
     - [Enregistrer des informations dans un fichier](https://github.com/Piotezaza/CoursNumericall/blob/master/M%C3%A9mo%20g%C3%A9ant.md#enregistrer-des-informations-dans-un-fichier)
 - [POO](https://github.com/Piotezaza/CoursNumericall/blob/master/M%C3%A9mo%20g%C3%A9ant.md#orient%C3%89-objet)
     - [AUTOLOAD](https://github.com/Piotezaza/CoursNumericall/blob/master/M%C3%A9mo%20g%C3%A9ant.md#autoload)
-    - [ESPACE DE NOM / NAMESPACE]()
-    - [STARTER TEMPLATE CRÉATION OBJET]()
-    - [TESTER LE TYPE D'ATTRIBUT (string, array, ...)]()
+    - [ESPACE DE NOM / NAMESPACE](https://github.com/Piotezaza/CoursNumericall/blob/master/M%C3%A9mo%20g%C3%A9ant.md#espace-de-nom--namespace)
+    - [STARTER TEMPLATE CRÉATION OBJET](https://github.com/Piotezaza/CoursNumericall/blob/master/M%C3%A9mo%20g%C3%A9ant.md#starter-template-cr%C3%89ation-objet)
+    - [TESTER LE TYPE D'ATTRIBUT (string, array, ...)](https://github.com/Piotezaza/CoursNumericall/blob/master/M%C3%A9mo%20g%C3%A9ant.md#tester-le-type-dattribut-string-array-)
 
 ### FONCTIONS DE BASE
 
