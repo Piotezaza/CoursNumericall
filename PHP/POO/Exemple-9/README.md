@@ -46,4 +46,10 @@ Dans `Maison`, les matériaux doivent être préféfinis dans un **array** de ty
 
 ---
 
-4. Enregistrer les informations dans un fichier & retourner une réponse en JSON
+4. AJAX
+
+- Enregistrer les informations dans un fichier & retourner une réponse en JSON.
+- Afficher l'envoi du formulaire et envoyer les données POST avec une requête AJAX.
+- Afficher la réponse dans une balise HTML.
+- JavaScript natif ou JQuery.
+
