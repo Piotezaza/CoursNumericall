@@ -232,21 +232,65 @@ fclose($file);
 ### SOMMAIRE
 
 - [FONCTIONS DE BASE]
+- [BASIQUE]()
+    - [Enregistrer des informations dans un fichier]()
 - [POO](https://github.com/Piotezaza/CoursNumericall/blob/master/M%C3%A9mo%20g%C3%A9ant.md#orient%C3%89-objet)
     - [AUTOLOAD](https://github.com/Piotezaza/CoursNumericall/blob/master/M%C3%A9mo%20g%C3%A9ant.md#autoload)
     - [ESPACE DE NOM / NAMESPACE]()
     - [STARTER TEMPLATE CRÉATION OBJET]()
     - [TESTER LE TYPE D'ATTRIBUT (string, array, ...)]()
 
-#### FONCTIONS DE BASE
+### FONCTIONS DE BASE
 
 
-#### ORIENTÉ OBJET
+### BASIQUE
+
+#### **ENREGISTRER DES INFORMATIONS DANS UN FICHIER
+
+```
+// VERSION À FAIRE À CHAQUE FOIS (methode dans if et ensuite le reste dans le if)
+    if($_POST){
+        if(empty($_POST['pseudo'])){
+            echo "Pas de pseudo renseigné";
+        } else {
+            echo "Bienvenue sur le site " .$_POST['pseudo'];
+        }
+    }
+
+    extract($_POST); // Cette fonction nous permet de créer des variables via les indices du tableau et affecte leur valeur
+
+    echo '<br>';
+
+    echo $pseudo . " - " . $email;
+
+
+    # On souhaite inscrire les valeurs récupérées par le formulaire dans un fichier externe.
+
+    $f = fopen("liste.txt", "a"); //on enregistre dans une variable l'opération d'ouverture d'un fichier. 'a' nous permet d'ouvrir le fichier et s'il n'existe pas, de le créer. La fonction fopen prend 2 arguments : nom du fichier + méthodoligie
+
+    /*
+        r  => lecture seule du fichier, début de fichier
+        r+ => lecture et écriture du fichier, début de fichier
+        w  => écriture seule, écrase le reste du fichier
+        w+ => lecture et écriture, écrase le reste du fichier
+        a  => écriture seule, fin du fichier
+        a+ => lecture et écriture, fin du fichier
+    */
+
+    fwrite($f, $_POST['pseudo'] . ' - ');
+    fwrite($f, $_POST['email'] . "\n");
+
+    $f = fclose($f); // pas indispensable mais libère de la ressource
+
+```
+
+
+### ORIENTÉ OBJET
 
 - `$this` 
-- `::set` représente l'objet depuis lequel il est appelé. Peut également s'écrire de la manière suivante (pas trop recommandée) > `::objet`
+- `::self` représente l'objet depuis lequel il est appelé. Peut également s'écrire de la manière suivante (pas trop recommandée) > `::objet`
 
-##### **AUTOLOAD**
+#### **AUTOLOAD**
 
 [Doc PHP.NET](http://php.net/manual/fr/function.spl-autoload-register.php)
 
@@ -262,7 +306,7 @@ spl_autoload_register(function($className)
 });
 ```
 ---
-##### **ESPACE DE NOM / NAMESPACE**
+#### **ESPACE DE NOM / NAMESPACE**
 
 [Cours rapide Openclassrooms](https://openclassrooms.com/courses/les-espaces-de-noms-namespace) | Pour plus de détails sur le code ci-dessous : [PHP.NET - Utilisation des espaces de noms : importation et alias](http://php.net/manual/fr/language.namespaces.importing.php)
 
@@ -310,7 +354,7 @@ func(); // Appel la fonction My\Full\functionName
 echo CONSTANT; 
 ```
 ---
-##### **STARTER TEMPLATE CRÉATION OBJET**
+#### **STARTER TEMPLATE CRÉATION OBJET**
 
 ```
 <?php
@@ -331,7 +375,7 @@ class OBJET /* extends PARENT*/
 }
 ```
 ---
-##### **TESTER LE TYPE D'ATTRIBUT (string, array, ...)**
+#### **TESTER LE TYPE D'ATTRIBUT (string, array, ...)**
 
 ```
 public function setAttribut(string $attribut)

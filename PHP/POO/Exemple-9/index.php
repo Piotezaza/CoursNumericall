@@ -62,6 +62,7 @@ $infos = $maison->getInfos();
 ?>
     </textarea>
 </div>
+<button type="submit" class="btn btn-primary">Envoyer</button>
 </form>
 
 <?php require_once('inc/footer.php');?>
