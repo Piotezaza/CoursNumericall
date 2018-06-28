@@ -67,9 +67,7 @@ La structure de ce fichier sera la suivante :
 #### CODE TYPE
 
 ```
-var hxr = new XMLHttpRequest;git add *
-git commit -m "Update"
-git push origin master
+var hxr = new XMLHttpRequest;
 
 xhr.open(METHOD, URL, ASYNC);
 
