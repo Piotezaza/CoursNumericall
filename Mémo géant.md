@@ -44,10 +44,10 @@ La structure de ce fichier sera la suivante :
 ### SOMMAIRE
 
 - [COURS]()
-- [AVEC JAVASCRIPT]()
-    - [CODE TYPE]()
-- [AVEC JQUERY]()
-    - [CODE TYPE]()
+- [AVEC JAVASCRIPT](https://github.com/Piotezaza/CoursNumericall/blob/master/M%C3%A9mo%20g%C3%A9ant.md#avec-javascript)
+    - [CODE TYPE](https://github.com/Piotezaza/CoursNumericall/blob/master/M%C3%A9mo%20g%C3%A9ant.md#code-type)
+- [AVEC JQUERY](https://github.com/Piotezaza/CoursNumericall/blob/master/M%C3%A9mo%20g%C3%A9ant.md#avec-jquery)
+    - [CODE TYPE](https://github.com/Piotezaza/CoursNumericall/blob/master/M%C3%A9mo%20g%C3%A9ant.md#code-type-1)
 
 ### COURS
 
