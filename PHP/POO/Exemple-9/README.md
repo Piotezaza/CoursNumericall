@@ -46,4 +46,4 @@ Dans `Maison`, les matériaux doivent être préféfinis dans un **array** de ty
 
 ---
 
-4. Enregistrer les informations dans un fichier 
+4. Enregistrer les informations dans un fichier & retourner une réponse en JSON
