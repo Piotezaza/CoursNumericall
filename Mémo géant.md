@@ -249,10 +249,14 @@ fclose($file);
 
 ```
 // VERSION À FAIRE À CHAQUE FOIS (methode dans if et ensuite le reste dans le if)
-    if($_POST){
-        if(empty($_POST['pseudo'])){
+    if($_POST)
+    {
+        if(empty($_POST['pseudo']))
+        {
             echo "Pas de pseudo renseigné";
-        } else {
+        }
+        else 
+        {
             echo "Bienvenue sur le site " .$_POST['pseudo'];
         }
     }
@@ -288,7 +292,7 @@ fclose($file);
 ### ORIENTÉ OBJET
 
 - `$this` 
-- `::self` représente l'objet depuis lequel il est appelé. Peut également s'écrire de la manière suivante (pas trop recommandée) > `::objet`
+- `::self` représente l'objet depuis lequel il est appelé. Peut également s'écrire de la manière suivante (pas trop recommandée) > `::objet`. À utiliser **uniquement** sur les `const` et les `static`.
 
 #### **AUTOLOAD**
 
