@@ -243,7 +243,7 @@ fclose($file);
 ### FONCTIONS DE BASE
 
 - `PHP_EOL` : permet de sauter une ligne dans un fichier
-- `` 
+- `require_once("fichier.txt")` : bloque l'execution du code si le fichier n'est pas trouvé
 - `` 
 - `` 
 

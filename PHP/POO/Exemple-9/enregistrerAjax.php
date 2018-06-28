@@ -1,19 +1,35 @@
 <?php
 
 
-if($_POST)
-{
+// if($_POST)
+// {
     if(!empty($_POST))
     {
-        $str =  "Maison: " . $_POST['nom'] . PHP_EOL
-                . "Matériaux structure: " . $_POST['matStructure'] . PHP_EOL
-                . "Matériaux toiture: " . $_POST['matToiture'] . PHP_EOL
-                . "Pièces: " . $_POST['pieces'] . PHP_EOL
+        if(empty($_POST['nom']) || empty($_POST['matStructure']) || empty($_POST['matToiture']) || empty($_POST['pieces']))
+        {
+            $result = array(
+                "code" => "error",
+                "message" => "Les données ne doivent pas être vide"
+            );
+        }
+        else
+        {
+            $str =  "Maison: " . strip_tags($_POST['nom']) . PHP_EOL
+                . "Matériaux structure: " . strip_tags($_POST['matStructure']) . PHP_EOL
+                . "Matériaux toiture: " . strip_tags($_POST['matToiture']) . PHP_EOL
+                . "Pièces: " . strip_tags($_POST['pieces']) . PHP_EOL
                 ;
         
-        $file = fopen($_POST['nom'] . '.txt', 'w');
-        fwrite($file, $str);
-        fclose($file);
+            $file = fopen($_POST['nom'] . '.txt', 'w');
+            fwrite($file, $str);
+            fclose($file);
+
+            $result = array(
+                "code" => "success",
+                "message" => "Les données ont été envoyées"
+            );
+        }
+       
     }
     else 
     {
@@ -22,7 +38,8 @@ if($_POST)
             "message" => "Les données n'ont pas été envoyées"
         );
     }
-}
+// }
 
-
-
+header("Content-Type: application/json");
+echo json_encode($result, JSON_PRETTY_PRINT);
+// echo JSON
