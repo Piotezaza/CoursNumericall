@@ -71,3 +71,4 @@ Des managers ou **repositories** permettent de faire la transition entre les ent
 
 - [Exemple d'architecture MVC à télécharger](https://github.com/Oviglo/MVCExemple/archive/master.zip)
 - [Composer.exe](https://getcomposer.org/Composer-Setup.exe) | (cocher developper mode et ne pas mettre de proxy)
+- [Packagist](https://packagist.org/)

@@ -3,6 +3,7 @@ Pour tous ceux qui ont du mal à suivre la cadence, un petit git des familles po
 
 ## Sommaire
 
+- [MEMO GEANT](https://github.com/Piotezaza/CoursNumericall/blob/master/M%C3%A9mo%20g%C3%A9ant.md)
 - [Tuto feignasse : Comment faire semblant de travailler ?](https://github.com/Piotezaza/CoursNumericall#tuto-feignasse)
 - [Télécharger un dossier / fichier en particulier sur Github](https://github.com/Piotezaza/CoursNumericall#t%C3%A9l%C3%A9charger-un-dossier--ficher-en-particulier)
 - [Liens de téléchargement GIT](https://github.com/Piotezaza/CoursNumericall#liens-de-t%C3%A9l%C3%A9chargement)
