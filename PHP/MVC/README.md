@@ -36,5 +36,24 @@ RewriteCond ${REQUEST_FILENAME} !-d
 RewriteRule . index.php [L, QSA] // QSA : on renvoie les paramètres
 ```
 
+## Le contrôleur frontal
 
+Le **contrôleur frontal** (Front Controller) appelle le bon contrôleur applicatif en fonction de la requête émise par l'utilisateur.
+
+Il a pour but d'analyser le lien que l'on appelle route et en résulte un nom de contrôleur, d'action et de paramètres.
+
+Par exemple, lors de l'appel de la route article/edit/23, le contrôleur frontal doit appeler l'objer contrôleur 
+
+**[...] J'AI PAS LA SUITE**
+
+
+## Le moteur de templates
+
+Le but d'une architecture MVC est de faciliter le travail en équipe, ainsi les vues seront développées principalepment pour un développeur front.
+
+L'utilisation du language PHP dans du code HTML fait perdre en lisibilité et peur être compliqué pour un dev front.
+
+Le moteur de template permet de développer des vues en proposant un **language simplifié** spécialement conçus pour l'affichage de données (et non le traitement)
+
+Il propose également un système de cache.
 
