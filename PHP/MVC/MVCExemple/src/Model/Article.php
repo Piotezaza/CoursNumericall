@@ -96,5 +96,7 @@ class Article extends Entity
     {
         $this -> id = 0;
         $this -> title = '(copie) ' . $this->title;
+        $this -> dateCreate = new \DateTime;
+        $this -> dateUpdate = new \DateTime;
     }
 }
