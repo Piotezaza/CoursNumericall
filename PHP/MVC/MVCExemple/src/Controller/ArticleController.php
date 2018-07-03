@@ -87,4 +87,25 @@ class ArticleController
             )
         );
     }
+
+    public function clone($id)
+    {
+        $articleManager = new ArticleManager;
+        $article = $articleManager->findById($id);
+
+        if(!empty($_POST))
+        {
+            $articleClone = clone($article);
+            $articleManager -> save($articleClone);
+            header("Location: /" . BASEPATH . "/article/index");
+            exit();
+        }
+
+        return array(
+            'template' => 'Article/clone.html.twig',
+            'data' => array(
+                'entity' => $article
+            )
+        );
+    }
 }

@@ -91,4 +91,9 @@ class Article extends Entity
 
         return $this;
     }
+
+    public function __clone()
+    {
+        $this -> id = 0;
+    }
 }
