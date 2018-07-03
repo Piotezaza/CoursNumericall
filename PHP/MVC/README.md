@@ -60,6 +60,6 @@ Il propose également un système de cache.
 
 ## Des objets comme les modèles
 
-Dans une architecture MVC, les données sont représentées par des objets appelés `entités` (Entity ou Domain Objects).
+Dans une architecture MVC, les données sont représentées par des objets appelés **entités** (Entity ou Domain Objects).
 
-Des managers ou `repositories` permettent de faire la transition entre les entités et la base de données (Data Mappers).
+Des managers ou **repositories** permettent de faire la transition entre les entités et la base de données (Data Mappers).
