@@ -15,13 +15,11 @@ $twig = new Twig_Environment($loader, array('debug' => true));
 $twig->addGlobal('path', BASEPATH);
 
 // Création filtre
-$filter = new Twig_Filter('icon', function()
+$filter = new Twig_Filter('icon', function($text)
 {
-    return preg_replace_callback('', function($matches)
-    {
-        
-    }, text);
-});
+    return preg_replace('/\.icon-([a-z0-9+-]+)/', '<i class="fa fa-$1"></i>', $text);
+}, array('pre_escape' => 'html', 'is_safe' => array('html')));
+$twig->addFilter($filter);
 
 use Controller\FrontController;
 
