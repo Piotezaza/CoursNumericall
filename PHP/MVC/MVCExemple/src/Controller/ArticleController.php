@@ -70,10 +70,13 @@ class ArticleController
 
     public function delete($id)
     {
+        $articleManager = new ArticleManager;
+        $article = $articleManager->findById($id);
+
         return array(
             'template' => 'Article/delete.html.twig',
             'data' => array(
-                'entity' => null, //$article
+                'entity' => $article
             )
         );
     }
