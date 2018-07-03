@@ -18,6 +18,7 @@ abstract class DBManager
     public function save(Entity $entity)
     {
         $data = $entity::DB_DATA;
+        
         if ($entity->getId() > 0) 
         { // Update
 
@@ -107,7 +108,7 @@ abstract class DBManager
         {
           $match = $match == strtoupper($match) ? strtolower($match) : lcfirst($match);
         }
-        
+
         return implode('_', $ret);
     }
 }
