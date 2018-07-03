@@ -69,8 +69,14 @@ abstract class DBManager
         return $entities;
     }
 
+    public function delete(Entity $entity)
+    {
+        $query = $this->pdo->prepare('DELETE FROM ' . $this->className . ' WHERE id=?');
+        $query->execute([$entity->getId()]);
+    }
+
     /**
-     * Converti une chaine en camel_case
+     * Converti une chaine en snake_case
      * @param string $input Chaîne à convertir
      * @return string
      */
