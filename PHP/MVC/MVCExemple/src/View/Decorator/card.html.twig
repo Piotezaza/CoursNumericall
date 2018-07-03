@@ -1,4 +1,4 @@
-<div class="card text-center">
+<div class="card {% if classes is defined %}{{ classes }}{% endif %}">
   <div class="card-header">
     {% block header %}{% endblock %}
   </div>

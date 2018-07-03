@@ -3,7 +3,7 @@
 
 {% block body %}
 
-    {% embed "Decorator/card.html.twig" %}
+    {% embed "Decorator/card.html.twig" with {"classes" : "text-white bg-danger"} %}
 
         {% block header %}Supprimer un article{% endblock %}
         {% block body %}Voulez-vous supprimer l'article "" ?{% endblock %}
