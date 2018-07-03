@@ -67,4 +67,14 @@ class ArticleController
             )
         );
     }
+
+    public function delete($id)
+    {
+        return array(
+            'template' => 'Article/delete.html.twig',
+            'data' => array(
+                'entity' => null, //$article
+            )
+        );
+    }
 }
