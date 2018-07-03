@@ -42,7 +42,7 @@ Le **contrôleur frontal** (Front Controller) appelle le bon contrôleur applica
 
 Il a pour but d'analyser le lien que l'on appelle route et en résulte un nom de contrôleur, d'action et de paramètres.
 
-Par exemple, lors de l'appel de la route article/edit/23, le contrôleur frontal doit appeler l'objer contrôleur 
+Par exemple, lors de l'appel de la route article/edit/23, le contrôleur frontal doit appeler l'objet contrôleur 
 
 **[...] J'AI PAS LA SUITE**
 
@@ -56,4 +56,7 @@ L'utilisation du language PHP dans du code HTML fait perdre en lisibilité et pe
 Le moteur de template permet de développer des vues en proposant un **language simplifié** spécialement conçus pour l'affichage de données (et non le traitement)
 
 Il propose également un système de cache.
+
+
+## Des objets comme les modèles
 
