@@ -18,33 +18,48 @@ abstract class DBManager
     public function save(Entity $entity)
     {
         $data = $entity::DB_DATA;
-        if ($entity->getId() > 0) { // Update
+        if ($entity->getId() > 0) 
+        { // Update
+
             $setters = "";
-            foreach ($data as $key => $value) {
+
+            foreach ($data as $key => $value) 
+            {
                 $setters .= $value . " = :".$value.",";
             }
+
             $setters = substr($setters, 0, strlen($setters) - 1); // Supprime le dernier ','
             $queryStr = "UPDATE " . $this->tableName  . " SET " . $setters . " WHERE id=".$entity->getId();
-        } else {
+        } 
+        else 
+        {
             $attributes = "";
             $values = "";
-            foreach ($data as $key => $value) {
+
+            foreach ($data as $key => $value) 
+            {
                 $attributes .= $value . ',';
                 $values .= ':' . $value . ',';
             }
+
             $attributes = substr($attributes, 0, strlen($attributes) - 1); // Supprime le dernier ','
             $values = substr($values, 0, strlen($values) - 1); // Supprime le dernier ','
             $queryStr = "INSERT INTO " . $this->tableName  . " (" . $attributes . ") VALUES (" . $values . ")";
         }
 
         $query = $this->pdo->prepare($queryStr);
+
         // Boucle pour appeler les méthodes accesseurs (getUsername())
-        foreach ($data as $key => $value) {
+        foreach ($data as $key => $value) 
+        {
             $methode = "get" . ucfirst($value);
             $get = $entity->$methode();
-            if ($get instanceof \DateTime) {
+
+            if ($get instanceof \DateTime) 
+            {
                 $get = $get->format('Y-m-d H:i:s');
             }
+
             $query->bindValue(':' . $value, $get);
         }
 
@@ -63,15 +78,18 @@ abstract class DBManager
         $query = $this->pdo->prepare('SELECT * FROM ' . $this->tableName);
         $query->execute();
         $entities = [];
-        while ($entity = $query->fetchObject($this->className)) {
+
+        while ($entity = $query->fetchObject($this->className)) 
+        {
             $entities[] = $entity;
         }
+
         return $entities;
     }
 
     public function delete(Entity $entity)
     {
-        $query = $this->pdo->prepare('DELETE FROM ' . $this->className . ' WHERE id=?');
+        $query = $this->pdo->prepare('DELETE FROM ' . $this->tableName . ' WHERE id=?');
         $query->execute([$entity->getId()]);
     }
 
@@ -80,12 +98,16 @@ abstract class DBManager
      * @param string $input Chaîne à convertir
      * @return string
      */
-    protected function fromCamelCase(string $input) {
+    protected function fromCamelCase(string $input) 
+    {
         preg_match_all('!([A-Z][A-Z0-9]*(?=$|[A-Z][a-z0-9])|[A-Za-z][a-z0-9]+)!', $input, $matches);
         $ret = $matches[0];
-        foreach ($ret as &$match) {
+
+        foreach ($ret as &$match) 
+        {
           $match = $match == strtoupper($match) ? strtolower($match) : lcfirst($match);
         }
+        
         return implode('_', $ret);
     }
 }
