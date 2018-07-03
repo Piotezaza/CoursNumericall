@@ -42,7 +42,7 @@ Le **contrôleur frontal** (Front Controller) appelle le bon contrôleur applica
 
 Il a pour but d'analyser le lien que l'on appelle route et en résulte un nom de contrôleur, d'action et de paramètres.
 
-Par exemple, lors de l'appel de la route article/edit/23, le contrôleur frontal doit appeler l'objet contrôleur 
+Par exemple, lors de l'appel de la route `article/edit/23`, le contrôleur frontal doit appeler l'objet contrôleur 
 
 **[...] J'AI PAS LA SUITE**
 
@@ -60,3 +60,6 @@ Il propose également un système de cache.
 
 ## Des objets comme les modèles
 
+Dans une architecture MVC, les données sont représentées par des objets appelés `entités` (Entity ou Domain Objects).
+
+Des managers ou `repositories` permettent de faire la transition entre les entités et la base de données (Data Mappers).
