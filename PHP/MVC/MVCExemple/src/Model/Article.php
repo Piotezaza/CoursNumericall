@@ -95,5 +95,6 @@ class Article extends Entity
     public function __clone()
     {
         $this -> id = 0;
+        $this -> title = '(copie) ' . $this->title;
     }
 }
