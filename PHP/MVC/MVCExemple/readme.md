@@ -13,6 +13,8 @@ Exécuter la commande suivante pour installer les bibliothèques tières
 composer install
 ```
 
-Dans le fichier index.php, une variable globale "BASEPATH" est définie comme le chemin du projet (attention il ne faut pas d'espace dans le lien)
+Dans le fichier `index.php`, une variable globale "BASEPATH" est définie comme le chemin du projet (attention il ne faut pas d'espace dans le lien)
 
-Faire de même pour le fichier .htaccess
+Faire de même pour le fichier `.htaccess`
+
+Dans Visual Studio Code, penser à installer l'extension **Apache Conf**

@@ -1,6 +1,6 @@
 # Activation de la réécriture
 RewriteEngine on
-RewriteBase /WebForce3/PHPMVC/Exemples/
+RewriteBase /CoursNumericall/PHP/MVC/MVCExemple/
 # Conditions de réécriture, ne doit pas être un fichier ou dossier éxistant 
 RewriteCond ${REQUEST_FILENAME} !-f
 RewriteCond ${REQUEST_FILENAME} !-d
