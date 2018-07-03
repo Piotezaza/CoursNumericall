@@ -17,3 +17,24 @@ Le principe des **routes** permet d'avoir des liens plus jolis mais surtout plus
 Ainsi la route pour le lien orécédent devient `monsite.com/article/edit/23`.
 
 Les routes affichent une arborescence qui n'existe pas physiquement sur le serveur, le **contrôleur frontal** interprète ces routes.
+
+Afin de rediriger les routes vers le fichier `index.php` un fichier .gtaccess doit être mis à la racine du projet
+
+```
+# Activation de la réécriture
+
+RewriteEngine on
+RewriteBase /Lien/Vers/MonProjet/
+
+# Conditions de réécriture, ne doit pas être un fichier ou un dossier existant
+
+RewriteCond ${REQUEST_FILENAME} !-f
+RewriteCond ${REQUEST_FILENAME} !-d
+
+# Redirection de tout autres liens vers index.php
+
+RewriteRule . index.php [L, QSA] // QSA : on renvoie les paramètres
+```
+
+
+
