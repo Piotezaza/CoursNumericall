@@ -14,7 +14,7 @@ class ArticleType extends AbstractType
             -> add('title')
             -> add('content')
             -> add('save', SubmitType::class, array(
-                
+              'label' => 'Enregistrer'
             ))
         ;
     }
