@@ -8,10 +8,12 @@
 
 Si quelqu'un en a besoin quand même, demandez-moi ! ^^
 
+---
 ## Commandes
 
 Installer la toolbar Apache : `composer symfony/apache-pack`, à la fin, faire yes : `y`.
 
+---
 ## MEMO
 
 ### Installation
@@ -31,8 +33,10 @@ composer create-project symfony/website-skeleton NomDuProje
 - **SRC** :  tout le code source de l'application
 - **TEMPLATES** : contient toutes les vues (fichiers **Twig**)
 - **TESTS** : fichiers pour les tests unitaires 
-- **TRANSLATIONS** : 
+- **TRANSLATIONS** : fichiers de traduction
+- **** : 
 
+---
 ## Liens utiles
 
 - [OPENCLASSROOMS - Développez votre site web avec le framework Symfony](https://openclassrooms.com/courses/3619856-developpez-votre-site-web-avec-le-framework-symfony)
