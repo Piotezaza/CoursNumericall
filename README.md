@@ -19,6 +19,8 @@ Tu veux faire semblant de travailler en cours en ayant mon code sous le nez parc
 - Vas sur le [Tuto Git](https://github.com/Piotezaza/CoursNumericall/blob/master/Tuto%20Git.md#r%C3%A9cup%C3%A9rer-un-projet-git) 
 - Espèce de feignasse ಠ_ಠ
 
+**INFO** : Si tu as édité le code et que tu n'arrives pas à `pull` pour récupérer mon code, tu dois écrire `git checkout *` \o/
+
 ---
 
 ## Télécharger un dossier / ficher en particulier
