@@ -51,7 +51,7 @@ class ArticleController extends Controller
 	}
 
 	/**
-	 * @Route ("/edit/{id}", )
+	 * @Route ("/edit/{id}", requirements={"id" = "\d+"})
 	 */
 	public function edit(Request $request)
 	{
