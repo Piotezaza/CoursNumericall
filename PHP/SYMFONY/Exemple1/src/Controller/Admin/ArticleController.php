@@ -58,7 +58,9 @@ class ArticleController extends Controller
 
 		if($form -> isSubmitted() && $form -> isValid())
 		{
-			
+			$em = $this -> getDoctrine() -> getManager();
+			$em -> persist($article);
+			$em -> flush();
 		}
 
 		return $this->render('admin/article/new.html.twig', array(
