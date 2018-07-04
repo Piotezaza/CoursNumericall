@@ -56,6 +56,11 @@ class ArticleController extends Controller
 		// 	$em -> flush();
 		// }
 
+		if($form -> isSubmitted() && $form -> isValid())
+		{
+			
+		}
+
 		return $this->render('admin/article/new.html.twig', array(
 			'form' => $form->createView(),
 		));
