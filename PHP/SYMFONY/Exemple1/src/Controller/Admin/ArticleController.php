@@ -53,7 +53,7 @@ class ArticleController extends Controller
 	/**
 	 * @Route ("/edit/{id}", requirements={"id" = "\d+"})
 	 */
-	public function edit(Request $request, $id)
+	public function edit(Request $request, Article $article)
 	{
 		// CREATION DU FORMULAIRE
 		$form = $this -> createForm(ArticleType::class, $article);
