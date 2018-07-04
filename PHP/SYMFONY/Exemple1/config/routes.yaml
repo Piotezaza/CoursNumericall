@@ -1,0 +1,12 @@
+#index:
+#    path: /
+#    controller: App\Controller\DefaultController::index
+homepage:
+  path: /
+  controller: Symfony\Bundle\FrameworkBundle\Controller\TemplateController::templateAction
+  defaults:
+    template: index.html.twig
+
+admin_article_index:
+  path: /admin/article/
+  controller: App\Controller\Admin\ArticleController::index
