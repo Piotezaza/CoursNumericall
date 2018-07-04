@@ -3,6 +3,7 @@
 - [CONSULTER - Projet de base](https://github.com/Piotezaza/CoursNumericall/tree/master/PHP/SYMFONY/BASE)
 - [TÉLÉCHARGER - Projet de base](https://github.com/Piotezaza/CoursNumericall/archive/master/PHP/SYMFONY/BASE.zip)
 - [MEMO](https://github.com/Piotezaza/CoursNumericall/tree/master/PHP/SYMFONY#memo)
+- [Liens utiles](https://github.com/Piotezaza/CoursNumericall/tree/master/PHP/SYMFONY#liens-utiles)
 
 **ATTENTION, PAS MAL DE DOSSIERS SONT IGNORÉS PAR LE `.gitignore`.** Ils sont dispo **uniquement** dans le dossier de base que vous pouvez télécharger.
 
@@ -11,7 +12,7 @@ Si quelqu'un en a besoin quand même, demandez-moi ! ^^
 ---
 ## Commandes
 
-Installer la toolbar Apache : `composer symfony/apache-pack`, à la fin, faire yes : `y`.
+Installer la toolbar Apache : `composer require symfony/apache-pack`, à la fin, faire yes : `y`.
 
 ---
 ## MEMO
@@ -35,6 +36,7 @@ composer create-project symfony/website-skeleton NomDuProje
 - **TESTS** : fichiers pour les tests unitaires 
 - **TRANSLATIONS** : fichiers de traduction (version Symfony < 4 : les vues sont dans le dossier `Ressource/Views` des Bundle)
 - **VAR** : contient le cache et les fichiers log
+- **VENDOR** : bibliothèque 
 
 ---
 ## Liens utiles
