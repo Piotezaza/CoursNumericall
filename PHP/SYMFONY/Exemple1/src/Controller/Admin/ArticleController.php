@@ -61,6 +61,8 @@ class ArticleController extends Controller
 			$em = $this -> getDoctrine() -> getManager();
 			$em -> persist($article);
 			$em -> flush();
+
+			return $this -> redirectToRoute('app_admin_article_index');
 		}
 
 		return $this->render('admin/article/new.html.twig', array(

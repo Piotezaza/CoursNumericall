@@ -19,6 +19,7 @@ class Article
 
     /**
      * @ORM\Column(type="string", length=80)
+     * @Assert\EqualTo("WebForce3")
      */
     private $title;
 
