@@ -53,8 +53,14 @@ class ArticleController extends Controller
 	/**
 	 * @Route ("/edit/{id}", requirements={"id" = "\d+"})
 	 */
-	public function edit(Request $request)
+	public function edit(Request $request, $id)
 	{
+		// CREATION DU FORMULAIRE
+		$form = $this -> createForm(ArticleType::class, $article);
+		$form -> handleRequest($request);
 
+		return $this->render('admin/article/edit.html.twig', array(
+			'form' => $form->createView(),
+		));
 	}
 }
