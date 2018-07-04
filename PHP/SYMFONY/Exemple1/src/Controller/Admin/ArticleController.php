@@ -34,6 +34,7 @@ class ArticleController extends Controller
 
 		// CREATION DU FORMULAIRE
 		$form = $this -> createForm(ArticleType::class, $article);
+		$form -> handleRequest($request);
 
 		if(!empty($_POST))
 		{
