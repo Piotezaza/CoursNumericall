@@ -16,6 +16,12 @@ class Article
     private $dateCreate;
     private $dateUpdate;
 
+    public function __construct()
+    {
+        $this -> dateCreate = new \DateTime;
+        $this -> dateUpdate = new \DateTime;
+    }
+
     /**
      * Get the value of id
      */ 
