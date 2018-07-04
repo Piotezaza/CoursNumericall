@@ -13,11 +13,28 @@ class Article
     /**
      * @ORM\Id
      * @ORM\GeneratedValue
+     * @ORM\Column(type="integer")
      */
     private $id;
+
+    /**
+     * @ORM\Column(type="string", length=80)
+     */
     private $title;
+
+     /**
+     * @ORM\Column(type="text")
+     */
     private $content;
+
+     /**
+     * @ORM\Column(type="datetime")
+     */
     private $dateCreate;
+
+    /**
+    * @ORM\Column(type="datetime")
+    */
     private $dateUpdate;
 
     public function __construct()
