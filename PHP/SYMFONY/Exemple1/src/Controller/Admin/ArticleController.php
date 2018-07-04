@@ -48,6 +48,8 @@ class ArticleController extends Controller
 			$em -> flush();
 		}
 
-		return $this->render('admin/article/new.html.twig');
+		return $this->render('admin/article/new.html.twig', array(
+			'form' => $form->createView(),
+		));
 	}
 }
