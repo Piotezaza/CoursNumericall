@@ -11,4 +11,11 @@ use Doctrine\ORM\Mapping as ORM;
 class Article
 {
     private $id;
+    private $title;
+    private $content;
+    private $dateCreate;
+    private $dateUpdate;git add *
+    git commit -m "Update"
+    git push origin master
+    
 }
