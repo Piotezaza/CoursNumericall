@@ -5,7 +5,7 @@ namespace App\Controller\Admin;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\Routing\Annotation\Route;
 use App\Entity\Article;
-use App\Form\AtricleType;
+use App\Form\ArticleType;
 
 /**
  * @Route("/admin/article")
@@ -27,6 +27,9 @@ class ArticleController extends Controller
 	public function new()
 	{
 		$article = new Article;
+
+		// CREATION DU FORMULAIRE
+		$form = $this -> createForm(ArticleType::class, $article);
 
 		if(!empty($_POST))
 		{
