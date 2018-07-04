@@ -5,6 +5,7 @@ namespace App\Controller\Admin;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\Routing\Annotation\Route;
 use App\Entity\Article;
+use App\Form\AtricleType;
 
 /**
  * @Route("/admin/article")
