@@ -24,12 +24,14 @@ composer create-project symfony/website-skeleton NomDuProje
 
 ### Dossiers
 
-- **ASSETS** : Fichiers JS/CSS
-- **BIN** : Fichiers binaire tel que la console
-- **CONFIG** : Fichiers de configuration des modules (version Symfony < 4 : un seul fichier `config.yml`)
-- **PUBLIC** : Contient `index.php`
-- **** : 
-- **** : 
+- **ASSETS** : fichiers JS/CSS
+- **BIN** : fichiers binaire tel que la console
+- **CONFIG** : fichiers de configuration des modules (version Symfony < 4 : un seul fichier `config.yml`)
+- **PUBLIC** : contient `index.php` et les fichiers statiques créés par *WebPack*
+- **SRC** :  tout le code source de l'application
+- **TEMPLATES** : contient toutes les vues (fichiers **Twig**)
+- **TESTS** : fichiers pour les tests unitaires 
+- **TRANSLATIONS** : 
 
 ## Liens utiles
 
