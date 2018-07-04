@@ -26,6 +26,10 @@ composer create-project symfony/website-skeleton NomDuProje
 
 - **ASSETS** : Fichiers JS/CSS
 - **BIN** : Fichiers binaire tel que la console
+- **CONFIG** : Fichiers de configuration des modules (version Symfony < 4 : un seul fichier `config.yml`)
+- **PUBLIC** : Contient `index.php`
+- **** : 
+- **** : 
 
 ## Liens utiles
 
