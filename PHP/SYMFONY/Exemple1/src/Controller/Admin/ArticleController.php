@@ -26,6 +26,21 @@ class ArticleController extends Controller
 	public function new()
 	{
 		$article = new Article;
+
+		if(!empty($_POST))
+		{
+			$post = array();
+			
+			foreach($_POST as $key => $p)
+			{
+				$post[$key] = trim($p); // trim enlève les espaces avant & après
+			}
+
+			$article 	-> setTitle(strip_tags($post/* ou $_POST si la boucle n'existe pas */['title']))
+						-> setContent($post['content'])
+						;
+		}
+
 		return $this->render('admin/article/new.html.twig');
 	}
 }
