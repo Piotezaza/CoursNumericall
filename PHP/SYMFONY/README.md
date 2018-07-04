@@ -36,7 +36,7 @@ composer create-project symfony/website-skeleton NomDuProje
 - **TESTS** : fichiers pour les tests unitaires 
 - **TRANSLATIONS** : fichiers de traduction (version Symfony < 4 : les vues sont dans le dossier `Ressource/Views` des Bundle)
 - **VAR** : contient le cache et les fichiers log
-- **VENDOR** : bibliothèque 
+- **VENDOR** : bibliothèques externes à notre application (comme Doctrine, Twig, SwiftMailer, etc)
 
 ---
 ## Liens utiles
