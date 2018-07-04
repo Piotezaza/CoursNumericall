@@ -33,8 +33,8 @@ composer create-project symfony/website-skeleton NomDuProje
 - **SRC** :  tout le code source de l'application
 - **TEMPLATES** : contient toutes les vues (fichiers **Twig**)
 - **TESTS** : fichiers pour les tests unitaires 
-- **TRANSLATIONS** : fichiers de traduction
-- **** : 
+- **TRANSLATIONS** : fichiers de traduction (version Symfony < 4 : les vues sont dans le dossier `Ressource/Views` des Bundle)
+- **VAR** : contient le cache et les fichiers log
 
 ---
 ## Liens utiles
