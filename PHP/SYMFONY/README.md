@@ -22,7 +22,7 @@ Installer la toolbar Apache : `composer require symfony/apache-pack`, à la fin,
 Via composer (gestionnaire de bibliothèques externes)
 
 ```
-composer create-project symfony/website-skeleton NomDuProje
+composer create-project symfony/website-skeleton NomDuProjet
 ```
 
 ### Dossiers
