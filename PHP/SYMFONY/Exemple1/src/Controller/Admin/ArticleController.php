@@ -27,8 +27,9 @@ class ArticleController extends Controller
 	/**
 	 * @Route("/new")
 	 */
-	public function new()
+	public function new(Request $request)
 	{
+		// NOUVELLE ENTITÉE ARTICLE
 		$article = new Article;
 
 		// CREATION DU FORMULAIRE
