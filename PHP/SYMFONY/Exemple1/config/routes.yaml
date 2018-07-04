@@ -4,3 +4,5 @@
 homepage:
   path: /
   controller: Symfony\Bundle\FrameworkBundle\Controller\TemplateController::templateAction
+  defaults:
+    template: index.html.twig

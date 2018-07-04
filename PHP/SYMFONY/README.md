@@ -38,6 +38,13 @@ composer create-project symfony/website-skeleton NomDuProje
 - **VAR** : contient le cache et les fichiers log
 - **VENDOR** : bibliothèques externes à notre application (comme Doctrine, Twig, SwiftMailer, etc)
 
+### Route
+
+Afficher les routes
+
+```
+php bin/console debug:router
+```
 ---
 ## Liens utiles
 
