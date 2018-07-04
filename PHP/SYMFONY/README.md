@@ -6,7 +6,11 @@
 ---
 ## Commandes
 
-Installer la toolbar Apache : `composer require symfony/apache-pack`, à la fin, faire yes : `y`.
+- Installer la toolbar Apache : `composer require symfony/apache-pack`, à la fin, faire yes : `y`.
+- Afficher la liste des routes : `php bin/console debug:router` 
+- Créer une base de données :
+    - Dans le fichier `.env`, modifier la ligne **23** (dans l'exemple1 : `DATABASE_URL=mysql://root@127.0.0.1:3306/Sf_exo`) 
+    - Dans le terminal : `php bin/console doctrine:database:create`
 
 ---
 ## MEMO
@@ -32,13 +36,6 @@ composer create-project symfony/website-skeleton NomDuProjet
 - **VAR** : contient le cache et les fichiers log
 - **VENDOR** : bibliothèques externes à notre application (comme Doctrine, Twig, SwiftMailer, etc)
 
-### Route
-
-Afficher les routes
-
-```
-php bin/console debug:router
-```
 ---
 ## Liens utiles
 
