@@ -88,4 +88,12 @@ class ArticleController extends Controller
 			'form' => $form->createView(),
 		));
 	}
+
+	/**
+	 * @Route ("/delete/{id}", requirements={"id" = "\d+"})
+	 */
+	public function delete(Request $request, Article $article)
+	{
+		
+	}
 }
