@@ -30,7 +30,7 @@
                             <td>{{ entity.title }}</td>
                             <td>{{ entity.dateCreate|date('d/m/Y H:i') }}</td>
                             <td>{{ entity.dateUpdate|date('d/m/y H:i') }}</td>
-                            <td></td>
+                            <td><a class="btn btn-secondary" href="{{ path('app_admin_article_edit', {'id': entity.id}) }}" role="button">Editer</a></td>
                         </tr>
                     {% endfor %}
                 </tbody>
