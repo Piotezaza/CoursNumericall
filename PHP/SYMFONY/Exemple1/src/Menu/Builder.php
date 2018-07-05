@@ -16,6 +16,8 @@ class Builder
     public function createAdminMenu()
     {
         $menu = $this -> factory -> createItem('root');
+        $manu -> setChildrenAttribute('class' )
+        $menu -> addChild('article', ['route' => 'app_admin_article_index']);
         return $menu;
     }
 }
