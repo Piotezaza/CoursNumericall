@@ -2,5 +2,32 @@
 
 {% block body %}
     {% embed 'decorator/_card.html.twig' %}
+        {% block header %}Liste des articles{% endblock %}
+        
+        {% block body %}
+            <a class="btn btn-success float-right" href="{{ path('app_admin_article_new') }}" role="button">Ajouter</a>
+        {% endblock %}
+        
+        {% block table %}
+            <table class="table">
+                <thead class="thead-dark">
+                    <tr>
+                        <th>Titre</th>
+                        <th>Date ajout</th>
+                        <th>Date modif.</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+        {% endblock %}
     {% endembed %}
 {% endblock %}
+
