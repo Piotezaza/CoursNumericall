@@ -17,7 +17,7 @@
 
 ### Installation
 
-Via composer (gestionnaire de bibliothèques externes)
+Via composer (gestionnaire de bibliothèques externes). `symfony/website-skeleton` peut être remplacé par un lien de dépot git.
 
 ```
 composer create-project symfony/website-skeleton NomDuProjet
@@ -35,6 +35,13 @@ composer create-project symfony/website-skeleton NomDuProjet
 - **TRANSLATIONS** : fichiers de traduction (version Symfony < 4 : les vues sont dans le dossier `Ressource/Views` des Bundle)
 - **VAR** : contient le cache et les fichiers log
 - **VENDOR** : bibliothèques externes à notre application (comme Doctrine, Twig, SwiftMailer, etc)
+
+### Webpack
+
+Webpack permet de condenser tous les fichiers assets dans un seul. Par exemple, tous les fichiers JavaScript sont minifiés et placés dans un seul fichier.git add *
+git commit -m "Update"
+git push origin master
+
 
 ---
 ## Liens utiles
