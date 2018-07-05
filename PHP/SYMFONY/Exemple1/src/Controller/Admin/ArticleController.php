@@ -31,6 +31,12 @@ class ArticleController extends Controller
 		;
 
 		$nbPages = ceil(count($entities) / $count);
+
+		if($nbPages < $page)
+		{
+			$this -> addFlash('danger', "Il n'y a que " . $nbPages . " page(s).");
+			return $this -> redirectToRoute('app_admin_article_index');
+		}
 		
 		return $this->render('admin/article/index.html.twig', array(
 			'entities' => $entities,
