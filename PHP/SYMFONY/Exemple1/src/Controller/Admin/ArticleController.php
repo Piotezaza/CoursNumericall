@@ -74,6 +74,16 @@ class ArticleController extends Controller
 		$form = $this -> createForm(ArticleType::class, $article);
 		$form -> handleRequest($request);
 
+		if($form -> isSubmitted() && $form -> isValid())
+		{
+			$article -> setDateUpdate(new \DateTime);
+			$em = $this -> getDoctrine() -> getManager();
+			$em -> persist($article);
+			$em -> flush();
+
+			return $this -> redirectToRoute('app_admin_article_index');
+		}
+
 		return $this->render('admin/article/edit.html.twig', array(
 			'form' => $form->createView(),
 		));
