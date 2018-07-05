@@ -108,6 +108,8 @@ class ArticleController extends Controller
 			$em -> remove($article);
 			$em -> flush();
 
+			$this -> addFlash('success', "L'article " . $article->getTitle() . " a bien été supprimé");
+
 			return $this -> redirectToRoute('app_admin_article_index');
 		}
 
