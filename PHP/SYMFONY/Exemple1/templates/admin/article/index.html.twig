@@ -1,6 +1,8 @@
 {% extends 'base.html.twig' %}
 
 {% block body %}
+
+    {% set countByPage = 0 %}
     {% embed 'decorator/_card.html.twig' %}
         
         {% block header %}
@@ -23,6 +25,7 @@
                 </thead>
                 <tbody>
                     {% for entity in entities %}
+                    {% set countByPage = countByPage +1 %}
                         <tr>
                             <td>{{ entity.title }}</td>
                             <td>{{ entity.dateCreate|date('d/m/Y H:i') }}</td>
@@ -35,7 +38,7 @@
         {% endblock %} {# block table #}
 
         {% block footer %}
-            {{ entities|length }} Article(s)
+            {{ countByPage }}/{{ entities|length }} Article(s)
         {% endblock %}
 
     {% endembed %} {# embed 'decorator/_card.html.twig' #}
