@@ -4,8 +4,6 @@ namespace App\Form;
 
 use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\FormBuilderInterface;
-use Symfony\Component\Form\Extension\Core\Type\SubmitType;
-// use Symfony\Component\Form\Extension\Core\Type\CountryType;
 
 class ArticleType extends AbstractType
 {
@@ -18,14 +16,6 @@ class ArticleType extends AbstractType
 
             -> add('content', null, array(
                 'label' => 'Contenu'
-            ))
-
-            // -> add('country', CountryType::class, array(
-            //     'mapped' => false
-            // ))
-
-            -> add('save', SubmitType::class, array(
-              'label' => 'Enregistrer'
             ))
         ;
     }
