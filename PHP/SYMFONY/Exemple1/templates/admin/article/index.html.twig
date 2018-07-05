@@ -39,7 +39,7 @@
 
         {% block footer %}
             <div class="float-left">{{ entities.iterator|length }}/{{ entities|length }} Article(s)</div>
-            
+
             <div class="float-right">
                 <nav aria-label="Page navigation example">
                     <ul class="pagination">
@@ -47,7 +47,7 @@
                             <a class="page-link" href="#"><span aria-hidden="true">&laquo;</span></a>
                         </li>
 
-                        {% for p in nbPages %} 
+                        {% for p in 1..nbPages %} 
                             <li class="page-item"><a class="page-link" href="#">{{ p }}</a></li>  
                         {% endfor %}
                         

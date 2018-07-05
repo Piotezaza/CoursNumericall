@@ -29,7 +29,7 @@ class ArticleController extends Controller
 		
 		return $this->render('admin/article/index.html.twig', array(
 			'entities' => $entities,
-			'nbPages' => $nbPages
+			'nbPages' => (int)$nbPages
 		));
 	}
 
