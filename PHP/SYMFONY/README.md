@@ -15,7 +15,7 @@
 - Installer fontawesome :
     - dans le terminal : `npm i @fortawesome/fontawesome-free-webfonts --save-dev`
     - dans `assets` trouver le fichier CSS ou SCSS et coller ces deux lignes puis faire `npm run dev`
-- Mettre à jour les bibliothèques (Fontawesome par exemple) : `npm update`
+- Mettre à jour les bibliothèques (Fontawesome par exemple) : `npm update` et coller ces deux lignes dispo aussi [ici](https://www.npmjs.com/package/@fortawesome/fontawesome-free-webfonts) dans le fichier scss ou css situé dans `assets`
 
 ```
 @import "~@fortawesome/fontawesome-free-webfonts/scss/fa-solid.scss";
