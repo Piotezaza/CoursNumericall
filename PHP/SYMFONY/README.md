@@ -67,3 +67,4 @@ Avec paramètres :
 ## Liens utiles
 
 - [OPENCLASSROOMS - Développez votre site web avec le framework Symfony](https://openclassrooms.com/courses/3619856-developpez-votre-site-web-avec-le-framework-symfony)
+- [SYMFONY - Querying for Objects: The Repository](http://symfony.com/doc/current/doctrine.html#querying-for-objects-the-repository)
