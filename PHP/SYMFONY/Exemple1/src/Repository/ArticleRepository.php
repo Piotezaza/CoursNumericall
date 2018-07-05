@@ -12,4 +12,9 @@ class ArticleRepository extends ServiceEntityRepository
     {
         parent::__construct($registry, Article::class);
     }
+
+    public function findByPage($page =1, $count = 10)
+    {
+        
+    }
 }
