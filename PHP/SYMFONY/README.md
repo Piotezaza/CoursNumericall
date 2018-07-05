@@ -38,10 +38,7 @@ composer create-project symfony/website-skeleton NomDuProjet
 
 ### Webpack
 
-Webpack permet de condenser tous les fichiers assets dans un seul. Par exemple, tous les fichiers JavaScript sont minifiés et placés dans un seul fichier.git add *
-git commit -m "Update"
-git push origin master
-
+Webpack permet de condenser tous les fichiers assets dans un seul. Par exemple, tous les fichiers JavaScript sont minifiés et placés dans un seul fichier.
 
 ---
 ## Liens utiles
