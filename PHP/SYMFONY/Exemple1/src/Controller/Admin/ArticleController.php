@@ -17,7 +17,7 @@ use App\Form\ArticleType;
 class ArticleController extends Controller
 {
 	/**
-	 * @Route("/{page}" requirements={"page" = "\d+"})
+	 * @Route("/{page}", requirements={"page" = "\d+"}, defaults={"page" = 1})
 	 */
 	public function index()
 	{
