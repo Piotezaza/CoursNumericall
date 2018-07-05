@@ -24,5 +24,7 @@ class ArticleRepository extends ServiceEntityRepository
             -> setFirstResult($first)
             -> setMaxResult($count)
         ;
+
+        return new Paginator($queryBuilder);
     }
 }
