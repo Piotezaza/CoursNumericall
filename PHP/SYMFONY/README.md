@@ -12,11 +12,22 @@
     - Dans le fichier `.env`, modifier la ligne **23** (dans l'exemple1 : `DATABASE_URL=mysql://root@127.0.0.1:3306/Sf_exo`) 
     - Dans le terminal : `php bin/console doctrine:database:create`
 - Lorsque l'on fait des modifications dans le dossier `assets`, pour que les changements prennent effet il faut rentrer cette commande dans le terminal : `npm run dev` 
+- Installer fontawesome :
+    - dans le terminal : `npm i @fortawesome/fontawesome-free-webfonts --save-dev`
+    - dans `assets` trouver le fichier CSS ou SCSS et coller ces deux lignes puis faire `npm run dev`
+
+```
+@import "~@fortawesome/fontawesome-free-webfonts/scss/fa-solid.scss";
+@import "~@fortawesome/fontawesome-free-webfonts/scss/fontawesome.scss";
+```
 
 ---
 ## MEMO
 
-### Installation
+### Installationgit add *
+git commit -m "Update"
+git push origin master
+
 
 Via composer (gestionnaire de bibliothèques externes). `symfony/website-skeleton` peut être remplacé par un lien de dépot git.
 
