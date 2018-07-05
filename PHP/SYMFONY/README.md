@@ -20,6 +20,7 @@
 @import "~@fortawesome/fontawesome-free-webfonts/scss/fontawesome.scss";
 ```
 - Mettre à jour les bibliothèques (Fontawesome par exemple) : `npm update` 
+- Lancer le serveur proposé par Symfony `php bin/console server:run`. Avantage : les liens ressemblent à ceux de la prod
 
 ---
 ## MEMO

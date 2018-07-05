@@ -30,7 +30,7 @@
                             <td>{{ entity.title }}</td>
                             <td>{{ entity.dateCreate|date('d/m/Y H:i') }}</td>
                             <td>{{ entity.dateUpdate|date('d/m/y H:i') }}</td>
-                            <td><a class="btn btn-secondary" href="{{ path('app_admin_article_edit', {'id': entity.id}) }}" role="button">Editer</a></td>
+                            <td><a class="btn btn-secondary" href="{{ path('app_admin_article_edit', {'id': entity.id}) }}" role="button"><i class="fa fa-edit"></i></a></td>
                         </tr>
                     {% endfor %}
                 </tbody>
@@ -44,7 +44,7 @@
                 <nav aria-label="Page navigation example">
                     <ul class="pagination">
                         <li class="page-item">
-                            <a class="page-link" href="{{ path('app_admin_article_index') }}"><span aria-hidden="true">&laquo;</span></a>
+                            <a class="page-link" href="{{ path('app_admin_article_index') }}"><i class="fas fa-angle-double-left"></i></a>
                         </li>
 
                         {% for p in 1..nbPages %} 
@@ -52,7 +52,7 @@
                         {% endfor %}
                         
                         <li class="page-item">
-                            <a class="page-link" href="{{ path('app_admin_article_index', {'page': nbPages}) }}"><span aria-hidden="true">&raquo;</span></a>
+                            <a class="page-link" href="{{ path('app_admin_article_index', {'page': nbPages}) }}"><i class="fas fa-angle-double-right"></i></a>
                         </li>
                     </ul>
                 </nav>
