@@ -66,7 +66,7 @@ La structure de ce fichier sera la suivante :
 
 #### CODE TYPE
 
-```
+```javascript
 var hxr = new XMLHttpRequest;
 
 xhr.open(METHOD, URL, ASYNC);
@@ -93,7 +93,7 @@ xhr.send();
 
 #### CODE TYPE
 
-```
+```javascript
 $.ajax({
 
     url: '',
@@ -119,7 +119,7 @@ $.ajax({
 #### Permet de paramétrer toutes les prochaînes requêtes AJAX (et donc de gagner du temps)
 
 
-```
+```javascript
 $.ajaxSetup({
     url: 'script.php'
 });
@@ -131,7 +131,7 @@ $.ajax({}).done(...);
 
 #### Requête GET & POST
 
-```
+```javascript
 $.get(URL, DATA, function(data){}, DATATYPE); // Requête GET
 $.post(URL, DATA, function(data){}, DATATYPE); // Requête POST
 $.getJSON(URL, DATA, function(data){}); // Requête GET type JSON
@@ -155,7 +155,7 @@ $.post(URL, DATA, function(data){}, 'json'); // Requête GET type JSON
 
 ### STARTER TEMPLATE
 
-```
+```html
 <!doctype html>
 <html lang="fr">
   <head>
@@ -182,7 +182,7 @@ $.post(URL, DATA, function(data){}, 'json'); // Requête GET type JSON
 
 ### FORMULAIRE TEMPLATE
 
-```
+```html
 <form>
   <div class="form-group">
     <label for="exampleInputEmail1">Email address</label>
@@ -250,7 +250,7 @@ $.post(URL, DATA, function(data){}, 'json'); // Requête GET type JSON
 
 ### CDN JQUERY
 
-```
+```html
 <script src="http://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
 ``` 
 
@@ -282,7 +282,7 @@ $.post(URL, DATA, function(data){}, 'json'); // Requête GET type JSON
 
 #### ENREGISTRER DES INFORMATIONS DANS UN FICHIER
 
-```
+```php
 // VERSION À FAIRE À CHAQUE FOIS (methode dans if et ensuite le reste dans le if)
     if($_POST)
     {
@@ -334,7 +334,7 @@ $.post(URL, DATA, function(data){}, 'json'); // Requête GET type JSON
 
 [Doc PHP.NET](http://php.net/manual/fr/function.spl-autoload-register.php)
 
-```
+```php
 spl_autoload_register(function($className)
 {
     // /* remplacer les \ par des / mac OS X UNIQUEMENT */ $className = str_replace('\\', '/', $className); 
@@ -356,7 +356,7 @@ spl_autoload_register(function($className)
 
 -> Il doit TOUJOURS être au début de la requête, sinon une erreur fatale va apparaître
 
-```
+```php
 namespace foo;
 use My\Full\Classname as Another;
 
@@ -396,7 +396,7 @@ echo CONSTANT;
 ---
 #### **STARTER TEMPLATE CRÉATION OBJET**
 
-```
+```php
 <?php
 
 namespace ;
@@ -417,7 +417,7 @@ class OBJET /* extends PARENT*/
 ---
 #### **TESTER LE TYPE D'ATTRIBUT (string, array, ...)**
 
-```
+```php
 public function setAttribut(string $attribut)
 {
     $this->attribut = $attribut;
