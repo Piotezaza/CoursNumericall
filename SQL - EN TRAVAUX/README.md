@@ -18,13 +18,13 @@ L’utilisation la plus courante de SQL consiste à lire des données issues de 
 
 L’utilisation basique de cette commande s’effectue de la manière suivante:
 
-```
+```sql
 SELECT nom_du_champ FROM nom_du_tableau
 ```
 
 Dans notre exemple, on va sélectionner tous (écrit `*` en SQL) les stagiaires. Pour se faire, il suffit d'écrire :
 
-```
+```sql
 SELECT * FROM stagiaires
 ```
 

@@ -34,7 +34,7 @@ Chaque snippet doit contenir :
 
 Voici l'apparence d'un snippet :
 
-```
+```json
 "NOM": {
 	"prefix": "CE QUE TU VAS ÉCRIRE",
 	"body": [
@@ -64,7 +64,7 @@ C'est l'oeuvre du `:` apres le `1`. Pour écrire le texte, il te suffit d'écrir
 
 **EXEMPLE 1 :** Snippet pour la fonction `if()`
 
-```
+```json
 "if()": {
 	"prefix": "if",
 	"body": [
@@ -79,7 +79,7 @@ C'est l'oeuvre du `:` apres le `1`. Pour écrire le texte, il te suffit d'écrir
 
 Le résutat sera le suivant :
 
-```
+```php
 if(EMPLACEMENT1)
 {
 EMPLACEMENT2
@@ -90,7 +90,7 @@ EMPLACEMENT2
 
 **EXEMPLE 2 :** Snippet pour initier une base de donnée *(issu du code de Steve)*
 
-```
+```json
 "BDD": {
 		"prefix": "BDD",
 		"body": [
@@ -110,7 +110,7 @@ EMPLACEMENT2
 
 Le résutat sera le suivant :
 
-```
+```php
 $dsn = 'mysql:host=localhost; dbname=nom';
 $login = 'root';
 $pwd = '';
@@ -124,7 +124,7 @@ $pdo = new PDO($dsn, $login, $pwd, $attributes);
 
 Pour mieux visualiser les emplacements :
 
-```
+```php
 $EMPLACEMENT5 = 'mysql:host=EMPLACEMENT1; dbname=EMPLACEMENT2';
 $EMPLACEMENT6 = 'EMPLACEMENT3';
 $EMPLACEMENT7 = 'EMPLACEMENT4';
@@ -144,7 +144,7 @@ $EMPLACEMENT9 = new PDO($EMPLACEMENT5, $EMPLACEMENT6, $EMPLACEMENT7, $EMPLACEMEN
 
 ## Petite liste avec les snippets **PHP** de Steve ✧ﾟ･: *ヽ(◕ヮ◕ヽ)
 
-```
+```json
 "print_r()": {
 		"prefix": "printr",
 		"body": [

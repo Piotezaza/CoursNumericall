@@ -97,7 +97,7 @@ Ce type de visibilité est, au niveau restrictif, à placer entre `public` et pr
 
 **EXEMPLE :**
 
-```
+```php
 <?php
 class ClasseMere
 {
@@ -141,7 +141,7 @@ Pour la déclaration de méthodes, il suffit de faire précéder le mot-clé `fu
 
 On va utiliser notre classe afin qu'elle nous fournisse un objet.
 
-```
+```php
 $perso = new Personnage;
 ```
 
@@ -150,7 +150,7 @@ $perso = new Personnage;
 
 Pour appeler une méthode d'un objet, il va falloir utiliser un opérateur : il s'agit de l'opérateur -> (une flèche composée d'un tiret suivi d'un chevron fermant). Celui-ci s'utilise de la manière suivante. À gauche de cet opérateur, on place l'objet que l'on veut utiliser. Dans l'exemple pris juste au-dessus, cet objet aurait été$perso. À droite de l'opérateur, on spécifie le nom de la méthode que l'on veut invoquer.
 
-```
+```php
 <?php
 // Nous créons une classe « Personnage ».
 class Personnage
@@ -175,7 +175,7 @@ $perso->parler(); // signifie « va chercher l'objet $perso, et invoque la méth
 
 Comme son nom l'indique, le constructeur sert à construire l'objet. Si des attributs doivent être initialisés ou qu'une connexion à la BDD doit être faite, c'est par ici que ça se passe. Le constructeur est exécuté **dès la création** de l'objet et par conséquent, **aucune valeur ne doit être retournée**, même si ça ne génèrera aucune erreur. Bien sûr, une classe fonctionne très bien sans constructeur, il n'est en rien obligatoire ! Si vous n'en spécifiez pas, cela revient au même que si vous en aviez écrit un vide (sans instruction à l'intérieur).
 
-```
+```php
 public function __construct($force, $degats) // Constructeur demandant 2 paramètres
   {
     echo 'Voici le constructeur !'; // Message s'affichant une fois que tout objet est créé.
@@ -192,7 +192,7 @@ public function __construct($force, $degats) // Constructeur demandant 2 paramè
 
 [Doc PHP.NET](http://php.net/manual/fr/function.spl-autoload-register.php)
 
-```
+```php
 spl_autoload_register(function($className)
 {
     // /* remplacer les \ par des / mac OS X UNIQUEMENT */ $className = str_replace('\\', '/', $className); 
@@ -214,7 +214,7 @@ spl_autoload_register(function($className)
 
 -> Il doit TOUJOURS être au début de la requête, sinon une erreur fatale va apparaître
 
-```
+```php
 namespace foo;
 use My\Full\Classname as Another;
 
@@ -255,7 +255,7 @@ echo CONSTANT;
 ---
 - **STARTER TEMPLATE CRÉATION OBJET**
 
-```
+```php
 <?php
 
 namespace ;
@@ -277,40 +277,12 @@ class OBJET /* extends PARENT*/
 ---
 - **Tester le type d'attribut (string, array,...)**
 
-```
+```php
 public function setAttribut(string $attribut)
 {
     $this->attribut = $attribut;
 
     return $this;
 }
-
-```
-
----
-- TEXT
-
-```
-
-```
-
----
-- TEXT
-
-```
-
-```
-
----
-- TEXT
-
-```
-
-```
-
----
-- TEXT
-
-```
 
 ```
