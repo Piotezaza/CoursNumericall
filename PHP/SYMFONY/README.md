@@ -24,6 +24,9 @@
 - Nettoyer le cache : `php bin/console cache:clear`
 - Statut des traductions `php bin/console debug:translation fr`
 
+BUNDLE SYMFONY
+- `composer require knplabs/knp-menu-bundle` aide à faire des menus
+
 ---
 ## MEMO
 
