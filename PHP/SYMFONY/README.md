@@ -22,6 +22,7 @@
 - Mettre à jour les bibliothèques (Fontawesome par exemple) : `npm update` 
 - Lancer le serveur proposé par Symfony `php bin/console server:run`. Avantage : les liens ressemblent à ceux de la prod
 - Nettoyer le cache : `php bin/console cache:clear`
+- Statut des traductions `php bin/console debug:translation fr`
 
 ---
 ## MEMO

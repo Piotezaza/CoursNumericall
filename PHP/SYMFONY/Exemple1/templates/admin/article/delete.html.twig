@@ -4,7 +4,7 @@
 {{ form_start(form) }}
 {% embed 'decorator/_card.html.twig' %}
     {% block header %} 
-    Supprimer un article
+    {{ 'article.delete'|trans }}
     {% endblock %}
 
     {% block body %} 
@@ -12,8 +12,8 @@
     {% endblock %}
 
     {% block footer %}  
-        <button type="submit" class="btn btn-danger">Supprimer</button>
-        <a class="btn btn-dark" href="{{ path('app_admin_article_index') }}" role="button">Annuler</a>
+        <button type="submit" class="btn btn-danger">{{ 'delete'|trans }}</button>
+        <a class="btn btn-dark" href="{{ path('app_admin_article_index') }}" role="button">{{ 'cancel'|trans }}</a>
     {% endblock %}
  {% endembed %}
 {{ form_end(form) }}

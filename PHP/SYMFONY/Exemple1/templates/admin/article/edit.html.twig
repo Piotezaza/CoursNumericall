@@ -3,7 +3,7 @@
 {{ form_start(form) }}
 {% embed 'decorator/_card.html.twig' %}
     {% block header %} 
-    Modifier un article
+    {{ 'article.edit'|trans }}
     {% endblock %}
 
     {% block body %} 
@@ -11,8 +11,8 @@
     {% endblock %}
 
     {% block footer %}  
-        <button type="submit" class="btn btn-warning">Modifier</button>
-        <a class="btn btn-dark" href="{{ path('app_admin_article_index') }}" role="button">Annuler</a>
+        <button type="submit" class="btn btn-warning">{{ 'edit'|trans }}</button>
+        <a class="btn btn-dark" href="{{ path('app_admin_article_index') }}" role="button">{{ 'cancel'|trans }}</a>
     {% endblock %}
  {% endembed %}
 {{ form_end(form) }}

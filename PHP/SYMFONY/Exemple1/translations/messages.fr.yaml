@@ -1,1 +1,8 @@
 add: Ajouter
+edit: Editer
+cancel: Annuler
+delete: Supprimer
+article:
+  edit: Modifier un article
+  add: Ajouter un article
+  delete: Supprimer un article
