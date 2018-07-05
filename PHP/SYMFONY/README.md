@@ -56,6 +56,12 @@ Les annotations sont des instructions définies dans un commentaire doc. Elles p
 */
 ```
 
+Avec paramètres :
+```
+/**
+* @Route("/edit/{id}", requirements={"id":"\d+"})
+*/
+```
 
 ---
 ## Liens utiles
