@@ -100,6 +100,16 @@ class ArticleController extends Controller
 		;
 
 		$form = $formBuilder -> getForm();
+		$form -> handleRequest($request);
+
+		if($form -> isSubmitted() && $form -> isValid())
+		{
+			$em = $this -> getDoctrine() -> getManager();
+			$em -> remove($article);
+			$em -> flush();
+
+			return $this -> redirectToRoute('app_admin_article_index');
+		}
 
 		return $this -> render('admin/article/delete.html.twig', array(
 			'form' => $form->createView(),
