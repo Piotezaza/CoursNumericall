@@ -21,11 +21,15 @@ class ArticleController extends Controller
 	 */
 	public function index()
 	{
+		$count = 10;
+
 		$em = $this -> getDoctrine() -> getManager();
 		$entities = $em -> getRepository(Article::class)->findByPage();
+		$nbPages = ceil(count($entities) / $count);
 		
 		return $this->render('admin/article/index.html.twig', array(
-			'entities' => $entities
+			'entities' => $entities,
+			'nbPage' => $nbPages
 		));
 	}
 
