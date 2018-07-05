@@ -7,12 +7,12 @@
     {% endblock %}
 
     {% block body %} 
-    {{ form_row(form) }}
+    {{ form(form) }}
     {% endblock %}
 
     {% block footer %}  
         <button type="submit" class="btn btn-warning">Modifier</button>
-        <a class="btn btn-secondary" href="{{ path('app_admin_article_index') }}" role="button">Annuler</a>
+        <a class="btn btn-dark" href="{{ path('app_admin_article_index') }}" role="button">Annuler</a>
     {% endblock %}
  {% endembed %}
 {{ form_end(form) }}

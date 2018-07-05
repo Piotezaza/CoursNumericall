@@ -10,7 +10,7 @@
         {% endblock %}
         
         {% block body %}
-            <a class="btn btn-success float-right" href="{{ path('app_admin_article_new') }}" role="button"><i class="fas fa-plus"></i> Ajouter</a>
+            <a class="btn btn-success float-right" href="{{ path('app_admin_article_new') }}" role="button"><i class="fas fa-plus"></i> {{ 'add'|trans }}</a>
         {% endblock %}
         
         {% block table %}

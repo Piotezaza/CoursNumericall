@@ -89,7 +89,7 @@ class ArticleController extends Controller
 			$em -> persist($article);
 			$em -> flush();
 
-			$this -> addFlash('success', "L'article " . $article->getTitle() . " a bien été modifié.");
+			$this -> addFlash('success', 'L\'article "<strong>'  . $article->getTitle() . '</strong>" a bien été modifié');
 
 			return $this -> redirectToRoute('app_admin_article_index');
 		}
