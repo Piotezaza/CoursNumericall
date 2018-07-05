@@ -11,7 +11,7 @@
 - Créer une base de données :
     - Dans le fichier `.env`, modifier la ligne **23** (dans l'exemple1 : `DATABASE_URL=mysql://root@127.0.0.1:3306/Sf_exo`) 
     - Dans le terminal : `php bin/console doctrine:database:create`
-- Lorsque l'on fait une modification dans le dossier `assets`, pour que les changements prennent effet, rentrer cette commande dans le terminal : `npm run dev` 
+- Lorsque l'on fait des modifications dans le dossier `assets`, pour que les changements prennent effet il faut rentrer cette commande dans le terminal : `npm run dev` 
 
 ---
 ## MEMO
