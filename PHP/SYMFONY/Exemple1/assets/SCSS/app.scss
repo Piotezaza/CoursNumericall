@@ -2,3 +2,7 @@
 @import "~bootstrap/scss/bootstrap";
 @import "~@fortawesome/fontawesome-free-webfonts/scss/fa-solid.scss";
 @import "~@fortawesome/fontawesome-free-webfonts/scss/fontawesome.scss";
+
+body{
+    padding-top : $nav-link-height + ($navbar-padding-y * 2);
+}

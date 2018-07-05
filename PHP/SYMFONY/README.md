@@ -23,6 +23,11 @@
 - Lancer le serveur proposé par Symfony `php bin/console server:run`. Avantage : les liens ressemblent à ceux de la prod
 - Nettoyer le cache : `php bin/console cache:clear`
 - Statut des traductions `php bin/console debug:translation fr`
+- Si erreur ci-dessous : dans `webpack.config.js`, ajouter cette partie en dessous de `Encore` : `.configureRuntimeEnvironment('dev')`
+
+```
+Error: Encore.setOutputPath() cannot be called yet because the runtime environment doesn't appear to be configured. Make sure you're using the encore executable or call Encore.configureRuntimeEnvironment() first if you're purposely not calling Encore directly.
+```
 
 BUNDLE SYMFONY
 - `composer require knplabs/knp-menu-bundle` aide à faire des menus
