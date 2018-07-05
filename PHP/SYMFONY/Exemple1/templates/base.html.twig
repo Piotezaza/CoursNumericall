@@ -8,7 +8,11 @@
     </head>
     <body>
         <div class="container">
-        {% embed 'decorator\_nav.html.twig' with {'class' : 'fixed-top navbar-dark bg-dark'} %} {% endembed %}
+        {% embed 'decorator/_nav.html.twig' with {'class': 'fixed-top navbar-dark bg-dark', 'brandUrl': '#'} %} 
+            {% block brand %} 
+                Admin 
+            {% endblock %} 
+        {% endembed %}
             {% for type, messages in app.flashes %} 
                 {% for message in messages %} 
                     <div class="alert alert-{{ type }} alert-dismissible fade show">{{ message }}
