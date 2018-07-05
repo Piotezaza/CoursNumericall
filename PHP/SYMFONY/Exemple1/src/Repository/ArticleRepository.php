@@ -17,12 +17,11 @@ class ArticleRepository extends ServiceEntityRepository
     public function findByPage($page =1, $count = 10)
     {
         $first = ($page - 1) * $count;
-        $count;
 
         $queryBuilder = $this->createQueryBuilder('a')
-            -> orderBy('a.dateCreate', 'ASC')
+            -> orderBy('a.dateCreate', 'DESC')
             -> setFirstResult($first)
-            -> setMaxResult($count)
+            -> setMaxResults($count)
         ;
 
         return new Paginator($queryBuilder);
