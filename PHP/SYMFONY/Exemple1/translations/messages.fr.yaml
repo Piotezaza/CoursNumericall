@@ -7,3 +7,4 @@ article:
   add: Ajouter un article
   delete: Supprimer un article
   count: Article|Articles
+  article: Article
