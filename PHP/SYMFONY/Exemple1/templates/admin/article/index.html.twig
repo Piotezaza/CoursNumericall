@@ -48,7 +48,7 @@
                         </li>
 
                         {% for p in 1..nbPages %} 
-                            <li class="page-item {% if p = page %} {{ active }} {% endif %}"><a class="page-link" href="{{ path('app_admin_article_index', {'page': p}) }}">{{ p }}</a></li>  
+                            <li class="page-item {% if p == page %} {{ 'active' }} {% endif %}"><a class="page-link" href="{{ path('app_admin_article_index', {'page': p}) }}">{{ p }}</a></li>  
                         {% endfor %}
                         
                         <li class="page-item">

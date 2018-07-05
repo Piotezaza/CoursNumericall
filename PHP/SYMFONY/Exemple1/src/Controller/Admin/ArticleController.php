@@ -29,12 +29,13 @@ class ArticleController extends Controller
 			-> getRepository(Article::class)
 			->findByPage($page, $count)
 		;
-		
+
 		$nbPages = ceil(count($entities) / $count);
 		
 		return $this->render('admin/article/index.html.twig', array(
 			'entities' => $entities,
-			'nbPages' => (int)$nbPages
+			'nbPages' => (int)$nbPages,
+			'page' => $page
 		));
 	}
 
