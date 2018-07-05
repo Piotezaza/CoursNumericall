@@ -10,7 +10,7 @@
         {% endblock %}
         
         {% block body %}
-            <a class="btn btn-success float-right" href="{{ path('app_admin_article_new') }}" role="button">Ajouter</a>
+            <a class="btn btn-success float-right" href="{{ path('app_admin_article_new') }}" role="button"><i class="fas fa-plus"></i> Ajouter</a>
         {% endblock %}
         
         {% block table %}
@@ -30,7 +30,12 @@
                             <td>{{ entity.title }}</td>
                             <td>{{ entity.dateCreate|date('d/m/Y H:i') }}</td>
                             <td>{{ entity.dateUpdate|date('d/m/y H:i') }}</td>
-                            <td><a class="btn btn-secondary" href="{{ path('app_admin_article_edit', {'id': entity.id}) }}" role="button"><i class="fa fa-edit"></i></a></td>
+                            <td>
+                                <div class="btn-group">
+                                    <a class="btn btn-secondary" href="{{ path('app_admin_article_edit', {'id': entity.id}) }}" role="button"><i class="fa fa-edit"></i></a>
+                                    <a class="btn btn-danger" href="{{ path('app_admin_article_edit', {'id': entity.id}) }}" role="button"><i class="fas fa-trash-alt"></i></a>
+                                </div>
+                            </td>
                         </tr>
                     {% endfor %}
                 </tbody>
