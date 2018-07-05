@@ -19,9 +19,9 @@ class ArticleRepository extends ServiceEntityRepository
         $first = ($page - 1) * $count;
 
         $queryBuilder = $this->createQueryBuilder('a')
-            -> orderBy('a.dateCreate', 'DESC')
-            -> setFirstResult($first)
-            -> setMaxResults($count)
+            -> orderBy('a.dateCreate', 'DESC') // ORDER BY a.date_create DESC
+            -> setFirstResult($first) // OFFSET
+            -> setMaxResults($count) // LIMIT
         ;
 
         return new Paginator($queryBuilder);
