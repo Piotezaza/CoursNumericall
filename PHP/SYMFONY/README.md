@@ -48,7 +48,7 @@ npm install --save-dev
 
 ### Annotation
 
-Les annotations sont des instructions définies dans un commentaire doc. Elles permettent de définir des paramètres
+Les annotations sont des instructions définies dans un commentaire doc. Elles permettent de définir des paramètres rapidement sans aller dans les fichiers config.
 
 ```
 /**
