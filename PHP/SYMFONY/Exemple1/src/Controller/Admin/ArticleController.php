@@ -24,7 +24,7 @@ class ArticleController extends Controller
 		$em = $this -> getDoctrine() -> getManager();
 		$entities = $em -> getRepository(Article::class)->findAll();
 		return $this->render('admin/article/index.html.twig', array(
-			'entities' => $entities,
+			'entities' => $entities
 		));
 	}
 
