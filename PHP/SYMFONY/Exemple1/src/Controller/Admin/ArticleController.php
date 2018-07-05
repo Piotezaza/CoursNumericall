@@ -94,6 +94,16 @@ class ArticleController extends Controller
 	 */
 	public function delete(Request $request, Article $article)
 	{
-		
+		$formBuilder = $this -> createFormBuilder()
+			-> setAction($this -> generateUrl('app_admin_article_delete', ['id' => $article -> getId()]))
+			-> setMethod('DELETE')
+		;
+
+		$form = $formBuilder -> getForm();
+
+		return $this -> render('admin/article/delete.html.twig', array(
+			'form' => $form->createView(),
+			'entity' => $article
+		));
 	}
 }

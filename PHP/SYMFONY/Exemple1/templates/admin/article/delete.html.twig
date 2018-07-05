@@ -1,5 +1,20 @@
 {% extends 'base.html.twig' %}
 {% block body %}
 
-{{ form(form, {'attr' : {'novalidate':true}} ) }}
+{{ form_start(form) }}
+{% embed 'decorator/_card.html.twig' %}
+    {% block header %} 
+    Supprimer un article
+    {% endblock %}
+
+    {% block body %} 
+    Confirmer la suppression de l'article <strong>"{{ entity.title}}"</strong>
+    {% endblock %}
+
+    {% block footer %}  
+        <button type="submit" class="btn btn-danger">Supprimer</button>
+        <a class="btn btn-secondary" href="{{ path('app_admin_article_index') }}" role="button">Annuler</a>
+    {% endblock %}
+ {% endembed %}
+{{ form_end(form) }}
 {% endblock %}
