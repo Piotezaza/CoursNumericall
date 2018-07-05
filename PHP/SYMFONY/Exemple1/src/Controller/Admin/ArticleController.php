@@ -21,7 +21,11 @@ class ArticleController extends Controller
 	 */
 	public function index()
 	{
-		return $this->render('admin/article/index.html.twig');
+		$em = $this -> getDoctrine() -> getManager();
+		$entities = $em -> getRepository(Article::class)->findAll();
+		return $this->render('admin/article/index.html.twig', array(
+			'entities' => $entities,
+		));
 	}
 
 	/**
