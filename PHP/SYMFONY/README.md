@@ -46,7 +46,7 @@ Pour installer les modules
 npm install --save-dev
 ```
 
-### Annotation
+#### Annotation
 
 Les annotations sont des instructions définies dans un commentaire doc. Elles permettent de définir des paramètres rapidement sans aller dans les fichiers config. Par exemple pour définir les routes dans un controller :
 
