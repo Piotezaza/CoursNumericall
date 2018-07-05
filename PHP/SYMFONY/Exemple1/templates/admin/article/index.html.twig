@@ -43,7 +43,7 @@
         {% endblock %} {# block table #}
 
         {% block footer %}
-            <div class="float-left">{{ entities.iterator|length }}/{{ entities|length }} Article(s)</div>
+            <div class="float-left">{{ entities.iterator|length }}/{{ entities|length }} {{ 'article.count'|transchoice(entities|length) }}</div>
 
             <div class="float-right">
                 <nav aria-label="Page navigation example">
