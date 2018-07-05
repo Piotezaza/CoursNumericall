@@ -44,15 +44,15 @@
                 <nav aria-label="Page navigation example">
                     <ul class="pagination">
                         <li class="page-item">
-                            <a class="page-link" href="#"><span aria-hidden="true">&laquo;</span></a>
+                            <a class="page-link" href="{{ path('app_admin_article_index') }}"><span aria-hidden="true">&laquo;</span></a>
                         </li>
 
                         {% for p in 1..nbPages %} 
-                            <li class="page-item"><a class="page-link" href="#">{{ p }}</a></li>  
+                            <li class="page-item"><a class="page-link" href="{{ path('app_admin_article_index', {'page': p}) }}">{{ p }}</a></li>  
                         {% endfor %}
                         
                         <li class="page-item">
-                            <a class="page-link" href="#" aria-label="Next"><span aria-hidden="true">&raquo;</span></a>
+                            <a class="page-link" href="{{ path('app_admin_article_index', {'page': nbPages}) }}"><span aria-hidden="true">&raquo;</span></a>
                         </li>
                     </ul>
                 </nav>
