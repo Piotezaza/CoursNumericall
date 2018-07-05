@@ -76,14 +76,14 @@ npm install --save-dev
 
 Les annotations sont des instructions définies dans un commentaire doc. Elles permettent de définir des paramètres rapidement sans aller dans les fichiers config. Par exemple pour définir les routes dans un controller :
 
-```
+```php
 /**
 * @Route("/chemin/de/la/route")
 */
 ```
 
 Avec paramètres :
-```
+```php
 /**
 * @Route("/edit/{id}", requirements={"id":"\d+"})
 */
