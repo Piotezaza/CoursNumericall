@@ -38,7 +38,7 @@
         {% endblock %} {# block table #}
 
         {% block footer %}
-            {{ countByPage }}/{{ entities|length }} Article(s)
+            {{ entities.iterator|length }}/{{ entities|length }} Article(s)
         {% endblock %}
 
     {% endembed %} {# embed 'decorator/_card.html.twig' #}
