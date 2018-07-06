@@ -55,7 +55,7 @@ class CategoryController extends Controller
             $em->flush();
 
             $t = $this->get('translator');
-            $this->addFlash('success', $t->trans('category.add_success', array('%entity%' => $category->getTitle())));
+            $this->addFlash('success', $t->trans('category.add_success', array('%entity%' => $category->getName())));
 
             return $this->redirectToRoute('app_admin_category_index');
         }
@@ -80,7 +80,7 @@ class CategoryController extends Controller
             $em->flush();
 
             $t = $this->get('translator');
-            $this->addFlash('success', $t->trans('category.edit_success', array('%entity%' => $category->getTitle())));
+            $this->addFlash('success', $t->trans('category.edit_success', array('%entity%' => $category->getName())));
 
             return $this->redirectToRoute('app_admin_category_index');
         }
@@ -109,7 +109,7 @@ class CategoryController extends Controller
             $em->flush();
 
             $t = $this->get('translator');
-            $this->addFlash('success', $t->trans('category.delete_success', array('%entity%' => $category->getTitle())));
+            $this->addFlash('success', $t->trans('category.delete_success', array('%entity%' => $category->getName())));
 
             return $this->redirectToRoute('app_admin_category_index');
         }

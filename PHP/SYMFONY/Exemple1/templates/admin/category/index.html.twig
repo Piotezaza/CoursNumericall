@@ -27,9 +27,7 @@
                     {% for entity in entities %}
                     {% set countByPage = countByPage +1 %}
                         <tr>
-                            <td>{{ entity.title }}</td>
-                            <td>{{ entity.dateCreate|date('d/m/Y H:i') }}</td>
-                            <td>{{ entity.dateUpdate|date('d/m/y H:i') }}</td>
+                            <td>{{ entity.name }}</td>
                             <td>
                                 <div class="btn-group">
                                     <a class="btn btn-warning" href="{{ path('app_admin_category_edit', {'id': entity.id}) }}" role="button"><i class="fa fa-edit"></i></a>
