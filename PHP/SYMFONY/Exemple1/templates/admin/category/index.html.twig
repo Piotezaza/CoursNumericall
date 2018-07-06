@@ -6,7 +6,7 @@
     {% embed 'decorator/_card.html.twig' %}
         
         {% block header %}
-            Liste des categories
+            {{ 'category.list'|trans }}
         {% endblock %}
         
         {% block body %}
@@ -17,9 +17,7 @@
             <table class="table">
                 <thead class="thead-dark">
                     <tr>
-                        <th>Titre</th>
-                        <th>Date ajout</th>
-                        <th>Date modif.</th>
+                        <th>{{ 'category.name'|trans }}</th>
                         <th></th>
                     </tr>
                 </thead>
