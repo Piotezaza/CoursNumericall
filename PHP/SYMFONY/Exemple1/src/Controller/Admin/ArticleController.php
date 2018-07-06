@@ -34,7 +34,10 @@ class ArticleController extends Controller
 
 		if($nbPages < $page)
 		{
-			$this -> addFlash('danger', "Il n'y a que " . $nbPages . " page(s).");
+			$t = $this -> get('translator');
+
+			$this -> addFlash('danger', $t->transChoice('page_error', $nbPages, array('%nbPages%' => $nbPages)));
+
 			return $this -> redirectToRoute('app_admin_article_index');
 		}
 		
@@ -63,7 +66,8 @@ class ArticleController extends Controller
 			$em -> persist($article);
 			$em -> flush();
 
-			$this -> addFlash('success', "L'article " . $article->getTitle() . " a bien été ajouté");
+			$t = $this -> get('translator');
+			$this -> addFlash('success', $t->trans('article.add_success', array('%entity%' => $article.getTitle())));
 
 			return $this -> redirectToRoute('app_admin_article_index');
 		}
@@ -89,7 +93,8 @@ class ArticleController extends Controller
 			$em -> persist($article);
 			$em -> flush();
 
-			$this -> addFlash('success', 'L\'article "<strong>'  . $article->getTitle() . '</strong>" a bien été modifié');
+			$t = $this -> get('translator');
+			$this -> addFlash('success', $t->trans('article.edit_success', array('%entity%' => $article.getTitle())));
 
 			return $this -> redirectToRoute('app_admin_article_index');
 		}
@@ -119,7 +124,10 @@ class ArticleController extends Controller
 			$em -> remove($article);
 			$em -> flush();
 
-			$this -> addFlash('success', "L'article " . $article->getTitle() . " a bien été supprimé");
+			$t = $this -> get('translator');
+			$this -> addFlash('success', $t->trans('article.delete_success', array(
+				'%entity%' => $article.getTitle()
+			)));
 
 			return $this -> redirectToRoute('app_admin_article_index');
 		}
