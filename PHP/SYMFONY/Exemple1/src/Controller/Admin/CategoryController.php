@@ -23,7 +23,8 @@ class CategoryController extends Controller
         $em = $this->getDoctrine()->getManager();
         $entities = $em->getRepository(Category::class)->findByPage($page, $count);
         $nbPages = ceil(count($entities) / $count);
-        if ($nbPages < $page && $nbPages > 0) {
+        $nbPages = $nbPages == 0? 1: $nbPages;
+        if ($nbPages < $page) {
 
             $t = $this->get('translator');
             $this->addFlash('danger', $t->transChoice('page_error', $nbPages, array('%nbPages%' => $nbPages)));
