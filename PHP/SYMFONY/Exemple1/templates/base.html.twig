@@ -9,7 +9,7 @@
 
 <body>
     <div class="container">
-    {% embed 'decorator/_nav.html.twig' with {'class': 'fixed-top navbar-light bg-light', 'brandUrl': '#'} %}
+    {% embed 'decorator/_nav.html.twig' with {'class': 'fixed-top navbar-dark bg-dark', 'brandUrl': '#'} %}
 
     {% block brand %}
     Admin
@@ -31,6 +31,7 @@
         {% endfor %}
         {% block body %}{% endblock %}
             <script src="{{ asset('build/js/app.js') }}"></script>
+            {{ tinymce_init() }}
         {% block javascripts %}{% endblock %}
     </div>
 </body>

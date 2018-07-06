@@ -15,7 +15,10 @@ class ArticleType extends AbstractType
             ))
 
             -> add('content', null, array(
-                'label' => 'Contenu'
+                'label' => 'Contenu',
+                'attr' => array(
+                    'class' => 'tinymce'
+                )
             ))
         ;
     }
