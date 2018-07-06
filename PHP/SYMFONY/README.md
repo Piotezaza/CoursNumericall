@@ -38,9 +38,7 @@ BUNDLE SYMFONY
 ---
 ## MEMO
 
-### Installationgit add *
-git commit -m "Update"
-git push origin master
+### Installation
 
 
 Via composer (gestionnaire de bibliothèques externes). `symfony/website-skeleton` peut être remplacé par un lien de dépot git.

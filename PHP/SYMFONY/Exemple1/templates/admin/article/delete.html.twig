@@ -8,7 +8,7 @@
     {% endblock %}
 
     {% block body %} 
-    {{ 'article.delete_message'|trans }}
+    {{ 'article.delete_message'|trans( { '%entity%' : entity.title })|raw }}
     {% endblock %}
 
     {% block footer %}  

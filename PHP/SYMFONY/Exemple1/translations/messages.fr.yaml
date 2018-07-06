@@ -3,7 +3,7 @@ edit: Editer
 cancel: Annuler
 delete: Supprimer
 article:
-  edit: Modifier un article
+  edit: Modifier l'article <b> "%entity%" <b>
   add: Ajouter un article
   delete: Supprimer un article
   count: Article|Articles
