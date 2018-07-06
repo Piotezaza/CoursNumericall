@@ -5,11 +5,11 @@
 {{ form_start(form) }}
 {% embed 'decorator/_card.html.twig' %}
     {% block header %}
-    {{ 'category.delete'|trans( {'%entity%' : entity.title} )|raw }}
+    {{ 'category.delete'|trans( {'%entity%' : entity.name} )|raw }}
     {% endblock %}
 
     {% block body %}
-    {{ 'category.delete_message'|trans( {'%entity%' : entity.title} )|raw }}
+    {{ 'category.delete_message'|trans( {'%entity%' : entity.name} )|raw }}
     {% endblock %}
 
     {% block footer %}
