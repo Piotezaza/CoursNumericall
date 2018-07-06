@@ -3,7 +3,7 @@
 {{ form_start(form) }}
 {% embed 'decorator/_card.html.twig' %}
     {% block header %} 
-    {{ 'article.add'|trans }}
+    {{ 'article.add'|trans( { '%entity%' : entity.title })|raw }}
     {% endblock %}
 
     {% block body %} 
