@@ -1,0 +1,16 @@
+{% extends 'base.html.twig' %}
+{% block body %}
+    {% embed 'decorator/_card.html.twig' %}
+    {% block header %} 
+    <h2>{{ entity.title }}</h2>
+    {% endblock %}
+
+    {% block body %} 
+    {{ entity.content }}
+    {% endblock %}
+
+    {% block footer %}  
+    Rédigé le : {{ entity.dateCreate|date('d/m/Y H:i') }}
+    {% endblock %}
+ {% endembed %}
+{% endblock %}
