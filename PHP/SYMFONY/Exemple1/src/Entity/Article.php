@@ -44,7 +44,7 @@ class Article
     private $dateUpdate;
 
     /**
-     * @ORM
+     * @ORM\ManyToOne(targetEntity="Category")
      */
     private $category;
 
