@@ -8,3 +8,4 @@ article:
   delete: Supprimer un article
   count: Article|Articles
   article: Article
+  delete_message: Confirmer la suppression de l'article <b> "%entity%" <b>
