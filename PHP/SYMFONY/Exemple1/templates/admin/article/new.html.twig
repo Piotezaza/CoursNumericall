@@ -2,18 +2,19 @@
 {% block body %}
 {{ form_start(form) }}
 {% embed 'decorator/_card.html.twig' %}
-    {% block header %} 
-    {{ 'article.add'|trans( { '%entity%' : entity.title })|raw }}
+    {% block header %}
+    Créer un nouvel article
     {% endblock %}
 
-    {% block body %} 
+    {% block body %}
     {{ form(form) }}
     {% endblock %}
 
-    {% block footer %}  
-        <button type="submit" class="btn btn-success">{{ 'add'|trans }}</button>
-        <a class="btn btn-dark" href="{{ path('app_admin_article_index') }}" role="button">{{ 'cancel'|trans }}</a>
+    {% block footer %}
+        <button type="submit" class="btn btn-success">Enregistrer</button>
+        <a class="btn btn-dark" href="{{ path('app_admin_article_index') }}" role="button">Annuler</a>
     {% endblock %}
  {% endembed %}
 {{ form_end(form) }}
+
 {% endblock %}

@@ -67,7 +67,7 @@ class ArticleController extends Controller
 			$em -> flush();
 
 			$t = $this -> get('translator');
-			$this -> addFlash('success', $t->trans('article.add_success', array('%entity%' => $article.getTitle())));
+			$this -> addFlash('success', $t->trans('article.add_success', array('%entity%' => $article->getTitle())));
 
 			return $this -> redirectToRoute('app_admin_article_index');
 		}
@@ -94,7 +94,7 @@ class ArticleController extends Controller
 			$em -> flush();
 
 			$t = $this -> get('translator');
-			$this -> addFlash('success', $t->trans('article.edit_success', array('%entity%' => $article.getTitle())));
+			$this -> addFlash('success', $t->trans('article.edit_success', array('%entity%' => $article->getTitle())));
 
 			return $this -> redirectToRoute('app_admin_article_index');
 		}
@@ -126,7 +126,7 @@ class ArticleController extends Controller
 
 			$t = $this -> get('translator');
 			$this -> addFlash('success', $t->trans('article.delete_success', array(
-				'%entity%' => $article.getTitle()
+				'%entity%' => $article->getTitle()
 			)));
 
 			return $this -> redirectToRoute('app_admin_article_index');

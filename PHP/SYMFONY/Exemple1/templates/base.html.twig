@@ -1,34 +1,38 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="UTF-8">
-        <title>{% block title %}Welcome!{% endblock %}</title>
-        <link rel="stylesheet" href="{{ asset('build/css/app.css') }}"/>
-        {% block stylesheets %}{% endblock %}
-    </head>
-    <body>
-        <div class="container">
-        {% embed 'decorator/_nav.html.twig' with {'class': 'fixed-top navbar-dark bg-dark', 'brandUrl': '#'} %} 
-            {% block brand %} 
-                Admin 
-            {% endblock %} 
-            {% block menu %} {{ knp_menu_render('admin') }} {% endblock %}
-        {% endembed %}
-            {% for type, messages in app.flashes %} 
-                {% for message in messages %} 
-                    <div class="alert alert-{{ type }} alert-dismissible fade show">{{ message }}
-                        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
-                    </div>
-                {% endfor %}
+
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}Welcome!{% endblock %}</title>
+    <link rel="stylesheet" href="{{ asset('build/css/app.css') }}" /> {% block stylesheets %}{% endblock %}
+</head>
+
+<body>
+    <div class="container">
+    {% embed 'decorator/_nav.html.twig' with {'class': 'fixed-top navbar-light bg-light', 'brandUrl': '#'} %}
+
+    {% block brand %}
+    Admin
+    {% endblock %}
+
+    {% block menu %}
+    {{ knp_menu_render('admin') }}
+    {% endblock %}
+
+    {% endembed %}
+        {% for type, messages in app.flashes %}
+             {% for message in messages %}
+                <div class="alert alert-{{ type }} alert-dismissible fade show">{{ message|raw }}
+                    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
             {% endfor %}
-
-            {% block body %}{% endblock %}
-        </div>
-
+        {% endfor %}
+        {% block body %}{% endblock %}
             <script src="{{ asset('build/js/app.js') }}"></script>
-            {% block javascripts %}{% endblock %}
-        
-    </body>
+        {% block javascripts %}{% endblock %}
+    </div>
+</body>
+
 </html>
