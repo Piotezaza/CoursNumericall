@@ -18,6 +18,7 @@
                 <thead class="thead-dark">
                     <tr>
                         <th>Titre</th>
+                        <th>{{ 'category.category'|trans }}</th>
                         <th>Date ajout</th>
                         <th>Date modif.</th>
                         <th></th>
@@ -28,6 +29,7 @@
                     {% set countByPage = countByPage +1 %}
                         <tr>
                             <td>{{ entity.title }}</td>
+                            <td>{{ entity.category }}</td>
                             <td>{{ entity.dateCreate|date('d/m/Y H:i') }}</td>
                             <td>{{ entity.dateUpdate|date('d/m/y H:i') }}</td>
                             <td>

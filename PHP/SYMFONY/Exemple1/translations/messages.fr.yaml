@@ -21,7 +21,7 @@ category:
   delete: Supprimer une catégorie
   delete_success: la catégorie <b> "%entity%" </b> a bien été supprimée
   count: catégorie|catégories
-  category: Article
+  category: Catégorie
   delete_message: Confirmer la suppression de la catégorie <b> "%entity%" </b>
   list: Liste des catégories
   name: Nom des catégories
