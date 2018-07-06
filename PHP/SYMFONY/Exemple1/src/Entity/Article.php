@@ -43,6 +43,11 @@ class Article
     */
     private $dateUpdate;
 
+    /**
+     * @ORM
+     */
+    private $category;
+
     public function __construct()
     {
         $this -> dateCreate = new \DateTime;
