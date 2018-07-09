@@ -56,6 +56,10 @@ class ArticleController extends Controller
 		// NOUVELLE ENTITÉE ARTICLE
 		$article = new Article;
 
+		// RÉCUPÉRATION DE L'UTILISATEUR CONNECTÉ
+		$user = $this -> get('security.token_storage') -> getToken() -> getUser();
+		$article -> setUser($user);
+
 		// CREATION DU FORMULAIRE
 		$form = $this -> createForm(ArticleType::class, $article);
 		$form -> handleRequest($request);
