@@ -10,3 +10,7 @@ homepage:
 # admin_article_index:
 #   path: /admin/article/
 #   controller: App\Controller\Admin\ArticleController::index
+
+# app/config/routing.yml
+fos_user:
+    resource: "@FOSUserBundle/Resources/config/routing/all.xml"
