@@ -48,6 +48,12 @@ class Article
      */
     private $category;
 
+    /**
+     * @var \App\Entity\User
+     * @ORM\ManyToOne(targetEntity="User", inversedBy="articles")
+     */
+    private $user;
+
     public function __construct()
     {
         $this -> dateCreate = new \DateTime;
@@ -158,6 +164,30 @@ class Article
     public function setCategory($category)
     {
         $this->category = $category;
+
+        return $this;
+    }
+
+    /**
+     * Get the value of user
+     *
+     * @return  \App\Entity\User
+     */ 
+    public function getUser()
+    {
+        return $this->user;
+    }
+
+    /**
+     * Set the value of user
+     *
+     * @param  \App\Entity\User  $user
+     *
+     * @return  self
+     */ 
+    public function setUser(\App\Entity\User $user)
+    {
+        $this->user = $user;
 
         return $this;
     }

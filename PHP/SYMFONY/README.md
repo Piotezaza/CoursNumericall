@@ -134,6 +134,13 @@ Plusieurs objets peuvent être associés à plusieurs autres
 */
 ```
 
+Pour une relation inverse (ex: obtenir les articles d'une catégorie)
+```php
+/**
+* @ORM\ManyToOne(targetEntity="Category", inversedBy="articles")
+*/
+```
+
 ---
 ## Liens utiles
 
