@@ -19,6 +19,7 @@ class ArticleType extends AbstractType
                 'label' => 'category.category',
                 'choice_label' => 'name',
                 'expanded' => true,
+                'expanded' => true,
                 'query_builder' => function(EntityRepository $er)
                 {
                     return $er  -> createQueryBuilder('c')
