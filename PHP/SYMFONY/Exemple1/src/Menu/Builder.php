@@ -18,7 +18,7 @@ class Builder
         $menu = $this -> factory -> createItem('root');
         $menu -> setChildrenAttribute('class', 'navbar-nav');
         $menu -> addChild('article.article', ['route' => 'app_admin_article_index']);
-        $menu -> addChild('catagory.catagory', ['route' => 'app_admin_category_index']);
+        $menu -> addChild('category.category', ['route' => 'app_admin_category_index']);
         return $menu;
     }
 }

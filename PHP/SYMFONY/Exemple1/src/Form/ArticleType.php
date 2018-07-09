@@ -15,7 +15,7 @@ class ArticleType extends AbstractType
             ))
 
             -> add('category', null, array(
-                'label' => 'category.catagory'
+                'label' => 'category.category'
             ))
 
             -> add('content', null, array(
