@@ -19,6 +19,7 @@ class ArticleRepository extends ServiceEntityRepository
         $first = ($page - 1) * $count;
 
         $queryBuilder = $this->createQueryBuilder('a')
+            -> leftJoin('a.category', 'c')
             -> orderBy('a.dateCreate', 'DESC') // ORDER BY a.date_create DESC
             -> setFirstResult($first) // OFFSET
             -> setMaxResults($count) // LIMIT
