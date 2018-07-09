@@ -2,6 +2,8 @@
 
 namespace App\Entity;
 
+use Doctrine\Common\Collections\ArrayCollection;
+use Doctrine\Common\Collections\Collection;
 use Doctrine\ORM\Mapping as ORM;
 use Symfony\Component\Validator\Constraints as Assert;
 
@@ -55,10 +57,16 @@ class Article
      */
     private $user;
 
+    /**
+     * @ORM\OneToMany(targetEntity="App\Entity\ArticleFollow", mappedBy="article", orphanRemoval=true)
+     */
+    private $articleFollows;
+
     public function __construct()
     {
         $this -> dateCreate = new \DateTime;
         $this -> dateUpdate = new \DateTime;
+        $this->articleFollows = new ArrayCollection();
     }
 
     /**
@@ -189,6 +197,37 @@ class Article
     public function setCategories($categories)
     {
         $this->categories = $categories;
+
+        return $this;
+    }
+
+    /**
+     * @return Collection|ArticleFollow[]
+     */
+    public function getArticleFollows(): Collection
+    {
+        return $this->articleFollows;
+    }
+
+    public function addArticleFollow(ArticleFollow $articleFollow): self
+    {
+        if (!$this->articleFollows->contains($articleFollow)) {
+            $this->articleFollows[] = $articleFollow;
+            $articleFollow->setArticle($this);
+        }
+
+        return $this;
+    }
+
+    public function removeArticleFollow(ArticleFollow $articleFollow): self
+    {
+        if ($this->articleFollows->contains($articleFollow)) {
+            $this->articleFollows->removeElement($articleFollow);
+            // set the owning side to null (unless already changed)
+            if ($articleFollow->getArticle() === $this) {
+                $articleFollow->setArticle(null);
+            }
+        }
 
         return $this;
     }

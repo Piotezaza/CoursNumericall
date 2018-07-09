@@ -146,3 +146,97 @@ Pour une relation inverse (ex: obtenir les articles d'une catégorie)
 
 - [OPENCLASSROOMS - Développez votre site web avec le framework Symfony](https://openclassrooms.com/courses/3619856-developpez-votre-site-web-avec-le-framework-symfony)
 - [SYMFONY - Querying for Objects: The Repository](http://symfony.com/doc/current/doctrine.html#querying-for-objects-the-repository)
+
+---
+## Autre
+
+Ajouter deux nouvelles entitées
+
+```bash
+PS C:\wamp1\www\CoursNumericall\PHP\SYMFONY\Exemple1> php bin/console make:entity
+
+
+ Class name of the entity to create or update (e.g. DeliciousElephant):
+ > ArticleFollow
+
+ created: src/Entity/ArticleFollow.php
+ created: src/Repository/ArticleFollowRepository.php
+
+ Entity generated! Now let's add some fields!
+ You can always add more fields later manually or by re-running this command.
+
+ New property name (press <return> to stop adding fields):
+ > date
+
+ Field type (enter ? to see all types) [string]:
+ > datetime
+
+ Can this field be null in the database (nullable) (yes/no) [no]:
+ >
+
+ updated: src/Entity/ArticleFollow.php
+
+ Add another property? Enter the property name (or press <return> to stop adding fields):
+ > article
+
+ Field type (enter ? to see all types) [string]:
+ > ManyToOne
+
+ What class should this entity be related to?:
+ > Article
+
+ Is the ArticleFollow.article property allowed to be null (nullable)? (yes/no) [yes]:
+ > no
+
+ Do you want to add a new property to Article so that you can access/update ArticleFollow objects from it - e.g. $article->getArticleFollows()? (yes/no) [yes]:
+ > yes
+
+ A new property will also be added to the Article class so that you can access the related ArticleFollow objects from it.
+
+ New field name inside Article [articleFollows]:
+ >
+
+ Do you want to activate orphanRemoval on your relationship?
+ A ArticleFollow is "orphaned" when it is removed from its related Article.
+ e.g. $article->removeArticleFollow($articleFollow)
+
+ NOTE: If a ArticleFollow may *change* from one Article to another, answer "no".
+
+ Do you want to automatically delete orphaned App\Entity\ArticleFollow objects (orphanRemoval)? (yes/no) [no]:
+ > yes
+
+ updated: src/Entity/ArticleFollow.php
+ updated: src/Entity/Article.php
+
+ Add another property? Enter the property name (or press <return> to stop adding fields):
+ > user
+
+ Field type (enter ? to see all types) [string]:
+ > ManyToOne
+
+ What class should this entity be related to?:
+ > User
+
+ Is the ArticleFollow.user property allowed to be null (nullable)? (yes/no) [yes]:
+ > no
+
+ Do you want to add a new property to User so that you can access/update ArticleFollow objects from it - e.g. $user->getArticleFollows()? (yes/no) [yes]:
+ > yes
+
+ A new property will also be added to the User class so that you can access the related ArticleFollow objects from it.
+
+ New field name inside User [articleFollows]:
+ >
+
+ Do you want to activate orphanRemoval on your relationship?
+ A ArticleFollow is "orphaned" when it is removed from its related User.
+ e.g. $user->removeArticleFollow($articleFollow)
+
+ NOTE: If a ArticleFollow may *change* from one User to another, answer "no".
+
+ Do you want to automatically delete orphaned App\Entity\ArticleFollow objects (orphanRemoval)? (yes/no) [no]:
+ > yes
+
+ updated: src/Entity/ArticleFollow.php
+ updated: src/Entity/User.php
+```
