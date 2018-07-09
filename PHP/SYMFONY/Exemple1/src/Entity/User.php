@@ -19,7 +19,7 @@ class User extends BaseUser
     protected $id;
 
     /**
-     * @ORM\OneToMany(targetEntity="Articles", mappedBy="user")
+     * @ORM\OneToMany(targetEntity="Article", mappedBy="user")
      */
     private $articles;
     
@@ -27,5 +27,25 @@ class User extends BaseUser
     {
         parent::__construct();
         // your own logic
+    }
+
+    /**
+     * Get the value of articles
+     */ 
+    public function getArticles()
+    {
+        return $this->articles;
+    }
+
+    /**
+     * Set the value of articles
+     *
+     * @return  self
+     */ 
+    public function setArticles($articles)
+    {
+        $this->articles = $articles;
+
+        return $this;
     }
 }
