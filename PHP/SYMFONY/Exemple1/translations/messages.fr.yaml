@@ -26,3 +26,8 @@ category:
   delete_message: Confirmer la suppression de la catégorie <b> "%entity%" </b>
   list: Liste des catégories
   name: Nom des catégories
+security:
+  login:
+    username: Pseudo
+    password: Mot de passe
+    submit: Se connecter
