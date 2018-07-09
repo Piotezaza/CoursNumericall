@@ -21,6 +21,11 @@ class Category
      */
     private $name;
 
+    /**
+     * @ORM\OneToMant(targetEntity="Article")
+     */
+    private $articles;
+
     public function getId()
     {
         return $this->id;
@@ -41,5 +46,25 @@ class Category
     public function __toString()
     {
         return $this -> name;
+    }
+
+    /**
+     * Get the value of articles
+     */ 
+    public function getArticles()
+    {
+        return $this->articles;
+    }
+
+    /**
+     * Set the value of articles
+     *
+     * @return  self
+     */ 
+    public function setArticles($articles)
+    {
+        $this->articles = $articles;
+
+        return $this;
     }
 }

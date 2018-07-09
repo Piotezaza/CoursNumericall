@@ -87,6 +87,52 @@ Avec paramètres :
 */
 ```
 
+### Entity
+
+#### Annotations
+
+Définir l'entité, annotation à mettre au dessus de la déclaration de classe
+
+```php
+/**
+ * @ORM\Entity(name="nom_de_la_table", repositoryClass="Namespace\De\La\Classe")
+ * /
+```
+
+Définir une colonne
+
+```php
+/**
+* @ORM\Column(name="nom_du_champ", type="string|text|integer|float|datetime|json_array", nullable=true, length=255)
+*/
+```
+
+Définir une relation
+
+*Un seul objet peut être associé à un seul autre*
+
+```php
+/**
+* @ORM\OneToOne(targetEntity="Namespace\De\La\Classe")
+*/
+```
+
+Plusieurs objets peuvent être associés à un seul autre
+
+```php
+/**
+* @ORM\ManyToOne(targetEntity="Classe")
+*/
+```
+
+Plusieurs objets peuvent être associés à plusieurs autres
+
+```php
+/**
+* @ORM\ManyToMany(targetEntity="Classe")
+*/
+```
+
 ---
 ## Liens utiles
 
