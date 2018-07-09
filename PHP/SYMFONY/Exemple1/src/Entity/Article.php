@@ -44,7 +44,7 @@ class Article
     private $dateUpdate;
 
     /**
-     * @ORM\ManyToOne(targetEntity="Category")
+     * @ORM\ManyToOne(targetEntity="Category", inversedBy="articles")
      */
     private $category;
 
