@@ -95,7 +95,8 @@ Définir l'entité, annotation à mettre au dessus de la déclaration de classe
 
 ```php
 /**
- * @ORM\Entity(name="nom_de_la_table", repositoryClass="Namespace\De\La\Classe")
+ * @ORM\Entity(repositoryClass="Namespace\De\La\Classe")
+ * @OR\Table(name="nom_de_la_table")
  * /
 ```
 
