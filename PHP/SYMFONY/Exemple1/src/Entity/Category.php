@@ -17,6 +17,7 @@ class Category
     private $id;
 
     /**
+     * @var string
      * @ORM\Column(type="string", length=60)
      */
     private $name;
@@ -29,18 +30,6 @@ class Category
     public function getId()
     {
         return $this->id;
-    }
-
-    public function getName(): ?string
-    {
-        return $this->name;
-    }
-
-    public function setName(string $name): self
-    {
-        $this->name = $name;
-
-        return $this;
     }
 
     public function __toString()
