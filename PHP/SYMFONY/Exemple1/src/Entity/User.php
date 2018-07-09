@@ -22,6 +22,11 @@ class User extends BaseUser
      * @ORM\OneToMany(targetEntity="Article", mappedBy="user")
      */
     private $articles;
+
+    /**
+     * @ORM\ManyToOne(targetEntity="App\Entity\ArticleFollow", inversedBy="user")
+     */
+    private $articleFollows;
     
     public function __construct()
     {
@@ -45,6 +50,18 @@ class User extends BaseUser
     public function setArticles($articles)
     {
         $this->articles = $articles;
+
+        return $this;
+    }
+
+    public function getArticleFollows(): ?ArticleFollow
+    {
+        return $this->articleFollows;
+    }
+
+    public function setArticleFollows(?ArticleFollow $articleFollows): self
+    {
+        $this->articleFollows = $articleFollows;
 
         return $this;
     }

@@ -30,6 +30,7 @@ class Article
 
      /**
      * @ORM\Column(type="text")
+     * @Assert\NotBlank()
      */
     private $content;
 
