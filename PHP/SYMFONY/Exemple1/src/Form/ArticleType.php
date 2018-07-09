@@ -15,7 +15,7 @@ class ArticleType extends AbstractType
                 'label' => 'Titre'
             ))
 
-            -> add('category', null, array( // EntityType
+            -> add('categories', null, array( // EntityType
                 'label' => 'category.category',
                 'choice_label' => 'name',
                 'expanded' => true,

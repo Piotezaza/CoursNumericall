@@ -20,7 +20,7 @@ class ArticleRepository extends ServiceEntityRepository
 
         $queryBuilder = $this->createQueryBuilder('a')
             -> select('a, c, u')
-            -> leftJoin('a.category', 'c')
+            -> leftJoin('a.categories', 'c')
             -> leftJoin('a.user', 'u')
             -> orderBy('a.dateCreate', 'DESC') // ORDER BY a.date_create DESC
             -> setFirstResult($first) // OFFSET

@@ -171,4 +171,24 @@ class Article
 
         return $this;
     }
+
+    /**
+     * Get the value of categories
+     */ 
+    public function getcategories()
+    {
+        return $this->categories;
+    }
+
+    /**
+     * Set the value of categories
+     *
+     * @return  self
+     */ 
+    public function setCategories($categories)
+    {
+        $this->categories = $categories;
+
+        return $this;
+    }
 }
