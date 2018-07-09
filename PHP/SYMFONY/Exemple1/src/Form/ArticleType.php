@@ -4,6 +4,7 @@ namespace App\Form;
 
 use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\FormBuilderInterface;
+use Doctrine\ORM\EntityRepository;
 
 class ArticleType extends AbstractType
 {
@@ -14,8 +15,15 @@ class ArticleType extends AbstractType
                 'label' => 'Titre'
             ))
 
-            -> add('category', null, array(
-                'label' => 'category.category'
+            -> add('category', null, array( // EntityType
+                'label' => 'category.category',
+                'choice_label' => 'name',
+                'expanded' => true,
+                'query_builder' => function(EntityRepository $er)
+                {
+                    return $er  -> createQueryBuilder('c')
+                                -> orderBy('c.name', 'ASC');
+                }
             ))
 
             -> add('content', null, array(

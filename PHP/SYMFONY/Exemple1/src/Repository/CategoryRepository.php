@@ -53,7 +53,9 @@ class CategoryRepository extends ServiceEntityRepository
     {
         $first = ($page - 1) * $count;
 
-        $queryBuilder = $this->createQueryBuilder('a')
+        $queryBuilder = $this->createQueryBuilder('c')
+            -> select('c, a')
+            -> leftJoin('c.articles', 'a')
             -> orderBy('a.id', 'DESC') // ORDER BY a.date_create DESC
             -> setFirstResult($first) // OFFSET
             -> setMaxResults($count) // LIMIT
