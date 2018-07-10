@@ -2,7 +2,9 @@
 
 > Tout d'abord, remerciez Steve, c'est grâce à lui que vous avez ce petit tuto ! ʕ•͡ᴥ•ʔ
 
-[Les snippets de Steve](https://github.com/Piotezaza/CoursNumericall/blob/master/Cr%C3%A9ation%20raccourcis%20VS%20Code.md#petite-liste-avec-les-snippets-php-de-steve-%EF%BE%9F-%E3%83%BD%E3%83%AE%E3%83%BD)
+[Les snippets de Steve](https://github.com/Piotezaza/CoursNumericall/blob/master/Cr%C3%A9atio```n%20raccourcis%20VS%20Code.md#petite-liste-avec-les-snippets-php-de-steve-%EF%BE%9F-%E3%83%BD%E3%83%AE%E3%83%BD)
+
+[Snippets Twig](https://github.com/Piotezaza/CoursNumericall/blob/master/Cr%C3%A9ation%20raccourcis%20VS%20Code.md#twig)
 
 Les raccourcis *appellés `snippet`* sont utilisés pour gagner du temps. Par exemple, si tu commences à écrire `html` tu vas avoir l'auto-complétion avec des portions de code pré-enregistrées qui vont apparaître et tu auras juste à faire `TAB` ou `ENTRER` pour que ça s'affiche. Je vais donc vous expliquer comment créer tout ça pour gagner du temps lors de vos séances de codage.
 
@@ -580,5 +582,76 @@ $EMPLACEMENT9 = new PDO($EMPLACEMENT5, $EMPLACEMENT6, $EMPLACEMENT7, $EMPLACEMEN
 			"$$pdo = new PDO($$dsn, $$login, $$pwd, $$attributes);"
 		],
 		"description": "Connexion à la BDD"
+	}
+```
+
+
+## Twig
+
+```json
+"{% block %}": {
+		"prefix": "block",
+		"body": [
+			"{% block $1 %}",
+			"\t $2",
+			"{% endblock %}",
+		],
+		"description": "Raccourci pour {% block $1 %} $2 {% endblock %}"
+	},
+
+	"{% extends '' %}": {
+		"prefix": "extends",
+		"body": [
+			"{% extends '$1' %}",
+		],
+		"description": "Raccourci pour {% extends '$1' %}"
+	},
+
+	"{% embed %}": {
+		"prefix": "embed",
+		"body": [
+			"{% embed '$1' %} $2{% endembed %}",
+		],
+		"description": "Raccourci pour {% embed $1 %} $2 {% endembed %}"
+	},
+
+	"{% for %}": {
+		"prefix": "for",
+		"body": [
+			"{% for $1 %} $2{% endfor %}",
+		],
+		"description": "Raccourci pour {% for $1 %} $2 {% endfor %}"
+	},
+
+	"{{ }}": {
+		"prefix": "bal",
+		"body": [
+			"{{ $1 }}",
+		],
+		"description": "Raccourci pourles doubles balises"
+	},
+
+	"{% set %}": {
+		"prefix": "set",
+		"body": [
+			"{% set $1 %}",
+		],
+		"description": "Création de variable avec set"
+	},
+
+	"{% ''|trans %}": {
+		"prefix": "trad",
+		"body": [
+			"{{ '$1'|trans$2 }}",
+		],
+		"description": "Traduction"
+	},
+
+	"{% ''|transchoice() %}": {
+		"prefix": "trad",
+		"body": [
+			"{{ '$1'|transchoice($2) }}",
+		],
+		"description": "Traduction à choix multiples"
 	}
 ```
