@@ -31,6 +31,7 @@ class ArticleController extends Controller
 		;
 
 		$nbPages = ceil(count($entities) / $count);
+		$nbPages = $nbPages == 0 ? 1 : $nbPages;
 
 		if($nbPages < $page)
 		{
