@@ -71,6 +71,12 @@ Error: Encore.setOutputPath() cannot be called yet because the runtime environme
 `composer require knplabs/knp-menu-bundle` aide à faire des menus
 
 ---
+**USER**
+
+- Créer un nouvel utilisateur : `php bin/console fos:user:create`
+- Promouvoir un utilisateur : `php bin/console fos:user:promote`
+
+---
 ## MEMO
 
 ### Installation
