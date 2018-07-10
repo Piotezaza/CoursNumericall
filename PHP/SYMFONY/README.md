@@ -8,15 +8,18 @@
 
 ---
 **Installer la toolbar Apache**
+
 `composer require symfony/apache-pack`, à la fin, faire yes : `y`.
 
 ---
 **Afficher la liste des routes**
+
 `php bin/console debug:router` 
 
 
 ---
 **Créer une base de données**
+
     - Dans le fichier `.env`, modifier la ligne **23** (dans l'exemple1 : `DATABASE_URL=mysql://root@127.0.0.1:3306/Sf_exo`) 
     - Dans le terminal : `php bin/console doctrine:database:create`
 
@@ -25,6 +28,7 @@
 
 ---
 **Installer fontawesome**
+
 - dans le terminal : `npm i @fortawesome/fontawesome-free-webfonts --save-dev`
 - dans `assets` trouver le fichier CSS ou SCSS et coller ces deux lignes dispo aussi [ici](https://www.npmjs.com/package/@fortawesome/fontawesome-free-webfonts) puis faire `npm run dev`
 ```scss
@@ -34,6 +38,7 @@
 
 ---
 **Mettre à jour les bibliothèques (Fontawesome par exemple)**
+
 `npm update` 
 
 ---
@@ -41,6 +46,7 @@
 
 ---
 **Nettoyer le cache**
+
 `php bin/console cache:clear`
 
 ---
@@ -48,6 +54,7 @@
 
 ---
 **Installer bundle FriendsOfSymfony**
+
 `composer require friendsofsymfony/user-bundle`
 
 Si erreur ci-dessous :
@@ -60,6 +67,7 @@ Error: Encore.setOutputPath() cannot be called yet because the runtime environme
 
 ---
 **BUNDLE SYMFONY**
+
 `composer require knplabs/knp-menu-bundle` aide à faire des menus
 
 ---
