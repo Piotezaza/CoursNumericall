@@ -6,6 +6,17 @@
         <div class="logo">
             {{ 'app_title'|trans }}
         </div>
+        {% embed 'decorator/nav_html.twig' with {'class': 'fixed-top navbar-dark bg-dark', 'brandUrl': path('homepage')} %} 
+        
+            {% block brand %}
+                 
+            {% endblock %}
+
+            {% block menu %}
+                 
+            {% endblock %}
+
+        {% endembed %}
     </header>
 
     {% block body %}
