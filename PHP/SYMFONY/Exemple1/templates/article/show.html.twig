@@ -13,7 +13,10 @@
     <div class="row">
         <div class="col-md-3"> Rédigé le : {{ entity.dateCreate|date('d/m/Y H:i') }}</div>
         <div class="col-md-8 text-right">{{ 'article.followers'|transchoice(entity.articleFollows|length, {'%count%': entity.articleFollows|length}) }}</div>
-        <div class="col-md-1 text-right">{{ form_start(form) }} <button type="submit" class="btn btn-sm text-light {% if isFollow %} bg-danger{% else %} bg-secondary {% endif %}"><i class="fa fa-heart" aria-hidden="true"></i></button></div>
+        
+        {% if is_granted('IS_AUTHENTICATED_REMEMBERED') %}
+            <div class="col-md-1 text-right">{{ form_start(form) }} <button type="submit" class="btn btn-sm text-light {% if isFollow %} bg-danger{% else %} bg-secondary {% endif %}"><i class="fa fa-heart" aria-hidden="true"></i></button></div>
+        {% endif %}
     </div>
     {% endblock %}
  {% endembed %}

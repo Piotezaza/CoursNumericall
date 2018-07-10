@@ -220,6 +220,14 @@ Pour faire une relation ManyToMany avec paramètres il faut créer une entité i
 */
 ```
 
+### Twig
+
+Tester si l'utilisateur est identifié
+```twig
+{% if is_granted('IS_AUTHENTICATED_REMEMBERED') %}
+{% endif %}
+```
+
 ---
 ## Liens utiles
 
