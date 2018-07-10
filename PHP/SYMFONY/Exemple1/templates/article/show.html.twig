@@ -6,12 +6,14 @@
     {% endblock %}
 
     {% block body %} 
-    {{ entity.content }}
+    {{ entity.content|raw }}
     {% endblock %}
 
     {% block footer %}  
-    Rédigé le : {{ entity.dateCreate|date('d/m/Y H:i') }}
-    <div class="bg-secondary p-2">{{ entity.articleFollows|length }} {{ 'article.followers'|transchoice(entity.articleFollows|length) }}</div>
+    <div class="row">
+        <div class="col-md-6"> Rédigé le : {{ entity.dateCreate|date('d/m/Y H:i') }}</div>
+        <div class="col-md-6 text-right">{{ 'article.followers'|transchoice(entity.articleFollows|length, {'%count%': entity.articleFollows|length}) }}</div>
+    </div>
     {% endblock %}
  {% endembed %}
 {% endblock %}
