@@ -8,7 +8,6 @@
 </head>
 
 <body>
-    <div class="container">
         {% for type, messages in app.flashes %}
              {% for message in messages %}
                 <div class="alert alert-{{ type }} alert-dismissible fade show">{{ message|raw }}
@@ -24,7 +23,6 @@
             <script src="{{ asset('build/js/app.js') }}"></script>
             {{ tinymce_init() }}
         {% block javascripts %}{% endblock %}
-    </div>
 </body>
 
 </html>
