@@ -22,8 +22,13 @@ class ArticleFollowRepository extends ServiceEntityRepository
         parent::__construct($registry, ArticleFollow::class);
     }
 
-    public function findOneByArticleAndUser(Article $article, User $user)
+    public function findOneByArticleAndUser(Article $article, $user)
     {
+        if(!is_object($user))
+        {
+            return null;
+        }
+        
         return $this->createQueryBuilder('a')
             ->andWhere('a.article = :article')
             ->andWhere('a.user = :user')

@@ -55,6 +55,13 @@ class ArticleController extends Controller
 	 */
     public function show(Request $request, Article $article)
     {
+		$user = $this -> get('security.token_storage') -> getToken() -> getUser();
+		$em = $this -> getDoctrine() -> getManager();
+		
+		$af = $em -> getRepository(ArticleFollow::class) -> findOneByArticleAndUser($article, $user);
+
+		$isActive = !is_null($af);
+
 		$formBuilder = $this -> createFormBuilder()
 			-> setAction($this -> generateUrl('app_article_follow', ['id' => $article -> getId()]))
 			-> setMethod('POST')
