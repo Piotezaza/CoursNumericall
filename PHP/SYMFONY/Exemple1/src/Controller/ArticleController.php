@@ -8,6 +8,7 @@ use Symfony\Component\Routing\Annotation\Route;
 use Symfony\Component\HttpFoundation\Request;
 
 use App\Entity\Article;
+use App\Entity\ArticleFollow;
 use App\Form\ArticleType;
 
 /**
@@ -54,8 +55,40 @@ class ArticleController extends Controller
 	 */
     public function show(Request $request, Article $article)
     {
+		$formBuilder = $this -> createFormBuilder()
+			-> setAction($this -> generateUrl('app_article_follow', ['id' => $article -> getId()]))
+			-> setMethod('POST')
+		;
+
+		$form = $formBuilder -> getForm();
+		$form -> handleRequest($request);
+
         return $this->render('article/show.html.twig', array(
-            'entity' => $article
+			'entity' => $article,
+			'form' => $form -> createView()
         ));
-    }
+	}
+	
+	/**
+	 * @Route("/follow/{id}", requirements={"id" = "\d+"})
+	 */
+	public function follow(Request $request, Article $article)
+	{
+		$user = $this -> get('security.token_storage') -> getToken() -> getUser();
+
+		if($request -> getMethod() == 'POST' && !is_null($user)) //is_object($user), $user instanceof \App\Entity\User
+		{
+			$af = new ArticleFollow();
+			$af 
+				-> setArticle($article)
+				-> setUser($user)
+			;
+
+			$em = $this -> getDoctrine() -> getManager();
+			$em -> persist($af);
+			$em -> flush();
+		}
+
+		return $this -> redirectToRoute('app_article_show', array('id' => $article -> getId()));
+	}
 }
