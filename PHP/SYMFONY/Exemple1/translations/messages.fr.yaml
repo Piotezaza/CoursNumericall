@@ -19,6 +19,7 @@ article:
   count_label: Nombre d'articles
   user: Utilisateur
   list: .icon-newspaper Liste des articles
+  followers: {0} Aucune personne suis l'article|{1} %count% personne suis l'article|[2, Inf[ %count% personnes suivent l'article
 category:
   edit: Modifier la catégorie <b> "%entity%" </b>
   edit_success: la catégorie <b> "%entity%" </b> a bien été modifiée
