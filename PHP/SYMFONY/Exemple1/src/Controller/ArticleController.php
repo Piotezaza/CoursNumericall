@@ -84,6 +84,7 @@ class ArticleController extends Controller
 	 */
 	public function follow(Request $request, Article $article)
 	{
+		$count = count($article -> getArticleFollows());
 		$isFollow = false;
 		$user = $this -> get('security.token_storage') -> getToken() -> getUser();
 
