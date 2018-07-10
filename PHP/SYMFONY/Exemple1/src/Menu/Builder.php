@@ -7,10 +7,12 @@ use Knp\Menu\FactoryInterface;
 class Builder
 {
     private $factory;
+    private $tokenStorage;
 
-    public function __construct(FactoryInterface $factory)
+    public function __construct(FactoryInterface $factory, $tokenStorage = null)
     {
         $this -> factory = $factory;
+        $this -> tokenStorage = $tokenStorage;
     }
 
     public function createAdminMenu()
@@ -36,9 +38,11 @@ class Builder
 
     public function createUserMenu()
     {
+        $user = $this -> tokenStorage -> getToken() -> getUser();
+
         $menu = $this -> factory -> createItem('root');
         $menu -> setChildrenAttribute('class', 'navbar-nav');
-        $parent = $menu -> addChild('user', ['uri' => '#']);
+        $parent = $menu -> addChild($user->getUsername(), ['uri' => '#']);
         $parent -> addChild('logout', ['route' => 'fos_user_security_logout']);
         return $menu;
     }
