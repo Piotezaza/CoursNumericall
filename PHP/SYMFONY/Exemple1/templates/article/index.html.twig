@@ -7,7 +7,6 @@
             <h5 class="mb-1">{{ entity.title }}</h5>
             <small>{{ entity.dateCreate|date('d/m/Y H:i') }}</small>
             </div>
-            <p class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
             {% for category in entity.categories %}
                 <span class="badge badge-secondary mr-1">{{ category }} </span>
             {% endfor %}
