@@ -61,9 +61,9 @@ Lancer le serveur proposé par Symfony `php bin/console server:run`. Avantage : 
 Si erreur ci-dessous :
 
 ```
-Error: Encore.setOutputPath() cannot be called yet because the runtime environment doesn't appear to be configured. 
-Make sure you're using the encore executable or call Encore.configureRuntimeEnvironment() first if you're
-purposely not calling Encore directly.
+Error: Encore.setOutputPath() cannot be called yet because the runtime environment doesn't appear to be 
+configured. Make sure you're using the encore executable or call Encore.configureRuntimeEnvironment()
+first if you're purposely not calling Encore directly.
 
 ```
  Dans `webpack.config.js`, ajouter cette partie en dessous de `Encore` : `.configureRuntimeEnvironment('dev')`
