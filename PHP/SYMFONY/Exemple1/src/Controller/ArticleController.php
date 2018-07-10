@@ -56,11 +56,13 @@ class ArticleController extends Controller
     public function show(Request $request, Article $article)
     {
 		$user = $this -> get('security.token_storage') -> getToken() -> getUser();
+
+		//Récupère l'entité ArticleFollow correspondante
 		$em = $this -> getDoctrine() -> getManager();
-		
+
 		$af = $em -> getRepository(ArticleFollow::class) -> findOneByArticleAndUser($article, $user);
 
-		$isActive = !is_null($af);
+		$isFollow = !is_null($af); // Actif s'il y a un objet ArticleFollow
 
 		$formBuilder = $this -> createFormBuilder()
 			-> setAction($this -> generateUrl('app_article_follow', ['id' => $article -> getId()]))
@@ -72,7 +74,8 @@ class ArticleController extends Controller
 
         return $this->render('article/show.html.twig', array(
 			'entity' => $article,
-			'form' => $form -> createView()
+			'form' => $form -> createView(),
+			'isFollow' => $isFollow
         ));
 	}
 	
@@ -83,7 +86,7 @@ class ArticleController extends Controller
 	{
 		$user = $this -> get('security.token_storage') -> getToken() -> getUser();
 
-		if($request -> getMethod() == 'POST' && !is_object($user)) //is_object($user), $user instanceof \App\Entity\User
+		if($request -> getMethod() == 'POST' && is_object($user)) //is_object($user), $user instanceof \App\Entity\User
 		{
 			$em = $this -> getDoctrine() -> getManager();
 			$af = $em -> getRepository(ArticleFollow::class) -> findOneByArticleAndUser($article, $user);
