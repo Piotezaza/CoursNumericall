@@ -83,6 +83,11 @@ first if you're purposely not calling Encore directly.
 - Promouvoir un utilisateur : `php bin/console fos:user:promote`
 
 ---
+**Afficher les services**
+
+`php bin/console debug:autowiring`
+
+---
 ## MEMO
 
 ### Installation
