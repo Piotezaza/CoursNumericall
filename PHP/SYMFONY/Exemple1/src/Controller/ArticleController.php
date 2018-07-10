@@ -78,15 +78,25 @@ class ArticleController extends Controller
 
 		if($request -> getMethod() == 'POST' && !is_null($user)) //is_object($user), $user instanceof \App\Entity\User
 		{
-			$af = new ArticleFollow();
-			$af 
+			$af = $em -> getRepository(ArticleFollow::class) -> findOneByArticleAndUser($article, $user);
+
+			if(is_object($af))
+			{
+
+			}
+			else
+			{
+				$af = new ArticleFollow();
+				$af 
 				-> setArticle($article)
 				-> setUser($user)
-			;
+				;
 
-			$em = $this -> getDoctrine() -> getManager();
-			$em -> persist($af);
-			$em -> flush();
+				$em = $this -> getDoctrine() -> getManager();
+				$em -> persist($af);
+				$em -> flush();
+			}
+			
 		}
 
 		return $this -> redirectToRoute('app_article_show', array('id' => $article -> getId()));
