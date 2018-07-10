@@ -84,6 +84,7 @@ class ArticleController extends Controller
 	 */
 	public function follow(Request $request, Article $article)
 	{
+		$isFollow = false;
 		$user = $this -> get('security.token_storage') -> getToken() -> getUser();
 
 		if($request -> getMethod() == 'POST' && is_object($user)) //is_object($user), $user instanceof \App\Entity\User
@@ -95,6 +96,8 @@ class ArticleController extends Controller
 			{
 				$em -> remove ($af);
 				$em -> flush();
+				$count--;
+				$isFollow = false;
 			}
 			else
 			{
@@ -104,11 +107,22 @@ class ArticleController extends Controller
 				-> setUser($user)
 				;
 
-				$em = $this -> getDoctrine() -> getManager();
+				// $em = $this -> getDoctrine() -> getManager();
 				$em -> persist($af);
 				$em -> flush();
+				$count++;
+				$isFollow = true;
 			}
 			
+		}
+
+		if ($request -> isXmlHttpRequest()) // Si c'est de l'AJAX
+		{
+			return new JsonResponse(array(
+				'success' => true,
+				'message' => $this -> get('translator') -> transchoice('article.followers', $count, array('%count%' => $count)),
+				'isFollow' => $isFollow
+			));
 		}
 
 		return $this -> redirectToRoute('app_article_show', array('id' => $article -> getId()));
