@@ -9,7 +9,7 @@
         <div class="logo">
             {{ 'app_title'|trans }}
         </div>
-        {% embed 'decorator/nav_html.twig' with {'class': 'fixed-top navbar-dark bg-dark', 'brandUrl': path('homepage')} %} 
+        {% embed 'decorator/_nav.html.twig' with {'class': 'fixed-top navbar-dark bg-dark', 'brandUrl': path('homepage')} %} 
         
             {% block brand %}
                  
