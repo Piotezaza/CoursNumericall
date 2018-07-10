@@ -7,14 +7,16 @@
 ## Commandes
 
 ---
-- Installer la toolbar Apache : `composer require symfony/apache-pack`, à la fin, faire yes : `y`.
+**Installer la toolbar Apache**
+`composer require symfony/apache-pack`, à la fin, faire yes : `y`.
 
 ---
-- Afficher la liste des routes : `php bin/console debug:router` 
+**Afficher la liste des routes**
+`php bin/console debug:router` 
 
 
 ---
-- Créer une base de données :
+**Créer une base de données**
     - Dans le fichier `.env`, modifier la ligne **23** (dans l'exemple1 : `DATABASE_URL=mysql://root@127.0.0.1:3306/Sf_exo`) 
     - Dans le terminal : `php bin/console doctrine:database:create`
 
@@ -22,7 +24,7 @@
 - Lorsque l'on fait des modifications dans le dossier `assets`, pour que les changements prennent effet il faut rentrer cette commande dans le terminal : `npm run dev` 
 
 ---
-- Installer fontawesome :
+**Installer fontawesome**
     - dans le terminal : `npm i @fortawesome/fontawesome-free-webfonts --save-dev`
     - dans `assets` trouver le fichier CSS ou SCSS et coller ces deux lignes dispo aussi [ici](https://www.npmjs.com/package/@fortawesome/fontawesome-free-webfonts) puis faire `npm run dev`
 ```scss
@@ -31,19 +33,22 @@
 ```
 
 ---
-- Mettre à jour les bibliothèques (Fontawesome par exemple) : `npm update` 
+**Mettre à jour les bibliothèques (Fontawesome par exemple)**
+`npm update` 
 
 ---
 - Lancer le serveur proposé par Symfony `php bin/console server:run`. Avantage : les liens ressemblent à ceux de la prod
 
 ---
-- Nettoyer le cache : `php bin/console cache:clear`
+**Nettoyer le cache**
+`php bin/console cache:clear`
 
 ---
 - Statut des traductions `php bin/console debug:translation fr`
 
 ---
-- Installer bundle FriendsOfSymfony : `composer require friendsofsymfony/user-bundle`
+**Installer bundle FriendsOfSymfony**
+`composer require friendsofsymfony/user-bundle`
 
 Si erreur ci-dessous :
 
@@ -54,8 +59,8 @@ Error: Encore.setOutputPath() cannot be called yet because the runtime environme
 -  Dans `webpack.config.js`, ajouter cette partie en dessous de `Encore` : `.configureRuntimeEnvironment('dev')`
 
 ---
-BUNDLE SYMFONY
-- `composer require knplabs/knp-menu-bundle` aide à faire des menus
+**BUNDLE SYMFONY**
+`composer require knplabs/knp-menu-bundle` aide à faire des menus
 
 ---
 ## MEMO
