@@ -26,6 +26,7 @@ class ArticleFollowRepository extends ServiceEntityRepository
     {
         return $this->createQueryBuilder('a')
             ->andWhere('a.article = :article')
+            ->andWhere('a.user = :user')
             ->setParameter('user', $user)
             ->setParameter('article', $article)
             ->getQuery()

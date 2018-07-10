@@ -78,11 +78,13 @@ class ArticleController extends Controller
 
 		if($request -> getMethod() == 'POST' && !is_null($user)) //is_object($user), $user instanceof \App\Entity\User
 		{
+			$em = $this -> getDoctrine() -> getManager();
 			$af = $em -> getRepository(ArticleFollow::class) -> findOneByArticleAndUser($article, $user);
 
 			if(is_object($af))
 			{
-
+				$em -> remove ($af);
+				$em -> flush();
 			}
 			else
 			{
