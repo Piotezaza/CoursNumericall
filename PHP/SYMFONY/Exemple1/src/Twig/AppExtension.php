@@ -12,7 +12,7 @@ class AppExtension extends AbstractExtension
     {
         return [
             new TwigFilter('parse_icons', [$this, 'parseIcons'], ['is_safe' => ['html']]),
-            new TwigFilter('slugify', [$this, 'slugify'],
+            new TwigFilter('slugify', [$this, 'slugify']),
         ];
     }
 
