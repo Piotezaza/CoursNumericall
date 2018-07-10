@@ -11,7 +11,7 @@
 
     {% block footer %}  
     Rédigé le : {{ entity.dateCreate|date('d/m/Y H:i') }}
-    <div class="bg-secondary p-2">{{ entity.articleFollows|length }} {{ 'article.followers'|transChoice(entity.articleFollows|length) }}</div>
+    <div class="bg-secondary p-2">{{ entity.articleFollows|length }} {{ 'article.followers'|transchoice(entity.articleFollows|length) }}</div>
     {% endblock %}
  {% endembed %}
 {% endblock %}
