@@ -1,17 +1,12 @@
 {% extends 'base.html.twig' %}
 
 {% block main_content %}
-    {% embed 'decorator/_nav.html.twig' with {'class': 'fixed-top navbar-dark bg-dark', 'brandUrl': '#'} %}
-
-        {% block brand %}
-            Admin
-        {% endblock %}
-
-        {% block menu %}
-            {{ knp_menu_render('admin', {'style': 'horizontal-right'}) }}
-        {% endblock %}
-
-    {% endembed %}
+    
+    <header class="main-header">
+        <div class="logo">
+            {{ 'app_title'|trans }}
+        </div>
+    </header>
 
     {% block body %}
     
