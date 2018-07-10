@@ -3,6 +3,7 @@ edit: Editer
 cancel: Annuler
 delete: Supprimer
 page_error: Il n'y a qu'une page|Il n'y a que %nbPages% pages
+app_title: WebForce3
 article:
   edit: Modifier l'article <b> "%entity%" </b>
   edit_success: L'article <b> "%entity%" </b> a bien été modifié

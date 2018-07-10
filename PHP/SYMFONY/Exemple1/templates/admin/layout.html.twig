@@ -12,18 +12,21 @@
         {% embed 'decorator/_nav.html.twig' with {'class': 'fixed-top navbar-dark bg-dark', 'brandUrl': path('homepage')} %} 
         
             {% block brand %}
-                 
             {% endblock %}
 
             {% block menu %}
-                 
             {% endblock %}
 
         {% endembed %}
     </header>
 
+    <aside class="main-sidebar">
+        <section class="sidebar">
+            
+        </section>
+    </aside>
+
     {% block body %}
-    
     {% endblock %}
 {% endblock %} {# /main_content #}
 
