@@ -42,7 +42,12 @@ class Builder
 
         $menu = $this -> factory -> createItem('root');
         $menu -> setChildrenAttribute('class', 'navbar-nav');
-        $parent = $menu -> addChild($user->getUsername(), ['uri' => '#']);
+        
+        $parent = $menu 
+            -> addChild($user->getUsername(), ['uri' => '#'])
+            -> setExtra('translation_domain', false)
+        ;
+        
         $parent -> addChild('logout', ['route' => 'fos_user_security_logout']);
         return $menu;
     }

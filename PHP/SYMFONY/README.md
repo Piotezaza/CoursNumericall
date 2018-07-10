@@ -193,6 +193,33 @@ Pour une relation inverse (ex: obtenir les articles d'une catégorie)
 */
 ```
 
+Pour faire une relation ManyToMany avec paramètres il faut créer une entité intermédiaire
+```php
+//PANIER
+
+/**
+* @ORM\OneToMany(targetEntity="PanierProduit")
+*/
+```
+```php
+//PANIER PRODUIT
+
+/**
+* @ORM\ManyToOne(targetEntity="Panier")
+*/
+
+/**
+* @ORM\ManyToOne(targetEntity="Produit")
+*/
+```
+```php
+//PRODUIT
+
+/**
+* @ORM\ManyToOne(targetEntity="PanierProduit")
+*/
+```
+
 ---
 ## Liens utiles
 
