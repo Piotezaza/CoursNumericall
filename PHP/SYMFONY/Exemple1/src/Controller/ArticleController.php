@@ -76,7 +76,7 @@ class ArticleController extends Controller
 	{
 		$user = $this -> get('security.token_storage') -> getToken() -> getUser();
 
-		if($request -> getMethod() == 'POST' && !is_null($user)) //is_object($user), $user instanceof \App\Entity\User
+		if($request -> getMethod() == 'POST' && !is_object($user)) //is_object($user), $user instanceof \App\Entity\User
 		{
 			$em = $this -> getDoctrine() -> getManager();
 			$af = $em -> getRepository(ArticleFollow::class) -> findOneByArticleAndUser($article, $user);
