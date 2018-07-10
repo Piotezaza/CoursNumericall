@@ -15,6 +15,7 @@ article:
   delete_message: Confirmer la suppression de l'article <b> "%entity%" </b>
   count_label: Nombre d'articles
   user: Utilisateur
+  list: .icon-newspaper Liste des articles
 category:
   edit: Modifier la catégorie <b> "%entity%" </b>
   edit_success: la catégorie <b> "%entity%" </b> a bien été modifiée

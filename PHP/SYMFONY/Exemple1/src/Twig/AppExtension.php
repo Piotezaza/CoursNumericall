@@ -22,7 +22,7 @@ class AppExtension extends AbstractExtension
         ];
     }
 
-    public function parseIcons($value)
+    public function parseIcons($text)
     {
         return preg_replace('/\.icon-([a-z0-9+-]+)/', '<i class="fa fa-$1"></i>', $text);
     }

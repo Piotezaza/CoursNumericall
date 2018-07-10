@@ -6,7 +6,7 @@
     {% embed 'decorator/_card.html.twig' %}
 
         {% block header %}
-            Liste des articles
+            {{ 'article.list'|trans|parse_icons }}
         {% endblock %}
 
         {% block body %}
