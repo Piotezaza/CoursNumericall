@@ -24,7 +24,13 @@ class ArticleFollowRepository extends ServiceEntityRepository
 
     public function findOneByArticleAndUser(Article $article, User $user)
     {
-
+        return $this->createQueryBuilder('a')
+            ->andWhere('a.article = :article')
+            ->setParameter('user', $user)
+            ->setParameter('article', $article)
+            ->getQuery()
+            ->getOneOrNullResult()
+        ;
     }
 
 //    /**
