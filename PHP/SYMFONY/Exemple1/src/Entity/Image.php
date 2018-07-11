@@ -36,9 +36,8 @@ class Image
 
     /**
      * @var UploadedFile
-     * @Assert\File(
+     * @Assert\Image(
      *  maxSize = "2M",
-     * mimeTypes = {"image/jpg", "image/png", "image/gif"}
      * )
      */
     private $file;
