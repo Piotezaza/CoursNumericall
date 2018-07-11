@@ -88,7 +88,15 @@ class ArticleController extends Controller
 		$isFollow = false;
 		$user = $this -> get('security.token_storage') -> getToken() -> getUser();
 
-		if($request -> getMethod() == 'POST' && is_object($user)) //is_object($user), $user instanceof \App\Entity\User
+		$formBuilder = $this -> createFormBuilder()
+			-> setAction($this -> generateUrl('app_article_follow', ['id' => $article -> getId()]))
+			-> setMethod('POST')
+		;
+
+		$form = $formBuilder -> getForm();
+		$form -> handleRequest($request);
+
+		if($form -> isSubmitted() && $form -> isValid() && is_object($user)) //is_object($user), $user instanceof \App\Entity\User
 		{
 			$em = $this -> getDoctrine() -> getManager();
 			$af = $em -> getRepository(ArticleFollow::class) -> findOneByArticleAndUser($article, $user);
