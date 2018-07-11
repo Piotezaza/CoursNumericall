@@ -262,7 +262,7 @@ if ($request -> isXmlHttpRequest()){}
 ### Ajouter deux nouvelles entitées
 
 ```bash
-PS C:\wamp1\www\CoursNumericall\PHP\SYMFONY\Exemple1> php bin/console make:entity
+PS C:\wamp\www\CoursNumericall\PHP\SYMFONY\Exemple1> php bin/console make:entity
 
 
  Class name of the entity to create or update (e.g. DeliciousElephant):
