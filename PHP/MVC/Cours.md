@@ -468,5 +468,3 @@ if( $match && is_callable( $match['target'] ) ) {
 ```
 
 La première case de chaque tableau contient la méthode (pour une page qui accepte des soumissions de formulaire POST, on utilisera par exemple `GET|POST`). La deuxième contient l'URL envoyée par le client, avec entre crochets ce qui doit être considéré par l'application comme un paramètre. Ce paramètre sera envoyé à la méthode du contrôleur lors de son appel. La troisième contient la route, au format `ClasseControleur#Methode`. La dernière case contient le nom de la route, qui doit être unique. On s'en servira par exemple pour générer une URL à partir d'une route (par exemple, dans le cas de l'affichage de l'action d'un formulaire).
-
-Les lignes suivantes mettent en place le routeur, et appellent les méthodes paramétrées dans les routes.
