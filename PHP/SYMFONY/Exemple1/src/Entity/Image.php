@@ -103,6 +103,7 @@ class Image
      */ 
     public function setFile(UploadedFile $file)
     {
+        $this->path = '';
         $this->file = $file;
 
         return $this;
