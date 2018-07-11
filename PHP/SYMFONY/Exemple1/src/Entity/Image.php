@@ -106,4 +106,12 @@ class Image
 
         return $this;
     }
+
+    public function generateFileName()
+    {
+        if($this -> file instanceOf UploadedFile)
+        {
+            
+        }
+    }
 }
