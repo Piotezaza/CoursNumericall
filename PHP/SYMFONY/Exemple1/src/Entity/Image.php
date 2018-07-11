@@ -115,8 +115,9 @@ class Image
         }
     }
 
-    public function getPublicRootDir(){
-        
+    public function getPublicRootDir()
+    {
+
     }
 
     public function upload()
