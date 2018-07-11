@@ -117,13 +117,12 @@ class Image
      */
     public function generateFileName()
     {
-        if ( is_file($this->getPublicRootDir() . $this->path) ) // si un fichier existe
-        { 
-            unlink($this->getPublicRootDir() . $this->path);
-        }
-        
-        if ( $this->file instanceof UploadedFile ) 
+        if ( is_file($this->getPublicRootDir() . $this->tmpPath) ) // si un fichier existe
         {
+            unlink($this->getPublicRootDir() . $this->tmpPath);
+        }
+
+        if ( $this->file instanceof UploadedFile ) {
             $this->path = uniqid('image_') . '.' . $this->file->guessExtension();
         }
     }
