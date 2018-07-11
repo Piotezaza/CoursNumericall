@@ -1,3 +1,7 @@
 import 'bootstrap';
 
-// $('body').append('HELLO JQUERY');
+$(document).ready(function(){
+
+
+    
+});
