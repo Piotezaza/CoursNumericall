@@ -88,6 +88,10 @@ first if you're purposely not calling Encore directly.
 `php bin/console debug:autowiring`
 
 ---
+**Créer une nouvelle entité** [Petit exemple]()
+- `php bin/console make:entity`
+
+---
 ## MEMO
 
 ### Installation
@@ -255,7 +259,7 @@ if ($request -> isXmlHttpRequest()){}
 ---
 ## Autre
 
-Ajouter deux nouvelles entitées
+### Ajouter deux nouvelles entitées
 
 ```bash
 PS C:\wamp1\www\CoursNumericall\PHP\SYMFONY\Exemple1> php bin/console make:entity
