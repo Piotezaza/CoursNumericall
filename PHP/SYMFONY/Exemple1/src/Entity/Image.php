@@ -20,43 +20,33 @@ class Image
     private $id;
 
     /**
-     * @ORM\Column(type="string", length=255)
-     */
-    private $name;
-
-    /**
-     * @ORM\Column(type="string", length=255)
+     * @ORM\Column(type="string", length=255, nullable=true)
      */
     private $path;
 
     /**
-     * @ORM\Column(type="string", length=255)
+     * @ORM\Column(type="string", length=255, nullable=true)
+     */
+    private $name;
+
+    /**
+     * @ORM\Column(type="text", nullable=true)
      */
     private $description;
 
     /**
      * @var UploadedFile
      * @Assert\Image(
-     *  maxSize = "2M",
+     * maxSize = "2M"
      * )
      */
     private $file;
 
+    
+
     public function getId()
     {
         return $this->id;
-    }
-
-    public function getName(): ?string
-    {
-        return $this->name;
-    }
-
-    public function setName(string $name): self
-    {
-        $this->name = $name;
-
-        return $this;
     }
 
     public function getPath(): ?string
@@ -71,12 +61,24 @@ class Image
         return $this;
     }
 
+    public function getName(): ?string
+    {
+        return $this->name;
+    }
+
+    public function setName(?string $name): self
+    {
+        $this->name = $name;
+
+        return $this;
+    }
+
     public function getDescription(): ?string
     {
         return $this->description;
     }
 
-    public function setDescription(string $description): self
+    public function setDescription(?string $description): self
     {
         $this->description = $description;
 
@@ -84,7 +86,7 @@ class Image
     }
 
     /**
-     * Get maxSize = "2M"
+     * Get maxSize = "2M",
      *
      * @return  UploadedFile
      */ 
@@ -94,14 +96,15 @@ class Image
     }
 
     /**
-     * Set maxSize = "2M"
+     * Set maxSize = "2M",
      *
-     * @param  UploadedFile  $file  maxSize = "2M"
+     * @param  UploadedFile  $file  maxSize = "2M",
      *
      * @return  self
      */ 
     public function setFile(UploadedFile $file)
     {
+        
         $this->path = '';
         $this->file = $file;
 
@@ -114,15 +117,11 @@ class Image
      */
     public function generateFileName()
     {
-        if(is_file($this->getPublicRootDir() . $this -> path)) // Si un fichier existe
-        {
-            // Supprimer un fichier
-            unlink($this->getPublicRootDir() . $this -> path);
+        if ( is_file($this->getPublicRootDir() . $this->tmpPath) ) { // si un fichier existe
+            unlink($this->getPublicRootDir() . $this->tmpPath);
         }
-
-        if($this -> file instanceOf UploadedFile)
-        {
-            $this -> path = uniqid('image_') . '.' . $this -> file -> guessExtension();
+        if ( $this->file instanceof UploadedFile ) {
+            $this->path = uniqid('image_') . '.' . $this->file->guessExtension();
         }
     }
 
@@ -137,12 +136,12 @@ class Image
      */
     public function upload()
     {
-        if($this -> file instanceOf UploadedFile)
-        {
-            $this -> file -> move(
-                $this -> getPublicRootDir(),
-                $this -> path
+        if ( $this->file instanceof UploadedFile ) {
+            $this->file->move(
+                $this->getPublicRootDir(),
+                $this->path
             );
         }
     }
+
 }
