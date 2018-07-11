@@ -10,6 +10,7 @@ use Symfony\Component\Validator\Constraints as Assert;
 
 /**
  * @ORM\Entity(repositoryClass="App\Repository\ArticleRepository")
+ * @ORM\HasLifecycleCallbacks
  */
 
 class Article
@@ -63,7 +64,7 @@ class Article
     private $articleFollows;
 
     /**
-     * @ORM\OneToOne(targetEntity="Image")
+     * @ORM\OneToOne(targetEntity="Image", cascade="all")
      * @ORM\JoinColumn(onDelete="SET NULL")
      */
     private $image;

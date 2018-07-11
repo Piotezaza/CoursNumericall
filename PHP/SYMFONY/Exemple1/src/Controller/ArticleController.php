@@ -57,12 +57,19 @@ class ArticleController extends Controller
 	 */
     public function show(Request $request, Article $article)
     {
-		$user = $this -> get('security.token_storage') -> getToken() -> getUser();
+		$user = $this 
+			-> get('security.token_storage') 
+			-> getToken() 
+			-> getUser();
 
 		//Récupère l'entité ArticleFollow correspondante
-		$em = $this -> getDoctrine() -> getManager();
+		$em = $this 
+			-> getDoctrine() 
+			-> getManager();
 
-		$af = $em -> getRepository(ArticleFollow::class) -> findOneByArticleAndUser($article, $user);
+		$af = $em 
+			-> getRepository(ArticleFollow::class) 
+			-> findOneByArticleAndUser($article, $user);
 
 		$isFollow = !is_null($af); // Actif s'il y a un objet ArticleFollow
 

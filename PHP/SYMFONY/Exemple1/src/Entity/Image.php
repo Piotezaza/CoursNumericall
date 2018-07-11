@@ -107,6 +107,10 @@ class Image
         return $this;
     }
 
+    /**
+     * @ORM\PrePersist()
+     * @ORM\PreUpdate()
+     */
     public function generateFileName()
     {
         if($this -> file instanceOf UploadedFile)
@@ -117,15 +121,19 @@ class Image
 
     public function getPublicRootDir()
     {
-
+        return __DIR__ . '/../../public/uploads/';
     }
 
+    /**
+     * @ORM\PostPersist()
+     * @ORM\PostUpdate()
+     */
     public function upload()
     {
         if($this -> file instanceOf UploadedFile)
         {
             $this -> file -> move(
-                '',
+                $this -> getPublicRootDir(),
                 $this -> path
             );
         }
