@@ -67,6 +67,8 @@ class Article
      * @ORM\JoinColumn(onDelete="SET NULL")
      */
     private $image;
+
+    private $deleteImage;
     
     public function __construct()
     {
@@ -254,6 +256,26 @@ class Article
     public function setImage($image)
     {
         $this->image = $image;
+
+        return $this;
+    }
+
+    /**
+     * Get the value of deleteImage
+     */ 
+    public function getDeleteImage()
+    {
+        return $this->deleteImage;
+    }
+
+    /**
+     * Set the value of deleteImage
+     *
+     * @return  self
+     */ 
+    public function setDeleteImage($deleteImage)
+    {
+        $this->deleteImage = $deleteImage;
 
         return $this;
     }

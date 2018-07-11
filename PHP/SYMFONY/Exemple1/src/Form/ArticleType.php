@@ -5,7 +5,7 @@ namespace App\Form;
 use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\FormBuilderInterface;
 use Doctrine\ORM\EntityRepository;
-use Symfony\Component\Form\Extension\Core\Type\TextType;
+use Symfony\Component\Form\Extension\Core\Type\CheckboxType;
 
 class ArticleType extends AbstractType
 {
@@ -29,6 +29,11 @@ class ArticleType extends AbstractType
             ))
 
             -> add('image', ImageType::class)
+
+            -> add('deleteImage', CheckboxType::class, array(
+                // 'mapped' => false,
+                'required' => false
+            ))
 
             -> add('content', null, array(
                 'label' => 'Contenu',
