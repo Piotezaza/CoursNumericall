@@ -277,6 +277,11 @@ class Article
     {
         $this->deleteImage = $deleteImage;
 
+        if($deleteImage)
+        {
+            $this -> image = null;
+        }
+
         return $this;
     }
 }
