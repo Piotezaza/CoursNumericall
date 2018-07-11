@@ -89,7 +89,7 @@ first if you're purposely not calling Encore directly.
 
 ---
 **Créer une nouvelle entité** → [Reste de la démarche](https://github.com/Piotezaza/CoursNumericall/tree/master/PHP/SYMFONY#ajouter-deux-nouvelles-entit%C3%A9es)
-- `php bin/console make:entity`
+`php bin/console make:entity`
 
 ---
 ## MEMO
