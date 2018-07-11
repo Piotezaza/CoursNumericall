@@ -250,6 +250,27 @@ Pour tester si la requête est en Ajax
 if ($request -> isXmlHttpRequest()){}
 ```
 
+### Lifecycle
+
+Il est possible d'indiquer à Doctrine d'appeler automatiquement des méthodes d'une entité, par exemple avant de faire un persist.
+
+Avant la déclaration de la classe, indique à Doctrine qu'il y a des méthodes à appeler:
+```php
+/**
+ * @ORM\HasLifecycleCallbacks
+ * /
+```
+
+```php
+/**
+ * @ORM\PrePersist()
+ * @ORM\PreUpdate()
+ * @ORM\PreRemove()
+ * @ORM\PostPersist()
+ * @ORM\PostUpdate()
+ * @ORM\PostRemove()
+*/
+```
 ---
 ## Liens utiles
 
