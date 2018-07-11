@@ -114,4 +114,19 @@ class Image
             $this -> path = uniqid('image_') . '.' . $this -> file -> guessExtension();
         }
     }
+
+    public function getPublicRootDir(){
+        
+    }
+
+    public function upload()
+    {
+        if($this -> file instanceOf UploadedFile)
+        {
+            $this -> file -> move(
+                '',
+                $this -> path
+            );
+        }
+    }
 }
