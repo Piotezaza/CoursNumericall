@@ -114,6 +114,12 @@ class Image
      */
     public function generateFileName()
     {
+        if(is_file($this->getPublicRootDir() . $this -> path)) // Si un fichier existe
+        {
+            // Supprimer un fichier
+            unlink($this->getPublicRootDir() . $this -> path);
+        }
+
         if($this -> file instanceOf UploadedFile)
         {
             $this -> path = uniqid('image_') . '.' . $this -> file -> guessExtension();
