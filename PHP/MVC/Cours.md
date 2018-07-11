@@ -400,7 +400,7 @@ Les possibilités sont nombreuses avec le module de réécriture d'Apache. [Voir
 ## Le routage
 ### Principe
 
-Dans une application web, les URLs différentes peuvent vite se multiplier, par exemple : `http://www.monsite.fr/article.php?id=128` `http://www.monsite.fr/users.php?id=14 http://www.monsite.fr/users.php?id=14&action=edit`
+Dans une application web, les URLs différentes peuvent vite se multiplier, par exemple : `http://www.monsite.fr/article.php?id=128` `http://www.monsite.fr/users.php?id=14` `http://www.monsite.fr/users.php?id=14&action=edit`
 
 Le problème de ce genre d'URLs est qu'elles ne sont pas facilement mémorisables, et que leur rôle ne saute pas forcément aux yeux de l'utilisateur.
 
