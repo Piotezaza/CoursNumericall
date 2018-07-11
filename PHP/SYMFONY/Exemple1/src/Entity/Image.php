@@ -111,7 +111,7 @@ class Image
     {
         if($this -> file instanceOf UploadedFile)
         {
-            
+            $this -> path = uniqid('image_') . '.' . $this -> file -> guessExtension();
         }
     }
 }
