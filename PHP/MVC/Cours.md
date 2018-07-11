@@ -393,7 +393,8 @@ RewriteEngine on
 RewriteCond %{HTTP_HOST} !^mon-site.fr$ [NC]                # La règle ne s'appliquera que si l'hôte demandé est différent du nom de domaine actuel ('mon-site.fr')
 RewriteRule . http://mon-site.fr%{REQUEST_URI} [R=301,L]    # On ajoute %{REQUEST_URI}, le chemin qui suit le nom de domaine. On génère en même temps un entête de type 301 (redirection permanente)
 ```
-Les possibilités sont nombreuses avec le module de réécriture d'Apache. [Voir la documentation pour plus d'informations]().
+
+Les possibilités sont nombreuses avec le module de réécriture d'Apache. [Voir la documentation pour plus d'informations](https://httpd.apache.org/docs/current/fr/mod/mod_rewrite.html).
 
 
 ## Le routage
@@ -409,19 +410,21 @@ La lecture de l'URL permet alors de déduire la page à laquelle elle donne acc�
 
 `http://www.monsite.fr/users/` pour gérer les utilisateurs `http://www.monsite.fr/articles/` pour voir tous les articles http://www.monsite.fr/moncompte/ pour accéder à mon compte, etc.
 
-On appelle parfois ces URLs des URLs sémantiques.
+On appelle parfois ces URLs des URLs **sémantiques**.
 
 Mais cela n'implique pas forcément de créer des dossiers `/users`, `articles` ou `/moncompte` sur le serveur. En fait, il se peut même que certaines pages soient accessibles depuis plusieurs URLs différentes.
 
 Il est possible, à l'aide de la réécriture d'URL, de rediriger toutes les requêtes vers une seule page, vers le contrôleur frontal de l'application.
 
-Le principe du routage permet de faire le lien entre ces URLs "lisibles" et l'accès à une partie de l'application.
+Le principe du **routage** permet de faire le lien entre ces URLs "lisibles" et l'accès à une partie de l'application.
 
-Exemple de routage
+### Exemple de routage
+
 Imaginons que nous ayons deux contrôleurs dans notre application : `Users`, qui donne accès aux méthodes `List` et `DisplayById($id)` `Index`, qui donne accès aux méthodes `Home` et `Contact`
 
 On imagine la table de correspondance suivante :
 
+```
 +----------------------------------------+------------+---------------------------+
 |                  URL                   | Contrôleur |          Méthode          |
 +----------------------------------------+------------+---------------------------+
@@ -430,7 +433,9 @@ On imagine la table de correspondance suivante :
 | monsite.fr                             | Index      | Home                      |
 | monsite.fr/contact                     | Index      | Contact                   |
 +----------------------------------------+------------+---------------------------+
-Dans le contrôleur frontal, il est par exemple possible de lire le contenu de la variable `$_SERVER['REQUEST_URI']`, qui correspond à l'URL qui a été passée au navigateur. Le serveur Apache n'oublie pas cette URL, même s'il n'accède pas vraiment au contenu vers lequel elle semble pointer (puisque nous avons réécrit l'URL).
+```
+
+Dans le contrôleur frontal, il est par exemple possible de lire le contenu de la variable `$_SERVER['REQUEST_URI']`, qui correspond à l'URL qui a été passée au navigateur. Le serveur Apache n'oublie pas cette URL, même s'il n'accède pas vraiment au contenu vers lequel elle semble pointer (puisque nous avons **réécrit** l'URL).
 
 D'après cette variable, on pourra appeler le bon contrôleur et la bonne action, en fonction de l'URL envoyée par le client.
 
@@ -440,6 +445,7 @@ Dans le framework `W`, les routes sont à paramétrer dans le fichier `routes.ph
 
 Exemple d'utilisation d'AltoRouter (sans le framework `W`) :
 
+```php
 $router = new AltoRouter();
 
 $router->addRoutes(array(
@@ -459,6 +465,8 @@ if( $match && is_callable( $match['target'] ) ) {
     // Si aucune route n'a été trouvée
     header( $_SERVER["SERVER_PROTOCOL"] . ' 404 Not Found');
 }
+```
+
 La première case de chaque tableau contient la méthode (pour une page qui accepte des soumissions de formulaire POST, on utilisera par exemple `GET|POST`). La deuxième contient l'URL envoyée par le client, avec entre crochets ce qui doit être considéré par l'application comme un paramètre. Ce paramètre sera envoyé à la méthode du contrôleur lors de son appel. La troisième contient la route, au format `ClasseControleur#Methode`. La dernière case contient le nom de la route, qui doit être unique. On s'en servira par exemple pour générer une URL à partir d'une route (par exemple, dans le cas de l'affichage de l'action d'un formulaire).
 
 Les lignes suivantes mettent en place le routeur, et appellent les méthodes paramétrées dans les routes.
