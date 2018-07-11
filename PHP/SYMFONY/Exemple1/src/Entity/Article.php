@@ -63,7 +63,7 @@ class Article
     private $articleFollows;
 
     /**
-     * @ORM\OneToOne(targetEntity="Image", cascade="all", orpanRemoval=true)
+     * @ORM\OneToOne(targetEntity="Image", cascade="all", orphanRemoval=true)
      * @ORM\JoinColumn(onDelete="SET NULL")
      */
     private $image;
