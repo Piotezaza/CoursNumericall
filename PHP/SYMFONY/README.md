@@ -228,6 +228,24 @@ Tester si l'utilisateur est identifié
 {% endif %}
 ```
 
+### Controller
+
+#### AJAX
+
+Pour retourner du Json dans un controller
+```php
+use Symfony\Component\HttpFoundation\JsonResponse;
+
+// ...
+
+return new JsonResponse(array(/*...*/));
+```
+
+Pour tester si la requête est en Ajax
+```php
+if ($request -> isXmlHttpRequest()){}
+```
+
 ---
 ## Liens utiles
 
