@@ -42,7 +42,7 @@ class Image
      */
     private $file;
 
-    
+    private $tmpPath;
 
     public function getId()
     {
@@ -104,7 +104,7 @@ class Image
      */ 
     public function setFile(UploadedFile $file)
     {
-        
+        $this->tmpPath = $this->path;
         $this->path = '';
         $this->file = $file;
 
@@ -117,10 +117,13 @@ class Image
      */
     public function generateFileName()
     {
-        if ( is_file($this->getPublicRootDir() . $this->tmpPath) ) { // si un fichier existe
-            unlink($this->getPublicRootDir() . $this->tmpPath);
+        if ( is_file($this->getPublicRootDir() . $this->path) ) // si un fichier existe
+        { 
+            unlink($this->getPublicRootDir() . $this->path);
         }
-        if ( $this->file instanceof UploadedFile ) {
+        
+        if ( $this->file instanceof UploadedFile ) 
+        {
             $this->path = uniqid('image_') . '.' . $this->file->guessExtension();
         }
     }
@@ -136,7 +139,8 @@ class Image
      */
     public function upload()
     {
-        if ( $this->file instanceof UploadedFile ) {
+        if ( $this->file instanceof UploadedFile ) 
+        {
             $this->file->move(
                 $this->getPublicRootDir(),
                 $this->path
