@@ -62,6 +62,12 @@ class Article
      */
     private $articleFollows;
 
+    /**
+     * @ORM\OneToOne(targetEntity="Image")
+     * @ORM\JoinColumn(onDelete="SET NULL")
+     */
+    private $image;
+    
     public function __construct()
     {
         $this -> dateCreate = new \DateTime;
@@ -228,6 +234,26 @@ class Article
                 $articleFollow->setArticle(null);
             }
         }
+
+        return $this;
+    }
+
+    /**
+     * Get the value of image
+     */ 
+    public function getImage()
+    {
+        return $this->image;
+    }
+
+    /**
+     * Set the value of image
+     *
+     * @return  self
+     */ 
+    public function setImage($image)
+    {
+        $this->image = $image;
 
         return $this;
     }
