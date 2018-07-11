@@ -400,15 +400,15 @@ Les possibilités sont nombreuses avec le module de réécriture d'Apache. [Voir
 ## Le routage
 ### Principe
 
-Dans une application web, les URLs différentes peuvent vite se multiplier, par exemple : http://www.monsite.fr/article.php?id=128 `http://www.monsite.fr/users.php?id=14 http://www.monsite.fr/users.php?id=14&action=edit`
+Dans une application web, les URLs différentes peuvent vite se multiplier, par exemple : `http://www.monsite.fr/article.php?id=128` `http://www.monsite.fr/users.php?id=14 http://www.monsite.fr/users.php?id=14&action=edit`
 
 Le problème de ce genre d'URLs est qu'elles ne sont pas facilement mémorisables, et que leur rôle ne saute pas forcément aux yeux de l'utilisateur.
 
-Sur les sites web modernes, on trouve souvent ce type d'URLs, à la place des précédentes : http://www.monsite.fr/nom-de-l-article http://www.monsite.fr/users/14 `http://www.monsite.fr/users/edit/14`
+Sur les sites web modernes, on trouve souvent ce type d'URLs, à la place des précédentes : `http://www.monsite.fr/nom-de-l-article` `http://www.monsite.fr/users/14` `http://www.monsite.fr/users/edit/14`
 
 La lecture de l'URL permet alors de déduire la page à laquelle elle donne accès. Ainsi, on peut construire une hiérarchie d'URLs qui ressemble, de près ou de loin, à la navigation du site web :
 
-`http://www.monsite.fr/users/` pour gérer les utilisateurs `http://www.monsite.fr/articles/` pour voir tous les articles http://www.monsite.fr/moncompte/ pour accéder à mon compte, etc.
+`http://www.monsite.fr/users/` pour gérer les utilisateurs `http://www.monsite.fr/articles/` pour voir tous les articles `http://www.monsite.fr/moncompte/` pour accéder à mon compte, etc.
 
 On appelle parfois ces URLs des URLs **sémantiques**.
 
