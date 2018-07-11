@@ -79,6 +79,7 @@ class ArticleController extends Controller
 
 		return $this->render('admin/article/new.html.twig', array(
 			'form' => $form->createView(),
+			'entity' => $article
 		));
 	}
 
