@@ -2,7 +2,7 @@ import 'bootstrap';
 
 $(document).ready(function(){
 
-    var $form = $('form[name="form"]');
+    var $form = $('#follow-form');
 
     $form.submit(function(){
 

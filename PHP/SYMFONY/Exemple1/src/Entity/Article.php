@@ -58,7 +58,7 @@ class Article
     private $user;
 
     /**
-     * @ORM\OneToMany(targetEntity="App\Entity\ArticleFollow", mappedBy="article", orphanRemoval=true)
+     * @ORM\OneToMany(targetEntity="App\Entity\ArticleFollow", mappedBy="article", orphanRemoval=true, cascade="all")
      */
     private $articleFollows;
 
