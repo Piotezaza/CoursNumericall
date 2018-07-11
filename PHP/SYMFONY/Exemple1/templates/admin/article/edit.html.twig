@@ -6,8 +6,30 @@
     {{ 'article.edit'|trans( { '%entity%' : entity.title })|raw }}
     {% endblock %}
 
-    {% block body %} 
-    {{ form(form) }}
+    {% block body %}
+        <div class="row">
+            <div class="col-md-6">
+                {{ form_row(form.title) }}
+            </div>
+            <div class="col-md-6">
+                {{ form_row(form.categories) }}
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-8">
+                {{ form_row(form.image) }}
+            </div>
+            <div class="col-md-4">
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col">
+                {{ form_row(form.content) }}
+            </div>
+        </div>
+
     {% endblock %}
 
     {% block footer %}  
