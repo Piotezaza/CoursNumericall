@@ -733,3 +733,9 @@ php bin/console make:twig-extension
 - `Not contains valid YAML` : l'**indentation** n'est sûrement pas bonne ou deux paramètres ont un **nom identique**
 - `Could not convert to string` : on essaie d'afficher un objet, il **manque** la méthode magique `__toString()`
 - `The file was found but the class not found` : le nom de la classe n'est pas le même que le nom du fichier
+- `Cannot fount "variable" in template` : il faut envoyer cette valeur 
+
+---
+## Plus
+
+- [SoftDelete](https://github.com/Atlantic18/DoctrineExtensions/blob/v2.4.x/doc/softdeleteable.md)
