@@ -1,4 +1,4 @@
-# Récap
+# RÉCAPITULATIF SYMFONY
 
 ## SOMMAIRE
 
@@ -62,6 +62,8 @@ composer update
 
 ### WebPack Encore
 
+[Site WebPack](https://webpack.js.org/) contenant toute la doc officielle.
+
 **Encore** est un module de Symfony pour faciliter l'intégration de **WebPack** dans un projet.
 
 **WebPack** est une bibliothèque qui va interpréter et minifier automatiquement les fichiers **SCSS** et **JavaScript**. Il assemble les fichiers `assets` en un seul.
@@ -78,6 +80,9 @@ npm run build
 
 ---
 ## Entité
+
+Les entités `Entity` sont des objets déstinés à être stockés dans la base de donnée. Ces fichiers sont dans `src/Entity`.
+
 
 ### Création
 
