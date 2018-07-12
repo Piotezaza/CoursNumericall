@@ -58,7 +58,7 @@ composer update
 - **`TESTS`** : contient les fichiers de tests PHPUnit pour faire des tests unitaires
 - **`TRANSLATIONS`** : fichiers de traduction (version Symfony < 4 : les vues sont dans le dossier `Ressource/Views` des Bundle)
 - **`VAR`** : contient le cache et les fichiers log
-- **`VENDOR`** : bibliothèques externes à notre application (comme Doctrine, Twig, SwiftMailer, etc)
+- **`VENDOR`** : bibliothèques PHP externes à notre application (comme Doctrine, Twig, SwiftMailer, etc)
 
 ---
 ## Entité
