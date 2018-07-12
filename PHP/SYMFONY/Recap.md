@@ -513,6 +513,18 @@ $builder -> ('status', ChoiceType::class, array(
 ));
 ```
 
+2. Entité pour une relation `ManyToOne`:
+```php
+$builder -> add('categorie', EntityType::class, array(
+    'class' => Category::class,
+    'choice_label' => 'name', // Attribut de ma catégorie à afficher
+    'query_builder' => function(EntityRepository $er){
+        return $er -> createQueryBuilder('c')
+            -> orderBy('c.name', 'ASC');
+    }
+));
+```
+
 ### Formulaires imbriqués
 ### Les collections
 ### Création dans un controller
