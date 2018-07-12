@@ -433,6 +433,15 @@ public function findByName($name)
 ```
 
 ### L'objet Paginator
+
+Objet pour gérer une pagination, retourne les entités d'une page et le nombre total d'entités.
+
+```php
+use Doctrine\ORM\Tools\Pagination\Paginator;
+
+return new Paginator($queryBuilder);
+```
+
 ### Appel dans un controller
 
 ---
