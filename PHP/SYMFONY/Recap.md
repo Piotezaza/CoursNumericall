@@ -320,6 +320,16 @@ public function edit(Article $article) {}
 
 Le param converter retourne automatiquement un objet Article en fonction de son id.
 
+```php
+use Sensio\Bundle\FrameworkExtraBundle\Configuration\Entity;
+
+/**
+ * @Route("/show/{id}/{comment_id}", requirements={"id" = "\d+", "comment_id" = "\d+"})
+ * @Entity("comment", expr="repository.find(comment_id)")
+ */
+public function show(Article $article, Comment $comment) {}
+```
+
 
 ### L'objet `Request`
 
