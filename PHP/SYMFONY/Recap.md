@@ -670,8 +670,11 @@ Les blocks permettent de faire de l'héritage de vue et de surcharger les partie
 ```twig
 {{ form(nomDuForm) }}
 
-{{ form_start(nomDuForm) }
+{{ form_start(nomDuForm) }}
+
+    {{ form_errors(nomDuChamp) }} {# affiche les erreurs globales (évite qu'elles soient en bas) #}
     {{ form_row(nomDuForm.name) }} {# affiche juste le champ name #}
+    
 {{ form_end(nomDuForm) } {# affiche tous les autres champs #}
 ```
 
