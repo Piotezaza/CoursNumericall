@@ -69,7 +69,12 @@ composer update
 **Commande pour créer les fichiers publiques :**
 ```
 npm run dev
+
+npm run build
 ```
+
+- `dev` ne minifie pas les fichiers, permet de retrouver les erreurs
+- `build` minifie les fichiers (pour la prod)
 
 ---
 ## Entité
