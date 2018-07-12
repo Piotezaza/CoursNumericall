@@ -710,6 +710,7 @@ article:
     name: Nom de l'article
     msg: L'article "%name%" est ajouté
     counter: Il y a %counter% article|Il y a %counter% articles
+    # counter: Il y a zero ou un article|Il y a plusieurs articles
 ```
 
 ### Extensions
