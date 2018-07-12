@@ -222,7 +222,7 @@ private $category;
 
 ### Cycle de vie
 
-
+Permet à **Doctrine** d'appeler automatiquement des méthodes de l'entité lors d'une action (ex: `persist` ou `remove`).
 
 
 ---
