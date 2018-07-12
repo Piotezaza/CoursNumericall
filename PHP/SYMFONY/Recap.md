@@ -159,29 +159,41 @@ private $articles;
 
 6. **Plusieurs** produits dans **plusieurs** paniers avec des **paramètres** :
 ```php
-// Entity Panier
+/*
+    -------------
+    Entity Panier
+    -------------
+*/ 
 
 /*
-* @ORM\OneToMany(targetEntity="PanierProduit")
+* @ORM\OneToMany(targetEntity="PanierProduit", mappedBy="panier")
 */
 private $panierProduits;
 
-// Entity PanierProduit
+/*
+    --------------------
+    Entity PanierProduit
+    --------------------
+*/ 
 
 /*
-* @ORM\ManyToOne(targetEntity="Panier")
+* @ORM\ManyToOne(targetEntity="Panier", inversedBy="panierProduits")
 */
 private $panier;
 
 /*
-* @ORM\ManyToOne(targetEntity="Produit")
+* @ORM\ManyToOne(targetEntity="Produit", inversedBy="panierProduits")
 */
 private $produit;
 
-// Entity Produit
+/*
+    --------------
+    Entity Produit
+    --------------
+*/ 
 
 /*
-* @ORM\OneToMany(targetEntity="PanierProduit")
+* @ORM\OneToMany(targetEntity="PanierProduit", mappedBy="panier")
 */
 private $panierProduit;
 ```
