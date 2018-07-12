@@ -594,6 +594,22 @@ $form = $formBuilder -> getForm();
 
 Twig est un moteur de templates. Il propose un language simplifié spécialement pour faire du front.
 
+```twig
+// Condition
+
+{% if var == 1 %}
+{% else %}
+{% endif %}
+
+// Test si une variable est définie
+{% if is var is defined %}
+{% endif %}
+
+// Négation
+{% if var is not defined %}
+{% endif %}
+```
+
 ### Commandes de base
 ### Les blocks
 ### Les formulaires
