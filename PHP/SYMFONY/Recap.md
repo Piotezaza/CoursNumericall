@@ -352,6 +352,10 @@ $post = $request -> request -> get('nom', 'valeur par défaut'); // $_POST['nom'
 $get = $request -> query -> get('nom'); // $_GET['nom']
 ```
 
+3. **Tester** si la requête est en **AJAX** :
+```php
+if( $request -> isHmlHttpRequest() ) { /*...*/ }
+```
 
 ### Réponses
 
