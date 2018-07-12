@@ -113,7 +113,17 @@ private $nomDuChamp;
 
 ### Relations
 
-Les relations permettent de faire des clés étrangères dans la base de données
+Les relations permettent de faire des clés étrangères dans la base de données.
+
+**EXEMPLES :**
+
+**Une** image pour **un** article :
+```php
+/*
+* @ORM\OneToOne(targetEntity="App\entity\Image", cascade="all", orphanRemoval=true)
+*/
+private $image;
+```
 
 
 ### Cycle de vie
