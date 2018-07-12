@@ -714,7 +714,17 @@ article:
     counter: "{0} Il n'y a pas d'article|{1} Il y a 1 article|[2, Inf[ Il y a %counter% articles" # 3ème version
 ```
 
+```php
+$t = $this -> get('translator');
+$t -> trans('chaine', array());
+$t -> transChoice('chaine', $count, array());
+```
+
 ### Extensions
 
+**Faire une exension :**
+```
+php bin/console make:twig-extension
+```
 ---
 ## Quelques erreurs
