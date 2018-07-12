@@ -422,6 +422,14 @@ public function findByName($name)
 -> setMaxResults(10) // LIMIT
 -> setFirstResult(0) // OFFSET
 -> leftJoin('e.objet', 'o')
+-> distinct()
+-> groupBy('e.val')
+
+// Resultat
+-> getResult()
+-> getOneResult();
+-> getOneOrNullResult();
+-> getScalarResult(); // -> select('COUNT(e)')
 ```
 
 ### L'objet Paginator
