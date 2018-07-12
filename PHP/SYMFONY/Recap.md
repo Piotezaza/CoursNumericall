@@ -412,6 +412,14 @@ public function findByName($name)
 }
 ```
 
+**Quelues méthodes du query builder :**
+
+```php
+-> where('e.value = :value')
+-> andWhere('...')
+-> orWhere('...')
+```
+
 ### L'objet Paginator
 ### Appel dans un controller
 
