@@ -592,22 +592,40 @@ $form = $formBuilder -> getForm();
 ---
 ## TWIG
 
+[DOC OFFICIELLE](https://twig.symfony.com/doc/2.x/)
+[{{ loop }}](https://twig.symfony.com/doc/2.x/tags/for.html)
+
 Twig est un moteur de templates. Il propose un language simplifié spécialement pour faire du front.
 
 ```twig
-// Condition
+<!-- Condition -->
 
 {% if var == 1 %}
 {% else %}
 {% endif %}
 
-// Test si une variable est définie
+<!-- Test si une variable est définie -->
 {% if is var is defined %}
 {% endif %}
 
-// Négation
+<!-- Négation -->
 {% if var is not defined %}
 {% endif %}
+
+<!-- Boucle (foreach) -->
+{% for entity in entities if entity.active %}
+    <!-- Permet de selectionner le 1er ou dernier item -->
+    {{ loop.first }} 
+    {{ loop.last }}
+    <!-- Donne l'index à partir de 1 -->
+    {{ loop.index }}
+    <!-- Donne l'index à partir de 0 -->
+    {{ loop.index0 }}
+{% endfor %}
+
+<!-- Faire une boucle de 0 à 10 -->
+{% for 0..10 %} 
+{% endfor %}
 ```
 
 ### Commandes de base
