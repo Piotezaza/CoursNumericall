@@ -395,18 +395,8 @@ return new JsonResponse(array(
 ## Repository
 
 ### Écrire une requête
-
-
-
 ### L'objet Paginator
-
-
-
 ### Appel dans un controller
-
-
-
-
 
 ---
 ## Formulaire
