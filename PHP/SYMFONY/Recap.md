@@ -407,6 +407,8 @@ public function findByName($name)
         -> where ('a.name = :name')
         -> setParameter('name', $name)
     ;
+
+    return $queryBuilder -> getQuery() -> getResult();
 }
 ```
 
