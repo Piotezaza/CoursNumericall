@@ -542,9 +542,28 @@ $builder -> add('address', AddressType::class);
 ```
 
 ### Les collections
+
+[DOC SYMFONY](http://symfony.com/doc/current/reference/constraints/Collection.html)
+
+```php
+$builder -> add('gallery', CollectionType::class, array(
+    'entry_type' => Image::class
+));
+```
+
 ### Création dans un controller
+
+**Pour créer un nouveau formulaire dans un controller:**
+```php
+$form = $this -> createForm(ArticleType::class, $article); // $article = entité Article
+```
 
 ---
 ## Les services
 
 ### Principes
+
+### Quelques services utiles
+
+---
+## TWIG
