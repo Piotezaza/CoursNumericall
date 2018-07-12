@@ -526,8 +526,24 @@ $builder -> add('categorie', EntityType::class, array(
 ```
 
 ### Formulaires imbriqués
+
+Pour ajouter un formulaire dans un autre (modifier deux entités), par exemple un formulaire addresse dans un formulaire client.
+
+```php
+$builder -> add('address', AddressType::class);
+```
+
+**Ne pas oublier l'attribut cascade dans la relation**
+```php
+/**
+ * @ORM\OneToOne(targetEntity="Address", cascade="all")
+ */
+```
+
 ### Les collections
 ### Création dans un controller
 
 ---
 ## Les services
+
+Principes
