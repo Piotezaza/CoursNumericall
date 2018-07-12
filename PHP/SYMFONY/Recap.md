@@ -224,6 +224,32 @@ private $category;
 
 Permet à **Doctrine** d'appeler automatiquement des méthodes de l'entité lors d'une action (ex: `persist` ou `remove`).
 
+**Avant la déclaration de la classe :**
+```php
+/*
+* @ORM\HasLifecycleCallbacks
+*/
+```
+
+**Juste avant la méthode à appeler :**
+
+```php
+/*
+* @ORM\PrePersist()
+* @ORM\PreUpdate()
+* @ORM\PreRemove()
+* @ORM\PostPersist()
+* @ORM\PostUpdate()
+* @ORM\PostRemove()
+*/
+public function prePersist() { /*...*/ }
+```
+
+
 
 ---
 ## Controller
+
+Routes
+Param Converter
+L'objet `Request`
