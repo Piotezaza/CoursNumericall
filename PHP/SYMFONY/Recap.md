@@ -697,8 +697,17 @@ Permettent de transformer une chaîne ou une valeur
 ```
 ### Traduction
 
-```yaml
+```twig
 {{ 'article.name'|trans }}
+{{ 'article.msg'|trans({"%name%" : entity.name}) }}
+```
+
+dans le fichier `messages.fr.yaml`
+
+```yaml
+article:
+    name: Nom de l'article
+    msg: L'article "%name%" est ajouté
 ```
 
 ### Extensions
