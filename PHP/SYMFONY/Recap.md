@@ -453,7 +453,7 @@ $articleRepository = $entityManager -> getRepository(Article::class);
 $articles = $articleRepository -> findByName('nom');
 ```
 
-### 
+### Sauvegarder et supprimer les entités
 
 ```php
 $entityManager -> persist($article) // Persist d'une entité
