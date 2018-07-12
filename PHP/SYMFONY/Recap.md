@@ -484,7 +484,7 @@ On ajoute des champs avec la méthode `add` de l'objet `builder`:
 ```php
 $builder -> add('name', null, array(
     'label' => 'label.traduction',
-    'required' => false|true,
+    'required' => false|true
 ))
 ```
 
