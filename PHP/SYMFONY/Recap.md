@@ -204,6 +204,7 @@ private $panierProduit;
 
 7. **Comportement** de l'article lors de la **suppression** d'une catégorie :
 
+Met l'attribut `category` à `null` si la catégorie est supprimée.
 ```php
 /*
     --------------
@@ -218,7 +219,6 @@ private $panierProduit;
 private $category;
 ```
 
-Met l'attribut `category` à `null` si la catégorie est supprimée.
 
 **Attributs**
 
