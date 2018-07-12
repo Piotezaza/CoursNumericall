@@ -468,6 +468,8 @@ $entityManager -> flush(); // Execute les requêtes
 Les formulaires d'entité sont dans des classes à part dans le dossier `src/Form`, elles sont nommées avec le suffixe `Type` (`ArticleType`).
 
 ### FormBuilder
+
+Dans une classe de formulaire une méthode `buildForm` doit être implémentée. 
 ### Types de champs
 ### Formulaires imbriqués
 ### Les collections
