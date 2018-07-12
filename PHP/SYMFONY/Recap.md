@@ -490,6 +490,8 @@ $builder -> add('name', null, array(
 
 ### Types de champs
 
+
+1. Select
 ```php
 use Symfony\Component\Form\Extension\Core\Type\TextType;
 
@@ -505,7 +507,9 @@ $builder -> ('status', ChoiceType::class, array(
         'article.statuts_active' => 'active',
         'article.statuts_draft' => 'draft',
         'article_statuts_inactive' => 'inactive'
-    )
+    ),
+    'multiple' => false, 
+    'expanded' => true // Affichage de bouton radio ou select
 ));
 ```
 
