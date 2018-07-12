@@ -44,8 +44,8 @@ Via composer : `composer create-project symfony/website-skeleton MonProjet`
 - **`CONFIG`** : fichiers de configuration des modules (version Symfony < 4 : un seul fichier `config.yml`)
     - **`PACKAGES`** : contient les configs des bibliothèques externes
 - **`NODE_MODULES`** : toutes les bibliothèques CSS/JavaScript
-- **`PUBLIC`** : contient le fichier `index.php` et les fichiers statiques créés par *WebPack*
-- **`SRC`** :  tout le code source de l'application
+- **`PUBLIC`** : contient le fichier `index.php` (dossier `web` pour Symfony < 4) et les fichiers statiques créés par *WebPack*
+- **`SRC`** :  contient tous les fichiers source PHP de l'application
 - **`TEMPLATES`** : contient toutes les vues (fichiers **Twig**)
 - **`TESTS`** : fichiers pour les tests unitaires 
 - **`TRANSLATIONS`** : fichiers de traduction (version Symfony < 4 : les vues sont dans le dossier `Ressource/Views` des Bundle)
