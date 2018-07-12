@@ -403,7 +403,10 @@ Le repository contient les requêtes d'une entité (une entite = un repository)
 
 public function findByName($name)
 {
-    $queryBuilder = $this -> createQueryBuilder('a'); // Alias de l'objet
+    $queryBuilder = $this -> createQueryBuilder('a') // Alias de l'objet
+        -> where ('a.name = :name')
+        -> setParameter('name', $name)
+    ;
 }
 ```
 
