@@ -21,12 +21,12 @@
     - [L'objet Paginator](https://github.com/Piotezaza/CoursNumericall/blob/master/PHP/SYMFONY/Recap.md#lobjet-paginator)
     - [Appel dans un controller](https://github.com/Piotezaza/CoursNumericall/blob/master/PHP/SYMFONY/Recap.md#appel-dans-un-controller)
 - [Formulaire](https://github.com/Piotezaza/CoursNumericall/blob/master/PHP/SYMFONY/Recap.md#formulaire)
-    - [FormBuilder]()
-    - [Types de champs]()
-    - [Formulaires imbriqués]()
-    - [Les collections]()
-    - [Création dans un controller]()
-- [Les services]()
+    - [FormBuilder](https://github.com/Piotezaza/CoursNumericall/blob/master/PHP/SYMFONY/Recap.md#formbuilder)
+    - [Types de champs](https://github.com/Piotezaza/CoursNumericall/blob/master/PHP/SYMFONY/Recap.md#types-de-champs)
+    - [Formulaires imbriqués](https://github.com/Piotezaza/CoursNumericall/blob/master/PHP/SYMFONY/Recap.md#formulaires-imbriqu%C3%A9s)
+    - [Les collections](https://github.com/Piotezaza/CoursNumericall/blob/master/PHP/SYMFONY/Recap.md#les-collections)
+    - [Création dans un controller](https://github.com/Piotezaza/CoursNumericall/blob/master/PHP/SYMFONY/Recap.md#cr%C3%A9ation-dans-un-controller)
+- [Les services](https://github.com/Piotezaza/CoursNumericall/blob/master/PHP/SYMFONY/Recap.md#les-services)
 
 ---
 ## Installation
@@ -393,6 +393,8 @@ return new JsonResponse(array(
 
 ---
 ## Repository
+
+Le repository contient les requêtes d'une entité (une entite = un repository)
 
 ### Écrire une requête
 ### L'objet Paginator
