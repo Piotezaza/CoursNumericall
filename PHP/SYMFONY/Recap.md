@@ -732,3 +732,4 @@ php bin/console make:twig-extension
 - `Must be an instance of` : soit il vous manque un **`use`** soit l'**espace de nom** à mal été écrit
 - `Not contains valid YAML` : l'**indentation** n'est sûrement pas bonne ou deux paramètres ont un **nom identique**
 - `Could not convert to string` : on essaie d'afficher un objet, il **manque** la méthode magique `__toString()`
+- `The file was found but the class not found` : le nom de la classe n'est pas le même que le nom du fichier
