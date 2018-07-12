@@ -357,7 +357,7 @@ $get = $request -> query -> get('nom'); // $_GET['nom']
 if( $request -> isHmlHttpRequest() ) { /*...*/ }
 ```
 
-### Réponses
+### Les objets `Response`
 
 
 
