@@ -28,7 +28,10 @@
     - [Les collections](https://github.com/Piotezaza/CoursNumericall/blob/master/PHP/SYMFONY/Recap.md#les-collections)
     - [Création dans un controller](https://github.com/Piotezaza/CoursNumericall/blob/master/PHP/SYMFONY/Recap.md#cr%C3%A9ation-dans-un-controller)
 - [Les services](https://github.com/Piotezaza/CoursNumericall/blob/master/PHP/SYMFONY/Recap.md#les-services)
-    - [Principes]()
+    - [Principe]()
+    - [Quelques services utiles]()
+- [TWIG]()
+    - [Commandes de base]()
 
 ---
 ## Installation
@@ -561,12 +564,25 @@ $form -> handleRequest($request);
 if($form -> isSubmitted() && $form -> isValid()) { /*...*/ }
 ```
 
+**Pour créer un formulaire sans objet Type:**
+```php
+$formBuilder = $this -> createFormBuilder()
+    -> setAction('action')
+    -> setMethod('POST') // DELETE|PUT
+    -> add('champ', TextType::class)
+;
+
+$form = $formBuilder -> getForm();
+```
+
 ---
 ## Les services
 
-### Principes
+### Principe
 
 ### Quelques services utiles
 
 ---
 ## TWIG
+
+###Commandes de base
