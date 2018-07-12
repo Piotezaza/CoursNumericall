@@ -177,6 +177,13 @@ private $panier;
 * @ORM\ManyToOne(targetEntity="Produit")
 */
 private $produit;
+
+// Entity Produit
+
+/*
+* @ORM\OneToMany(targetEntity="PanierProduit")
+*/
+private $panierProduit;
 ```
 
 **Attributs**
