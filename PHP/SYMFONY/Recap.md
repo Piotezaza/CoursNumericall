@@ -94,8 +94,10 @@ php bin/console make:entity
 La base de données est définie via les annotations (instructions dans les commentaires).
 
 **Pour définir une colonne :**
-```
-
+```php
+/*
+* @ORM\Column(name="nom_du_champ", type="string", length=80, nullable=true)
+*/
 ```
 
 ### Relations
