@@ -697,12 +697,12 @@ Permettent de transformer une chaîne ou une valeur
 ```
 ### Traduction
 
+**Dans notre Vue:**
 ```twig
 {{ 'article.name'|trans }}
 {{ 'article.msg'|trans({"%name%" : entity.name}) }}
 ```
-
-dans le fichier `messages.fr.yaml`
+**Dans le fichier `messages.fr.yaml`:**
 
 ```yaml
 article:
