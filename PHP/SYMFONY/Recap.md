@@ -361,7 +361,13 @@ if( $request -> isHmlHttpRequest() ) { /*...*/ }
 
 Une action d'un `Controller` doit toujours retourner un objet de type `Response`.
 
-
+**Retourner** une réponse qui **contient une vue Twig** :
+```php
+return $this -> render('chemin/de/la/vue.html.twig', array(
+    'param1' => $param1,
+    'param2' => $param2
+));
+```
 
 ---
 ## Repository
