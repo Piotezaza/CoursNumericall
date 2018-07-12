@@ -117,7 +117,7 @@ Les relations permettent de faire des clés étrangères dans la base de donnée
 
 **EXEMPLES :**
 
-**Une** image pour **un** article :
+1. **Une** image pour **un** article :
 ```php
 /*
 * @ORM\OneToOne(targetEntity="App\entity\Image", cascade="all", orphanRemoval=true)
@@ -128,7 +128,7 @@ private $image;
 - `orphanRemoval` : Supprime les orphelins. (ex: pour article déjà enregistré avec un lien vers une image, si je supprime l'image (état passe à `null`) et que je sauvegarde mon article, ça supprime l'image.
 
 
-**Plusieurs** articles pour **une** catégorie :
+2. **Plusieurs** articles pour **une** catégorie :
 ```php
 /*
 * @ORM\ManyToOne(targetEntity="Category", inversedBy="articles")
@@ -138,7 +138,7 @@ private $category;
 - `inversedBy` : L'attribut `inversedBy` désigne le champ dans l'entité qui est le côté inverse de la relation.
 
 
-**Relation inverse** (obtenir les articles d'une catégorie) :
+3. **Relation inverse** (obtenir les articles d'une catégorie) :
 ```php
 /*
 * @ORM\OneToMany(targetEntity="Article", mappedBy="category")
