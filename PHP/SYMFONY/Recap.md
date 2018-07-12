@@ -592,8 +592,8 @@ $form = $formBuilder -> getForm();
 ---
 ## TWIG
 
-[DOC OFFICIELLE](https://twig.symfony.com/doc/2.x/)
-[{{ loop }}](https://twig.symfony.com/doc/2.x/tags/for.html)
+- [DOC OFFICIELLE](https://twig.symfony.com/doc/2.x/)
+- [{{ loop }}](https://twig.symfony.com/doc/2.x/tags/for.html)
 
 Twig est un moteur de templates. Il propose un language simplifié spécialement pour faire du front.
 
