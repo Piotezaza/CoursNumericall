@@ -467,12 +467,17 @@ $entityManager -> flush(); // Execute les requêtes
 
 Les formulaires d'entité sont dans des classes à part dans le dossier `src/Form`, elles sont nommées avec le suffixe `Type` (`ArticleType`).
 
+**Pour créer un formulaire :**
+```
+php bin/console make:form
+```
+
 ### FormBuilder
 
 Dans une classe de formulaire une méthode `buildForm` doit être implémentée. 
 
 ```php
-TEXTE
+public function buildForm(FormBuilderInterface $builder, array $options) { /*...*/ }
 ```
 
 ### Types de champs
