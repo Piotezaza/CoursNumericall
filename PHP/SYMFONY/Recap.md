@@ -483,7 +483,8 @@ public function buildForm(FormBuilderInterface $builder, array $options) { /*...
 On ajoute des champs avec la méthode `add` de l'objet `builder`:
 ```php
 $builder -> add('name', null, array(
-    'label' => 'label.traduction'
+    'label' => 'label.traduction',
+    'required' => false|true,
 ))
 ```
 
