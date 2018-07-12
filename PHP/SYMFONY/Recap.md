@@ -597,6 +597,8 @@ $form = $formBuilder -> getForm();
 
 Twig est un moteur de templates. Il propose un language simplifié spécialement pour faire du front.
 
+### Commandes de base
+
 ```twig
 <!-- Condition -->
 
@@ -631,8 +633,9 @@ Twig est un moteur de templates. Il propose un language simplifié spécialement
 {% endfor %}
 ```
 
-### Commandes de base
 ### Les blocks
+
+Définissent une partie d'une vue qui peut être 
 ### Les formulaires
 ### Les filtres
 ### Traduction
