@@ -83,10 +83,20 @@ npm run build
 
 Les entités `Entity` sont des objets déstinés à être stockés dans la base de donnée. Ces fichiers sont dans `src/Entity`.
 
+Une table = une entité.
 
 ### Création
 
+```
+php bin/console make:entity
+```
 
+La base de données est définie via les annotations (instructions dans les commentaires).
+
+**Pour définir une colonne :**
+```
+
+```
 
 ### Relations
 
