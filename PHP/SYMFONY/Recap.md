@@ -124,7 +124,6 @@ Les relations permettent de faire des clés étrangères dans la base de donnée
 */
 private $image;
 ```
-
 - `cascade` : Si l'article est supprimé, les images liées le seront également.
 - `orphanRemoval` : Supprime les orphelins. (ex: pour article déjà enregistré avec un lien vers une image, si je supprime l'image (état passe à `null`) et que je sauvegarde mon article, ça supprime l'image.
 
@@ -135,7 +134,6 @@ private $image;
 */
 private $category;
 ```
-
 - `inversedBy` : L'attribut `inversedBy` désigne le champ dans l'entité qui est le côté inverse de la relation.
 
 
