@@ -66,6 +66,11 @@ composer update
 
 **WebPack** est une bibliothèque qui va interpréter et minifier automatiquement les fichiers **SCSS** et **JavaScript**. Il assemble les fichiers `assets` en un seul.
 
+**Commande pour créer les fichiers publiques :**
+```
+npm run dev
+```
+
 ---
 ## Entité
 
