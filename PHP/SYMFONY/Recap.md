@@ -470,6 +470,11 @@ Les formulaires d'entité sont dans des classes à part dans le dossier `src/For
 ### FormBuilder
 
 Dans une classe de formulaire une méthode `buildForm` doit être implémentée. 
+
+```php
+TEXTE
+```
+
 ### Types de champs
 ### Formulaires imbriqués
 ### Les collections
