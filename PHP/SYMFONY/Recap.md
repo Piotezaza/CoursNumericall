@@ -144,9 +144,25 @@ private $articles; // Type ArrayCollecion
 4. **Plusieurs** articles pour **plusieurs** utilisateurs (auteurs) :
 ```php
 /*
-* @ORM\ManyToMany(targetEntity="Article", mappedBy="category")
+* @ORM\ManyToMany(targetEntity="User", inversedBy="articles")
 */
-private $articles; // Type ArrayCollecion
+private $users;
+```
+
+5. **Relation inverse** (tous les articles d'un utilisateur):
+```php
+/*
+* @ORM\ManyToMany(targetEntity="Article", mappedBy="users")
+*/
+private $articles;
+```
+
+6. **Plusieurs** produits dans **plusieurs** paniers avec des **paramètres** :
+```php
+/*
+* @ORM\ManyToMany(targetEntity="Article", mappedBy="users")
+*/
+private $articles;
 ```
 
 **Attributs**
