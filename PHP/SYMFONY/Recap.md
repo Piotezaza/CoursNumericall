@@ -701,6 +701,7 @@ Permettent de transformer une chaîne ou une valeur
 ```twig
 {{ 'article.name'|trans }}
 {{ 'article.msg'|trans({"%name%" : entity.name}) }}
+{{ 'article.counter'|transchoice(count, {"%counter%" : count}) }}
 ```
 **Dans le fichier `messages.fr.yaml`:**
 
@@ -708,6 +709,7 @@ Permettent de transformer une chaîne ou une valeur
 article:
     name: Nom de l'article
     msg: L'article "%name%" est ajouté
+    counter: Il y a %counter% article|Il y a %counter% articles
 ```
 
 ### Extensions
