@@ -216,9 +216,9 @@ private $panierProduit;
 * @ORM\JoinColumn(onDelete="SET NULL")
 */
 private $category;
-
-
 ```
+
+Met l'attribut `category` à `null` si la catégorie est supprimée.
 
 **Attributs**
 
