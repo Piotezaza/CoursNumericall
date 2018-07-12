@@ -33,8 +33,8 @@
     - [Quelques services utiles](https://github.com/Piotezaza/CoursNumericall/blob/master/PHP/SYMFONY/Recap.md#quelques-services-utiles)
 - [TWIG](https://github.com/Piotezaza/CoursNumericall/blob/master/PHP/SYMFONY/Recap.md#twig)
     - [Commandes de base](https://github.com/Piotezaza/CoursNumericall/blob/master/PHP/SYMFONY/Recap.md#commandes-de-base)
-    - [Les blocks]()
-    - [Les formulaires]()
+    - [Les blocks](https://github.com/Piotezaza/CoursNumericall/blob/master/PHP/SYMFONY/Recap.md#les-blocks)
+    - [Les formulaires](https://github.com/Piotezaza/CoursNumericall/blob/master/PHP/SYMFONY/Recap.md#les-formulaires)
 
 ---
 ## Installation
