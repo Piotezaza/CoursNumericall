@@ -333,7 +333,7 @@ public function show(Article $article, Comment $comment) {}
 
 ### L'objet `Request`
 
-
+L'objet `Request` permet d'obtenir des informations sur la requête client (POST/GET etc.)
 
 ### Réponses
 
