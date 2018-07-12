@@ -2,15 +2,16 @@
 
 ## SOMMAIRE
 
-- [Installation]()
-    - [Nouveau projet]()
-    - [Projet existant sur Git]()
-- [Dossiers]()
-- [Entité]()
-    - [Création]()
-    - [Relations]()
-    - [Cycle de vie]()
-- [Controller]()
+- [Installation](https://github.com/Piotezaza/CoursNumericall/blob/master/PHP/SYMFONY/Recap.md#installation)
+    - [Nouveau projet](https://github.com/Piotezaza/CoursNumericall/blob/master/PHP/SYMFONY/Recap.md#nouveau-projet)
+    - [Projet existant sur Git](https://github.com/Piotezaza/CoursNumericall/blob/master/PHP/SYMFONY/Recap.md#projet-existant-sur-git)
+- [Projet](https://github.com/Piotezaza/CoursNumericall/blob/master/PHP/SYMFONY/Recap.md#projet)
+    - [Dossiers]()
+- [Entité](https://github.com/Piotezaza/CoursNumericall/blob/master/PHP/SYMFONY/Recap.md#entit%C3%A9)
+    - [Création](https://github.com/Piotezaza/CoursNumericall/blob/master/PHP/SYMFONY/Recap.md#cr%C3%A9ation)
+    - [Relations](https://github.com/Piotezaza/CoursNumericall/blob/master/PHP/SYMFONY/Recap.md#relations)
+    - [Cycle de vie](https://github.com/Piotezaza/CoursNumericall/blob/master/PHP/SYMFONY/Recap.md#cycle-de-vie)
+- [Controller](https://github.com/Piotezaza/CoursNumericall/blob/master/PHP/SYMFONY/Recap.md#controller)
 
 ---
 ## Installation
@@ -34,9 +35,11 @@ Via composer : `composer create-project symfony/website-skeleton MonProjet`
 `composer update`
 
 ---
-## Dossiers
+## Projet
 
-- **ASSETS** : fichiers JS/CSS
+### Dossiers
+
+- **ASSETS** : contient tous les fichiers SCSS, JavaScript du projet
 - **BIN** : fichiers binaire tel que la console
 - **CONFIG** : fichiers de configuration des modules (version Symfony < 4 : un seul fichier `config.yml`)
 - **PUBLIC** : contient `index.php` et les fichiers statiques créés par *WebPack*
