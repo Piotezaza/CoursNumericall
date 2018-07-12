@@ -87,11 +87,13 @@ Une table = une entité.
 
 ### Création
 
-La base de données est définie via les annotations (instructions dans les commentaires).
+**Créer une entité :**
 
 ```
 php bin/console make:entity
 ```
+
+La base de données est définie via les annotations (instructions dans les commentaires).
 
 **Mettre à jour la base de données :**
 
