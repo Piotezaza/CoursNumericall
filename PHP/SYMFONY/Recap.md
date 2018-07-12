@@ -159,8 +159,7 @@ private $articles;
 
 6. **Plusieurs** produits dans **plusieurs** paniers avec des **paramètres** :
 ```php
-/*
-    -------------
+/*  -------------
     Entity Panier
     -------------
 */ 
@@ -172,8 +171,7 @@ private $panierProduits;
 
 
 
-/*
-    --------------------
+/*  --------------------
     Entity PanierProduit
     --------------------
 */ 
@@ -190,8 +188,7 @@ private $produit;
 
 
 
-/*
-    --------------
+/*  --------------
     Entity Produit
     --------------
 */ 
