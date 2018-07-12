@@ -52,13 +52,19 @@ composer update
 - **`CONFIG`** : fichiers de configuration des modules (version Symfony < 4 : un seul fichier `config.yml`)
     - **`PACKAGES`** : contient les configs des bibliothèques externes
 - **`NODE_MODULES`** : toutes les bibliothèques CSS/JavaScript
-- **`PUBLIC`** : contient le fichier `index.php` (dossier `web` pour Symfony < 4) et les fichiers statiques créés par *WebPack*
+- **`PUBLIC`** : contient le fichier `index.php` (dossier `web` pour Symfony < 4) et les fichiers statiques créés par *[WebPack]()*
 - **`SRC`** :  contient tous les fichiers source PHP de l'application
 - **`TEMPLATES`** : contient toutes les vues (fichiers **Twig** `fichier.html.twig`)
 - **`TESTS`** : contient les fichiers de tests PHPUnit pour faire des tests unitaires
 - **`TRANSLATIONS`** : fichiers de traduction (version Symfony < 4 : les vues sont dans le dossier `Ressource/Views` des Bundle)
 - **`VAR`** : contient le cache et les fichiers log
 - **`VENDOR`** : bibliothèques PHP externes à notre application (comme Doctrine, Twig, SwiftMailer, etc)
+
+### WebPack Encore
+
+**Encore** est un module de Symfony pour faciliter l'intégration de **WebPack** dans un projet.
+
+**WebPack** est une bibliothèque qui va interpréter et minifier automatiquement les fichiers **SCSS** et **JavaScript**. Il assemble les fichiers `assets` en un seul.
 
 ---
 ## Entité
