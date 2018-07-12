@@ -341,6 +341,18 @@ use Symfony\Component\HttpFoundation\Request;
 public function new(Request $request) { /*...*/ }
 ```
 
+1. **Hydrater** un **formulaire** à partir des données `$_POST` :
+```php
+$form -> handleRequest($request);
+```
+
+2. **Récupérer** des **valeurs** de la requête :
+```php
+$post = $request -> request -> get('nom', 'valeur par défaut'); // $_POST['nom']
+$get = $request -> query -> get('nom'); // $_GET['nom']
+```
+
+
 ### Réponses
 
 
