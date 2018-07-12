@@ -87,11 +87,17 @@ Une table = une entité.
 
 ### Création
 
+La base de données est définie via les annotations (instructions dans les commentaires).
+
 ```
 php bin/console make:entity
 ```
 
-La base de données est définie via les annotations (instructions dans les commentaires).
+**Mettre à jour la base de données :**
+
+```
+php bin/console doctrine:schema:update --force
+```
 
 **Pour définir une colonne :**
 ```php
@@ -103,10 +109,9 @@ use Doctrine\ORM\Mapping as ORM;
 private $nomDuChamp;
 ```
 
-
-
 ### Relations
 
+Les relations permettent de faire des clés étrangères dans la base de données
 
 
 ### Cycle de vie
