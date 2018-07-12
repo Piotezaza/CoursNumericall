@@ -614,6 +614,9 @@ Twig est un moteur de templates. Il propose un language simplifié spécialement
 
 <!-- Boucle (foreach) -->
 {% for entity in entities if entity.active %}
+{% endfor %}
+
+{% for entity in entities if entity.active %}
     <!-- Permet de selectionner le 1er ou dernier item -->
     {{ loop.first }} 
     {{ loop.last }}
