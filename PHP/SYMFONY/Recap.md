@@ -127,6 +127,7 @@ private $image;
 - `cascade` : Si l'article est supprimé, les images liées le seront également.
 - `orphanRemoval` : Supprime les orphelins. (ex: pour article déjà enregistré avec un lien vers une image, si je supprime l'image (état passe à `null`) et que je sauvegarde mon article, ça supprime l'image.
 
+
 **Plusieurs** articles pour **une** catégorie :
 ```php
 /*
