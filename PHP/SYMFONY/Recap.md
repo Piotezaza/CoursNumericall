@@ -656,6 +656,15 @@ Les blocks permettent de faire de l'héritage de vue et de surcharger les partie
     Contenu de la page
 {% endblock %}
 ```
+
+**Pour afficher le contenu d'un bloc parent :**
+
+```twig
+{% block content %}
+    {{ parent() }}
+{% endblock %}
+```
+
 ### Les formulaires
 ### Les filtres
 ### Traduction
