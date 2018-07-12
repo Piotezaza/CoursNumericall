@@ -418,6 +418,10 @@ public function findByName($name)
 -> where('e.value = :value')
 -> andWhere('...')
 -> orWhere('...')
+-> orderBy('e.id', 'ASC|DESC')
+-> setMaxResults(10) // LIMIT
+-> setFirstResult(0) // OFFSET
+-> leftJoin('e.objet', 'o')
 ```
 
 ### L'objet Paginator
