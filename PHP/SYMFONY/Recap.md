@@ -335,6 +335,12 @@ public function show(Article $article, Comment $comment) {}
 
 L'objet `Request` permet d'obtenir des informations sur la requête client (POST/GET etc.)
 
+```php
+use Symfony\Component\HttpFoundation\Request;
+
+public function new(Request $request) { /*...*/ }
+```
+
 ### Réponses
 
 
