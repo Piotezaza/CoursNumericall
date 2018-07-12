@@ -633,6 +633,11 @@ Twig est un moteur de templates. Il propose un language simplifié spécialement
 {% endfor %}
 ```
 
+**Pour déboguer des valeurs (`var_dump`) :**
+```twig
+{{ dump(variable) }}
+```
+
 ### Les blocks
 
 Les blocks permettent de faire de l'héritage de vue et de surcharger les parties parentes.
@@ -674,13 +679,28 @@ Les blocks permettent de faire de l'héritage de vue et de surcharger les partie
 
     {{ form_errors(nomDuChamp) }} {# affiche les erreurs globales (évite qu'elles soient en bas) #}
     {{ form_row(nomDuForm.name) }} {# affiche juste le champ name #}
-    
-{{ form_end(nomDuForm) } {# affiche tous les autres champs #}
+
+{{ form_end(nomDuForm) } {# affiche tous les autres champs et le </form> #}
 ```
+
+**Mettre le bouton submit directement en HTML**
 
 
 ### Les filtres
+
+Permettent de transformer une chaîne ou une valeur
+
+```twig
+{{ 'MaChaine'|lower }} {# 'machaine' #}
+{{ entity.date|date('d/m/Y') }} {# 01/01/2001 #}
+{{ '<b>Texte</b>'|raw }} {# permet d'interpréter l'HTML #}
+```
 ### Traduction
+
+```yaml
+{{ 'article.name'|trans }}
+```
+
 ### Extensions
 
 ---
