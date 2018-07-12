@@ -444,6 +444,23 @@ return new Paginator($queryBuilder);
 
 ### Appel dans un controller
 
+Il faut déjà récupérer l'entity manager puis appeler le repository de l'entité.
+
+```php
+$entityManager = $this -> getDoctrine() -> getManager();
+
+$articleRepository = $entityManager -> getRepository(Article::class);
+$articles = $articleRepository -> findByName('nom');
+```
+
+### 
+
+```php
+$entityManager -> persist($article) // Persist d'une entité
+// Persist = prépare une requête
+$entityManager -> remove($article); // Supprime
+$entityManager -> flush(); // Execute les requêtes
+```
 ---
 ## Formulaire
 
