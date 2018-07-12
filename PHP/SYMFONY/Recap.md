@@ -202,6 +202,24 @@ private $produit;
 private $panierProduit;
 ```
 
+7. **Comportement** de l'article lors de la **suppression** d'une catégorie :
+
+```php
+/*
+    --------------
+    Entity Article
+    --------------
+*/ 
+
+/*
+* @ORM\ManyToOne(targetEntity="Category")
+* @ORM\JoinColumn(onDelete="SET NULL")
+*/
+private $category;
+
+
+```
+
 **Attributs**
 
 - `cascade` : Si l'article est supprimé, les images liées le seront également.
