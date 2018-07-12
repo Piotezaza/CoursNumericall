@@ -600,35 +600,35 @@ Twig est un moteur de templates. Il propose un language simplifié spécialement
 ### Commandes de base
 
 ```twig
-<!-- Condition -->
+{# Condition #}
 
 {% if var == 1 %}
 {% else %}
 {% endif %}
 
-<!-- Test si une variable est définie -->
+{# Test si une variable est définie #}
 {% if is var is defined %}
 {% endif %}
 
-<!-- Négation -->
+{# Négation #}
 {% if var is not defined %}
 {% endif %}
 
-<!-- Boucle (foreach) -->
+{# Boucle (foreach) #}
 {% for entity in entities %}
 {% endfor %}
 
 {% for entity in entities if entity.active %}
-    <!-- Permet de selectionner le 1er ou dernier item -->
+    {# Permet de selectionner le 1er ou dernier item #}
     {{ loop.first }} 
     {{ loop.last }}
-    <!-- Donne l'index à partir de 1 -->
+    {# Donne l'index à partir de 1 #}
     {{ loop.index }}
-    <!-- Donne l'index à partir de 0 -->
+    {# Donne l'index à partir de 0 #}
     {{ loop.index0 }}
 {% endfor %}
 
-<!-- Faire une boucle de 0 à 10 -->
+{# Faire une boucle de 0 à 10 #}
 {% for 0..10 %} 
 {% endfor %}
 ```
@@ -636,7 +636,26 @@ Twig est un moteur de templates. Il propose un language simplifié spécialement
 ### Les blocks
 
 Les blocks permettent de faire de l'héritage de vue et de surcharger les parties parentes.
+```twig
+{# base.html.twig #}
 
+<header></header>
+
+<div class="content">
+    {% block content %}
+    {% endblock %}
+</div>
+
+<footer></footer>
+
+{# accueil.html.twig #}
+
+{% extends 'base.html.twig' %}
+
+{% block content %}
+    Contenu de la page
+{% endblock %}
+```
 ### Les formulaires
 ### Les filtres
 ### Traduction
