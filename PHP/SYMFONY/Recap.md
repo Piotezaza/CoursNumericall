@@ -480,6 +480,13 @@ Dans une classe de formulaire une méthode `buildForm` doit être implémentée.
 public function buildForm(FormBuilderInterface $builder, array $options) { /*...*/ }
 ```
 
+On ajoute des champs avec la méthode `add` de l'objet `builder`:
+```php
+$builder -> add('name', null, array(
+    'label' => 'label.traduction'
+))
+```
+
 ### Types de champs
 ### Formulaires imbriqués
 ### Les collections
