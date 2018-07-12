@@ -15,7 +15,7 @@
     - [Routes](https://github.com/Piotezaza/CoursNumericall/blob/master/PHP/SYMFONY/Recap.md#routes)
     - [Param Converter](https://github.com/Piotezaza/CoursNumericall/blob/master/PHP/SYMFONY/Recap.md#param-converter)
     - [L'objet `Request`](https://github.com/Piotezaza/CoursNumericall/blob/master/PHP/SYMFONY/Recap.md#lobjet-request)
-    - [Réponses](https://github.com/Piotezaza/CoursNumericall/blob/master/PHP/SYMFONY/Recap.md#r%C3%A9ponses)
+    - [Les objets `Response`](https://github.com/Piotezaza/CoursNumericall/blob/master/PHP/SYMFONY/Recap.md#les-objets-response)
 - [Repository](https://github.com/Piotezaza/CoursNumericall/blob/master/PHP/SYMFONY/Recap.md#repository)
     - [Écrire une requête]()
     - [L'objet Paginator]()
@@ -359,6 +359,7 @@ if( $request -> isHmlHttpRequest() ) { /*...*/ }
 
 ### Les objets `Response`
 
+Une action d'un Controller doit toujours retourner un objet de type Reponse.
 
 
 
