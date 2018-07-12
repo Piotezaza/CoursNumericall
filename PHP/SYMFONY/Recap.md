@@ -18,7 +18,11 @@
 
 ### Nouveau projet
 
-Via composer : `composer create-project symfony/website-skeleton MonProjet`
+Via composer : 
+
+```
+composer create-project symfony/website-skeleton MonProjet
+```
 
 **Installer les bibliothèques :**
 
@@ -28,11 +32,15 @@ Via composer : `composer create-project symfony/website-skeleton MonProjet`
 
 ### Projet existant sur Git
 
-`git clone http://github.com/projet` 
+```
+git clone http://github.com/projet`
+```
 
 **Mettre à jour les bibliothèques PHP, CSS & JavaScript :**
 
-`composer update`
+```
+composer update
+```
 
 ---
 ## Projet
@@ -46,8 +54,8 @@ Via composer : `composer create-project symfony/website-skeleton MonProjet`
 - **`NODE_MODULES`** : toutes les bibliothèques CSS/JavaScript
 - **`PUBLIC`** : contient le fichier `index.php` (dossier `web` pour Symfony < 4) et les fichiers statiques créés par *WebPack*
 - **`SRC`** :  contient tous les fichiers source PHP de l'application
-- **`TEMPLATES`** : contient toutes les vues (fichiers **Twig**)
-- **`TESTS`** : fichiers pour les tests unitaires 
+- **`TEMPLATES`** : contient toutes les vues (fichiers **Twig** `fichier.html.twig`)
+- **`TESTS`** : contient les fichiers de tests PHPUnit pour faire des tests unitaires
 - **`TRANSLATIONS`** : fichiers de traduction (version Symfony < 4 : les vues sont dans le dossier `Ressource/Views` des Bundle)
 - **`VAR`** : contient le cache et les fichiers log
 - **`VENDOR`** : bibliothèques externes à notre application (comme Doctrine, Twig, SwiftMailer, etc)
