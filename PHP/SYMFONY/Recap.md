@@ -635,7 +635,8 @@ Twig est un moteur de templates. Il propose un language simplifié spécialement
 
 ### Les blocks
 
-Définissent une partie d'une vue qui peut être 
+Les blocks permettent de faire de l'héritage de vue et de surcharger les parties parentes.
+
 ### Les formulaires
 ### Les filtres
 ### Traduction
