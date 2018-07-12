@@ -708,9 +708,10 @@ Permettent de transformer une chaîne ou une valeur
 ```yaml
 article:
     name: Nom de l'article
-    msg: L'article "%name%" est ajouté
-    counter: Il y a %counter% article|Il y a %counter% articles
-    # counter: Il y a zero ou un article|Il y a plusieurs articles
+    msg: L'article %name% est ajouté
+    counter: Il y a %counter% article|Il y a %counter% articles # 1ère version
+    counter: Il y a zero ou un article|Il y a plusieurs articles # 2nd version
+    counter: "{0} Il n'y a pas d'article|{1} Il y a 1 article|[2, Inf[ Il y a %counter% articles" # 3ème version
 ```
 
 ### Extensions
