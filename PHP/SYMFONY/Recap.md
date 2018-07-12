@@ -253,6 +253,41 @@ public function prePersist() { /*...*/ }
 ---
 ## Controller
 
+Les `controllers` sont les classes qui vont être utilisées lors de l'appel d'une route, ils sont stockés dans le dossier `src/Controller`.
+
 ### Routes
+
+
+
 ### Param Converter
+
+
+
 ### L'objet `Request`
+
+
+
+### Réponses
+
+
+
+
+---
+## Repository
+
+### Écrire une requête
+
+
+
+### L'objet Paginator
+
+
+
+### Appel dans un controller
+
+
+
+
+
+---
+## Formulaire
