@@ -35,6 +35,10 @@
     - [Commandes de base](https://github.com/Piotezaza/CoursNumericall/blob/master/PHP/SYMFONY/Recap.md#commandes-de-base)
     - [Les blocks](https://github.com/Piotezaza/CoursNumericall/blob/master/PHP/SYMFONY/Recap.md#les-blocks)
     - [Les formulaires](https://github.com/Piotezaza/CoursNumericall/blob/master/PHP/SYMFONY/Recap.md#les-formulaires)
+    - [Les filtres]()
+    - [Traduction]()
+    - [Extensions]()
+- [**Quelques erreurs**]()
 
 ---
 ## Installation
@@ -588,6 +592,14 @@ $form = $formBuilder -> getForm();
 ---
 ## TWIG
 
+Twig est un moteur de templates. Il propose un language simplifié spécialement pour faire du front.
+
 ### Commandes de base
 ### Les blocks
 ### Les formulaires
+### Les filtres
+### Traduction
+### Extensions
+
+---
+## Quelques erreurs
