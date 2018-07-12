@@ -15,6 +15,12 @@
     - [Routes](https://github.com/Piotezaza/CoursNumericall/blob/master/PHP/SYMFONY/Recap.md#routes)
     - [Param Converter](https://github.com/Piotezaza/CoursNumericall/blob/master/PHP/SYMFONY/Recap.md#param-converter)
     - [L'objet `Request`](https://github.com/Piotezaza/CoursNumericall/blob/master/PHP/SYMFONY/Recap.md#lobjet-request)
+    - [Réponses](https://github.com/Piotezaza/CoursNumericall/blob/master/PHP/SYMFONY/Recap.md#r%C3%A9ponses)
+- [Repository](https://github.com/Piotezaza/CoursNumericall/blob/master/PHP/SYMFONY/Recap.md#repository)
+    - [Écrire une requête]()
+    - [L'objet Paginator]()
+    - [Appel dans un controller]()
+- [Formulaire]()
 
 ---
 ## Installation
@@ -108,7 +114,7 @@ php bin/console doctrine:schema:update --force
 ```php
 use Doctrine\ORM\Mapping as ORM;
 
-/*
+/**
 * @ORM\Column(name="nom_du_champ", type="string", length=80, nullable=true)
 */
 private $nomDuChamp;
@@ -122,7 +128,7 @@ Les relations permettent de faire des clés étrangères dans la base de donnée
 
 1. **Une** image pour **un** article :
 ```php
-/*
+/**
 * @ORM\OneToOne(targetEntity="App\entity\Image", cascade="all", orphanRemoval=true)
 */
 private $image;
@@ -130,7 +136,7 @@ private $image;
 
 2. **Plusieurs** articles pour **une** catégorie :
 ```php
-/*
+/**
 * @ORM\ManyToOne(targetEntity="Category", inversedBy="articles")
 */
 private $category;
@@ -138,7 +144,7 @@ private $category;
 
 3. **Relation inverse** (obtenir les articles d'une catégorie) :
 ```php
-/*
+/**
 * @ORM\OneToMany(targetEntity="Article", mappedBy="category")
 */
 private $articles; // Type ArrayCollecion
@@ -146,7 +152,7 @@ private $articles; // Type ArrayCollecion
 
 4. **Plusieurs** articles pour **plusieurs** utilisateurs (auteurs) :
 ```php
-/*
+/**
 * @ORM\ManyToMany(targetEntity="User", inversedBy="articles")
 */
 private $users;
@@ -154,7 +160,7 @@ private $users;
 
 5. **Relation inverse** (tous les articles d'un utilisateur):
 ```php
-/*
+/**
 * @ORM\ManyToMany(targetEntity="Article", mappedBy="users")
 */
 private $articles;
@@ -167,7 +173,7 @@ private $articles;
     -------------
 */ 
 
-/*
+/**
 * @ORM\OneToMany(targetEntity="PanierProduit", mappedBy="panier")
 */
 private $panierProduits;
@@ -179,12 +185,12 @@ private $panierProduits;
     --------------------
 */ 
 
-/*
+/**
 * @ORM\ManyToOne(targetEntity="Panier", inversedBy="panierProduits")
 */
 private $panier;
 
-/*
+/**
 * @ORM\ManyToOne(targetEntity="Produit", inversedBy="panierProduits")
 */
 private $produit;
@@ -196,7 +202,7 @@ private $produit;
     --------------
 */ 
 
-/*
+/**
 * @ORM\OneToMany(targetEntity="PanierProduit", mappedBy="panier")
 */
 private $panierProduit;
@@ -208,7 +214,7 @@ Met l'attribut `category` à `null` si la catégorie est supprimée.
 ```php
 //Entity Article
 
-/*
+/**
 * @ORM\ManyToOne(targetEntity="Category")
 * @ORM\JoinColumn(onDelete="SET NULL")
 */
@@ -229,7 +235,7 @@ Permet à **Doctrine** d'appeler automatiquement des méthodes de l'entité lors
 
 **Avant la déclaration de la classe :**
 ```php
-/*
+/**
 * @ORM\HasLifecycleCallbacks
 */
 ```
@@ -237,7 +243,7 @@ Permet à **Doctrine** d'appeler automatiquement des méthodes de l'entité lors
 **Juste avant la méthode à appeler :**
 
 ```php
-/*
+/**
 * @ORM\PrePersist()
 * @ORM\PreUpdate()
 * @ORM\PreRemove()
@@ -256,6 +262,46 @@ public function prePersist() { /*...*/ }
 Les `controllers` sont les classes qui vont être utilisées lors de l'appel d'une route, ils sont stockés dans le dossier `src/Controller`.
 
 ### Routes
+
+1. **Pour définir un préfixe pour toutes les routes d'un `controller`, mettre avant la déclaration de la `class`:**
+```php
+use Symfony\Component\Routing\Annotation\Route;
+
+/**
+ * @Route("/prefixe/article/")
+ */
+class ArticleController extends Controller {}
+```
+
+2. **Avant la déclaration d'une méthode :**
+```php
+/**
+ * @Route("/new")
+ */
+public function new() {}
+```
+
+
+3. **Pour définir les paramètres :**
+```php
+/**
+ * @Route("/edit/{id}", name="article_edit", requirements={"id" = "\d+"})
+ */
+public function edit($id) {}
+```
+
+- `requirements`: obligatoire
+- `d` : chiffre
+- `+` : 1 ou plusieurs
+
+4. **Valeur par défaut:**
+```php
+/**
+ * @Route("/list/{page}", requirements={"page" = "\d+"}, defaults={"page" = 1})
+ */
+public function list($page) {}
+```
+
 
 
 
