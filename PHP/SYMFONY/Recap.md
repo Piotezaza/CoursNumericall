@@ -666,6 +666,12 @@ Les blocks permettent de faire de l'héritage de vue et de surcharger les partie
 ```
 
 ### Les formulaires
+
+```twig
+{% form(nomDuForm) %}
+```
+
+
 ### Les filtres
 ### Traduction
 ### Extensions
