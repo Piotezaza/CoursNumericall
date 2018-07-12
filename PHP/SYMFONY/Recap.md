@@ -490,7 +490,24 @@ $builder -> add('name', null, array(
 
 ### Types de champs
 
+```php
+use Symfony\Component\Form\Extension\Core\Type\TextType;
 
+// Syntaxe à vérifier pour ajouter plusieurs types en une seule fois
+use Symfony\Component\Form\Extension\Core\Type\Type{
+    TextType,
+    ...
+};
+
+$builder -> ('status', ChoiceType::class, array(
+    'label' => 'article.choice',
+    'choices' => array(
+        'article.statuts_active' => 'active',
+        'article.statuts_draft' => 'draft',
+        'article_statuts_inactive' => 'inactive'
+    )
+));
+```
 
 ### Formulaires imbriqués
 ### Les collections
