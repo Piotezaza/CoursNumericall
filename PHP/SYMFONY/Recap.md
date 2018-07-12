@@ -135,7 +135,7 @@ private $image;
 */
 private $category;
 ```
-- `inversedBy` : L'attribut `inversedBy` désigne le champ dans l'entité qui est le côté inverse de la relation.
+`inversedBy` : L'attribut `inversedBy` désigne le champ dans l'entité qui est le côté inverse de la relation.
 
 
 3. **Relation inverse** (obtenir les articles d'une catégorie) :
@@ -145,7 +145,7 @@ private $category;
 */
 private $articles; // Type ArrayCollecion
 ```
-- `mappedBy` : Cette option spécifie le nom de propriété sur le targetEntity qui est du côté possédant cette relation. C'est un attribut requis pour le côté inverse d'une relation.
+`mappedBy` : Cette option spécifie le nom de propriété sur le targetEntity qui est du côté possédant cette relation. C'est un attribut requis pour le côté inverse d'une relation.
 
 
 ### Cycle de vie
