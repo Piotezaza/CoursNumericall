@@ -124,9 +124,6 @@ Les relations permettent de faire des clés étrangères dans la base de donnée
 */
 private $image;
 ```
-- `cascade` : Si l'article est supprimé, les images liées le seront également.
-- `orphanRemoval` : Supprime les orphelins. (ex: pour article déjà enregistré avec un lien vers une image, si je supprime l'image (état passe à `null`) et que je sauvegarde mon article, ça supprime l'image.
-
 
 2. **Plusieurs** articles pour **une** catégorie :
 ```php
@@ -135,8 +132,6 @@ private $image;
 */
 private $category;
 ```
-`inversedBy` : L'attribut `inversedBy` désigne le champ dans l'entité qui est le côté inverse de la relation.
-
 
 3. **Relation inverse** (obtenir les articles d'une catégorie) :
 ```php
@@ -145,8 +140,21 @@ private $category;
 */
 private $articles; // Type ArrayCollecion
 ```
-`mappedBy` : Cette option spécifie le nom de propriété sur le targetEntity qui est du côté possédant cette relation. C'est un attribut requis pour le côté inverse d'une relation.
 
+4. **Plusieurs** articles pour **plusieurs** utilisateurs (auteurs) :
+```php
+/*
+* @ORM\ManyToMany(targetEntity="Article", mappedBy="category")
+*/
+private $articles; // Type ArrayCollecion
+```
+
+**Attributs**
+
+- `cascade` : Si l'article est supprimé, les images liées le seront également.
+- `orphanRemoval` : Supprime les orphelins. (ex: pour article déjà enregistré avec un lien vers une image, si je supprime l'image (état passe à `null`) et que je sauvegarde mon article, ça supprime l'image.
+- `inversedBy` : L'attribut `inversedBy` désigne le champ dans l'entité qui est le côté inverse de la relation.
+- `mappedBy` : Cette option spécifie le nom de propriété sur le targetEntity qui est du côté possédant cette relation. C'est un attribut requis pour le côté inverse d'une relation.
 
 ### Cycle de vie
 
