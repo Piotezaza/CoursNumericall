@@ -307,9 +307,18 @@ public function list($page) {}
 php bin/console debug:router
 ```
 
-
 ### Param Converter
 
+Il permet de nous envoyer les types demandés dans une méthode d'un controller.
+
+```php
+/**
+ * @Route("/edit/{id}", requirements={"id" = "\d+"})
+ */
+public function edit(Article $article) {}
+```
+
+Le param converter retourne automatiquement un objet Article en fonction de son id.
 
 
 ### L'objet `Request`
