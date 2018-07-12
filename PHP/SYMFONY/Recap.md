@@ -613,7 +613,7 @@ Twig est un moteur de templates. Il propose un language simplifié spécialement
 {% endif %}
 
 <!-- Boucle (foreach) -->
-{% for entity in entities if entity.active %}
+{% for entity in entities %}
 {% endfor %}
 
 {% for entity in entities if entity.active %}
