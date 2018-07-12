@@ -263,7 +263,7 @@ Les `controllers` sont les classes qui vont être utilisées lors de l'appel d'u
 
 ### Routes
 
-1. **Pour définir un préfixe pour toutes les routes d'un `controller`, mettre avant la déclaration de la `class`:**
+1. Pour **définir** un **préfixe** pour toutes les routes d'un `controller`, mettre avant la déclaration de la `class`:
 ```php
 use Symfony\Component\Routing\Annotation\Route;
 
@@ -273,7 +273,7 @@ use Symfony\Component\Routing\Annotation\Route;
 class ArticleController extends Controller {}
 ```
 
-2. **Avant la déclaration d'une méthode :**
+2. **Avant** la déclaration d'une **méthode** :
 ```php
 /**
  * @Route("/new")
@@ -282,7 +282,7 @@ public function new() {}
 ```
 
 
-3. **Pour définir les paramètres :**
+3. Pour **définir** les **paramètres** :
 ```php
 /**
  * @Route("/edit/{id}", name="article_edit", requirements={"id" = "\d+"})
@@ -294,7 +294,7 @@ public function edit($id) {}
 - `d` : chiffre
 - `+` : 1 ou plusieurs
 
-4. **Valeur par défaut:**
+4. **Valeur par défaut** :
 ```php
 /**
  * @Route("/list/{page}", requirements={"page" = "\d+"}, defaults={"page" = 1})
@@ -302,7 +302,10 @@ public function edit($id) {}
 public function list($page) {}
 ```
 
-
+**Commande pour afficher les routes de l'application**
+```
+php bin/console debug:router
+```
 
 
 ### Param Converter
