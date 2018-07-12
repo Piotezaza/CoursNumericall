@@ -170,6 +170,8 @@ private $articles;
 */
 private $panierProduits;
 
+
+
 /*
     --------------------
     Entity PanierProduit
@@ -185,6 +187,8 @@ private $panier;
 * @ORM\ManyToOne(targetEntity="Produit", inversedBy="panierProduits")
 */
 private $produit;
+
+
 
 /*
     --------------
