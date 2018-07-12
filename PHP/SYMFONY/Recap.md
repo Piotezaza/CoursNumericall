@@ -397,6 +397,16 @@ return new JsonResponse(array(
 Le repository contient les requêtes d'une entité (une entite = un repository)
 
 ### Écrire une requête
+
+```php
+// Article Repository
+
+public function findByName($name)
+{
+    $queryBuilder = $this -> createQueryBuilder('a'); // Alias de l'objet
+}
+```
+
 ### L'objet Paginator
 ### Appel dans un controller
 
