@@ -20,7 +20,7 @@
     - [Écrire une requête](https://github.com/Piotezaza/CoursNumericall/blob/master/PHP/SYMFONY/Recap.md#%C3%89crire-une-requ%C3%AAte)
     - [L'objet Paginator](https://github.com/Piotezaza/CoursNumericall/blob/master/PHP/SYMFONY/Recap.md#lobjet-paginator)
     - [Appel dans un controller](https://github.com/Piotezaza/CoursNumericall/blob/master/PHP/SYMFONY/Recap.md#appel-dans-un-controller)
-    - [### Sauvegarder et supprimer les entités](https://github.com/Piotezaza/CoursNumericall/blob/master/PHP/SYMFONY/Recap.md#sauvegarder-et-supprimer-les-entit%C3%A9s)
+    - [Sauvegarder et supprimer les entités](https://github.com/Piotezaza/CoursNumericall/blob/master/PHP/SYMFONY/Recap.md#sauvegarder-et-supprimer-les-entit%C3%A9s)
 - [Formulaire](https://github.com/Piotezaza/CoursNumericall/blob/master/PHP/SYMFONY/Recap.md#formulaire)
     - [FormBuilder](https://github.com/Piotezaza/CoursNumericall/blob/master/PHP/SYMFONY/Recap.md#formbuilder)
     - [Types de champs](https://github.com/Piotezaza/CoursNumericall/blob/master/PHP/SYMFONY/Recap.md#types-de-champs)
@@ -489,6 +489,9 @@ $builder -> add('name', null, array(
 ```
 
 ### Types de champs
+
+
+
 ### Formulaires imbriqués
 ### Les collections
 ### Création dans un controller
