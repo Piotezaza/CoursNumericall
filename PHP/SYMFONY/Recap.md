@@ -359,7 +359,7 @@ if( $request -> isHmlHttpRequest() ) { /*...*/ }
 
 ### Les objets `Response`
 
-Une action d'un Controller doit toujours retourner un objet de type Reponse.
+Une action d'un `Controller` doit toujours retourner un objet de type `Response`.
 
 
 
