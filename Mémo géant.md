@@ -152,6 +152,7 @@ $.post(URL, DATA, function(data){}, 'json'); // Requête GET type JSON
 
 - [STARTER TEMPLATE](https://github.com/Piotezaza/CoursNumericall/blob/master/M%C3%A9mo%20g%C3%A9ant.md#starter-template)
 - [FORMULAIRE TEMPLATE](https://github.com/Piotezaza/CoursNumericall/blob/master/M%C3%A9mo%20g%C3%A9ant.md#formulaire-template)
+- [MODAL POP-UP / POP-OUT](https://github.com/Piotezaza/CoursNumericall/blob/master/M%C3%A9mo%20g%C3%A9ant.md#modal-pop-up--pop-out)
 
 ### STARTER TEMPLATE
 
