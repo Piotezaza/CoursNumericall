@@ -201,6 +201,17 @@ $.post(URL, DATA, function(data){}, 'json'); // Requête GET type JSON
 </form>
 ```
 
+### MODAL POP-UP / POP-OUT
+
+Fonction pour faire apparaître un modal Boostrap pendant 2,5 secondes. L'attribut `modal` doit être remplacé par **l'ID** du modal visé.
+
+```javascript
+function popUp_OutModal(modal) {
+    $(modal).modal('show');
+    setTimeout(function() { $(modal).modal('hide'); }, 2500);
+}
+```
+
 ---
 ---
 
