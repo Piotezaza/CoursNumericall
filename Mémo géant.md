@@ -212,7 +212,7 @@ function popUp_OutModal(modal) {
     setTimeout(function() { $(modal).modal('hide'); }, 2500);
 }
 
-// Exemple 
+// Exemple d'utilisation
 popUp_OutModal('#modalQuiDechire')
 
 ```
