@@ -211,6 +211,10 @@ function popUp_OutModal(modal) {
     $(modal).modal('show');
     setTimeout(function() { $(modal).modal('hide'); }, 2500);
 }
+
+// Exemple 
+popUp_OutModal('#modalQuiDechire')
+
 ```
 
 ---
