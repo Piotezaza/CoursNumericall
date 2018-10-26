@@ -279,13 +279,14 @@ popUp_OutModal('#modalQuiDechire')
 ### SOMMAIRE
 
 - [FONCTIONS DE BASE](https://github.com/Piotezaza/CoursNumericall/blob/master/M%C3%A9mo%20g%C3%A9ant.md#fonctions-de-base)
-- [BASIQUE]()
+- [BASIQUE](https://github.com/Piotezaza/CoursNumericall/blob/master/M%C3%A9mo%20g%C3%A9ant.md#basique)
     - [Enregistrer des informations dans un fichier](https://github.com/Piotezaza/CoursNumericall/blob/master/M%C3%A9mo%20g%C3%A9ant.md#enregistrer-des-informations-dans-un-fichier)
-- [POO](https://github.com/Piotezaza/CoursNumericall/blob/master/M%C3%A9mo%20g%C3%A9ant.md#orient%C3%89-objet)
+- [ORIENTÉ OBJET](https://github.com/Piotezaza/CoursNumericall/blob/master/M%C3%A9mo%20g%C3%A9ant.md#orient%C3%89-objet)
     - [AUTOLOAD](https://github.com/Piotezaza/CoursNumericall/blob/master/M%C3%A9mo%20g%C3%A9ant.md#autoload)
     - [ESPACE DE NOM / NAMESPACE](https://github.com/Piotezaza/CoursNumericall/blob/master/M%C3%A9mo%20g%C3%A9ant.md#espace-de-nom--namespace)
     - [STARTER TEMPLATE CRÉATION OBJET](https://github.com/Piotezaza/CoursNumericall/blob/master/M%C3%A9mo%20g%C3%A9ant.md#starter-template-cr%C3%89ation-objet)
     - [TESTER LE TYPE D'ATTRIBUT (string, array, ...)](https://github.com/Piotezaza/CoursNumericall/blob/master/M%C3%A9mo%20g%C3%A9ant.md#tester-le-type-dattribut-string-array-)
+- [FONCTIONS UTILES](https://github.com/Piotezaza/CoursNumericall/blob/master/M%C3%A9mo%20g%C3%A9ant.md#fonctions-de-base)
 
 ### FONCTIONS DE BASE
 
@@ -442,6 +443,17 @@ public function setAttribut(string $attribut)
 }
 
 ```
+
+### FONCTIONS UTILES
+
+#### **CRÉATION AUTOMATIQUE DE LA DATE DU JOUR**
+
+[DOC](http://php.net/manual/fr/function.date.php)
+
+```php
+$today = date('d-m-Y H:i:s') // Retourne 26-10-2018 09:56:58
+```
+
 
 ---
 ---
