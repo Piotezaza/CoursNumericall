@@ -550,4 +550,6 @@ $today = date('d-m-Y H:i:s') // Retourne 26-10-2018 09:56:58
 - [Affinity](https://affinity.serif.com/fr/) | Logiciels equivalents à Photoshop & Illustrator
 - [Codepen.io](https://codepen.io/) | Coder directement en ligne et trouver des idées
 - [StackOverflow](http://stackoverflow.com) | Forum de devs'
-- [Wappalyzer - Extension Chrome](https://www.wappalyzer.com/) | Permet de savoir ce qui est utilisé comme techno. sur un site
+- [Wappalyzer - Extension Chrome & Firefox](https://www.wappalyzer.com/download) | Permet de savoir ce qui est utilisé comme techno. sur un site
+- [ColorZilla - Extension Chrome](https://chrome.google.com/webstore/detail/colorzilla/bhlhnicpbhignbdhedgjhgdocnmhomnp) | Pipette pour récupérer les couleurs de sites web (extrêmement pratique)
+- [LightHouse](https://chrome.google.com/webstore/detail/lighthouse/blipmdconlkpinefehnmjammfjpmpbjk) | Fais un compte rendu sur les performances du site où l'extension est utilisée
