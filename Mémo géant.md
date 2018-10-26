@@ -495,6 +495,7 @@ $today = date('d-m-Y H:i:s') // Retourne 26-10-2018 09:56:58
 - [SOLOLEARN](https://www.sololearn.com/) | Cours programmation - en ligne et sur application mobile (en anglais)
 - [OPENCLASSROOMS](https://openclassrooms.com/fr/) | Cours en ligne (en français)
 - [ABONNEMENT PREMIUM SOLO OPENCLASSROOMS](https://openclassrooms.com/fr/partners/pole-emploi/offers) | 0€ si inscrit à Pôle Emploi
+- [SQL](https://sql.sh/)
 
 **HTML**
 - [ALSACREATIONS - Nouveautés](https://www.alsacreations.com/article/lire/750-HTML5-nouveautes.html)
@@ -538,3 +539,5 @@ $today = date('d-m-Y H:i:s') // Retourne 26-10-2018 09:56:58
 - [DB Browser for SQLite - BDD]( https://sqlitebrowser.org/)
 - [Visual Studio Code - Windows](https://code.visualstudio.com/docs/?dv=win)
 - [ColorPic](https://www.clubic.com/telecharger-fiche14962-colorpic.html)
+- [Adobe XD](https://www.adobe.com/lu_fr/products/xd.html) | GRATUIT - Pour créer des layouts d'application, site web... Cousin de [Sketch](https://www.sketchapp.com/) (payant)
+- [Affinity](https://affinity.serif.com/fr/) | Logiciels equivalents à Photoshop & Illustrator
