@@ -460,7 +460,7 @@ $today = date('d-m-Y H:i:s') // Retourne 26-10-2018 09:56:58
 
 ## SQL [↑ UP ↑](https://github.com/Piotezaza/CoursNumericall/blob/master/M%C3%A9mo%20g%C3%A9ant.md#sommaire)
 
-### SOMMAIRE
+### SOMMAIRE    
 
 - []()
 
@@ -485,3 +485,5 @@ $today = date('d-m-Y H:i:s') // Retourne 26-10-2018 09:56:58
 
 - [GRAFIKART - Tuto JSON](https://www.grafikart.fr/tutoriels/jquery/json-77)
 - [FUNDATION](https://foundation.zurb.com/) | Framework Boostrap like
+- [DATATABLES](https://datatables.net/manual/) | Plugin Javascript qui créé des tableaux "automatiques"
+- [SUMMERNOTE](https://summernote.org/) | WISIWYG éditeur de texte à intégrer
