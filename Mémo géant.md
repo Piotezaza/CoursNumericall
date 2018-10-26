@@ -446,9 +446,7 @@ public function setAttribut(string $attribut)
 
 ### FONCTIONS UTILES
 
-#### **CRÉATION AUTOMATIQUE DE LA DATE DU JOUR**
-
-[DOC](http://php.net/manual/fr/function.date.php)
+#### **CRÉATION AUTOMATIQUE DE LA DATE DU JOUR - [DOC](http://php.net/manual/fr/function.date.php)**
 
 ```php
 $today = date('d-m-Y H:i:s') // Retourne 26-10-2018 09:56:58
