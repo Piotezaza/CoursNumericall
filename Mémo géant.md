@@ -86,7 +86,7 @@ xhr.send();
 ### AVEC JQUERY
 
 - `url: ''` : lien vers le script à appeler
-- `method: 'POST'` : ou GET
+- `method: 'POST'` : ou GET (par défaut)
 - `data: {}` : **OBJET** `{ username: 'Bob', password: '1234' }` ou **CHAÎNE** `( "username=Bob&password=1234" )`
 - `dataType: 'html'` : ou JSON
 - `console.log(data);` : affichage du contenu de la réponse
