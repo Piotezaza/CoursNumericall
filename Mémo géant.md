@@ -528,8 +528,8 @@ $today = date('d-m-Y H:i:s') // Retourne 26-10-2018 09:56:58
 
 
 ### PLUGINS
-- [DATATABLES](https://datatables.net/manual/) | Plugin Javascript qui créé des tableaux "automatiques"
-- [SUMMERNOTE](https://summernote.org/) | WISIWYG éditeur de texte à intégrer
+- [DATATABLES](https://datatables.net/manual/) | Créé des tableaux "automatiques" avec Ajax (Javascript)
+- [SUMMERNOTE](https://summernote.org/) | WISIWYG éditeur de texte à intégrer (Javascript)
 
 
 ### OUTILS / LOGICIELS
