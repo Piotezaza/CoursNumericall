@@ -287,6 +287,7 @@ popUp_OutModal('#modalQuiDechire')
     - [STARTER TEMPLATE CRÉATION OBJET](https://github.com/Piotezaza/CoursNumericall/blob/master/M%C3%A9mo%20g%C3%A9ant.md#starter-template-cr%C3%89ation-objet)
     - [TESTER LE TYPE D'ATTRIBUT (string, array, ...)](https://github.com/Piotezaza/CoursNumericall/blob/master/M%C3%A9mo%20g%C3%A9ant.md#tester-le-type-dattribut-string-array-)
 - [FONCTIONS UTILES](https://github.com/Piotezaza/CoursNumericall/blob/master/M%C3%A9mo%20g%C3%A9ant.md#fonctions-utiles)
+    - [CRÉATION AUTOMATIQUE DE LA DATE DU JOUR](https://github.com/Piotezaza/CoursNumericall/blob/master/M%C3%A9mo%20g%C3%A9ant.md#cr%C3%A9ation-automatique-de-la-date-du-jour---doc)
 
 ### FONCTIONS DE BASE
 
