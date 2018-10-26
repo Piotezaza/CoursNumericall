@@ -550,3 +550,4 @@ $today = date('d-m-Y H:i:s') // Retourne 26-10-2018 09:56:58
 - [Affinity](https://affinity.serif.com/fr/) | Logiciels equivalents à Photoshop & Illustrator
 - [Codepen.io](https://codepen.io/) | Coder directement en ligne et trouver des idées
 - [StackOverflow](http://stackoverflow.com) | Forum de devs'
+- [Wappalyzer - Extension Chrome](https://www.wappalyzer.com/) | Permet de savoir ce qui est utilisé comme techno. sur un site
