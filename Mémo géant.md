@@ -286,7 +286,7 @@ popUp_OutModal('#modalQuiDechire')
     - [ESPACE DE NOM / NAMESPACE](https://github.com/Piotezaza/CoursNumericall/blob/master/M%C3%A9mo%20g%C3%A9ant.md#espace-de-nom--namespace)
     - [STARTER TEMPLATE CRÉATION OBJET](https://github.com/Piotezaza/CoursNumericall/blob/master/M%C3%A9mo%20g%C3%A9ant.md#starter-template-cr%C3%89ation-objet)
     - [TESTER LE TYPE D'ATTRIBUT (string, array, ...)](https://github.com/Piotezaza/CoursNumericall/blob/master/M%C3%A9mo%20g%C3%A9ant.md#tester-le-type-dattribut-string-array-)
-- [FONCTIONS UTILES](https://github.com/Piotezaza/CoursNumericall/blob/master/M%C3%A9mo%20g%C3%A9ant.md#fonctions-de-base)
+- [FONCTIONS UTILES](https://github.com/Piotezaza/CoursNumericall/blob/master/M%C3%A9mo%20g%C3%A9ant.md#fonctions-utiles)
 
 ### FONCTIONS DE BASE
 
