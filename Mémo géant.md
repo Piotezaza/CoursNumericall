@@ -493,6 +493,8 @@ $today = date('d-m-Y H:i:s') // Retourne 26-10-2018 09:56:58
 ### COURS
 
 - [SOLOLEARN](https://www.sololearn.com/) | Cours programmation - en ligne et sur application mobile (en anglais)
+- [OPENCLASSROOMS](https://openclassrooms.com/fr/) | Cours en ligne (en français)
+- [ABONNEMENT PREMIUM SOLO OPENCLASSROOMS](https://openclassrooms.com/fr/partners/pole-emploi/offers) | 0€ si inscrit à Pôle Emploi
 
 **HTML**
 - [ALSACREATIONS - HTML5 - Nouveautés](https://www.alsacreations.com/article/lire/750-HTML5-nouveautes.html)
