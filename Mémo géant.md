@@ -512,7 +512,7 @@ $today = date('d-m-Y H:i:s') // Retourne 26-10-2018 09:56:58
 
 
 **Accessibilité**
-- [Web Content Accessibility Guidelines (WCAG) - Version un peu moche](https://www.w3.org/TR/WCAG20)
+- [Web Content Accessibility Guidelines (WCAG)](https://www.w3.org/TR/WCAG20) | Version un peu moche
 - [Checklist WCAG](https://webaim.org/standards/wcag/checklist)
 - [Google developers - Web - Accessibilité](https://developers.google.com/web/fundamentals/accessibility)
 - [Contrast Checker](https://webaim.org/resources/contrastchecker)
