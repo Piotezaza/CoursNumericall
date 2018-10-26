@@ -1,7 +1,5 @@
 # Mémo géant
 
-Plutôt que de fouiller dans TOUS les dossiers pour retrouver TOUS mes mémos, tout sera écrit ici. 
-
 La structure de ce fichier sera la suivante : 
 
 **SOMMAIRE GÉNÉRAL**
