@@ -531,6 +531,7 @@ $today = date('d-m-Y H:i:s') // Retourne 26-10-2018 09:56:58
 ### PLUGINS
 - [DATATABLES](https://datatables.net/manual/) | Créé des tableaux "automatiques" avec Ajax (Javascript)
 - [SUMMERNOTE](https://summernote.org/) | WISIWYG éditeur de texte à intégrer (Javascript)
+- [CHAINED](https://appelsiini.net/projects/chained/) | Plugin jQuery qui relie des selects entre eux pour créer une dépendence [EXEMPLE](https://codepen.io/piotezaza/pen/WaNOYQ)
 
 
 ### OUTILS / LOGICIELS
@@ -539,3 +540,5 @@ $today = date('d-m-Y H:i:s') // Retourne 26-10-2018 09:56:58
 - [ColorPic](https://www.clubic.com/telecharger-fiche14962-colorpic.html)
 - [Adobe XD](https://www.adobe.com/lu_fr/products/xd.html) | GRATUIT - Pour créer des layouts d'application, site web... Cousin de [Sketch](https://www.sketchapp.com/) (payant)
 - [Affinity](https://affinity.serif.com/fr/) | Logiciels equivalents à Photoshop & Illustrator
+- [Codepen.io](https://codepen.io/) | Coder directement en ligne et trouver des idées
+- [StackOverflow](http://stackoverflow.com) | Forum de devs'
