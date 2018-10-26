@@ -483,6 +483,8 @@ $today = date('d-m-Y H:i:s') // Retourne 26-10-2018 09:56:58
 
 ## AUTRES LIENS UTILES [↑ UP ↑](https://github.com/Piotezaza/CoursNumericall/blob/master/M%C3%A9mo%20g%C3%A9ant.md#sommaire)
 
+### SOMMAIRE
+
 - [COURS](https://github.com/Piotezaza/CoursNumericall/blob/master/M%C3%A9mo%20g%C3%A9ant.md#cours-1)
 - [LANGAGES / FRAMEWORKS / BIBLIOTHEQUES](https://github.com/Piotezaza/CoursNumericall/blob/master/M%C3%A9mo%20g%C3%A9ant.md#langages--frameworks--bibliotheques)
 - [PLUGINS](https://github.com/Piotezaza/CoursNumericall/blob/master/M%C3%A9mo%20g%C3%A9ant.md#plugins)
