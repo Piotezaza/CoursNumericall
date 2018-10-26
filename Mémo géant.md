@@ -483,7 +483,54 @@ $today = date('d-m-Y H:i:s') // Retourne 26-10-2018 09:56:58
 
 ## AUTRES LIENS UTILES [↑ UP ↑](https://github.com/Piotezaza/CoursNumericall/blob/master/M%C3%A9mo%20g%C3%A9ant.md#sommaire)
 
+- [COURS]()
+- [LANGAGES / FRAMEWORKS / BIBLIOTHEQUES]()
+- [PLUGINS]()
+- [OUTILS / LOGICIELS]()
+
+### COURS
+
+- [SOLOLEARN](https://www.sololearn.com/) | Cours programmation - en ligne et sur application mobile (en anglais)
+
+**HTML**
+- [ALSACREATIONS - HTML5 - Nouveautés](https://www.alsacreations.com/article/lire/750-HTML5-nouveautes.html)
+- [ALSACREATIONS - HTML5 - Section, article, nav...](https://www.alsacreations.com/article/lire/1376-html5-section-article-nav-header-footer-aside.html)
+- [ALSACREATIONS - HTML5 - Le contexte de formatage block en CSS](https://www.alsacreations.com/astuce/lire/1543-Le-contexte-de-formatage-block-en-CSS.html)
+
+
+**CSS**
+- [COMPRENDRE FLEXBOX](https://openclassrooms.com/courses/apprenez-a-creer-votre-site-web-avec-html5-et-css3/la-mise-en-page-avec-flexbox)
+- [APPRENDRE LES LAYOUTS CSS](http://learnlayout.com/)
+
+
+**Javascript**
 - [GRAFIKART - Tuto JSON](https://www.grafikart.fr/tutoriels/jquery/json-77)
+
+
+**Accessibilité**
+- [Web Content Accessibility Guidelines (WCAG) - Version un peu moche](https://www.w3.org/TR/WCAG20)
+- [Checklist WCAG](https://webaim.org/standards/wcag/checklist)
+- [Google developers - Web - Accessibilité](https://developers.google.com/web/fundamentals/accessibility)
+- [Contrast Checker](https://webaim.org/resources/contrastchecker)
+- [Certification OpQuast](https://shop.opquast.com/)
+
+**UX Design**
+- [Material.io](https://material.io/)
+
+**SEO**
+- [Google PageSpeed Insights - Wordpress](https://kinsta.com/blog/google-pagespeed-insights/)
+
+
+### LANGAGES / FRAMEWORKS / BIBLIOTHEQUES
 - [FUNDATION](https://foundation.zurb.com/) | Framework Boostrap like
+
+
+### PLUGINS
 - [DATATABLES](https://datatables.net/manual/) | Plugin Javascript qui créé des tableaux "automatiques"
 - [SUMMERNOTE](https://summernote.org/) | WISIWYG éditeur de texte à intégrer
+
+
+### OUTILS / LOGICIELS
+- [DB Browser for SQLite - BDD]( https://sqlitebrowser.org/)
+- [Visual Studio Code - Windows](https://code.visualstudio.com/docs/?dv=win)
+- [ColorPic](https://www.clubic.com/telecharger-fiche14962-colorpic.html)
