@@ -225,8 +225,8 @@ popUp_OutModal('#modalQuiDechire')
 
 - [FLEXBOX FROGGY](http://flexboxfroggy.com/#fr)
 - [CSS ZEN GARDEN](http://www.csszengarden.com/)
-- [OBJECT-POSITION]()
-- [OBJECT-FIT]()
+- [OBJECT-POSITION](https://github.com/Piotezaza/CoursNumericall/blob/master/M%C3%A9mo%20g%C3%A9ant.md#object-position)
+- [OBJECT-FIT](https://github.com/Piotezaza/CoursNumericall/blob/master/M%C3%A9mo%20g%C3%A9ant.md#object-fit)
 
 ### OBJECT-POSITION
 
