@@ -225,8 +225,16 @@ popUp_OutModal('#modalQuiDechire')
 
 - [FLEXBOX FROGGY](http://flexboxfroggy.com/#fr)
 - [CSS ZEN GARDEN](http://www.csszengarden.com/)
+- [OBJECT-POSITION]()
+- [OBJECT-FIT]()
 
-### TITRE
+### OBJECT-POSITION
+
+La propriété `object-position` détermine l'alignement d'un élément remplacé au sein de sa boîte. Les zones de la boîtes qui ne sont pas recouvertes par le contenu de l'élément remplacé montreront l'arrière-plan de l'élément. [MDN](https://developer.mozilla.org/fr/docs/Web/CSS/object-position)
+
+### OBJECT-FIT
+
+La propriété CSS `object-fit` définit la façon dont le contenu d'un élément remplacé doit s'adapter à son parent en utilisant sa largeur et sa hauteur. [MDN](https://developer.mozilla.org/fr/docs/Web/CSS/object-fit)
 
 ---
 ---
