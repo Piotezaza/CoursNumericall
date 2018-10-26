@@ -497,9 +497,9 @@ $today = date('d-m-Y H:i:s') // Retourne 26-10-2018 09:56:58
 - [ABONNEMENT PREMIUM SOLO OPENCLASSROOMS](https://openclassrooms.com/fr/partners/pole-emploi/offers) | 0€ si inscrit à Pôle Emploi
 
 **HTML**
-- [ALSACREATIONS - HTML5 - Nouveautés](https://www.alsacreations.com/article/lire/750-HTML5-nouveautes.html)
-- [ALSACREATIONS - HTML5 - Section, article, nav...](https://www.alsacreations.com/article/lire/1376-html5-section-article-nav-header-footer-aside.html)
-- [ALSACREATIONS - HTML5 - Le contexte de formatage block en CSS](https://www.alsacreations.com/astuce/lire/1543-Le-contexte-de-formatage-block-en-CSS.html)
+- [ALSACREATIONS - Nouveautés](https://www.alsacreations.com/article/lire/750-HTML5-nouveautes.html)
+- [ALSACREATIONS - Section, article, nav...](https://www.alsacreations.com/article/lire/1376-html5-section-article-nav-header-footer-aside.html)
+- [ALSACREATIONS - Le contexte de formatage block en CSS](https://www.alsacreations.com/astuce/lire/1543-Le-contexte-de-formatage-block-en-CSS.html)
 
 
 **CSS**
