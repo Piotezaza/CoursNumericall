@@ -227,6 +227,8 @@ popUp_OutModal('#modalQuiDechire')
 - [CSS ZEN GARDEN](http://www.csszengarden.com/)
 - [OBJECT-POSITION](https://github.com/Piotezaza/CoursNumericall/blob/master/M%C3%A9mo%20g%C3%A9ant.md#object-position)
 - [OBJECT-FIT](https://github.com/Piotezaza/CoursNumericall/blob/master/M%C3%A9mo%20g%C3%A9ant.md#object-fit)
+- [OPENCLASSROOMS - COMPRENDRE FLEXBOX](https://openclassrooms.com/courses/apprenez-a-creer-votre-site-web-avec-html5-et-css3/la-mise-en-page-avec-flexbox)
+- [APPRENDRE LES LAYOUTS CSS](http://learnlayout.com/)
 
 ### OBJECT-POSITION
 
@@ -244,7 +246,9 @@ La propriété CSS `object-fit` définit la façon dont le contenu d'un élémen
 
 ### SOMMAIRE
 
-- []()
+- [ALSACREATIONS - Nouveautés](https://www.alsacreations.com/article/lire/750-HTML5-nouveautes.html)
+- [ALSACREATIONS - Section, article, nav...](https://www.alsacreations.com/article/lire/1376-html5-section-article-nav-header-footer-aside.html)
+- [ALSACREATIONS - Le contexte de formatage block en CSS](https://www.alsacreations.com/astuce/lire/1543-Le-contexte-de-formatage-block-en-CSS.html)
 
 ### TITRE
 
@@ -256,7 +260,7 @@ La propriété CSS `object-fit` définit la façon dont le contenu d'un élémen
 
 ### SOMMAIRE
 
-- []()
+- [GRAFIKART - Tuto JSON](https://www.grafikart.fr/tutoriels/jquery/json-77)
 
 ### TITRE
 
@@ -491,32 +495,17 @@ $today = date('d-m-Y H:i:s') // Retourne 26-10-2018 09:56:58
 
 ### SOMMAIRE
 
-- [COURS](https://github.com/Piotezaza/CoursNumericall/blob/master/M%C3%A9mo%20g%C3%A9ant.md#cours-1)
+- [COURS / DOCUMENTATION](https://github.com/Piotezaza/CoursNumericall/blob/master/M%C3%A9mo%20g%C3%A9ant.md#cours-1)
 - [LANGAGES / FRAMEWORKS / BIBLIOTHEQUES](https://github.com/Piotezaza/CoursNumericall/blob/master/M%C3%A9mo%20g%C3%A9ant.md#langages--frameworks--bibliotheques)
 - [PLUGINS](https://github.com/Piotezaza/CoursNumericall/blob/master/M%C3%A9mo%20g%C3%A9ant.md#plugins)
 - [OUTILS / LOGICIELS](https://github.com/Piotezaza/CoursNumericall/blob/master/M%C3%A9mo%20g%C3%A9ant.md#outils--logiciels)
 
-### COURS
+### COURS / DOCUMENTATION
 
 - [SOLOLEARN](https://www.sololearn.com/) | Cours programmation - en ligne et sur application mobile (en anglais)
 - [OPENCLASSROOMS](https://openclassrooms.com/fr/) | Cours en ligne (en français)
 - [ABONNEMENT PREMIUM SOLO OPENCLASSROOMS](https://openclassrooms.com/fr/partners/pole-emploi/offers) | 0€ si inscrit à Pôle Emploi
 - [SQL](https://sql.sh/)
-
-**HTML**
-- [ALSACREATIONS - Nouveautés](https://www.alsacreations.com/article/lire/750-HTML5-nouveautes.html)
-- [ALSACREATIONS - Section, article, nav...](https://www.alsacreations.com/article/lire/1376-html5-section-article-nav-header-footer-aside.html)
-- [ALSACREATIONS - Le contexte de formatage block en CSS](https://www.alsacreations.com/astuce/lire/1543-Le-contexte-de-formatage-block-en-CSS.html)
-
-
-**CSS**
-- [COMPRENDRE FLEXBOX](https://openclassrooms.com/courses/apprenez-a-creer-votre-site-web-avec-html5-et-css3/la-mise-en-page-avec-flexbox)
-- [APPRENDRE LES LAYOUTS CSS](http://learnlayout.com/)
-
-
-**Javascript**
-- [GRAFIKART - Tuto JSON](https://www.grafikart.fr/tutoriels/jquery/json-77)
-
 
 **Accessibilité**
 - [Web Content Accessibility Guidelines (WCAG)](https://www.w3.org/TR/WCAG20) | Version un peu moche
