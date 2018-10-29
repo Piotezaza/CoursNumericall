@@ -272,7 +272,7 @@ La propriété CSS `object-fit` définit la façon dont le contenu d'un élémen
 
 ### SOMMAIRE
 
-- []()
+- [CDN JQUERY](https://github.com/Piotezaza/CoursNumericall/blob/master/M%C3%A9mo%20g%C3%A9ant.md#cdn-jquery)
 
 ### CDN JQUERY
 
