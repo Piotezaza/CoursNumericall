@@ -496,6 +496,9 @@ $today = date('d-m-Y H:i:s') // Retourne 26-10-2018 09:56:58
 ### SOMMAIRE
 
 - [COURS / DOCUMENTATION](https://github.com/Piotezaza/CoursNumericall/blob/master/M%C3%A9mo%20g%C3%A9ant.md#cours--documentation)
+    - [ACCESSIBILITÉ]()
+    - [UX DESIGN]()
+    - [SEO]()
 - [LANGAGES / FRAMEWORKS / BIBLIOTHEQUES](https://github.com/Piotezaza/CoursNumericall/blob/master/M%C3%A9mo%20g%C3%A9ant.md#langages--frameworks--bibliotheques)
 - [PLUGINS](https://github.com/Piotezaza/CoursNumericall/blob/master/M%C3%A9mo%20g%C3%A9ant.md#plugins)
 - [OUTILS / LOGICIELS](https://github.com/Piotezaza/CoursNumericall/blob/master/M%C3%A9mo%20g%C3%A9ant.md#outils--logiciels)
@@ -507,17 +510,17 @@ $today = date('d-m-Y H:i:s') // Retourne 26-10-2018 09:56:58
 - [ABONNEMENT PREMIUM SOLO OPENCLASSROOMS](https://openclassrooms.com/fr/partners/pole-emploi/offers) | 0€ si inscrit à Pôle Emploi
 - [SQL](https://sql.sh/)
 
-**Accessibilité**
+#### ACCESSIBILITÉ
 - [Web Content Accessibility Guidelines (WCAG)](https://www.w3.org/TR/WCAG20) | Version un peu moche
 - [Checklist WCAG](https://webaim.org/standards/wcag/checklist)
 - [Google developers - Web - Accessibilité](https://developers.google.com/web/fundamentals/accessibility)
 - [Contrast Checker](https://webaim.org/resources/contrastchecker)
 - [Certification OpQuast](https://shop.opquast.com/)
 
-**UX Design**
+#### UX DESIGN
 - [Material.io](https://material.io/)
 
-**SEO**
+#### SEO
 - [Google PageSpeed Insights - Wordpress](https://kinsta.com/blog/google-pagespeed-insights/)
 
 
