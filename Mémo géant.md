@@ -287,6 +287,9 @@ console.log(cart);
 3: {id: "4 id", quantity: "4 quantity"}
 4: {id: "4 id", quantity: "4 quantity"}
 
+// Récupérer la 3ème ligne
+cart[2]["id"];
+cart[2]["quantity"];
 
 // SECONDE VERSION
 var element = {}, cart = [];
@@ -308,6 +311,10 @@ console.log(cart);
 2: element: {id: "4 id", quantity: "4 quantity"}
 3: element: {id: "4 id", quantity: "4 quantity"}
 4: element: {id: "4 id", quantity: "4 quantity"}
+
+// Récupérer la 3ème ligne
+cart[2]["element"]["id"];
+cart[2]["element"]["quantity"];
 ```
 
 ---
