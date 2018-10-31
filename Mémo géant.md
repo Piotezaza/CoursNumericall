@@ -266,6 +266,29 @@ La propriété CSS `object-fit` définit la façon dont le contenu d'un élémen
 ### AUTOFILL ARRAY
 
 ```javascript
+// PREMIERE VERSION
+var element = {}, cart = [];
+var counter = 5;
+
+for(i=0; i < counter; i++)
+{
+    id = i + ' id';
+    quantity = i + ' quantity';
+    cart.push({id, quantity});
+}
+
+console.log(cart);
+
+// Return
+(5) [{…}, {…}, {…}, {…}, {…}]
+0: {id: "4 id", quantity: "4 quantity"}
+1: {id: "4 id", quantity: "4 quantity"}
+2: {id: "4 id", quantity: "4 quantity"}
+3: {id: "4 id", quantity: "4 quantity"}
+4: {id: "4 id", quantity: "4 quantity"}
+
+
+// SECONDE VERSION
 var element = {}, cart = [];
 var counter = 5;
 
