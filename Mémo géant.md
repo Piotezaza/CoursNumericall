@@ -298,6 +298,7 @@ La propriété CSS `object-fit` définit la façon dont le contenu d'un élémen
     - [TESTER LE TYPE D'ATTRIBUT (string, array, ...)](https://github.com/Piotezaza/CoursNumericall/blob/master/M%C3%A9mo%20g%C3%A9ant.md#tester-le-type-dattribut-string-array-)
 - [FONCTIONS UTILES](https://github.com/Piotezaza/CoursNumericall/blob/master/M%C3%A9mo%20g%C3%A9ant.md#fonctions-utiles)
     - [CRÉATION AUTOMATIQUE DE LA DATE DU JOUR](https://github.com/Piotezaza/CoursNumericall/blob/master/M%C3%A9mo%20g%C3%A9ant.md#cr%C3%A9ation-automatique-de-la-date-du-jour---doc)
+    - [INSERTION DE PLUSIEURS LIGNES DANS LA TABLE GRACE A PDO](https://github.com/Piotezaza/CoursNumericall/blob/master/M%C3%A9mo%20g%C3%A9ant.md#insertion-de-plusieurs-lignes-dans-la-table-grace-a-pdo)
 
 ### FONCTIONS DE BASE
 
