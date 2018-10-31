@@ -352,6 +352,7 @@ cart[2]["element"]["quantity"];
 - [FONCTIONS UTILES](https://github.com/Piotezaza/CoursNumericall/blob/master/M%C3%A9mo%20g%C3%A9ant.md#fonctions-utiles)
     - [CRÉATION AUTOMATIQUE DE LA DATE DU JOUR](https://github.com/Piotezaza/CoursNumericall/blob/master/M%C3%A9mo%20g%C3%A9ant.md#cr%C3%A9ation-automatique-de-la-date-du-jour---doc)
     - [INSERTION DE PLUSIEURS LIGNES DANS LA TABLE GRACE A PDO](https://github.com/Piotezaza/CoursNumericall/blob/master/M%C3%A9mo%20g%C3%A9ant.md#insertion-de-plusieurs-lignes-dans-la-table-grace-a-pdo)
+    - [ALTERNATIVE AU lastInsertId()]()
 
 ### FONCTIONS DE BASE
 
@@ -588,6 +589,74 @@ $rowsToInsert[] = array(
 pdoMultiInsert('people', $rowsToInsert, $pdo);
 ```
 
+#### **ALTERNATIVE AU lastInsertId()**
+
+```php
+function getLastId($pdo)
+{
+    try
+    {
+        $req = null;
+        $retdata = array();
+
+        $req = $pdo->prepare("SELECT MAX(ColonneVisee) AS ID FROM maTable");
+        $req->execute();
+
+        while( $data = $req->fetch(PDO::FETCH_OBJ) )
+        {
+            $retdata[] = $data;
+        }
+
+        return $retdata;
+    }
+    catch(Exception $e)
+    {
+        return $e->getMessage();
+    }
+}
+
+/* getLastId($pdo) retourne :
+
+Array
+(
+    [0] => stdClass Object
+        (
+            [ID] => 27
+        )
+)
+*/
+
+
+function insertDansMaTable($Name, $Address)
+{
+    $attributes = [
+        PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION, 
+        PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC
+    ];
+    $pdo = new PDO('sqlite:BDD/data.db', null, null, $attributes);
+    $req = $pdo->prepare("INSERT INTO Employees (Name) VALUES (:Name)");
+
+    $req->bindValue(':Name', $Name, PDO::PARAM_STR); 
+
+   if( $req->execute() )
+   {
+        $lastID = getLastId($pdo);
+
+        foreach($lastID as $val)
+        {
+            $lastID = $val -> ID;
+        }
+
+        //J'appelle la fonction insertDansMonAutreTable car maintenant je connais mon $lastID
+        insertDansMonAutreTable( $Address, $lastID);        
+   }
+   else 
+   {
+        $req->errorCode();
+        echo "Fail";
+   }
+}
+```
 
 ---
 ---
