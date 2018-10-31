@@ -261,8 +261,31 @@ La propriété CSS `object-fit` définit la façon dont le contenu d'un élémen
 ### SOMMAIRE
 
 - [GRAFIKART - Tuto JSON](https://www.grafikart.fr/tutoriels/jquery/json-77)
+- [AUTOFILL ARRAY]()
 
-### TITRE
+### AUTOFILL ARRAY
+
+```javascript
+var element = {}, cart = [];
+var counter = 5;
+
+for(i=0; i < counter; i++)
+{
+    element.id = i + ' id';
+    element.quantity = i + ' quantity';
+    cart.push({element: element});
+}
+
+console.log(cart);
+
+// Return
+(5) [{…}, {…}, {…}, {…}, {…}]
+0: element: {id: "4 id", quantity: "4 quantity"}
+1: element: {id: "4 id", quantity: "4 quantity"}
+2: element: {id: "4 id", quantity: "4 quantity"}
+3: element: {id: "4 id", quantity: "4 quantity"}
+4: element: {id: "4 id", quantity: "4 quantity"}
+```
 
 ---
 ---
