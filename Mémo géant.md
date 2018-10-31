@@ -463,6 +463,77 @@ public function setAttribut(string $attribut)
 $today = date('d-m-Y H:i:s') // Retourne 26-10-2018 09:56:58
 ```
 
+#### **INSERTION DE PLUSIEURS LIGNES DANS LA TABLE GRACE A PDO**
+
+```php
+function pdoMultiInsert($tableName, $data, $pdoObject){
+    
+    // Contiendra les extraits de code SQL
+    $rowsSQL = array();
+ 
+    // Contiendra les valeurs que nous devons lier.
+    $toBind = array();
+    
+    // Récupère la liste des noms de colonnes à utiliser dans la requete SQL
+    $columnNames = array_keys($data[0]);
+ 
+    // Boucle sur l'array $data.
+    foreach($data as $arrayIndex => $row){
+        $params = array();
+        foreach($row as $columnName => $columnValue){
+            $param = ":" . $columnName . $arrayIndex;
+            $params[] = $param;
+            $toBind[$param] = $columnValue; 
+        }
+        $rowsSQL[] = "(" . implode(", ", $params) . ")";
+    }
+ 
+    // Creation de l'instruction SQL
+    $sql = "INSERT INTO `$tableName` (" . implode(", ", $columnNames) . ") VALUES " . implode(", ", $rowsSQL);
+ 
+    // On prepare la requete
+    $pdoStatement = $pdoObject->prepare($sql);
+ 
+    // On bind les values
+    foreach($toBind as $param => $val){
+        $pdoStatement->bindValue($param, $val);
+    }
+    
+    // On execute
+    return $pdoStatement->execute();
+}
+
+// UTILISATION
+
+// Connexion avec le PDO
+$pdo = new PDO('mysql:host=localhost;dbname=test', 'root', '');
+ 
+// Exemple d'array avec des valeurs qu'on injecte dans la table
+$rowsToInsert = array(
+    array(
+        'name' => 'John Doe',
+        'dob' => '1993-01-04',
+    ),
+    array(
+        'name' => 'Jane Doe',
+        'dob' => '1987-06-14',
+    ),
+    array(
+        'name' => 'Joe Bloggs',
+        'dob' => '1989-09-29',
+    )
+);
+ 
+// Exemple d'array avec des valeurs qu'on injecte dans la table en plus des datas précédentes
+$rowsToInsert[] = array(
+    'name' => 'Patrick Simmons',
+    'dob' => '1972-11-12'
+);
+ 
+// On appelle notre fonction
+pdoMultiInsert('people', $rowsToInsert, $pdo);
+```
+
 
 ---
 ---
