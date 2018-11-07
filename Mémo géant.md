@@ -724,6 +724,7 @@ function insertDansMaTable($Name, $Address)
 
 ### PLUGINS
 - [DATATABLES](https://datatables.net/manual/) | Créé des tableaux "automatiques" avec Ajax (Javascript)
+    - [FONCTIONS PRINCIPALES](https://github.com/Piotezaza/draft/tree/master/DataTables)
 - [SUMMERNOTE](https://summernote.org/) | WISIWYG éditeur de texte à intégrer (Javascript)
 - [CHAINED](https://appelsiini.net/projects/chained/) | Plugin jQuery qui relie des selects entre eux pour créer une dépendence [EXEMPLE](https://codepen.io/piotezaza/pen/WaNOYQ)
 
