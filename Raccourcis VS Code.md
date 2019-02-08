@@ -65,7 +65,12 @@ Tu as peut-être déjà remarqué mais des fois, t'as carrément un texte sélec
 
 C'est l'oeuvre du `:` apres le `1`. Pour écrire le texte, il te suffit d'écrire ce que tu veux derrière les deux points. Je vais faire quelques exemples pour que ce soit bien clair.
 
-**BONNUS** : Pour faire une tabulation, écris juste `\t` à l'endroit où tu veux la voir apparaître !
+**BONUS** : 
+
+- Pour faire une tabulation, écris juste `\t` à l'endroit où tu veux la voir apparaître !
+- Pour faire une liste de propositions à un endroit précis : `${1|prop1,prop2|}`
+- Pour échapper les `$`, faire `\\$`
+- Dans un fichier de snippets GLOBALES, le scope définit les langages autorisés à utiliser ces snippets
 
 ---
 
